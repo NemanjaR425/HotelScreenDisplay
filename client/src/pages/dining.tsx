@@ -183,7 +183,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back to Restaurants
                 </Button>
-                <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6">
                   <div className="flex items-center space-x-3 mb-2">
                     <Utensils className="w-8 h-8 text-primary" />
                     <Badge variant="secondary" className="text-lg px-3 py-1">
@@ -224,7 +224,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                           {items.map((item, index) => (
                             <div 
                               key={index}
-                              className="flex justify-between items-start border-b border-border/20 pb-4 last:border-b-0 last:pb-0"
+                              className="flex justify-between items-start pb-4"
                               data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
                             >
                               <div className="flex-1">

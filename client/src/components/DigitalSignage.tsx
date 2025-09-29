@@ -78,7 +78,7 @@ export default function DigitalSignage({
       <div className="h-full flex gap-3">
         {/* Left Panel - Welcome Section */}
         <div 
-          className="flex-1 border border-card-border rounded-lg p-8 flex flex-col relative overflow-hidden"
+          className="flex-1 rounded-lg p-8 flex flex-col relative overflow-hidden"
           style={{
             backgroundImage: `url(${resortImage})`,
             backgroundSize: 'cover',
