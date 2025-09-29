@@ -6,6 +6,7 @@ export default function WeatherWidgetExample() {
       temperature={72}
       condition="sunny"
       location="Downtown"
+      currentWeatherText="Current weather in"
     />
   );
 }

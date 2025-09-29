@@ -4,9 +4,10 @@ interface WeatherWidgetProps {
   temperature: number;
   condition: 'sunny' | 'cloudy' | 'rainy';
   location: string;
+  currentWeatherText: string;
 }
 
-export default function WeatherWidget({ temperature, condition, location }: WeatherWidgetProps) {
+export default function WeatherWidget({ temperature, condition, location, currentWeatherText }: WeatherWidgetProps) {
   const getWeatherIcon = () => {
     switch (condition) {
       case 'sunny':
@@ -50,7 +51,7 @@ export default function WeatherWidget({ temperature, condition, location }: Weat
         </div>
       </div>
       <div className="border-l border-border pl-4">
-        <p className="text-sm text-muted-foreground">Current weather in</p>
+        <p className="text-sm text-muted-foreground">{currentWeatherText}</p>
         <p className="font-medium" data-testid="text-location">{location}</p>
       </div>
     </div>

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Clock } from 'lucide-react';
 import WeatherWidget from './WeatherWidget';
 import ServiceCategory from './ServiceCategory';
+import LanguageSelector from './LanguageSelector';
+import { getTranslation } from '../utils/translations';
 import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
 
 interface DigitalSignageProps {
@@ -14,6 +16,9 @@ export default function DigitalSignage({
   tagline = "Your Premier Destination for Luxury & Hospitality"
 }: DigitalSignageProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentLanguage, setCurrentLanguage] = useState('en');
+  
+  const t = getTranslation(currentLanguage);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -71,7 +76,12 @@ export default function DigitalSignage({
                 </div>
               </div>
               
-              <WeatherWidget temperature={72} condition="sunny" location="Herceg Novi, Montenegro" />
+              <WeatherWidget 
+                temperature={72} 
+                condition="sunny" 
+                location="Herceg Novi, Montenegro"
+                currentWeatherText={t.currentWeatherIn}
+              />
             </div>
 
             {/* Spacer to push welcome message to bottom */}
@@ -79,21 +89,27 @@ export default function DigitalSignage({
 
             {/* Bottom welcome message */}
             <div className="mb-8">
-              <p className="text-2xl text-white/80 mb-4">Welcome to</p>
-              <h1 className="text-6xl font-bold text-white leading-tight" data-testid="text-hotel-name">
+              <p className="text-2xl text-white/80 mb-4">{t.welcomeTo}</p>
+              <h1 className="text-6xl font-bold text-white leading-tight mb-6" data-testid="text-hotel-name">
                 {hotelName}
               </h1>
+              
+              {/* Language Selector */}
+              <LanguageSelector 
+                currentLanguage={currentLanguage}
+                onLanguageChange={setCurrentLanguage}
+              />
             </div>
           </div>
         </div>
 
         {/* Right Panel - Service Categories Grid */}
         <div className="w-[48rem] grid grid-cols-2 gap-4" style={{ gridTemplateRows: '1fr 1fr 1fr' }}>
-          <ServiceCategory category="dining" />
-          <ServiceCategory category="shopping" />
-          <ServiceCategory category="excursions" />
-          <ServiceCategory category="entertainment" />
-          <ServiceCategory category="spa" className="col-span-2" />
+          <ServiceCategory category="dining" title={t.dining} />
+          <ServiceCategory category="shopping" title={t.shopping} />
+          <ServiceCategory category="excursions" title={t.excursions} />
+          <ServiceCategory category="entertainment" title={t.entertainment} />
+          <ServiceCategory category="spa" title={t.spa} className="col-span-2" />
         </div>
       </div>
     </div>
