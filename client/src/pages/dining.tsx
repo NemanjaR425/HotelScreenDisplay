@@ -147,34 +147,36 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                   onClick={() => setSelectedRestaurant(restaurant.id)}
                   data-testid={`restaurant-card-${restaurant.id}`}
                 >
-                  <div className="relative w-full h-48 overflow-hidden">
+                  <div className="relative w-full flex-1 overflow-hidden">
                     <img 
                       src={restaurant.image} 
                       alt={restaurant.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <CardContent className="text-center space-y-4 p-6 flex flex-col items-center justify-center flex-1">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-2">{restaurant.name}</h3>
-                      <Badge variant="secondary" className="text-sm px-3 py-1">
-                        {restaurant.cuisine}
-                      </Badge>
-                    </div>
-                    <p className="text-muted-foreground text-base leading-relaxed">
-                      {restaurant.description}
-                    </p>
-                    <div className="space-y-1 text-xs text-muted-foreground">
-                      <div className="flex items-center justify-center space-x-2">
-                        <Clock className="w-3 h-3" />
-                        <span>{restaurant.hours}</span>
+                  <div className="flex-1 flex flex-col">
+                    <CardContent className="text-center space-y-4 p-6 flex flex-col items-center justify-center h-full">
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2">{restaurant.name}</h3>
+                        <Badge variant="secondary" className="text-sm px-3 py-1">
+                          {restaurant.cuisine}
+                        </Badge>
                       </div>
-                      <div className="flex items-center justify-center space-x-2">
-                        <MapPin className="w-3 h-3" />
-                        <span>{restaurant.location}</span>
+                      <p className="text-muted-foreground text-base leading-relaxed">
+                        {restaurant.description}
+                      </p>
+                      <div className="space-y-1 text-xs text-muted-foreground">
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-3 h-3" />
+                          <span>{restaurant.hours}</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-3 h-3" />
+                          <span>{restaurant.location}</span>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
+                    </CardContent>
+                  </div>
                 </Card>
               ))}
             </div>
