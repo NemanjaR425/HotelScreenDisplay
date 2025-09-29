@@ -6,6 +6,10 @@ export interface Translations {
   entertainment: string;
   spa: string;
   currentWeatherIn: string;
+  weatherSunny: string;
+  weatherClearNight: string;
+  weatherCloudy: string;
+  weatherRainy: string;
 }
 
 export const translations: Record<string, Translations> = {
@@ -16,7 +20,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Izleti",
     entertainment: "Zabava",
     spa: "Spa",
-    currentWeatherIn: "Trenutno vrijeme u"
+    currentWeatherIn: "Trenutno vrijeme u",
+    weatherSunny: "Sunčano",
+    weatherClearNight: "Vedra noć",
+    weatherCloudy: "Oblačno",
+    weatherRainy: "Kiša"
   },
   en: { // English
     welcomeTo: "Welcome to",
@@ -25,7 +33,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Excursions",
     entertainment: "Entertainment",
     spa: "Spa",
-    currentWeatherIn: "Current weather in"
+    currentWeatherIn: "Current weather in",
+    weatherSunny: "Sunny",
+    weatherClearNight: "Clear Night",
+    weatherCloudy: "Cloudy",
+    weatherRainy: "Light Rain"
   },
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
@@ -34,7 +46,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Экскурсии", 
     entertainment: "Развлечения",
     spa: "Спа",
-    currentWeatherIn: "Текущая погода в"
+    currentWeatherIn: "Текущая погода в",
+    weatherSunny: "Солнечно",
+    weatherClearNight: "Ясная ночь",
+    weatherCloudy: "Облачно",
+    weatherRainy: "Дождь"
   },
   es: { // Spanish
     welcomeTo: "Bienvenido a",
@@ -43,7 +59,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Excursiones",
     entertainment: "Entretenimiento", 
     spa: "Spa",
-    currentWeatherIn: "Clima actual en"
+    currentWeatherIn: "Clima actual en",
+    weatherSunny: "Soleado",
+    weatherClearNight: "Noche despejada",
+    weatherCloudy: "Nublado",
+    weatherRainy: "Lluvia ligera"
   },
   fr: { // French
     welcomeTo: "Bienvenue à",
@@ -52,7 +72,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Excursions",
     entertainment: "Divertissement",
     spa: "Spa", 
-    currentWeatherIn: "Météo actuelle à"
+    currentWeatherIn: "Météo actuelle à",
+    weatherSunny: "Ensoleillé",
+    weatherClearNight: "Nuit claire",
+    weatherCloudy: "Nuageux",
+    weatherRainy: "Pluie légère"
   },
   de: { // German
     welcomeTo: "Willkommen im",
@@ -61,7 +85,11 @@ export const translations: Record<string, Translations> = {
     excursions: "Ausflüge",
     entertainment: "Unterhaltung",
     spa: "Spa",
-    currentWeatherIn: "Aktuelles Wetter in"
+    currentWeatherIn: "Aktuelles Wetter in",
+    weatherSunny: "Sonnig",
+    weatherClearNight: "Klare Nacht",
+    weatherCloudy: "Bewölkt",
+    weatherRainy: "Leichter Regen"
   }
 };
 

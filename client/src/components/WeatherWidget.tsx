@@ -5,9 +5,10 @@ interface WeatherWidgetProps {
   condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
   location: string;
   currentWeatherText: string;
+  conditionText: string;
 }
 
-export default function WeatherWidget({ temperature, condition, location, currentWeatherText }: WeatherWidgetProps) {
+export default function WeatherWidget({ temperature, condition, location, currentWeatherText, conditionText }: WeatherWidgetProps) {
   const getWeatherIcon = () => {
     switch (condition) {
       case 'sunny':
@@ -23,20 +24,6 @@ export default function WeatherWidget({ temperature, condition, location, curren
     }
   };
 
-  const getConditionText = () => {
-    switch (condition) {
-      case 'sunny':
-        return 'Sunny';
-      case 'clear-night':
-        return 'Clear Night';
-      case 'cloudy':
-        return 'Cloudy';
-      case 'rainy':
-        return 'Light Rain';
-      default:
-        return 'Sunny';
-    }
-  };
 
   return (
     <div className="flex items-center space-x-4 bg-card rounded-xl p-6 border border-card-border" data-testid="weather-widget">
@@ -50,7 +37,7 @@ export default function WeatherWidget({ temperature, condition, location, curren
             </span>
           </div>
           <p className="text-sm text-muted-foreground" data-testid="text-condition">
-            {getConditionText()}
+            {conditionText}
           </p>
         </div>
       </div>

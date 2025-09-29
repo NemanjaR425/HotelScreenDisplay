@@ -65,6 +65,21 @@ export default function DigitalSignage({
     return timeString;
   };
 
+  const getWeatherConditionText = (condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night') => {
+    switch (condition) {
+      case 'sunny':
+        return t.weatherSunny;
+      case 'clear-night':
+        return t.weatherClearNight;
+      case 'cloudy':
+        return t.weatherCloudy;
+      case 'rainy':
+        return t.weatherRainy;
+      default:
+        return t.weatherSunny;
+    }
+  };
+
   return (
     <div 
       className="w-full h-screen overflow-hidden p-6" 
@@ -112,6 +127,7 @@ export default function DigitalSignage({
                 condition={weather?.condition ?? 'sunny'} 
                 location="Herceg Novi, Montenegro"
                 currentWeatherText={t.currentWeatherIn}
+                conditionText={getWeatherConditionText(weather?.condition ?? 'sunny')}
               />
             </div>
 
