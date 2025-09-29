@@ -81,8 +81,16 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
   const [selectedRestaurant, setSelectedRestaurant] = useState<string | null>(null);
   const t = getTranslation(currentLanguage);
 
+  const translatedRestaurants = restaurants.map(restaurant => ({
+    ...restaurant,
+    name: t[`restaurant${restaurant.id}Name` as keyof typeof t] as string,
+    description: t[`restaurant${restaurant.id}Description` as keyof typeof t] as string,
+    cuisine: t[`restaurant${restaurant.id}Cuisine` as keyof typeof t] as string,
+    location: t[`restaurant${restaurant.id}Location` as keyof typeof t] as string,
+  }));
+
   const selectedRestaurantData = selectedRestaurant 
-    ? restaurants.find(r => r.id === selectedRestaurant)
+    ? translatedRestaurants.find(r => r.id === selectedRestaurant)
     : null;
 
   const groupedMenuItems = selectedRestaurantData?.menuItems.reduce((acc, item) => {
@@ -124,7 +132,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
           {!selectedRestaurant ? (
             /* Restaurant Grid */
             <div className="grid grid-cols-4 gap-4 h-full">
-              {restaurants.map((restaurant) => (
+              {translatedRestaurants.map((restaurant) => (
                 <Card
                   key={restaurant.id}
                   className="overflow-visible hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center h-full"
