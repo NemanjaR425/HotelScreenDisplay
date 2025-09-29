@@ -1,4 +1,5 @@
 import { Utensils, ShoppingBag, MapPin, Music, Waves } from 'lucide-react';
+import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
 
 interface ServiceCategoryProps {
   category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa';
@@ -24,15 +25,29 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     }
   };
 
+  const isDining = category === 'dining';
+
   return (
     <div 
-      className={`bg-card border border-card-border rounded-lg flex flex-col items-center justify-center p-6 hover-elevate ${className}`}
+      className={`border border-card-border rounded-lg flex flex-col items-center justify-center p-6 hover-elevate relative overflow-hidden ${className} ${
+        isDining ? '' : 'bg-card'
+      }`}
+      style={isDining ? {
+        backgroundImage: `url(${cookingImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      } : {}}
       data-testid={`service-category-${category}`}
     >
-      <div className="text-primary mb-4">
+      {isDining && (
+        <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+      )}
+      
+      <div className={`relative z-10 flex flex-col items-center ${isDining ? 'text-white' : 'text-primary'} mb-4`}>
         {getCategoryIcon()}
       </div>
-      <h3 className="text-2xl font-medium text-card-foreground text-center" data-testid={`text-category-${category}`}>
+      <h3 className={`text-2xl font-medium text-center relative z-10 ${isDining ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
         {title}
       </h3>
     </div>
