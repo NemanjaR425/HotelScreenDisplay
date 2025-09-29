@@ -143,28 +143,34 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
               {translatedRestaurants.map((restaurant) => (
                 <Card
                   key={restaurant.id}
-                  className="overflow-visible hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center h-full"
+                  className="overflow-hidden hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm flex flex-col h-full"
                   onClick={() => setSelectedRestaurant(restaurant.id)}
                   data-testid={`restaurant-card-${restaurant.id}`}
                 >
-                  <CardContent className="text-center space-y-6 p-8 flex flex-col items-center justify-center h-full">
-                    <Utensils className="w-16 h-16 text-primary" />
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <img 
+                      src={restaurant.image} 
+                      alt={restaurant.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardContent className="text-center space-y-4 p-6 flex flex-col items-center justify-center flex-1">
                     <div>
-                      <h3 className="text-3xl font-bold mb-3">{restaurant.name}</h3>
-                      <Badge variant="secondary" className="text-base px-4 py-2">
+                      <h3 className="text-2xl font-bold mb-2">{restaurant.name}</h3>
+                      <Badge variant="secondary" className="text-sm px-3 py-1">
                         {restaurant.cuisine}
                       </Badge>
                     </div>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
+                    <p className="text-muted-foreground text-base leading-relaxed">
                       {restaurant.description}
                     </p>
-                    <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="space-y-1 text-xs text-muted-foreground">
                       <div className="flex items-center justify-center space-x-2">
-                        <Clock className="w-4 h-4" />
+                        <Clock className="w-3 h-3" />
                         <span>{restaurant.hours}</span>
                       </div>
                       <div className="flex items-center justify-center space-x-2">
-                        <MapPin className="w-4 h-4" />
+                        <MapPin className="w-3 h-3" />
                         <span>{restaurant.location}</span>
                       </div>
                     </div>
