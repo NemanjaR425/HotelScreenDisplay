@@ -60,8 +60,11 @@ export default function DigitalSignage({
             <WeatherWidget temperature={72} condition="sunny" location="Downtown" />
           </div>
 
-          {/* Center welcome message */}
-          <div className="flex-1 flex flex-col justify-center">
+          {/* Spacer to push welcome message to bottom */}
+          <div className="flex-1"></div>
+
+          {/* Bottom welcome message */}
+          <div className="mb-8">
             <p className="text-2xl text-muted-foreground mb-4">Welcome to</p>
             <h1 className="text-6xl font-bold text-foreground leading-tight" data-testid="text-hotel-name">
               {hotelName}
