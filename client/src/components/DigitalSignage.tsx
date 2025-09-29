@@ -28,8 +28,21 @@ export default function DigitalSignage({
     return () => clearInterval(timer);
   }, []);
 
+  // Map language codes to locale codes for proper date/time formatting
+  const getLocale = (languageCode: string) => {
+    const localeMap: Record<string, string> = {
+      'me': 'sr-ME', // Montenegrin uses Serbian locale for Montenegro
+      'en': 'en-US',
+      'ru': 'ru-RU',
+      'es': 'es-ES',
+      'fr': 'fr-FR',
+      'de': 'de-DE'
+    };
+    return localeMap[languageCode] || 'en-US';
+  };
+
   const formatDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
+    return date.toLocaleDateString(getLocale(currentLanguage), {
       weekday: 'long',
       month: 'long',
       day: 'numeric'
@@ -37,7 +50,7 @@ export default function DigitalSignage({
   };
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
+    return date.toLocaleTimeString(getLocale(currentLanguage), {
       hour: '2-digit',
       minute: '2-digit',
       hour12: true
