@@ -6,12 +6,12 @@ interface LanguageSelectorProps {
 
 export default function LanguageSelector({ currentLanguage, onLanguageChange, className = '' }: LanguageSelectorProps) {
   const languages = [
-    { code: 'me', name: 'CG', flag: '🇲🇪' },
-    { code: 'en', name: 'EN', flag: '🇺🇸' },
-    { code: 'ru', name: 'RU', flag: '🇷🇺' },
-    { code: 'es', name: 'ES', flag: '🇪🇸' },
-    { code: 'fr', name: 'FR', flag: '🇫🇷' },
-    { code: 'de', name: 'DE', flag: '🇩🇪' }
+    { code: 'me', name: 'Montenegrin' },
+    { code: 'en', name: 'English' },
+    { code: 'ru', name: 'Russian' },
+    { code: 'es', name: 'Spanish' },
+    { code: 'fr', name: 'French' },
+    { code: 'de', name: 'German' }
   ];
 
   return (
@@ -30,7 +30,6 @@ export default function LanguageSelector({ currentLanguage, onLanguageChange, cl
           }`}
           data-testid={`language-button-${language.code}`}
         >
-          <span className="mr-1">{language.flag}</span>
           {language.name}
         </button>
       ))}
