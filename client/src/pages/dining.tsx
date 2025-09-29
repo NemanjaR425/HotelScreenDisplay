@@ -6,6 +6,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
+import prosciuttoImage from '@assets/italian-parma-prosciutto-crudo-dried-ham-on-a-marb-2023-11-27-05-13-51-utc_1759175873409.jpg';
+import sushiImage from '@assets/sushi-set-with-shrimps-and-rice-on-concrete-table-2025-03-24-07-38-39-utc_1759175873409.jpg';
+import pizzaImage from '@assets/assorted-meat-pizza-with-jamon-and-olives-2024-09-21-21-23-11-utc_1759175873409.jpg';
+import steakImage from '@assets/raw-beef-sirloin-steak-with-rosemary-on-wooden-cut-2025-05-30-14-50-37-utc_1759175873410.jpg';
 import { getTranslation } from '../utils/translations';
 
 // Mock restaurant data
@@ -17,6 +21,7 @@ const restaurants = [
     cuisine: 'Mediterranean',
     hours: '12:00 PM - 11:00 PM',
     location: 'Main Floor, Oceanview Terrace',
+    image: prosciuttoImage,
     menuItems: [
       { category: 'Appetizers', name: 'Grilled Octopus', description: 'Tender octopus with olive oil and herbs', price: '18.00' },
       { category: 'Appetizers', name: 'Mezze Platter', description: 'Selection of hummus, olives, and cheese', price: '22.00' },
@@ -32,6 +37,7 @@ const restaurants = [
     cuisine: 'Japanese',
     hours: '6:00 PM - 12:00 AM',
     location: '2nd Floor, Garden View',
+    image: sushiImage,
     menuItems: [
       { category: 'Sushi', name: 'Omakase Selection', description: 'Chef\'s choice of 12 pieces premium sushi', price: '85.00' },
       { category: 'Sushi', name: 'Salmon Teriyaki Roll', description: 'Fresh salmon with teriyaki glaze', price: '16.00' },
@@ -47,6 +53,7 @@ const restaurants = [
     cuisine: 'Italian',
     hours: '11:00 AM - 11:00 PM',
     location: 'Main Floor, Piazza Courtyard',
+    image: pizzaImage,
     menuItems: [
       { category: 'Antipasti', name: 'Burrata Caprese', description: 'Creamy burrata with tomatoes and basil', price: '19.00' },
       { category: 'Antipasti', name: 'Prosciutto e Melone', description: 'Parma ham with fresh cantaloupe', price: '21.00' },
@@ -62,6 +69,7 @@ const restaurants = [
     cuisine: 'American Steakhouse',
     hours: '5:00 PM - 11:00 PM',
     location: '3rd Floor, Executive Level',
+    image: steakImage,
     menuItems: [
       { category: 'Starters', name: 'Oysters Rockefeller', description: 'Fresh oysters with spinach and herbs', price: '24.00' },
       { category: 'Starters', name: 'Caesar Salad', description: 'Romaine lettuce with parmesan and croutons', price: '16.00' },
