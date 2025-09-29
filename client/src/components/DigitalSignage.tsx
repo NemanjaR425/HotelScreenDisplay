@@ -104,7 +104,7 @@ export default function DigitalSignage({
 
             {/* Bottom welcome message */}
             <div className="mb-8">
-              <p className="text-2xl text-white/80 mb-4">{t.welcomeTo}</p>
+              <p className="text-2xl text-white/80 mb-1">{t.welcomeTo}</p>
               <h1 className="text-6xl font-bold text-white leading-tight mb-6" data-testid="text-hotel-name">
                 {hotelName}
               </h1>
