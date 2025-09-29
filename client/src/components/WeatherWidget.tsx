@@ -1,8 +1,8 @@
-import { Cloud, Sun, CloudRain, Thermometer } from 'lucide-react';
+import { Cloud, Sun, CloudRain, Thermometer, Moon } from 'lucide-react';
 
 interface WeatherWidgetProps {
   temperature: number;
-  condition: 'sunny' | 'cloudy' | 'rainy';
+  condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
   location: string;
   currentWeatherText: string;
 }
@@ -12,6 +12,8 @@ export default function WeatherWidget({ temperature, condition, location, curren
     switch (condition) {
       case 'sunny':
         return <Sun className="w-8 h-8 text-yellow-500" />;
+      case 'clear-night':
+        return <Moon className="w-8 h-8 text-blue-200" />;
       case 'cloudy':
         return <Cloud className="w-8 h-8 text-gray-400" />;
       case 'rainy':
@@ -25,6 +27,8 @@ export default function WeatherWidget({ temperature, condition, location, curren
     switch (condition) {
       case 'sunny':
         return 'Sunny';
+      case 'clear-night':
+        return 'Clear Night';
       case 'cloudy':
         return 'Cloudy';
       case 'rainy':
