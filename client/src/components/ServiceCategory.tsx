@@ -1,5 +1,6 @@
 import { Utensils, ShoppingBag, MapPin, Music, Waves } from 'lucide-react';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
+import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
 
 interface ServiceCategoryProps {
   category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa';
@@ -26,28 +27,36 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
   };
 
   const isDining = category === 'dining';
+  const isShopping = category === 'shopping';
+  const hasBackgroundImage = isDining || isShopping;
+
+  const getBackgroundImage = () => {
+    if (isDining) return cookingImage;
+    if (isShopping) return shoppingImage;
+    return null;
+  };
 
   return (
     <div 
       className={`border border-card-border rounded-lg flex flex-col items-center justify-center p-6 hover-elevate relative overflow-hidden ${className} ${
-        isDining ? '' : 'bg-card'
+        hasBackgroundImage ? '' : 'bg-card'
       }`}
-      style={isDining ? {
-        backgroundImage: `url(${cookingImage})`,
+      style={hasBackgroundImage ? {
+        backgroundImage: `url(${getBackgroundImage()})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       } : {}}
       data-testid={`service-category-${category}`}
     >
-      {isDining && (
+      {hasBackgroundImage && (
         <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
       )}
       
-      <div className={`relative z-10 flex flex-col items-center ${isDining ? 'text-white' : 'text-primary'} mb-4`}>
+      <div className={`relative z-10 flex flex-col items-center ${hasBackgroundImage ? 'text-white' : 'text-primary'} mb-4`}>
         {getCategoryIcon()}
       </div>
-      <h3 className={`text-2xl font-medium text-center relative z-10 ${isDining ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
+      <h3 className={`text-2xl font-medium text-center relative z-10 ${hasBackgroundImage ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
         {title}
       </h3>
     </div>
