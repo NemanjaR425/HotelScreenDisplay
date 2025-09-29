@@ -1,4 +1,5 @@
 import { Utensils, ShoppingBag, MapPin, Music, Waves } from 'lucide-react';
+import { Link } from 'wouter';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
 import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
 import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
@@ -45,19 +46,17 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     return null;
   };
 
-  return (
-    <div 
-      className={`border border-card-border rounded-lg flex flex-col items-center justify-center p-6 hover-elevate relative overflow-hidden ${className} ${
-        hasBackgroundImage ? '' : 'bg-card'
-      }`}
-      style={hasBackgroundImage ? {
-        backgroundImage: `url(${getBackgroundImage()})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      } : {}}
-      data-testid={`service-category-${category}`}
-    >
+  const getNavigationPath = () => {
+    switch (category) {
+      case 'dining':
+        return '/dining';
+      default:
+        return '#'; // Placeholder for other categories
+    }
+  };
+
+  const content = (
+    <>
       {hasBackgroundImage && (
         <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
       )}
@@ -68,6 +67,41 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
       <h3 className={`text-2xl font-medium text-center relative z-10 ${hasBackgroundImage ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
         {title}
       </h3>
+    </>
+  );
+
+  const sharedClassName = `border border-card-border rounded-lg flex flex-col items-center justify-center p-6 hover-elevate active-elevate-2 relative overflow-hidden ${className} ${
+    hasBackgroundImage ? '' : 'bg-card'
+  }`;
+
+  const sharedStyle = hasBackgroundImage ? {
+    backgroundImage: `url(${getBackgroundImage()})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  } : {};
+
+  if (category === 'dining') {
+    return (
+      <Link href={getNavigationPath()}>
+        <div 
+          className={`${sharedClassName} cursor-pointer`}
+          style={sharedStyle}
+          data-testid={`service-category-${category}`}
+        >
+          {content}
+        </div>
+      </Link>
+    );
+  }
+
+  return (
+    <div 
+      className={sharedClassName}
+      style={sharedStyle}
+      data-testid={`service-category-${category}`}
+    >
+      {content}
     </div>
   );
 }
