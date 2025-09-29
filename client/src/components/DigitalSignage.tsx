@@ -61,7 +61,7 @@ export default function DigitalSignage({
 
   return (
     <div className="w-full h-screen bg-background overflow-hidden p-6" data-testid="digital-signage" style={{ aspectRatio: '16/9' }}>
-      <div className="h-full flex gap-6">
+      <div className="h-full flex gap-3">
         {/* Left Panel - Welcome Section */}
         <div 
           className="flex-1 border border-card-border rounded-lg p-8 flex flex-col relative overflow-hidden"
