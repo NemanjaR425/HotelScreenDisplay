@@ -4,6 +4,7 @@ import WeatherWidget from './WeatherWidget';
 import ServiceCategory from './ServiceCategory';
 import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
+import { useWeather } from '../hooks/use-weather';
 import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 
@@ -21,6 +22,7 @@ export default function DigitalSignage({
   onLanguageChange
 }: DigitalSignageProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const { data: weather } = useWeather();
   
   const t = getTranslation(currentLanguage);
 
@@ -106,8 +108,8 @@ export default function DigitalSignage({
               </div>
               
               <WeatherWidget 
-                temperature={22} 
-                condition="sunny" 
+                temperature={weather?.temperature ?? 22} 
+                condition={weather?.condition ?? 'sunny'} 
                 location="Herceg Novi, Montenegro"
                 currentWeatherText={t.currentWeatherIn}
               />
