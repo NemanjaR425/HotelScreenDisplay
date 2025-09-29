@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import LanguageSelector from '@/components/LanguageSelector';
-import gradientBackground from '@assets/gradient-colored-background-2025-01-07-23-09-49-utc_1759147416039.jpg';
+import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import { getTranslation } from '../utils/translations';
 
 // Mock restaurant data
