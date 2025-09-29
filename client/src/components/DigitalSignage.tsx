@@ -5,6 +5,7 @@ import ServiceCategory from './ServiceCategory';
 import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
+import gradientBackground from '@assets/Y7V4l0_1759146954404.jpg';
 
 interface DigitalSignageProps {
   hotelName?: string;
@@ -60,7 +61,17 @@ export default function DigitalSignage({
   };
 
   return (
-    <div className="w-full h-screen bg-background overflow-hidden p-6" data-testid="digital-signage" style={{ aspectRatio: '16/9' }}>
+    <div 
+      className="w-full h-screen overflow-hidden p-6" 
+      data-testid="digital-signage" 
+      style={{ 
+        aspectRatio: '16/9',
+        backgroundImage: `url(${gradientBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="h-full flex gap-3">
         {/* Left Panel - Welcome Section */}
         <div 
