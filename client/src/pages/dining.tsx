@@ -4,6 +4,7 @@ import { Link } from 'wouter';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/gradient-colored-background-2025-01-07-23-09-49-utc_1759147416039.jpg';
 import { getTranslation } from '../utils/translations';
 
@@ -71,9 +72,13 @@ const restaurants = [
   }
 ];
 
-export default function DiningPage() {
+interface DiningPageProps {
+  currentLanguage: string;
+  onLanguageChange: (language: string) => void;
+}
+
+export default function DiningPage({ currentLanguage, onLanguageChange }: DiningPageProps) {
   const [selectedRestaurant, setSelectedRestaurant] = useState<string | null>(null);
-  const currentLanguage = 'en'; // Default to English for now
   const t = getTranslation(currentLanguage);
 
   const selectedRestaurantData = selectedRestaurant 
@@ -112,7 +117,11 @@ export default function DiningPage() {
               <h1 className="text-4xl font-bold text-white" data-testid="text-page-title">
                 {t.dining}
               </h1>
-              <p className="text-white/80 text-lg">Choose from our four exceptional restaurants</p>
+              <p className="text-white/80 text-lg mb-4">Choose from our four exceptional restaurants</p>
+              <LanguageSelector 
+                currentLanguage={currentLanguage}
+                onLanguageChange={onLanguageChange}
+              />
             </div>
           </div>
         </div>
