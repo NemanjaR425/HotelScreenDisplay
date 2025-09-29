@@ -71,7 +71,7 @@ export default function DigitalSignage({
                 </div>
               </div>
               
-              <WeatherWidget temperature={72} condition="sunny" location="Downtown" />
+              <WeatherWidget temperature={72} condition="sunny" location="Herceg Novi, Montenegro" />
             </div>
 
             {/* Spacer to push welcome message to bottom */}
