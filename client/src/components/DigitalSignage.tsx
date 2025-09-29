@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Clock } from 'lucide-react';
 import WeatherWidget from './WeatherWidget';
 import ServiceCategory from './ServiceCategory';
+import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
 
 interface DigitalSignageProps {
   hotelName?: string;
@@ -42,33 +43,47 @@ export default function DigitalSignage({
     <div className="w-full h-screen bg-background overflow-hidden p-6" data-testid="digital-signage" style={{ aspectRatio: '16/9' }}>
       <div className="h-full flex gap-6">
         {/* Left Panel - Welcome Section */}
-        <div className="flex-1 bg-card border border-card-border rounded-lg p-8 flex flex-col">
-          {/* Top row with clock/date and weather */}
-          <div className="flex justify-between items-start mb-8">
-            <div className="text-left">
-              <div className="flex items-center space-x-2 text-muted-foreground mb-2">
-                <Clock className="w-6 h-6" />
-                <span className="text-2xl font-medium" data-testid="text-current-time">
-                  {formatTime(currentTime)}
-                </span>
+        <div 
+          className="flex-1 border border-card-border rounded-lg p-8 flex flex-col relative overflow-hidden"
+          style={{
+            backgroundImage: `url(${resortImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
+          
+          {/* Content container */}
+          <div className="relative z-10 flex flex-col h-full">
+            {/* Top row with clock/date and weather */}
+            <div className="flex justify-between items-start mb-8">
+              <div className="text-left">
+                <div className="flex items-center space-x-2 text-white mb-2">
+                  <Clock className="w-6 h-6" />
+                  <span className="text-2xl font-medium" data-testid="text-current-time">
+                    {formatTime(currentTime)}
+                  </span>
+                </div>
+                <div className="text-lg text-white/80" data-testid="text-current-date">
+                  {formatDate(currentTime)}
+                </div>
               </div>
-              <div className="text-lg text-muted-foreground" data-testid="text-current-date">
-                {formatDate(currentTime)}
-              </div>
+              
+              <WeatherWidget temperature={72} condition="sunny" location="Downtown" />
             </div>
-            
-            <WeatherWidget temperature={72} condition="sunny" location="Downtown" />
-          </div>
 
-          {/* Spacer to push welcome message to bottom */}
-          <div className="flex-1"></div>
+            {/* Spacer to push welcome message to bottom */}
+            <div className="flex-1"></div>
 
-          {/* Bottom welcome message */}
-          <div className="mb-8">
-            <p className="text-2xl text-muted-foreground mb-4">Welcome to</p>
-            <h1 className="text-6xl font-bold text-foreground leading-tight" data-testid="text-hotel-name">
-              {hotelName}
-            </h1>
+            {/* Bottom welcome message */}
+            <div className="mb-8">
+              <p className="text-2xl text-white/80 mb-4">Welcome to</p>
+              <h1 className="text-6xl font-bold text-white leading-tight" data-testid="text-hotel-name">
+                {hotelName}
+              </h1>
+            </div>
           </div>
         </div>
 
