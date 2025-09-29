@@ -5,7 +5,7 @@ import ServiceCategory from './ServiceCategory';
 import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
-import gradientBackground from '@assets/Y7V4l0_1759146954404.jpg';
+import gradientBackground from '@assets/gradient-colored-background-2025-01-07-23-09-49-utc_1759147416039.jpg';
 
 interface DigitalSignageProps {
   hotelName?: string;
