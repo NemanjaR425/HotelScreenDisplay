@@ -105,61 +105,52 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
       }}
     >
       <div className="h-full flex flex-col relative">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center space-x-4">
+        {!selectedRestaurant && (
+          /* Header - only show on restaurant selection screen */
+          <div className="flex items-center space-x-4 mb-6">
             <Link href="/">
               <Button variant="outline" size="icon" data-testid="button-back-home">
                 <ArrowLeft className="w-5 h-5" />
               </Button>
             </Link>
-            <div>
-              <h1 className="text-4xl font-bold text-white" data-testid="text-page-title">
-                {t.dining}
-              </h1>
-              <p className="text-white/80 text-lg">Choose from our four exceptional restaurants</p>
-            </div>
+            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+              {t.dining}
+            </h1>
           </div>
-        </div>
+        )}
 
         {/* Content */}
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 overflow-hidden pb-20">
           {!selectedRestaurant ? (
             /* Restaurant Grid */
-            <div className="grid grid-cols-2 gap-6 h-full">
+            <div className="grid grid-cols-4 gap-4 h-full">
               {restaurants.map((restaurant) => (
-                <Card 
+                <Card
                   key={restaurant.id}
-                  className="hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm border-white/20"
+                  className="overflow-visible hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center h-full"
                   onClick={() => setSelectedRestaurant(restaurant.id)}
                   data-testid={`restaurant-card-${restaurant.id}`}
                 >
-                  <CardHeader>
-                    <div className="flex items-center space-x-3 mb-2">
-                      <Utensils className="w-6 h-6 text-primary" />
-                      <Badge variant="secondary">{restaurant.cuisine}</Badge>
+                  <CardContent className="text-center space-y-6 p-8 flex flex-col items-center justify-center h-full">
+                    <Utensils className="w-16 h-16 text-primary" />
+                    <div>
+                      <h3 className="text-3xl font-bold mb-3">{restaurant.name}</h3>
+                      <Badge variant="secondary" className="text-base px-4 py-2">
+                        {restaurant.cuisine}
+                      </Badge>
                     </div>
-                    <CardTitle className="text-2xl">{restaurant.name}</CardTitle>
-                    <CardDescription className="text-lg">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
                       {restaurant.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-2 text-muted-foreground">
+                    </p>
+                    <div className="space-y-2 text-sm text-muted-foreground">
+                      <div className="flex items-center justify-center space-x-2">
                         <Clock className="w-4 h-4" />
                         <span>{restaurant.hours}</span>
                       </div>
-                      <div className="flex items-center space-x-2 text-muted-foreground">
+                      <div className="flex items-center justify-center space-x-2">
                         <MapPin className="w-4 h-4" />
                         <span>{restaurant.location}</span>
                       </div>
-                      <Button 
-                        className="w-full mt-4" 
-                        data-testid={`button-view-menu-${restaurant.id}`}
-                      >
-                        View Menu
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -242,13 +233,15 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
           )}
         </div>
 
-        {/* Language Selector - Bottom Left */}
-        <div className="absolute bottom-0 left-0 mb-6 ml-6 z-10">
-          <LanguageSelector 
-            currentLanguage={currentLanguage}
-            onLanguageChange={onLanguageChange}
-          />
-        </div>
+        {/* Language Selector - Bottom Left (only on restaurant selection screen) */}
+        {!selectedRestaurant && (
+          <div className="absolute bottom-0 left-0 mb-6 z-10">
+            <LanguageSelector 
+              currentLanguage={currentLanguage}
+              onLanguageChange={onLanguageChange}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
