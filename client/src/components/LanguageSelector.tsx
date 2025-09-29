@@ -6,12 +6,12 @@ interface LanguageSelectorProps {
 
 export default function LanguageSelector({ currentLanguage, onLanguageChange, className = '' }: LanguageSelectorProps) {
   const languages = [
-    { code: 'me', name: 'Montenegrin' },
+    { code: 'me', name: 'Crnogorski' },
     { code: 'en', name: 'English' },
-    { code: 'ru', name: 'Russian' },
-    { code: 'es', name: 'Spanish' },
-    { code: 'fr', name: 'French' },
-    { code: 'de', name: 'German' }
+    { code: 'ru', name: 'Русский' },
+    { code: 'es', name: 'Español' },
+    { code: 'fr', name: 'Français' },
+    { code: 'de', name: 'Deutsch' }
   ];
 
   return (
