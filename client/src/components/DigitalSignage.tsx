@@ -50,11 +50,13 @@ export default function DigitalSignage({
   };
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString(getLocale(currentLanguage), {
+    // Get time parts using English locale to keep AM/PM in English
+    const timeString = date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
       hour12: true
     });
+    return timeString;
   };
 
   return (
