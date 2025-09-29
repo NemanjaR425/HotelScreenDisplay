@@ -71,12 +71,9 @@ const restaurants = [
   }
 ];
 
-interface DiningPageProps {
-  currentLanguage?: string;
-}
-
-export default function DiningPage({ currentLanguage = 'en' }: DiningPageProps) {
+export default function DiningPage() {
   const [selectedRestaurant, setSelectedRestaurant] = useState<string | null>(null);
+  const currentLanguage = 'en'; // Default to English for now
   const t = getTranslation(currentLanguage);
 
   const selectedRestaurantData = selectedRestaurant 
