@@ -92,7 +92,7 @@ export default function DigitalSignage({
               </div>
               
               <WeatherWidget 
-                temperature={72} 
+                temperature={22} 
                 condition="sunny" 
                 location="Herceg Novi, Montenegro"
                 currentWeatherText={t.currentWeatherIn}

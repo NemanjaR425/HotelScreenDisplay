@@ -42,7 +42,7 @@ export default function WeatherWidget({ temperature, condition, location, curren
           <div className="flex items-center space-x-2">
             <Thermometer className="w-5 h-5 text-muted-foreground" />
             <span className="text-2xl font-medium" data-testid="text-temperature">
-              {temperature}°F
+              {temperature}°C
             </span>
           </div>
           <p className="text-sm text-muted-foreground" data-testid="text-condition">
