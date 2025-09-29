@@ -3,6 +3,7 @@ import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-202
 import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
 import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
 import entertainmentImage from '@assets/the-musicians-were-playing-rock-music-on-stage-th-2023-11-27-05-11-51-utc_1759145753669.jpg';
+import spaImage from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
 
 interface ServiceCategoryProps {
   category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa';
@@ -32,13 +33,15 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
   const isShopping = category === 'shopping';
   const isExcursions = category === 'excursions';
   const isEntertainment = category === 'entertainment';
-  const hasBackgroundImage = isDining || isShopping || isExcursions || isEntertainment;
+  const isSpa = category === 'spa';
+  const hasBackgroundImage = isDining || isShopping || isExcursions || isEntertainment || isSpa;
 
   const getBackgroundImage = () => {
     if (isDining) return cookingImage;
     if (isShopping) return shoppingImage;
     if (isExcursions) return excursionsImage;
     if (isEntertainment) return entertainmentImage;
+    if (isSpa) return spaImage;
     return null;
   };
 
