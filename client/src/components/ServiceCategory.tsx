@@ -83,9 +83,9 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
 
   if (category === 'dining') {
     return (
-      <Link href={getNavigationPath()}>
+      <Link href={getNavigationPath()} className="h-full">
         <div 
-          className={`${sharedClassName} cursor-pointer`}
+          className={`${sharedClassName} cursor-pointer h-full`}
           style={sharedStyle}
           data-testid={`service-category-${category}`}
         >
