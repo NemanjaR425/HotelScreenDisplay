@@ -104,7 +104,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="h-full flex flex-col">
+      <div className="h-full flex flex-col relative">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center space-x-4">
@@ -117,11 +117,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
               <h1 className="text-4xl font-bold text-white" data-testid="text-page-title">
                 {t.dining}
               </h1>
-              <p className="text-white/80 text-lg mb-4">Choose from our four exceptional restaurants</p>
-              <LanguageSelector 
-                currentLanguage={currentLanguage}
-                onLanguageChange={onLanguageChange}
-              />
+              <p className="text-white/80 text-lg">Choose from our four exceptional restaurants</p>
             </div>
           </div>
         </div>
@@ -244,6 +240,14 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
               </div>
             </div>
           )}
+        </div>
+
+        {/* Language Selector - Bottom Left */}
+        <div className="absolute bottom-0 left-0 mb-6 ml-6 z-10">
+          <LanguageSelector 
+            currentLanguage={currentLanguage}
+            onLanguageChange={onLanguageChange}
+          />
         </div>
       </div>
     </div>
