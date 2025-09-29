@@ -10,14 +10,17 @@ import gradientBackground from '@assets/gradient-colored-background-2025-01-07-2
 interface DigitalSignageProps {
   hotelName?: string;
   tagline?: string;
+  currentLanguage: string;
+  onLanguageChange: (language: string) => void;
 }
 
 export default function DigitalSignage({ 
   hotelName = "Hotel Grand Plaza",
-  tagline = "Your Premier Destination for Luxury & Hospitality"
+  tagline = "Your Premier Destination for Luxury & Hospitality",
+  currentLanguage,
+  onLanguageChange
 }: DigitalSignageProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [currentLanguage, setCurrentLanguage] = useState('en');
   
   const t = getTranslation(currentLanguage);
 
@@ -123,7 +126,7 @@ export default function DigitalSignage({
               {/* Language Selector */}
               <LanguageSelector 
                 currentLanguage={currentLanguage}
-                onLanguageChange={setCurrentLanguage}
+                onLanguageChange={onLanguageChange}
               />
             </div>
           </div>
