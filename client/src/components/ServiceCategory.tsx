@@ -1,6 +1,7 @@
 import { Utensils, ShoppingBag, MapPin, Music, Waves } from 'lucide-react';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
 import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
+import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
 
 interface ServiceCategoryProps {
   category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa';
@@ -28,11 +29,13 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
 
   const isDining = category === 'dining';
   const isShopping = category === 'shopping';
-  const hasBackgroundImage = isDining || isShopping;
+  const isExcursions = category === 'excursions';
+  const hasBackgroundImage = isDining || isShopping || isExcursions;
 
   const getBackgroundImage = () => {
     if (isDining) return cookingImage;
     if (isShopping) return shoppingImage;
+    if (isExcursions) return excursionsImage;
     return null;
   };
 
