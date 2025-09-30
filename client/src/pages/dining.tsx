@@ -226,24 +226,24 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                   {Object.entries(groupedMenuItems).map(([category, items]) => (
                     <Card key={category} className="bg-white/95 backdrop-blur-sm border-white/20">
                       <CardHeader>
-                        <CardTitle className="text-2xl" data-testid={`menu-category-${category.toLowerCase().replace(' ', '-')}`}>
+                        <CardTitle className="text-xl" data-testid={`menu-category-${category.toLowerCase().replace(' ', '-')}`}>
                           {category}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <div className="space-y-4">
+                        <div className="space-y-2">
                           {items.map((item, index) => (
                             <div 
                               key={index}
-                              className="flex justify-between items-start pb-4"
+                              className="flex justify-between items-start pb-2"
                               data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
                             >
                               <div className="flex-1">
-                                <h4 className="font-semibold text-lg mb-1">{item.name}</h4>
-                                <p className="text-muted-foreground">{item.description}</p>
+                                <h4 className="font-semibold text-base mb-1">{item.name}</h4>
+                                <p className="text-muted-foreground text-sm">{item.description}</p>
                               </div>
                               <div className="ml-4">
-                                <span className="text-lg font-bold">${item.price}</span>
+                                <span className="text-base font-bold">${item.price}</span>
                               </div>
                             </div>
                           ))}
