@@ -182,7 +182,8 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
             </div>
           ) : (
             /* Menu View */
-            <div className="h-full flex flex-col">
+            <div className="h-full flex flex-col items-center">
+              <div className="w-full max-w-4xl flex flex-col h-full">
               {/* Restaurant Header */}
               <div className="mb-6">
                 <Button 
@@ -252,6 +253,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                     </Card>
                   ))}
                 </div>
+              </div>
               </div>
             </div>
           )}
