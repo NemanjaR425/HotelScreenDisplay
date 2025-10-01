@@ -125,7 +125,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
           /* Header - only show on restaurant selection screen */
           <div className="flex items-center space-x-4 mb-6">
             <Link href="/">
-              <Button variant="outline" size="icon" data-testid="button-back-home">
+              <Button variant="default" size="icon" data-testid="button-back-home">
                 <ArrowLeft className="w-5 h-5" />
               </Button>
             </Link>
@@ -188,7 +188,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
               <div className="mb-6">
                 <div className="flex items-center justify-between gap-4 mb-4">
                   <Button 
-                    variant="outline" 
+                    variant="default" 
                     onClick={() => setSelectedRestaurant(null)}
                     data-testid="button-back-restaurants"
                   >
