@@ -223,35 +223,33 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
 
               {/* Menu Categories */}
               <div className="flex-1 overflow-y-auto">
-                <div className="grid gap-6">
-                  {Object.entries(groupedMenuItems).map(([category, items]) => (
-                    <Card key={category} className="bg-white/95 backdrop-blur-sm border-white/20">
-                      <CardHeader>
-                        <CardTitle className="text-xl" data-testid={`menu-category-${category.toLowerCase().replace(' ', '-')}`}>
+                <div className="bg-white/95 backdrop-blur-sm rounded-lg p-8">
+                  <div className="grid grid-cols-2 gap-8">
+                    {Object.entries(groupedMenuItems).map(([category, items]) => (
+                      <div key={category}>
+                        <h3 
+                          className="text-xl font-bold mb-4 pb-2 border-b-2 border-foreground"
+                          data-testid={`menu-category-${category.toLowerCase().replace(' ', '-')}`}
+                        >
                           {category}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-2">
+                        </h3>
+                        <div className="space-y-4">
                           {items.map((item, index) => (
                             <div 
                               key={index}
-                              className="flex justify-between items-start pb-2"
                               data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
                             >
-                              <div className="flex-1">
-                                <h4 className="font-semibold text-base mb-1">{item.name}</h4>
-                                <p className="text-muted-foreground text-sm">{item.description}</p>
+                              <div className="flex justify-between items-baseline mb-1">
+                                <h4 className="font-semibold text-base">{item.name}</h4>
+                                <span className="text-base font-semibold ml-4">${item.price}</span>
                               </div>
-                              <div className="ml-4">
-                                <span className="text-base font-bold">${item.price}</span>
-                              </div>
+                              <p className="text-muted-foreground text-sm leading-snug">{item.description}</p>
                             </div>
                           ))}
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
               </div>
