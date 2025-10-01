@@ -186,15 +186,20 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
               <div className="w-full max-w-4xl flex flex-col h-full">
               {/* Restaurant Header */}
               <div className="mb-6">
-                <Button 
-                  variant="outline" 
-                  onClick={() => setSelectedRestaurant(null)}
-                  className="mb-4"
-                  data-testid="button-back-restaurants"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Restaurants
-                </Button>
+                <div className="flex items-center justify-between gap-4 mb-4">
+                  <Button 
+                    variant="outline" 
+                    onClick={() => setSelectedRestaurant(null)}
+                    data-testid="button-back-restaurants"
+                  >
+                    <ArrowLeft className="w-4 h-4 mr-2" />
+                    Back to Restaurants
+                  </Button>
+                  <LanguageSelector 
+                    currentLanguage={currentLanguage}
+                    onLanguageChange={onLanguageChange}
+                  />
+                </div>
                 <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6">
                   <div className="flex items-center space-x-3 mb-2">
                     <Utensils className="w-8 h-8 text-primary" />
