@@ -50,6 +50,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     switch (category) {
       case 'dining':
         return '/dining';
+      case 'excursions':
+        return '/tours';
       default:
         return '#'; // Placeholder for other categories
     }
@@ -81,7 +83,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     backgroundRepeat: 'no-repeat'
   } : {};
 
-  if (category === 'dining') {
+  if (category === 'dining' || category === 'excursions') {
     return (
       <Link href={getNavigationPath()} className="h-full">
         <div 

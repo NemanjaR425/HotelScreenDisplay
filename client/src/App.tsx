@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
+import ToursPage from "@/pages/tours";
 import NotFound from "@/pages/not-found";
 
 function Home({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
@@ -16,11 +17,16 @@ function Dining({ currentLanguage, onLanguageChange }: { currentLanguage: string
   return <DiningPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
 }
 
+function Tours({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
+  return <ToursPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
+}
+
 function Router({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
   return (
     <Switch>
       <Route path="/" component={() => <Home currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
       <Route path="/dining" component={() => <Dining currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
+      <Route path="/tours" component={() => <Tours currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
       <Route component={NotFound} />
     </Switch>
   );

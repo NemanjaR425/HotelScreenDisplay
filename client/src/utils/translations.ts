@@ -30,6 +30,66 @@ export interface Translations {
   restaurant4Description: string;
   restaurant4Cuisine: string;
   restaurant4Location: string;
+  
+  tour1Name: string;
+  tour1Description: string;
+  tour1Duration: string;
+  tour1Price: string;
+  
+  tour2Name: string;
+  tour2Description: string;
+  tour2Duration: string;
+  tour2Price: string;
+  
+  tour3Name: string;
+  tour3Description: string;
+  tour3Duration: string;
+  tour3Price: string;
+  
+  tour4Name: string;
+  tour4Description: string;
+  tour4Duration: string;
+  tour4Price: string;
+  
+  tour5Name: string;
+  tour5Description: string;
+  tour5Duration: string;
+  tour5Price: string;
+  
+  tour6Name: string;
+  tour6Description: string;
+  tour6Duration: string;
+  tour6Price: string;
+  
+  tour7Name: string;
+  tour7Description: string;
+  tour7Duration: string;
+  tour7Price: string;
+  
+  tour8Name: string;
+  tour8Description: string;
+  tour8Duration: string;
+  tour8Price: string;
+  
+  tour9Name: string;
+  tour9Description: string;
+  tour9Duration: string;
+  tour9Price: string;
+  
+  tour10Name: string;
+  tour10Description: string;
+  tour10Duration: string;
+  tour10Price: string;
+  
+  tour11Name: string;
+  tour11Description: string;
+  tour11Duration: string;
+  tour11Price: string;
+  
+  tour12Name: string;
+  tour12Description: string;
+  tour12Duration: string;
+  tour12Price: string;
 }
 
 export const translations: Record<string, Translations> = {
@@ -64,7 +124,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Premium steakhouse sa suhomesnatom govedinom i finim vinima",
     restaurant4Cuisine: "Američki Steakhouse",
-    restaurant4Location: "Treći sprat, Izvršni nivo"
+    restaurant4Location: "Treći sprat, Izvršni nivo",
+    
+    tour1Name: "Tura Starog Grada",
+    tour1Description: "Istražite istorijski stari grad sa vodicem i posetite lokalne znamenitosti",
+    tour1Duration: "3 sata",
+    tour1Price: "€45",
+    
+    tour2Name: "Krstarenje Zaljevom",
+    tour2Description: "Opuštajuće krstarenje kroz zaljev Boka sa pogledom na planine",
+    tour2Duration: "4 sata",
+    tour2Price: "€65",
+    
+    tour3Name: "Vinska Tura",
+    tour3Description: "Posetite lokalne vinarije i degustirajte crnogorska vina",
+    tour3Duration: "5 sati",
+    tour3Price: "€80",
+    
+    tour4Name: "Planinsko Pešačenje",
+    tour4Description: "Vođeno pešačenje kroz nacionalni park sa prekrasnim pogledima",
+    tour4Duration: "6 sati",
+    tour4Price: "€55",
+    
+    tour5Name: "Kulinska Tura",
+    tour5Description: "Upoznajte crnogorsku kuhinju kroz tradicijska jela",
+    tour5Duration: "4 sata",
+    tour5Price: "€70",
+    
+    tour6Name: "Plaža i Ronjenje",
+    tour6Description: "Poseta skrivenim plažama i ronjenje u kristalno čistoj vodi",
+    tour6Duration: "5 sati",
+    tour6Price: "€90",
+    
+    tour7Name: "Istorijska Tvrđava",
+    tour7Description: "Istražite srednjovekovne tvrđave i saznajte o istoriji regiona",
+    tour7Duration: "3 sata",
+    tour7Price: "€50",
+    
+    tour8Name: "Ribolov",
+    tour8Description: "Tradicionalni ribolov sa lokalnim ribarima",
+    tour8Duration: "4 sata",
+    tour8Price: "€60",
+    
+    tour9Name: "Misterija Monastira",
+    tour9Description: "Posetite drevne pravoslavne manastire skrivene u planinama",
+    tour9Duration: "5 sati",
+    tour9Price: "€75",
+    
+    tour10Name: "Sunset Sailing",
+    tour10Description: "Romanticno jedrenje tokom zalaska sunca",
+    tour10Duration: "2 sata",
+    tour10Price: "€85",
+    
+    tour11Name: "Lokalna Pijaca",
+    tour11Description: "Otkrijte lokalne pijace i prodavnice sa autentičnim proizvodima",
+    tour11Duration: "3 sata",
+    tour11Price: "€40",
+    
+    tour12Name: "Noćni Život",
+    tour12Description: "Istražite lokalni noćni život i zabavu",
+    tour12Duration: "4 sata",
+    tour12Price: "€55"
   },
   en: { // English
     welcomeTo: "Welcome to",
@@ -97,7 +217,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Premium steakhouse featuring dry-aged beef and fine wines",
     restaurant4Cuisine: "American Steakhouse",
-    restaurant4Location: "3rd Floor, Executive Level"
+    restaurant4Location: "3rd Floor, Executive Level",
+    
+    tour1Name: "Old Town Tour",
+    tour1Description: "Explore the historic old town with a local guide and visit landmarks",
+    tour1Duration: "3 hours",
+    tour1Price: "€45",
+    
+    tour2Name: "Bay Cruise",
+    tour2Description: "Relaxing cruise through the Bay of Kotor with mountain views",
+    tour2Duration: "4 hours",
+    tour2Price: "€65",
+    
+    tour3Name: "Wine Tasting Tour",
+    tour3Description: "Visit local wineries and taste Montenegrin wines",
+    tour3Duration: "5 hours",
+    tour3Price: "€80",
+    
+    tour4Name: "Mountain Hiking",
+    tour4Description: "Guided hike through national park with stunning views",
+    tour4Duration: "6 hours",
+    tour4Price: "€55",
+    
+    tour5Name: "Culinary Tour",
+    tour5Description: "Discover Montenegrin cuisine through traditional dishes",
+    tour5Duration: "4 hours",
+    tour5Price: "€70",
+    
+    tour6Name: "Beach & Snorkeling",
+    tour6Description: "Visit hidden beaches and snorkel in crystal clear waters",
+    tour6Duration: "5 hours",
+    tour6Price: "€90",
+    
+    tour7Name: "Historic Fortress",
+    tour7Description: "Explore medieval fortresses and learn about regional history",
+    tour7Duration: "3 hours",
+    tour7Price: "€50",
+    
+    tour8Name: "Fishing Experience",
+    tour8Description: "Traditional fishing trip with local fishermen",
+    tour8Duration: "4 hours",
+    tour8Price: "€60",
+    
+    tour9Name: "Monastery Mystery",
+    tour9Description: "Visit ancient Orthodox monasteries hidden in the mountains",
+    tour9Duration: "5 hours",
+    tour9Price: "€75",
+    
+    tour10Name: "Sunset Sailing",
+    tour10Description: "Romantic sailing trip during sunset",
+    tour10Duration: "2 hours",
+    tour10Price: "€85",
+    
+    tour11Name: "Local Market",
+    tour11Description: "Discover local markets and shops with authentic products",
+    tour11Duration: "3 hours",
+    tour11Price: "€40",
+    
+    tour12Name: "Nightlife Tour",
+    tour12Description: "Explore local nightlife and entertainment venues",
+    tour12Duration: "4 hours",
+    tour12Price: "€55"
   },
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
@@ -130,7 +310,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Премиальный стейк-хаус с мясом сухого вызревания и изысканными винами",
     restaurant4Cuisine: "Американский стейк-хаус",
-    restaurant4Location: "3-й этаж, Исполнительный уровень"
+    restaurant4Location: "3-й этаж, Исполнительный уровень",
+    
+    tour1Name: "Тур по Старому Городу",
+    tour1Description: "Исследуйте исторический старый город с гидом и посетите достопримечательности",
+    tour1Duration: "3 часа",
+    tour1Price: "€45",
+    
+    tour2Name: "Круиз по Заливу",
+    tour2Description: "Расслабляющий круиз по Бока-Которскому заливу с видом на горы",
+    tour2Duration: "4 часа",
+    tour2Price: "€65",
+    
+    tour3Name: "Винный Тур",
+    tour3Description: "Посетите местные винодельни и попробуйте черногорские вина",
+    tour3Duration: "5 часов",
+    tour3Price: "€80",
+    
+    tour4Name: "Горный Поход",
+    tour4Description: "Пешеходная экскурсия по национальному парку с потрясающими видами",
+    tour4Duration: "6 часов",
+    tour4Price: "€55",
+    
+    tour5Name: "Кулинарный Тур",
+    tour5Description: "Откройте черногорскую кухню через традиционные блюда",
+    tour5Duration: "4 часа",
+    tour5Price: "€70",
+    
+    tour6Name: "Пляж и Снорклинг",
+    tour6Description: "Посетите скрытые пляжи и понырять в кристально чистой воде",
+    tour6Duration: "5 часов",
+    tour6Price: "€90",
+    
+    tour7Name: "Историческая Крепость",
+    tour7Description: "Исследуйте средневековые крепости и узнайте о региональной истории",
+    tour7Duration: "3 часа",
+    tour7Price: "€50",
+    
+    tour8Name: "Рыбалка",
+    tour8Description: "Традиционная рыбалка с местными рыбаками",
+    tour8Duration: "4 часа",
+    tour8Price: "€60",
+    
+    tour9Name: "Тайна Монастырей",
+    tour9Description: "Посетите древние православные монастыри в горах",
+    tour9Duration: "5 часов",
+    tour9Price: "€75",
+    
+    tour10Name: "Закатное Плавание",
+    tour10Description: "Романтическое плавание на закате",
+    tour10Duration: "2 часа",
+    tour10Price: "€85",
+    
+    tour11Name: "Местный Рынок",
+    tour11Description: "Откройте местные рынки с аутентичными продуктами",
+    tour11Duration: "3 часа",
+    tour11Price: "€40",
+    
+    tour12Name: "Ночная Жизнь",
+    tour12Description: "Исследуйте местную ночную жизнь и развлечения",
+    tour12Duration: "4 часа",
+    tour12Price: "€55"
   },
   es: { // Spanish
     welcomeTo: "Bienvenido a",
@@ -163,7 +403,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Steakhouse premium con carne madurada en seco y vinos finos",
     restaurant4Cuisine: "Steakhouse Americano",
-    restaurant4Location: "Tercer piso, Nivel ejecutivo"
+    restaurant4Location: "Tercer piso, Nivel ejecutivo",
+    
+    tour1Name: "Tour del Casco Antiguo",
+    tour1Description: "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
+    tour1Duration: "3 horas",
+    tour1Price: "€45",
+    
+    tour2Name: "Crucero por la Bahía",
+    tour2Description: "Relajante crucero por la Bahía de Kotor con vistas a las montañas",
+    tour2Duration: "4 horas",
+    tour2Price: "€65",
+    
+    tour3Name: "Tour de Degustación de Vinos",
+    tour3Description: "Visite bodegas locales y deguste vinos montenegrinos",
+    tour3Duration: "5 horas",
+    tour3Price: "€80",
+    
+    tour4Name: "Senderismo de Montaña",
+    tour4Description: "Caminata guiada por el parque nacional con vistas impresionantes",
+    tour4Duration: "6 horas",
+    tour4Price: "€55",
+    
+    tour5Name: "Tour Culinario",
+    tour5Description: "Descubra la cocina montenegrina a través de platos tradicionales",
+    tour5Duration: "4 horas",
+    tour5Price: "€70",
+    
+    tour6Name: "Playa y Snorkel",
+    tour6Description: "Visite playas escondidas y practique snorkel en aguas cristalinas",
+    tour6Duration: "5 horas",
+    tour6Price: "€90",
+    
+    tour7Name: "Fortaleza Histórica",
+    tour7Description: "Explore fortalezas medievales y aprenda sobre la historia regional",
+    tour7Duration: "3 horas",
+    tour7Price: "€50",
+    
+    tour8Name: "Experiencia de Pesca",
+    tour8Description: "Viaje de pesca tradicional con pescadores locales",
+    tour8Duration: "4 horas",
+    tour8Price: "€60",
+    
+    tour9Name: "Misterio del Monasterio",
+    tour9Description: "Visite antiguos monasterios ortodoxos escondidos en las montañas",
+    tour9Duration: "5 horas",
+    tour9Price: "€75",
+    
+    tour10Name: "Navegación al Atardecer",
+    tour10Description: "Viaje romántico en velero durante el atardecer",
+    tour10Duration: "2 horas",
+    tour10Price: "€85",
+    
+    tour11Name: "Mercado Local",
+    tour11Description: "Descubra mercados locales y tiendas con productos auténticos",
+    tour11Duration: "3 horas",
+    tour11Price: "€40",
+    
+    tour12Name: "Tour Nocturno",
+    tour12Description: "Explore la vida nocturna local y lugares de entretenimiento",
+    tour12Duration: "4 horas",
+    tour12Price: "€55"
   },
   fr: { // French
     welcomeTo: "Bienvenue à",
@@ -196,7 +496,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Steakhouse premium avec boeuf maturé à sec et vins fins",
     restaurant4Cuisine: "Steakhouse Américain",
-    restaurant4Location: "3ème étage, Niveau exécutif"
+    restaurant4Location: "3ème étage, Niveau exécutif",
+    
+    tour1Name: "Visite de la Vieille Ville",
+    tour1Description: "Explorez la vieille ville historique avec un guide et visitez les monuments",
+    tour1Duration: "3 heures",
+    tour1Price: "€45",
+    
+    tour2Name: "Croisière dans la Baie",
+    tour2Description: "Croisière relaxante dans la baie de Kotor avec vue sur les montagnes",
+    tour2Duration: "4 heures",
+    tour2Price: "€65",
+    
+    tour3Name: "Tour de Dégustation de Vins",
+    tour3Description: "Visitez les caves locales et dégustez les vins monténégrins",
+    tour3Duration: "5 heures",
+    tour3Price: "€80",
+    
+    tour4Name: "Randonnée en Montagne",
+    tour4Description: "Randonnée guidée dans le parc national avec vues spectaculaires",
+    tour4Duration: "6 heures",
+    tour4Price: "€55",
+    
+    tour5Name: "Tour Culinaire",
+    tour5Description: "Découvrez la cuisine monténégrine à travers des plats traditionnels",
+    tour5Duration: "4 heures",
+    tour5Price: "€70",
+    
+    tour6Name: "Plage et Snorkeling",
+    tour6Description: "Visitez des plages cachées et faites du snorkeling dans des eaux cristallines",
+    tour6Duration: "5 heures",
+    tour6Price: "€90",
+    
+    tour7Name: "Forteresse Historique",
+    tour7Description: "Explorez les forteresses médiévales et découvrez l'histoire régionale",
+    tour7Duration: "3 heures",
+    tour7Price: "€50",
+    
+    tour8Name: "Expérience de Pêche",
+    tour8Description: "Sortie de pêche traditionnelle avec des pêcheurs locaux",
+    tour8Duration: "4 heures",
+    tour8Price: "€60",
+    
+    tour9Name: "Mystère des Monastères",
+    tour9Description: "Visitez d'anciens monastères orthodoxes cachés dans les montagnes",
+    tour9Duration: "5 heures",
+    tour9Price: "€75",
+    
+    tour10Name: "Navigation au Coucher du Soleil",
+    tour10Description: "Sortie romantique en voilier au coucher du soleil",
+    tour10Duration: "2 heures",
+    tour10Price: "€85",
+    
+    tour11Name: "Marché Local",
+    tour11Description: "Découvrez les marchés locaux avec des produits authentiques",
+    tour11Duration: "3 heures",
+    tour11Price: "€40",
+    
+    tour12Name: "Tour de Nuit",
+    tour12Description: "Explorez la vie nocturne locale et les lieux de divertissement",
+    tour12Duration: "4 heures",
+    tour12Price: "€55"
   },
   de: { // German
     welcomeTo: "Willkommen im",
@@ -229,7 +589,67 @@ export const translations: Record<string, Translations> = {
     restaurant4Name: "Steakhouse Prime",
     restaurant4Description: "Premium Steakhouse mit trocken gereiftem Rindfleisch und erlesenen Weinen",
     restaurant4Cuisine: "Amerikanisches Steakhouse",
-    restaurant4Location: "3. Etage, Executive Level"
+    restaurant4Location: "3. Etage, Executive Level",
+    
+    tour1Name: "Altstadttour",
+    tour1Description: "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",
+    tour1Duration: "3 Stunden",
+    tour1Price: "€45",
+    
+    tour2Name: "Bucht-Kreuzfahrt",
+    tour2Description: "Entspannende Kreuzfahrt durch die Bucht von Kotor mit Bergblick",
+    tour2Duration: "4 Stunden",
+    tour2Price: "€65",
+    
+    tour3Name: "Weinprobe-Tour",
+    tour3Description: "Besuchen Sie lokale Weingüter und probieren Sie montenegrinische Weine",
+    tour3Duration: "5 Stunden",
+    tour3Price: "€80",
+    
+    tour4Name: "Bergwanderung",
+    tour4Description: "Geführte Wanderung durch den Nationalpark mit atemberaubender Aussicht",
+    tour4Duration: "6 Stunden",
+    tour4Price: "€55",
+    
+    tour5Name: "Kulinarische Tour",
+    tour5Description: "Entdecken Sie die montenegrinische Küche durch traditionelle Gerichte",
+    tour5Duration: "4 Stunden",
+    tour5Price: "€70",
+    
+    tour6Name: "Strand & Schnorcheln",
+    tour6Description: "Besuchen Sie versteckte Strände und schnorcheln Sie im kristallklaren Wasser",
+    tour6Duration: "5 Stunden",
+    tour6Price: "€90",
+    
+    tour7Name: "Historische Festung",
+    tour7Description: "Erkunden Sie mittelalterliche Festungen und lernen Sie die regionale Geschichte kennen",
+    tour7Duration: "3 Stunden",
+    tour7Price: "€50",
+    
+    tour8Name: "Angelerlebnis",
+    tour8Description: "Traditioneller Angelausflug mit lokalen Fischern",
+    tour8Duration: "4 Stunden",
+    tour8Price: "€60",
+    
+    tour9Name: "Kloster-Geheimnis",
+    tour9Description: "Besuchen Sie alte orthodoxe Klöster versteckt in den Bergen",
+    tour9Duration: "5 Stunden",
+    tour9Price: "€75",
+    
+    tour10Name: "Sonnenuntergang-Segeln",
+    tour10Description: "Romantischer Segelausflug bei Sonnenuntergang",
+    tour10Duration: "2 Stunden",
+    tour10Price: "€85",
+    
+    tour11Name: "Lokaler Markt",
+    tour11Description: "Entdecken Sie lokale Märkte mit authentischen Produkten",
+    tour11Duration: "3 Stunden",
+    tour11Price: "€40",
+    
+    tour12Name: "Nachtleben-Tour",
+    tour12Description: "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
+    tour12Duration: "4 Stunden",
+    tour12Price: "€55"
   }
 };
 
