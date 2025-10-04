@@ -7,6 +7,19 @@ import LanguageSelector from "@/components/LanguageSelector";
 import { getTranslation } from "@/utils/translations";
 import gradientBackground from "@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg";
 
+import tour1Image from "@assets/fortress-walls-of-the-ancient-town-of-kotor-on-the-2023-11-27-05-28-50-utc_1759609904304.jpg";
+import tour2Image from "@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759609904304.jpg";
+import tour3Image from "@assets/river-rijeka-crnojevica-in-montenegro-2024-10-18-07-50-59-utc_1759609904305.jpg";
+import tour4Image from "@assets/mausoleum-of-petar-petrovic-njegos-2023-11-27-05-02-52-utc_1759609904304.jpg";
+import tour5Image from "@assets/city-perast-montenegro-2023-11-27-05-09-23-utc_1759609904305.jpg";
+import tour6Image from "@assets/discover-the-enchanting-island-of-sveti-stefan-in-2024-09-30-13-00-59-utc_1759609904303.jpg";
+import tour7Image from "@assets/za na zid (66)_1759609904304.jpg";
+import tour8Image from "@assets/close-up-of-a-cable-car-cabin-against-the-sky-2023-11-27-05-20-12-utc_1759609904303.jpg";
+import tour9Image from "@assets/beautiful-mediterranean-landscape-2023-11-27-05-36-32-utc_1759609904305.jpg";
+import tour10Image from "@assets/budva-town-in-summer-2023-11-27-05-33-48-utc_1759609904305.jpg";
+import tour11Image from "@assets/horsewoman-on-the-beach-2023-11-27-04-56-21-utc_1759609904305.jpg";
+import tour12Image from "@assets/happy-couple-on-red-four-wheeler-atv-in-mountains-2023-11-27-04-53-37-utc_1759609904303.jpg";
+
 interface TourPageProps {
   currentLanguage: string;
   onLanguageChange: (lang: string) => void;
@@ -24,13 +37,19 @@ interface Tour {
 export default function ToursPage({ currentLanguage, onLanguageChange }: TourPageProps) {
   const t = getTranslation(currentLanguage);
 
+  const tourImages = [
+    tour1Image, tour2Image, tour3Image, tour4Image,
+    tour5Image, tour6Image, tour7Image, tour8Image,
+    tour9Image, tour10Image, tour11Image, tour12Image
+  ];
+
   const tours: Tour[] = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
     name: t[`tour${i + 1}Name` as keyof typeof t] as string,
     description: t[`tour${i + 1}Description` as keyof typeof t] as string,
     duration: t[`tour${i + 1}Duration` as keyof typeof t] as string,
     price: t[`tour${i + 1}Price` as keyof typeof t] as string,
-    image: "" // Placeholder for now
+    image: tourImages[i]
   }));
 
   return (
@@ -67,18 +86,23 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
         <div className="flex-1 overflow-y-auto pb-6">
           <div className="grid grid-cols-6 gap-4 auto-rows-fr">
             {tours.map((tour) => (
-              <Card
+              <div
                 key={tour.id}
-                className="overflow-visible hover-elevate active-elevate-2 cursor-pointer bg-white/95 backdrop-blur-sm flex flex-col"
+                className="relative rounded-md overflow-hidden hover-elevate active-elevate-2 cursor-pointer h-full"
                 data-testid={`tour-card-${tour.id}`}
+                style={{
+                  backgroundImage: `url(${tour.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  minHeight: '200px'
+                }}
               >
-                <CardContent className="text-center space-y-3 p-6 flex flex-col items-center justify-center h-full">
-                  <div className="w-full aspect-square bg-muted rounded-md mb-2 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-muted-foreground">#{tour.id}</span>
-                  </div>
-                  <h3 className="text-xl font-bold leading-tight">{tour.name}</h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">{tour.description}</p>
-                  <div className="space-y-1 text-xs text-muted-foreground w-full">
+                <div className="absolute inset-0 bg-black/50 rounded-md"></div>
+                <div className="relative z-10 text-center space-y-2 p-4 flex flex-col items-center justify-center h-full text-white">
+                  <h3 className="text-lg font-bold leading-tight">{tour.name}</h3>
+                  <p className="text-xs line-clamp-2 opacity-90">{tour.description}</p>
+                  <div className="space-y-1 text-xs w-full mt-auto">
                     <div className="flex items-center justify-center space-x-2">
                       <Clock className="w-3 h-3" />
                       <span>{tour.duration}</span>
@@ -88,8 +112,8 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
                       <span>{tour.price}</span>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
