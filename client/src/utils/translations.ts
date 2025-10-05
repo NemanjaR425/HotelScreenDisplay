@@ -90,6 +90,31 @@ export interface Translations {
   tour12Description: string;
   tour12Duration: string;
   tour12Price: string;
+  
+  spa1Name: string;
+  spa1Description: string;
+  spa1Hours: string;
+  spa1Price: string;
+  
+  spa2Name: string;
+  spa2Description: string;
+  spa2Hours: string;
+  spa2Price: string;
+  
+  spa3Name: string;
+  spa3Description: string;
+  spa3Hours: string;
+  spa3Price: string;
+  
+  spa4Name: string;
+  spa4Description: string;
+  spa4Hours: string;
+  spa4Price: string;
+  
+  spa5Name: string;
+  spa5Description: string;
+  spa5Hours: string;
+  spa5Price: string;
 }
 
 export const translations: Record<string, Translations> = {
@@ -184,7 +209,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Noćni Život",
     tour12Description: "Istražite lokalni noćni život i zabavu",
     tour12Duration: "4 sata",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Švedska Masaža",
+    spa1Description: "Klasična terapeutska masaža za opuštanje mišića",
+    spa1Hours: "09:00 - 20:00",
+    spa1Price: "€65",
+    
+    spa2Name: "Terapija Toplim Kamenom",
+    spa2Description: "Umirujuća terapija sa toplim vulkanskim kamenjem",
+    spa2Hours: "10:00 - 19:00",
+    spa2Price: "€85",
+    
+    spa3Name: "Tretman Lica",
+    spa3Description: "Luksuzni tretman lica za sve tipove kože",
+    spa3Hours: "09:00 - 20:00",
+    spa3Price: "€75",
+    
+    spa4Name: "Piling Tijela",
+    spa4Description: "Revitalizirajući tretman piling tijela sa prirodnim uljima",
+    spa4Hours: "10:00 - 18:00",
+    spa4Price: "€55",
+    
+    spa5Name: "Aromaterapija",
+    spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
+    spa5Hours: "09:00 - 20:00",
+    spa5Price: "€70"
   },
   en: { // English
     welcomeTo: "Welcome to",
@@ -277,7 +327,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Nightlife Tour",
     tour12Description: "Explore local nightlife and entertainment venues",
     tour12Duration: "4 hours",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Swedish Massage",
+    spa1Description: "Classic therapeutic massage for muscle relaxation",
+    spa1Hours: "09:00 AM - 08:00 PM",
+    spa1Price: "€65",
+    
+    spa2Name: "Hot Stone Therapy",
+    spa2Description: "Soothing therapy with warm volcanic stones",
+    spa2Hours: "10:00 AM - 07:00 PM",
+    spa2Price: "€85",
+    
+    spa3Name: "Facial Treatment",
+    spa3Description: "Luxury facial treatment for all skin types",
+    spa3Hours: "09:00 AM - 08:00 PM",
+    spa3Price: "€75",
+    
+    spa4Name: "Body Scrub",
+    spa4Description: "Revitalizing body scrub treatment with natural oils",
+    spa4Hours: "10:00 AM - 06:00 PM",
+    spa4Price: "€55",
+    
+    spa5Name: "Aromatherapy",
+    spa5Description: "Relaxing massage with essential oils",
+    spa5Hours: "09:00 AM - 08:00 PM",
+    spa5Price: "€70"
   },
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
@@ -370,7 +445,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Ночная Жизнь",
     tour12Description: "Исследуйте местную ночную жизнь и развлечения",
     tour12Duration: "4 часа",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Шведский Массаж",
+    spa1Description: "Классический терапевтический массаж для расслабления мышц",
+    spa1Hours: "09:00 - 20:00",
+    spa1Price: "€65",
+    
+    spa2Name: "Стоун-терапия",
+    spa2Description: "Успокаивающая терапия теплыми вулканическими камнями",
+    spa2Hours: "10:00 - 19:00",
+    spa2Price: "€85",
+    
+    spa3Name: "Уход за Лицом",
+    spa3Description: "Роскошный уход за лицом для всех типов кожи",
+    spa3Hours: "09:00 - 20:00",
+    spa3Price: "€75",
+    
+    spa4Name: "Пилинг Тела",
+    spa4Description: "Восстанавливающий пилинг тела с натуральными маслами",
+    spa4Hours: "10:00 - 18:00",
+    spa4Price: "€55",
+    
+    spa5Name: "Ароматерапия",
+    spa5Description: "Расслабляющий массаж с эфирными маслами",
+    spa5Hours: "09:00 - 20:00",
+    spa5Price: "€70"
   },
   es: { // Spanish
     welcomeTo: "Bienvenido a",
@@ -463,7 +563,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Tour Nocturno",
     tour12Description: "Explore la vida nocturna local y lugares de entretenimiento",
     tour12Duration: "4 horas",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Masaje Sueco",
+    spa1Description: "Masaje terapéutico clásico para relajación muscular",
+    spa1Hours: "09:00 - 20:00",
+    spa1Price: "€65",
+    
+    spa2Name: "Terapia de Piedras Calientes",
+    spa2Description: "Terapia relajante con piedras volcánicas calientes",
+    spa2Hours: "10:00 - 19:00",
+    spa2Price: "€85",
+    
+    spa3Name: "Tratamiento Facial",
+    spa3Description: "Tratamiento facial de lujo para todo tipo de piel",
+    spa3Hours: "09:00 - 20:00",
+    spa3Price: "€75",
+    
+    spa4Name: "Exfoliación Corporal",
+    spa4Description: "Tratamiento revitalizante de exfoliación corporal con aceites naturales",
+    spa4Hours: "10:00 - 18:00",
+    spa4Price: "€55",
+    
+    spa5Name: "Aromaterapia",
+    spa5Description: "Masaje relajante con aceites esenciales",
+    spa5Hours: "09:00 - 20:00",
+    spa5Price: "€70"
   },
   fr: { // French
     welcomeTo: "Bienvenue à",
@@ -556,7 +681,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Tour de Nuit",
     tour12Description: "Explorez la vie nocturne locale et les lieux de divertissement",
     tour12Duration: "4 heures",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Massage Suédois",
+    spa1Description: "Massage thérapeutique classique pour la relaxation musculaire",
+    spa1Hours: "09:00 - 20:00",
+    spa1Price: "€65",
+    
+    spa2Name: "Thérapie aux Pierres Chaudes",
+    spa2Description: "Thérapie apaisante avec des pierres volcaniques chaudes",
+    spa2Hours: "10:00 - 19:00",
+    spa2Price: "€85",
+    
+    spa3Name: "Soin du Visage",
+    spa3Description: "Soin du visage de luxe pour tous types de peau",
+    spa3Hours: "09:00 - 20:00",
+    spa3Price: "€75",
+    
+    spa4Name: "Gommage Corps",
+    spa4Description: "Gommage corporel revitalisant aux huiles naturelles",
+    spa4Hours: "10:00 - 18:00",
+    spa4Price: "€55",
+    
+    spa5Name: "Aromathérapie",
+    spa5Description: "Massage relaxant aux huiles essentielles",
+    spa5Hours: "09:00 - 20:00",
+    spa5Price: "€70"
   },
   de: { // German
     welcomeTo: "Willkommen im",
@@ -649,7 +799,32 @@ export const translations: Record<string, Translations> = {
     tour12Name: "Nachtleben-Tour",
     tour12Description: "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
     tour12Duration: "4 Stunden",
-    tour12Price: "€55"
+    tour12Price: "€55",
+    
+    spa1Name: "Schwedische Massage",
+    spa1Description: "Klassische therapeutische Massage zur Muskelentspannung",
+    spa1Hours: "09:00 - 20:00",
+    spa1Price: "€65",
+    
+    spa2Name: "Hot Stone Therapie",
+    spa2Description: "Beruhigende Therapie mit warmen Vulkansteinen",
+    spa2Hours: "10:00 - 19:00",
+    spa2Price: "€85",
+    
+    spa3Name: "Gesichtsbehandlung",
+    spa3Description: "Luxuriöse Gesichtsbehandlung für alle Hauttypen",
+    spa3Hours: "09:00 - 20:00",
+    spa3Price: "€75",
+    
+    spa4Name: "Körperpeeling",
+    spa4Description: "Revitalisierende Körperpeeling-Behandlung mit natürlichen Ölen",
+    spa4Hours: "10:00 - 18:00",
+    spa4Price: "€55",
+    
+    spa5Name: "Aromatherapie",
+    spa5Description: "Entspannende Massage mit ätherischen Ölen",
+    spa5Hours: "09:00 - 20:00",
+    spa5Price: "€70"
   }
 };
 
