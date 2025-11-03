@@ -84,7 +84,7 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
 
         {/* Tours Grid */}
         <div className="flex-1 overflow-y-auto pb-6 flex items-center justify-center">
-          <div className="grid grid-cols-4 gap-4 max-w-6xl">
+          <div className="grid grid-cols-3 gap-6 max-w-5xl">
             {tours.map((tour) => (
               <div
                 key={tour.id}
