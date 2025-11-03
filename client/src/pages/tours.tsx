@@ -83,19 +83,18 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
         </div>
 
         {/* Tours Grid */}
-        <div className="flex-1 overflow-y-auto pb-6">
-          <div className="grid grid-cols-6 gap-4 auto-rows-fr">
+        <div className="flex-1 overflow-y-auto pb-6 flex items-center justify-center">
+          <div className="grid grid-cols-4 gap-4 max-w-6xl">
             {tours.map((tour) => (
               <div
                 key={tour.id}
-                className="relative rounded-md overflow-hidden hover-elevate active-elevate-2 cursor-pointer h-full"
+                className="relative rounded-md overflow-hidden hover-elevate active-elevate-2 cursor-pointer aspect-square"
                 data-testid={`tour-card-${tour.id}`}
                 style={{
                   backgroundImage: `url(${tour.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  minHeight: '200px'
+                  backgroundRepeat: 'no-repeat'
                 }}
               >
                 <div className="absolute inset-0 bg-black/50 rounded-md"></div>
