@@ -115,6 +115,46 @@ export interface Translations {
   spa5Description: string;
   spa5Hours: string;
   spa5Price: string;
+  
+  ent1Name: string;
+  ent1Description: string;
+  ent1Time: string;
+  ent1Price: string;
+  
+  ent2Name: string;
+  ent2Description: string;
+  ent2Time: string;
+  ent2Price: string;
+  
+  ent3Name: string;
+  ent3Description: string;
+  ent3Time: string;
+  ent3Price: string;
+  
+  ent4Name: string;
+  ent4Description: string;
+  ent4Time: string;
+  ent4Price: string;
+  
+  ent5Name: string;
+  ent5Description: string;
+  ent5Time: string;
+  ent5Price: string;
+  
+  ent6Name: string;
+  ent6Description: string;
+  ent6Time: string;
+  ent6Price: string;
+  
+  ent7Name: string;
+  ent7Description: string;
+  ent7Time: string;
+  ent7Price: string;
+  
+  ent8Name: string;
+  ent8Description: string;
+  ent8Time: string;
+  ent8Price: string;
 }
 
 export const translations: Record<string, Translations> = {
@@ -234,7 +274,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Aromaterapija",
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Live DJ Večeri",
+    ent1Description: "Moderne elektronske muzičke performanse sa profesionalnim DJ-ovima",
+    ent1Time: "21:00 - 02:00",
+    ent1Price: "Besplatno",
+    
+    ent2Name: "Tradicionalni Ples",
+    ent2Description: "Autentične folklorne predstave sa tradicional nom muzikom i plesom",
+    ent2Time: "19:00 - 20:30",
+    ent2Price: "€15",
+    
+    ent3Name: "Plesna Zabava",
+    ent3Description: "Noćna plesna zabava sa vrhunskom muzikom i atmosferom",
+    ent3Time: "22:00 - 03:00",
+    ent3Price: "€10",
+    
+    ent4Name: "Live Bend",
+    ent4Description: "Vrhunski muzičari izvode popularnu i rock muziku",
+    ent4Time: "20:00 - 23:00",
+    ent4Price: "€20",
+    
+    ent5Name: "Live Pevač",
+    ent5Description: "Profesionalni vokalisti izvode poznate hitove",
+    ent5Time: "19:00 - 22:00",
+    ent5Price: "Besplatno",
+    
+    ent6Name: "Magična Predstava",
+    ent6Description: "Zadivljujuće magične performanse za sve uzraste",
+    ent6Time: "18:00 - 19:00",
+    ent6Price: "€25",
+    
+    ent7Name: "Jazz Večer",
+    ent7Description: "Sofisticirani jazz performansi sa renomiranim bendovima",
+    ent7Time: "20:00 - 23:00",
+    ent7Price: "€15",
+    
+    ent8Name: "Karaoke Noć",
+    ent8Description: "Zabavna karaoke večer sa širokim repertoarom pjesama",
+    ent8Time: "21:00 - 01:00",
+    ent8Price: "Besplatno"
   },
   en: { // English
     welcomeTo: "Welcome to",
@@ -352,7 +432,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Aromatherapy",
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Live DJ Nights",
+    ent1Description: "Modern electronic music performances with professional DJs",
+    ent1Time: "9:00 PM - 2:00 AM",
+    ent1Price: "Free",
+    
+    ent2Name: "Traditional Dance",
+    ent2Description: "Authentic folklore performances with traditional music and dance",
+    ent2Time: "7:00 PM - 8:30 PM",
+    ent2Price: "€15",
+    
+    ent3Name: "Dance Party",
+    ent3Description: "Nighttime dance party with top music and atmosphere",
+    ent3Time: "10:00 PM - 3:00 AM",
+    ent3Price: "€10",
+    
+    ent4Name: "Live Band",
+    ent4Description: "Talented musicians performing popular and rock music",
+    ent4Time: "8:00 PM - 11:00 PM",
+    ent4Price: "€20",
+    
+    ent5Name: "Live Singer",
+    ent5Description: "Professional vocalists performing popular hits",
+    ent5Time: "7:00 PM - 10:00 PM",
+    ent5Price: "Free",
+    
+    ent6Name: "Magic Show",
+    ent6Description: "Amazing magic performances for all ages",
+    ent6Time: "6:00 PM - 7:00 PM",
+    ent6Price: "€25",
+    
+    ent7Name: "Jazz Evening",
+    ent7Description: "Sophisticated jazz performances with renowned bands",
+    ent7Time: "8:00 PM - 11:00 PM",
+    ent7Price: "€15",
+    
+    ent8Name: "Karaoke Night",
+    ent8Description: "Fun karaoke evening with a wide repertoire of songs",
+    ent8Time: "9:00 PM - 1:00 AM",
+    ent8Price: "Free"
   },
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
@@ -470,7 +590,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Ароматерапия",
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Живые DJ Вечера",
+    ent1Description: "Современные электронные музыкальные выступления с профессиональными диджеями",
+    ent1Time: "21:00 - 02:00",
+    ent1Price: "Бесплатно",
+    
+    ent2Name: "Традиционные Танцы",
+    ent2Description: "Аутентичные фольклорные представления с традиционной музыкой и танцами",
+    ent2Time: "19:00 - 20:30",
+    ent2Price: "€15",
+    
+    ent3Name: "Танцевальная Вечеринка",
+    ent3Description: "Ночная танцевальная вечеринка с лучшей музыкой и атмосферой",
+    ent3Time: "22:00 - 03:00",
+    ent3Price: "€10",
+    
+    ent4Name: "Живая Группа",
+    ent4Description: "Талантливые музыканты исполняют популярную и рок-музыку",
+    ent4Time: "20:00 - 23:00",
+    ent4Price: "€20",
+    
+    ent5Name: "Живой Вокалист",
+    ent5Description: "Профессиональные вокалисты исполняют популярные хиты",
+    ent5Time: "19:00 - 22:00",
+    ent5Price: "Бесплатно",
+    
+    ent6Name: "Магическое Шоу",
+    ent6Description: "Удивительные магические представления для всех возрастов",
+    ent6Time: "18:00 - 19:00",
+    ent6Price: "€25",
+    
+    ent7Name: "Джазовый Вечер",
+    ent7Description: "Изысканные джазовые выступления с известными группами",
+    ent7Time: "20:00 - 23:00",
+    ent7Price: "€15",
+    
+    ent8Name: "Караоке Ночь",
+    ent8Description: "Веселый караоке вечер с широким репертуаром песен",
+    ent8Time: "21:00 - 01:00",
+    ent8Price: "Бесплатно"
   },
   es: { // Spanish
     welcomeTo: "Bienvenido a",
@@ -588,7 +748,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Aromaterapia",
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Noches de DJ en Vivo",
+    ent1Description: "Actuaciones de música electrónica moderna con DJs profesionales",
+    ent1Time: "21:00 - 02:00",
+    ent1Price: "Gratis",
+    
+    ent2Name: "Danza Tradicional",
+    ent2Description: "Actuaciones folclóricas auténticas con música y baile tradicional",
+    ent2Time: "19:00 - 20:30",
+    ent2Price: "€15",
+    
+    ent3Name: "Fiesta de Baile",
+    ent3Description: "Fiesta de baile nocturna con la mejor música y ambiente",
+    ent3Time: "22:00 - 03:00",
+    ent3Price: "€10",
+    
+    ent4Name: "Banda en Vivo",
+    ent4Description: "Músicos talentosos interpretando música popular y rock",
+    ent4Time: "20:00 - 23:00",
+    ent4Price: "€20",
+    
+    ent5Name: "Cantante en Vivo",
+    ent5Description: "Vocalistas profesionales interpretando éxitos populares",
+    ent5Time: "19:00 - 22:00",
+    ent5Price: "Gratis",
+    
+    ent6Name: "Espectáculo de Magia",
+    ent6Description: "Asombrosas actuaciones de magia para todas las edades",
+    ent6Time: "18:00 - 19:00",
+    ent6Price: "€25",
+    
+    ent7Name: "Velada de Jazz",
+    ent7Description: "Sofisticadas actuaciones de jazz con bandas reconocidas",
+    ent7Time: "20:00 - 23:00",
+    ent7Price: "€15",
+    
+    ent8Name: "Noche de Karaoke",
+    ent8Description: "Divertida velada de karaoke con un amplio repertorio de canciones",
+    ent8Time: "21:00 - 01:00",
+    ent8Price: "Gratis"
   },
   fr: { // French
     welcomeTo: "Bienvenue à",
@@ -706,7 +906,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Aromathérapie",
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Soirées DJ Live",
+    ent1Description: "Performances musicales électroniques modernes avec des DJs professionnels",
+    ent1Time: "21:00 - 02:00",
+    ent1Price: "Gratuit",
+    
+    ent2Name: "Danse Traditionnelle",
+    ent2Description: "Spectacles folkloriques authentiques avec musique et danse traditionnelles",
+    ent2Time: "19:00 - 20:30",
+    ent2Price: "€15",
+    
+    ent3Name: "Soirée Dansante",
+    ent3Description: "Soirée dansante nocturne avec une excellente musique et ambiance",
+    ent3Time: "22:00 - 03:00",
+    ent3Price: "€10",
+    
+    ent4Name: "Groupe Live",
+    ent4Description: "Musiciens talentueux interprétant de la musique populaire et rock",
+    ent4Time: "20:00 - 23:00",
+    ent4Price: "€20",
+    
+    ent5Name: "Chanteur Live",
+    ent5Description: "Chanteurs professionnels interprétant des hits populaires",
+    ent5Time: "19:00 - 22:00",
+    ent5Price: "Gratuit",
+    
+    ent6Name: "Spectacle de Magie",
+    ent6Description: "Spectacles de magie étonnants pour tous les âges",
+    ent6Time: "18:00 - 19:00",
+    ent6Price: "€25",
+    
+    ent7Name: "Soirée Jazz",
+    ent7Description: "Spectacles de jazz sophistiqués avec des groupes renommés",
+    ent7Time: "20:00 - 23:00",
+    ent7Price: "€15",
+    
+    ent8Name: "Soirée Karaoké",
+    ent8Description: "Soirée karaoké amusante avec un large répertoire de chansons",
+    ent8Time: "21:00 - 01:00",
+    ent8Price: "Gratuit"
   },
   de: { // German
     welcomeTo: "Willkommen im",
@@ -824,7 +1064,47 @@ export const translations: Record<string, Translations> = {
     spa5Name: "Aromatherapie",
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
-    spa5Price: "€70"
+    spa5Price: "€70",
+    
+    ent1Name: "Live DJ Abende",
+    ent1Description: "Moderne elektronische Musikaufführungen mit professionellen DJs",
+    ent1Time: "21:00 - 02:00",
+    ent1Price: "Kostenlos",
+    
+    ent2Name: "Traditioneller Tanz",
+    ent2Description: "Authentische Folklore-Aufführungen mit traditioneller Musik und Tanz",
+    ent2Time: "19:00 - 20:30",
+    ent2Price: "€15",
+    
+    ent3Name: "Tanzparty",
+    ent3Description: "Nächtliche Tanzparty mit bester Musik und Atmosphäre",
+    ent3Time: "22:00 - 03:00",
+    ent3Price: "€10",
+    
+    ent4Name: "Live Band",
+    ent4Description: "Talentierte Musiker spielen populäre und Rock-Musik",
+    ent4Time: "20:00 - 23:00",
+    ent4Price: "€20",
+    
+    ent5Name: "Live Sänger",
+    ent5Description: "Professionelle Sänger spielen beliebte Hits",
+    ent5Time: "19:00 - 22:00",
+    ent5Price: "Kostenlos",
+    
+    ent6Name: "Zaubershow",
+    ent6Description: "Erstaunliche Zauberaufführungen für alle Altersgruppen",
+    ent6Time: "18:00 - 19:00",
+    ent6Price: "€25",
+    
+    ent7Name: "Jazz Abend",
+    ent7Description: "Raffinierte Jazz-Aufführungen mit renommierten Bands",
+    ent7Time: "20:00 - 23:00",
+    ent7Price: "€15",
+    
+    ent8Name: "Karaoke Nacht",
+    ent8Description: "Unterhaltsamer Karaoke-Abend mit einem breiten Repertoire an Liedern",
+    ent8Time: "21:00 - 01:00",
+    ent8Price: "Kostenlos"
   }
 };
 
