@@ -88,7 +88,7 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
             {tours.map((tour) => (
               <div
                 key={tour.id}
-                className="relative rounded-md overflow-hidden hover-elevate active-elevate-2 cursor-pointer"
+                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer"
                 data-testid={`tour-card-${tour.id}`}
                 style={{
                   backgroundImage: `url(${tour.image})`,

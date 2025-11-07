@@ -83,7 +83,7 @@ export default function EntertainmentPage({ currentLanguage, onLanguageChange }:
             {entertainment.map((ent) => (
               <div
                 key={ent.id}
-                className="relative rounded-md overflow-hidden hover-elevate active-elevate-2 cursor-pointer"
+                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer"
                 data-testid={`entertainment-card-${ent.id}`}
                 style={{
                   backgroundImage: `url(${ent.image})`,
