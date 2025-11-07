@@ -11,6 +11,21 @@ export interface Translations {
   weatherCloudy: string;
   weatherRainy: string;
   
+  mondayName: string;
+  mondayDescription: string;
+  tuesdayName: string;
+  tuesdayDescription: string;
+  wednesdayName: string;
+  wednesdayDescription: string;
+  thursdayName: string;
+  thursdayDescription: string;
+  fridayName: string;
+  fridayDescription: string;
+  saturdayName: string;
+  saturdayDescription: string;
+  sundayName: string;
+  sundayDescription: string;
+  
   restaurant1Name: string;
   restaurant1Description: string;
   restaurant1Cuisine: string;
@@ -171,6 +186,21 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Oblačno",
     weatherRainy: "Kiša",
     
+    mondayName: "Ponedjeljak",
+    mondayDescription: "Započnite sedmicu sa sofisticiranom jazz muzikom i opuštajućom atmosferom",
+    tuesdayName: "Utorak",
+    tuesdayDescription: "Uživajte u profesionalnim vokalnim nastupima sa poznatim hitovima",
+    wednesdayName: "Srijeda",
+    wednesdayDescription: "Doživite autentične folklorne nastupe sa tradicionalnom muzikom i plesom",
+    thursdayName: "Četvrtak",
+    thursdayDescription: "Čarobno veče sa neverovatnim magičnim predstavama za sve uzraste",
+    fridayName: "Petak",
+    fridayDescription: "Započnite vikend sa energičnim nastupima uživo i vrhunskom muzikom",
+    saturdayName: "Subota",
+    saturdayDescription: "Najbolje veče sedmice sa DJ nastupima, plesnim zabavama i karaoke zabavom",
+    sundayName: "Nedjelja",
+    sundayDescription: "Opustite se uz tradicionalne narodne nastupe i uživajte u kulturnom večeru",
+    
     restaurant1Name: "Azure Mediteranski",
     restaurant1Description: "Autentična mediteranska kuhinja sa svježim morskim plodovima i tradicionalnim jelima",
     restaurant1Cuisine: "Mediteranski",
@@ -328,6 +358,21 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Clear Night",
     weatherCloudy: "Cloudy",
     weatherRainy: "Light Rain",
+    
+    mondayName: "Monday",
+    mondayDescription: "Start your week with sophisticated jazz music and a relaxing atmosphere",
+    tuesdayName: "Tuesday",
+    tuesdayDescription: "Enjoy professional vocal performances featuring popular hits",
+    wednesdayName: "Wednesday",
+    wednesdayDescription: "Experience authentic folklore performances with traditional music and dance",
+    thursdayName: "Thursday",
+    thursdayDescription: "A magical evening with amazing magic performances for all ages",
+    fridayName: "Friday",
+    fridayDescription: "Kick off the weekend with energetic live band performances and top music",
+    saturdayName: "Saturday",
+    saturdayDescription: "The best night of the week with DJ performances, dance parties and karaoke fun",
+    sundayName: "Sunday",
+    sundayDescription: "Relax with traditional folk performances and enjoy a cultural evening",
     
     restaurant1Name: "Azure Mediterranean",
     restaurant1Description: "Authentic Mediterranean cuisine with fresh seafood and traditional dishes",
@@ -487,6 +532,21 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Облачно",
     weatherRainy: "Дождь",
     
+    mondayName: "Понедельник",
+    mondayDescription: "Начните неделю с изысканной джазовой музыки и расслабляющей атмосферы",
+    tuesdayName: "Вторник",
+    tuesdayDescription: "Наслаждайтесь профессиональными вокальными выступлениями с популярными хитами",
+    wednesdayName: "Среда",
+    wednesdayDescription: "Испытайте аутентичные фольклорные выступления с традиционной музыкой и танцами",
+    thursdayName: "Четверг",
+    thursdayDescription: "Волшебный вечер с удивительными магическими представлениями для всех возрастов",
+    fridayName: "Пятница",
+    fridayDescription: "Начните выходные с энергичными живыми выступлениями и лучшей музыкой",
+    saturdayName: "Суббота",
+    saturdayDescription: "Лучшая ночь недели с выступлениями диджеев, танцевальными вечеринками и караоке",
+    sundayName: "Воскресенье",
+    sundayDescription: "Расслабьтесь с традиционными народными выступлениями и наслаждайтесь культурным вечером",
+    
     restaurant1Name: "Azure Средиземноморский",
     restaurant1Description: "Аутентичная средиземноморская кухня со свежими морепродуктами и традиционными блюдами",
     restaurant1Cuisine: "Средиземноморская",
@@ -644,6 +704,21 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Noche despejada",
     weatherCloudy: "Nublado",
     weatherRainy: "Lluvia ligera",
+    
+    mondayName: "Lunes",
+    mondayDescription: "Comience la semana con música de jazz sofisticada y un ambiente relajante",
+    tuesdayName: "Martes",
+    tuesdayDescription: "Disfrute de actuaciones vocales profesionales con éxitos populares",
+    wednesdayName: "Miércoles",
+    wednesdayDescription: "Experimente auténticas actuaciones folclóricas con música y danza tradicional",
+    thursdayName: "Jueves",
+    thursdayDescription: "Una velada mágica con increíbles espectáculos de magia para todas las edades",
+    fridayName: "Viernes",
+    fridayDescription: "Comience el fin de semana con energéticas actuaciones de bandas en vivo y la mejor música",
+    saturdayName: "Sábado",
+    saturdayDescription: "La mejor noche de la semana con presentaciones de DJ, fiestas de baile y diversión de karaoke",
+    sundayName: "Domingo",
+    sundayDescription: "Relájese con actuaciones folclóricas tradicionales y disfrute de una velada cultural",
     
     restaurant1Name: "Azure Mediterráneo",
     restaurant1Description: "Auténtica cocina mediterránea con mariscos frescos y platos tradicionales",
@@ -803,6 +878,21 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Nuageux",
     weatherRainy: "Pluie légère",
     
+    mondayName: "Lundi",
+    mondayDescription: "Commencez la semaine avec de la musique jazz sophistiquée et une atmosphère relaxante",
+    tuesdayName: "Mardi",
+    tuesdayDescription: "Profitez de performances vocales professionnelles avec des hits populaires",
+    wednesdayName: "Mercredi",
+    wednesdayDescription: "Découvrez des spectacles folkloriques authentiques avec musique et danse traditionnelles",
+    thursdayName: "Jeudi",
+    thursdayDescription: "Une soirée magique avec d'incroyables spectacles de magie pour tous les âges",
+    fridayName: "Vendredi",
+    fridayDescription: "Lancez le week-end avec des performances live énergiques et de la meilleure musique",
+    saturdayName: "Samedi",
+    saturdayDescription: "La meilleure soirée de la semaine avec des performances de DJ, des soirées dansantes et du karaoké",
+    sundayName: "Dimanche",
+    sundayDescription: "Détendez-vous avec des spectacles folkloriques traditionnels et profitez d'une soirée culturelle",
+    
     restaurant1Name: "Azure Méditerranéen",
     restaurant1Description: "Cuisine méditerranéenne authentique avec fruits de mer frais et plats traditionnels",
     restaurant1Cuisine: "Méditerranéenne",
@@ -960,6 +1050,21 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Klare Nacht",
     weatherCloudy: "Bewölkt",
     weatherRainy: "Leichter Regen",
+    
+    mondayName: "Montag",
+    mondayDescription: "Beginnen Sie die Woche mit anspruchsvoller Jazzmusik und entspannter Atmosphäre",
+    tuesdayName: "Dienstag",
+    tuesdayDescription: "Genießen Sie professionelle Gesangsauftritte mit beliebten Hits",
+    wednesdayName: "Mittwoch",
+    wednesdayDescription: "Erleben Sie authentische Folkloreaufführungen mit traditioneller Musik und Tanz",
+    thursdayName: "Donnerstag",
+    thursdayDescription: "Ein magischer Abend mit erstaunlichen Zaubervorstellungen für alle Altersgruppen",
+    fridayName: "Freitag",
+    fridayDescription: "Starten Sie ins Wochenende mit energiegeladenen Live-Band-Auftritten und bester Musik",
+    saturdayName: "Samstag",
+    saturdayDescription: "Die beste Nacht der Woche mit DJ-Auftritten, Tanzpartys und Karaoke-Spaß",
+    sundayName: "Sonntag",
+    sundayDescription: "Entspannen Sie mit traditionellen Folkloreaufführungen und genießen Sie einen kulturellen Abend",
     
     restaurant1Name: "Azure Mediterran",
     restaurant1Description: "Authentische mediterrane Küche mit frischen Meeresfrüchten und traditionellen Gerichten",
