@@ -54,6 +54,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
         return '/tours';
       case 'spa':
         return '/spa';
+      case 'entertainment':
+        return '/entertainment';
       default:
         return '#'; // Placeholder for other categories
     }
@@ -85,7 +87,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     backgroundRepeat: 'no-repeat'
   } : {};
 
-  if (category === 'dining' || category === 'excursions' || category === 'spa') {
+  if (category === 'dining' || category === 'excursions' || category === 'spa' || category === 'entertainment') {
     return (
       <Link href={getNavigationPath()} className="h-full">
         <div 

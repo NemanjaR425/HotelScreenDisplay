@@ -8,6 +8,7 @@ import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
 import ToursPage from "@/pages/tours";
 import SpaPage from "@/pages/spa";
+import EntertainmentPage from "@/pages/entertainment";
 import NotFound from "@/pages/not-found";
 
 function Home({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
@@ -26,6 +27,10 @@ function Spa({ currentLanguage, onLanguageChange }: { currentLanguage: string; o
   return <SpaPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
 }
 
+function Entertainment({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
+  return <EntertainmentPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
+}
+
 function Router({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
   return (
     <Switch>
@@ -33,6 +38,7 @@ function Router({ currentLanguage, onLanguageChange }: { currentLanguage: string
       <Route path="/dining" component={() => <Dining currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
       <Route path="/tours" component={() => <Tours currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
       <Route path="/spa" component={() => <Spa currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
+      <Route path="/entertainment" component={() => <Entertainment currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
       <Route component={NotFound} />
     </Switch>
   );
