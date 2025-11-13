@@ -42,7 +42,6 @@ Preferred communication style: Simple, everyday language.
 - **Content Categories**: Modular system for dining, shopping, excursions, entertainment, and spa services
 - **Asset Management**: Integrated image handling for service categories and resort photography
 - **Auto-rotation**: Timed content slides with configurable intervals for dynamic information display
-- **Weekly Entertainment Schedule**: 7-day entertainment calendar with day-specific descriptions and activities, organized in a scrollable two-column layout (description panel on left, activity cards on right)
 
 ### Data Architecture
 - **Shared Types**: Common TypeScript interfaces between client and server for data consistency
