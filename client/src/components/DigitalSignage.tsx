@@ -147,7 +147,7 @@ export default function DigitalSignage({
         </div>
 
         {/* Right Panel - Service Categories Grid */}
-        <div className="w-[48rem] grid grid-cols-2 gap-4" style={{ gridTemplateRows: '1fr 1fr 1fr' }}>
+        <div className="w-[56rem] grid grid-cols-2 gap-4" style={{ gridTemplateRows: '1fr 1fr 1fr' }}>
           <ServiceCategory category="dining" title={t.dining} />
           <ServiceCategory category="shopping" title={t.shopping} />
           <ServiceCategory category="excursions" title={t.excursions} />
