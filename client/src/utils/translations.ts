@@ -276,7 +276,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 sata",
     tour11Price: "€40",
     
-    tour12Name: "Noćni Život",
+    tour12Name: "Buggy tura",
     tour12Description: "Istražite lokalni noćni život i zabavu",
     tour12Duration: "4 sata",
     tour12Price: "€55",
@@ -449,7 +449,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 hours",
     tour11Price: "€40",
     
-    tour12Name: "Nightlife Tour",
+    tour12Name: "Buggy tour",
     tour12Description: "Explore local nightlife and entertainment venues",
     tour12Duration: "4 hours",
     tour12Price: "€55",
@@ -622,7 +622,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 часа",
     tour11Price: "€40",
     
-    tour12Name: "Ночная Жизнь",
+    tour12Name: "Багги тур",
     tour12Description: "Исследуйте местную ночную жизнь и развлечения",
     tour12Duration: "4 часа",
     tour12Price: "€55",
@@ -795,7 +795,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 horas",
     tour11Price: "€40",
     
-    tour12Name: "Tour Nocturno",
+    tour12Name: "Tour en Buggy",
     tour12Description: "Explore la vida nocturna local y lugares de entretenimiento",
     tour12Duration: "4 horas",
     tour12Price: "€55",
@@ -968,7 +968,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 heures",
     tour11Price: "€40",
     
-    tour12Name: "Tour de Nuit",
+    tour12Name: "Tour en Buggy",
     tour12Description: "Explorez la vie nocturne locale et les lieux de divertissement",
     tour12Duration: "4 heures",
     tour12Price: "€55",
@@ -1141,7 +1141,7 @@ export const translations: Record<string, Translations> = {
     tour11Duration: "3 Stunden",
     tour11Price: "€40",
     
-    tour12Name: "Nachtleben-Tour",
+    tour12Name: "Buggy-Tour",
     tour12Description: "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
     tour12Duration: "4 Stunden",
     tour12Price: "€55",
