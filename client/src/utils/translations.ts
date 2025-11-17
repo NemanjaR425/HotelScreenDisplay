@@ -251,7 +251,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 sati",
     tour6Price: "€90",
     
-    tour7Name: "Istorijska Tvrđava",
+    tour7Name: "Stari Grad Herceg Novi",
     tour7Description: "Istražite srednjovekovne tvrđave i saznajte o istoriji regiona",
     tour7Duration: "3 sata",
     tour7Price: "€50",
@@ -424,7 +424,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 hours",
     tour6Price: "€90",
     
-    tour7Name: "Historic Fortress",
+    tour7Name: "Old town Herceg Novi",
     tour7Description: "Explore medieval fortresses and learn about regional history",
     tour7Duration: "3 hours",
     tour7Price: "€50",
@@ -597,7 +597,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 часов",
     tour6Price: "€90",
     
-    tour7Name: "Историческая Крепость",
+    tour7Name: "Старый Город Херцег-Нови",
     tour7Description: "Исследуйте средневековые крепости и узнайте о региональной истории",
     tour7Duration: "3 часа",
     tour7Price: "€50",
@@ -770,7 +770,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 horas",
     tour6Price: "€90",
     
-    tour7Name: "Fortaleza Histórica",
+    tour7Name: "Casco Antiguo Herceg Novi",
     tour7Description: "Explore fortalezas medievales y aprenda sobre la historia regional",
     tour7Duration: "3 horas",
     tour7Price: "€50",
@@ -943,7 +943,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 heures",
     tour6Price: "€90",
     
-    tour7Name: "Forteresse Historique",
+    tour7Name: "Vieille Ville Herceg Novi",
     tour7Description: "Explorez les forteresses médiévales et découvrez l'histoire régionale",
     tour7Duration: "3 heures",
     tour7Price: "€50",
@@ -1116,7 +1116,7 @@ export const translations: Record<string, Translations> = {
     tour6Duration: "5 Stunden",
     tour6Price: "€90",
     
-    tour7Name: "Historische Festung",
+    tour7Name: "Altstadt Herceg Novi",
     tour7Description: "Erkunden Sie mittelalterliche Festungen und lernen Sie die regionale Geschichte kennen",
     tour7Duration: "3 Stunden",
     tour7Price: "€50",
