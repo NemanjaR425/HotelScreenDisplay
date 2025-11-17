@@ -231,7 +231,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 sata",
     tour2Price: "€65",
     
-    tour3Name: "Vinska Tura",
+    tour3Name: "Rijeka Crnojevića",
     tour3Description: "Posetite lokalne vinarije i degustirajte crnogorska vina",
     tour3Duration: "5 sati",
     tour3Price: "€80",
@@ -404,7 +404,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 hours",
     tour2Price: "€65",
     
-    tour3Name: "Wine Tasting Tour",
+    tour3Name: "Rijeka Crnojevića",
     tour3Description: "Visit local wineries and taste Montenegrin wines",
     tour3Duration: "5 hours",
     tour3Price: "€80",
@@ -577,7 +577,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 часа",
     tour2Price: "€65",
     
-    tour3Name: "Винный Тур",
+    tour3Name: "Река Црноевича",
     tour3Description: "Посетите местные винодельни и попробуйте черногорские вина",
     tour3Duration: "5 часов",
     tour3Price: "€80",
@@ -750,7 +750,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 horas",
     tour2Price: "€65",
     
-    tour3Name: "Tour de Degustación de Vinos",
+    tour3Name: "Rijeka Crnojevića",
     tour3Description: "Visite bodegas locales y deguste vinos montenegrinos",
     tour3Duration: "5 horas",
     tour3Price: "€80",
@@ -923,7 +923,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 heures",
     tour2Price: "€65",
     
-    tour3Name: "Tour de Dégustation de Vins",
+    tour3Name: "Rijeka Crnojevića",
     tour3Description: "Visitez les caves locales et dégustez les vins monténégrins",
     tour3Duration: "5 heures",
     tour3Price: "€80",
@@ -1096,7 +1096,7 @@ export const translations: Record<string, Translations> = {
     tour2Duration: "4 Stunden",
     tour2Price: "€65",
     
-    tour3Name: "Weinprobe-Tour",
+    tour3Name: "Rijeka Crnojevića",
     tour3Description: "Besuchen Sie lokale Weingüter und probieren Sie montenegrinische Weine",
     tour3Duration: "5 Stunden",
     tour3Price: "€80",
