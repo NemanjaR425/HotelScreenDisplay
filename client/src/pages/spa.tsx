@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import spaImage1 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
-import spaImage2 from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
+import spaImage2 from '@assets/stock_images/modern_hotel_gym_fit_f290cc76.jpg';
 import spaImage3 from '@assets/beautiful-mediterranean-landscape-2023-11-27-05-36-32-utc_1759609904305.jpg';
 import spaImage4 from '@assets/river-rijeka-crnojevica-in-montenegro-2024-10-18-07-50-59-utc_1759609904305.jpg';
 import spaImage5 from '@assets/discover-the-enchanting-island-of-sveti-stefan-in-2024-09-30-13-00-59-utc_1759609904303.jpg';
