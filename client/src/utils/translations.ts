@@ -301,7 +301,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
     
-    spa5Name: "Aromaterapija",
+    spa5Name: "Sauna",
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
@@ -474,7 +474,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 AM - 06:00 PM",
     spa4Price: "€55",
     
-    spa5Name: "Aromatherapy",
+    spa5Name: "Sauna",
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
     spa5Price: "€70",
@@ -647,7 +647,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
     
-    spa5Name: "Ароматерапия",
+    spa5Name: "Сауна",
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
@@ -820,7 +820,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
     
-    spa5Name: "Aromaterapia",
+    spa5Name: "Sauna",
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
@@ -993,7 +993,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
     
-    spa5Name: "Aromathérapie",
+    spa5Name: "Sauna",
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
@@ -1166,7 +1166,7 @@ export const translations: Record<string, Translations> = {
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
     
-    spa5Name: "Aromatherapie",
+    spa5Name: "Sauna",
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
