@@ -246,7 +246,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 sata",
     tour5Price: "€70",
     
-    tour6Name: "Plaža i Ronjenje",
+    tour6Name: "Budva",
     tour6Description: "Poseta skrivenim plažama i ronjenje u kristalno čistoj vodi",
     tour6Duration: "5 sati",
     tour6Price: "€90",
@@ -419,7 +419,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 hours",
     tour5Price: "€70",
     
-    tour6Name: "Beach & Snorkeling",
+    tour6Name: "Budva",
     tour6Description: "Visit hidden beaches and snorkel in crystal clear waters",
     tour6Duration: "5 hours",
     tour6Price: "€90",
@@ -592,7 +592,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 часа",
     tour5Price: "€70",
     
-    tour6Name: "Пляж и Снорклинг",
+    tour6Name: "Будва",
     tour6Description: "Посетите скрытые пляжи и понырять в кристально чистой воде",
     tour6Duration: "5 часов",
     tour6Price: "€90",
@@ -765,7 +765,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 horas",
     tour5Price: "€70",
     
-    tour6Name: "Playa y Snorkel",
+    tour6Name: "Budva",
     tour6Description: "Visite playas escondidas y practique snorkel en aguas cristalinas",
     tour6Duration: "5 horas",
     tour6Price: "€90",
@@ -938,7 +938,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 heures",
     tour5Price: "€70",
     
-    tour6Name: "Plage et Snorkeling",
+    tour6Name: "Budva",
     tour6Description: "Visitez des plages cachées et faites du snorkeling dans des eaux cristallines",
     tour6Duration: "5 heures",
     tour6Price: "€90",
@@ -1111,7 +1111,7 @@ export const translations: Record<string, Translations> = {
     tour5Duration: "4 Stunden",
     tour5Price: "€70",
     
-    tour6Name: "Strand & Schnorcheln",
+    tour6Name: "Budva",
     tour6Description: "Besuchen Sie versteckte Strände und schnorcheln Sie im kristallklaren Wasser",
     tour6Duration: "5 Stunden",
     tour6Price: "€90",
