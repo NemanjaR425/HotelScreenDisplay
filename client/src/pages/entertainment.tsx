@@ -32,16 +32,16 @@ export default function EntertainmentPage({ currentLanguage, onLanguageChange }:
   const t = getTranslation(currentLanguage);
 
   const entImages = [
-    ent1Image, ent2Image, ent3Image, ent4Image,
+    ent2Image, ent3Image, ent4Image,
     ent5Image, ent6Image, ent7Image, ent8Image
   ];
 
-  const entertainments: Entertainment[] = Array.from({ length: 8 }, (_, i) => ({
-    id: i + 1,
-    name: t[`ent${i + 1}Name` as keyof typeof t] as string,
-    description: t[`ent${i + 1}Description` as keyof typeof t] as string,
-    time: t[`ent${i + 1}Time` as keyof typeof t] as string,
-    price: t[`ent${i + 1}Price` as keyof typeof t] as string,
+  const entertainments: Entertainment[] = Array.from({ length: 7 }, (_, i) => ({
+    id: i + 2,
+    name: t[`ent${i + 2}Name` as keyof typeof t] as string,
+    description: t[`ent${i + 2}Description` as keyof typeof t] as string,
+    time: t[`ent${i + 2}Time` as keyof typeof t] as string,
+    price: t[`ent${i + 2}Price` as keyof typeof t] as string,
     image: entImages[i]
   }));
 
