@@ -96,7 +96,7 @@ export default function EntertainmentPage({ currentLanguage, onLanguageChange }:
                   <p className="text-xs line-clamp-2 opacity-90">{ent.description}</p>
                   <div className="space-y-1 text-xs w-full mt-auto">
                     <div className="flex items-center justify-center space-x-2">
-                      <Clock className="w-3 h-3" />
+                      <Clock className="w-5 h-5" />
                       <span>{ent.time}</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
