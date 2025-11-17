@@ -82,14 +82,10 @@ export default function DigitalSignage({
 
   return (
     <div 
-      className="w-full h-screen overflow-hidden p-6" 
+      className="w-full h-screen overflow-hidden p-6 bg-white" 
       data-testid="digital-signage" 
       style={{ 
-        aspectRatio: '16/9',
-        backgroundImage: `url(${gradientBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        aspectRatio: '16/9'
       }}
     >
       <div className="h-full flex gap-3">
