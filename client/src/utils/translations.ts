@@ -296,7 +296,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Gym",
+    spa4Name: "Teretana",
     spa4Description: "Revitalizirajući tretman piling tijela sa prirodnim uljima",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
