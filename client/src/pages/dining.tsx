@@ -123,15 +123,21 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
       <div className="h-full flex flex-col relative">
         {!selectedRestaurant && (
           /* Header - only show on restaurant selection screen */
-          <div className="flex items-center space-x-4 mb-6">
-            <Link href="/">
-              <Button variant="default" size="icon" data-testid="button-back-home">
-                <ArrowLeft className="w-5 h-5" />
-              </Button>
-            </Link>
-            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
-              {t.dining}
-            </h1>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-4">
+              <Link href="/">
+                <Button variant="default" size="icon" data-testid="button-back-home">
+                  <ArrowLeft className="w-5 h-5" />
+                </Button>
+              </Link>
+              <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+                {t.dining}
+              </h1>
+            </div>
+            <LanguageSelector 
+              currentLanguage={currentLanguage}
+              onLanguageChange={onLanguageChange}
+            />
           </div>
         )}
 
@@ -261,16 +267,6 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
             </div>
           )}
         </div>
-
-        {/* Language Selector - Bottom Left (only on restaurant selection screen) */}
-        {!selectedRestaurant && (
-          <div className="absolute bottom-0 left-0 mb-6 z-10">
-            <LanguageSelector 
-              currentLanguage={currentLanguage}
-              onLanguageChange={onLanguageChange}
-            />
-          </div>
-        )}
       </div>
     </div>
   );
