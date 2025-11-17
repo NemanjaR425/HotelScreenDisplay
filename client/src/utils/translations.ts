@@ -296,7 +296,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Piling Tijela",
+    spa4Name: "Gym",
     spa4Description: "Revitalizirajući tretman piling tijela sa prirodnim uljima",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
@@ -469,7 +469,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 AM - 08:00 PM",
     spa3Price: "€75",
     
-    spa4Name: "Body Scrub",
+    spa4Name: "Gym",
     spa4Description: "Revitalizing body scrub treatment with natural oils",
     spa4Hours: "10:00 AM - 06:00 PM",
     spa4Price: "€55",
@@ -642,7 +642,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Пилинг Тела",
+    spa4Name: "Тренажерный зал",
     spa4Description: "Восстанавливающий пилинг тела с натуральными маслами",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
@@ -815,7 +815,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Exfoliación Corporal",
+    spa4Name: "Gimnasio",
     spa4Description: "Tratamiento revitalizante de exfoliación corporal con aceites naturales",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
@@ -988,7 +988,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Gommage Corps",
+    spa4Name: "Salle de Sport",
     spa4Description: "Gommage corporel revitalisant aux huiles naturelles",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
@@ -1161,7 +1161,7 @@ export const translations: Record<string, Translations> = {
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
     
-    spa4Name: "Körperpeeling",
+    spa4Name: "Fitnessstudio",
     spa4Description: "Revitalisierende Körperpeeling-Behandlung mit natürlichen Ölen",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
