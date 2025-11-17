@@ -226,7 +226,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 sata",
     tour1Price: "€45",
     
-    tour2Name: "Krstarenje Zaljevom",
+    tour2Name: "Perast",
     tour2Description: "Opuštajuće krstarenje kroz zaljev Boka sa pogledom na planine",
     tour2Duration: "4 sata",
     tour2Price: "€65",
@@ -399,7 +399,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 hours",
     tour1Price: "€45",
     
-    tour2Name: "Bay Cruise",
+    tour2Name: "Perast",
     tour2Description: "Relaxing cruise through the Bay of Kotor with mountain views",
     tour2Duration: "4 hours",
     tour2Price: "€65",
@@ -572,7 +572,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 часа",
     tour1Price: "€45",
     
-    tour2Name: "Круиз по Заливу",
+    tour2Name: "Пераст",
     tour2Description: "Расслабляющий круиз по Бока-Которскому заливу с видом на горы",
     tour2Duration: "4 часа",
     tour2Price: "€65",
@@ -745,7 +745,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 horas",
     tour1Price: "€45",
     
-    tour2Name: "Crucero por la Bahía",
+    tour2Name: "Perast",
     tour2Description: "Relajante crucero por la Bahía de Kotor con vistas a las montañas",
     tour2Duration: "4 horas",
     tour2Price: "€65",
@@ -918,7 +918,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 heures",
     tour1Price: "€45",
     
-    tour2Name: "Croisière dans la Baie",
+    tour2Name: "Perast",
     tour2Description: "Croisière relaxante dans la baie de Kotor avec vue sur les montagnes",
     tour2Duration: "4 heures",
     tour2Price: "€65",
@@ -1091,7 +1091,7 @@ export const translations: Record<string, Translations> = {
     tour1Duration: "3 Stunden",
     tour1Price: "€45",
     
-    tour2Name: "Bucht-Kreuzfahrt",
+    tour2Name: "Perast",
     tour2Description: "Entspannende Kreuzfahrt durch die Bucht von Kotor mit Bergblick",
     tour2Duration: "4 Stunden",
     tour2Price: "€65",
