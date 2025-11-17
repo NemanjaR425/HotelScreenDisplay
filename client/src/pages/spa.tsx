@@ -7,7 +7,7 @@ import gradientBackground from '@assets/abstract-luxury-gradient-blue-background
 import spaImage1 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
 import spaImage2 from '@assets/close-up-of-a-portrait-of-a-young-woman-with-her-e-2025-01-09-21-59-16-utc (Large)_1763401007421.jpg';
 import spaImage3 from '@assets/two-attractive-women-are-pampered-themselves-at-th-2024-04-22-20-12-44-utc (Large)_1763401615156.jpg';
-import spaImage4 from '@assets/river-rijeka-crnojevica-in-montenegro-2024-10-18-07-50-59-utc_1759609904305.jpg';
+import spaImage4 from '@assets/strong-couch-training-woman-in-modern-gym-2025-03-08-05-47-45-utc (Large)_1763401695456.jpg';
 import spaImage5 from '@assets/discover-the-enchanting-island-of-sveti-stefan-in-2024-09-30-13-00-59-utc_1759609904303.jpg';
 import { getTranslation } from '../utils/translations';
 
