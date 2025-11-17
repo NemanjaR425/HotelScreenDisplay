@@ -236,7 +236,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 sati",
     tour3Price: "€80",
     
-    tour4Name: "Planinsko Pešačenje",
+    tour4Name: "Lovćen",
     tour4Description: "Vođeno pešačenje kroz nacionalni park sa prekrasnim pogledima",
     tour4Duration: "6 sati",
     tour4Price: "€55",
@@ -409,7 +409,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 hours",
     tour3Price: "€80",
     
-    tour4Name: "Mountain Hiking",
+    tour4Name: "Lovćen",
     tour4Description: "Guided hike through national park with stunning views",
     tour4Duration: "6 hours",
     tour4Price: "€55",
@@ -582,7 +582,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 часов",
     tour3Price: "€80",
     
-    tour4Name: "Горный Поход",
+    tour4Name: "Ловчен",
     tour4Description: "Пешеходная экскурсия по национальному парку с потрясающими видами",
     tour4Duration: "6 часов",
     tour4Price: "€55",
@@ -755,7 +755,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 horas",
     tour3Price: "€80",
     
-    tour4Name: "Senderismo de Montaña",
+    tour4Name: "Lovćen",
     tour4Description: "Caminata guiada por el parque nacional con vistas impresionantes",
     tour4Duration: "6 horas",
     tour4Price: "€55",
@@ -928,7 +928,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 heures",
     tour3Price: "€80",
     
-    tour4Name: "Randonnée en Montagne",
+    tour4Name: "Lovćen",
     tour4Description: "Randonnée guidée dans le parc national avec vues spectaculaires",
     tour4Duration: "6 heures",
     tour4Price: "€55",
@@ -1101,7 +1101,7 @@ export const translations: Record<string, Translations> = {
     tour3Duration: "5 Stunden",
     tour3Price: "€80",
     
-    tour4Name: "Bergwanderung",
+    tour4Name: "Lovćen",
     tour4Description: "Geführte Wanderung durch den Nationalpark mit atemberaubender Aussicht",
     tour4Duration: "6 Stunden",
     tour4Price: "€55",
