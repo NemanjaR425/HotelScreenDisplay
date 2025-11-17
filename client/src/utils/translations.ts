@@ -266,7 +266,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 sati",
     tour9Price: "€75",
     
-    tour10Name: "Sunset Sailing",
+    tour10Name: "Budva",
     tour10Description: "Romanticno jedrenje tokom zalaska sunca",
     tour10Duration: "2 sata",
     tour10Price: "€85",
@@ -439,7 +439,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 hours",
     tour9Price: "€75",
     
-    tour10Name: "Sunset Sailing",
+    tour10Name: "Budva",
     tour10Description: "Romantic sailing trip during sunset",
     tour10Duration: "2 hours",
     tour10Price: "€85",
@@ -612,7 +612,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 часов",
     tour9Price: "€75",
     
-    tour10Name: "Закатное Плавание",
+    tour10Name: "Будва",
     tour10Description: "Романтическое плавание на закате",
     tour10Duration: "2 часа",
     tour10Price: "€85",
@@ -785,7 +785,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 horas",
     tour9Price: "€75",
     
-    tour10Name: "Navegación al Atardecer",
+    tour10Name: "Budva",
     tour10Description: "Viaje romántico en velero durante el atardecer",
     tour10Duration: "2 horas",
     tour10Price: "€85",
@@ -958,7 +958,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 heures",
     tour9Price: "€75",
     
-    tour10Name: "Navigation au Coucher du Soleil",
+    tour10Name: "Budva",
     tour10Description: "Sortie romantique en voilier au coucher du soleil",
     tour10Duration: "2 heures",
     tour10Price: "€85",
@@ -1131,7 +1131,7 @@ export const translations: Record<string, Translations> = {
     tour9Duration: "5 Stunden",
     tour9Price: "€75",
     
-    tour10Name: "Sonnenuntergang-Segeln",
+    tour10Name: "Budva",
     tour10Description: "Romantischer Segelausflug bei Sonnenuntergang",
     tour10Duration: "2 Stunden",
     tour10Price: "€85",
