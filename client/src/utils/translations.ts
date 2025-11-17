@@ -221,7 +221,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Američki Steakhouse",
     restaurant4Location: "Treći sprat, Izvršni nivo",
     
-    tour1Name: "Tura Starog Grada",
+    tour1Name: "Stari Grad Kotor",
     tour1Description: "Istražite istorijski stari grad sa vodicem i posetite lokalne znamenitosti",
     tour1Duration: "3 sata",
     tour1Price: "€45",
@@ -394,7 +394,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "American Steakhouse",
     restaurant4Location: "3rd Floor, Executive Level",
     
-    tour1Name: "Old Town Tour",
+    tour1Name: "Kotor Old Town",
     tour1Description: "Explore the historic old town with a local guide and visit landmarks",
     tour1Duration: "3 hours",
     tour1Price: "€45",
@@ -567,7 +567,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Американский стейк-хаус",
     restaurant4Location: "3-й этаж, Исполнительный уровень",
     
-    tour1Name: "Тур по Старому Городу",
+    tour1Name: "Старый Город Котор",
     tour1Description: "Исследуйте исторический старый город с гидом и посетите достопримечательности",
     tour1Duration: "3 часа",
     tour1Price: "€45",
@@ -740,7 +740,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Steakhouse Americano",
     restaurant4Location: "Tercer piso, Nivel ejecutivo",
     
-    tour1Name: "Tour del Casco Antiguo",
+    tour1Name: "Casco Antiguo de Kotor",
     tour1Description: "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
     tour1Duration: "3 horas",
     tour1Price: "€45",
@@ -913,7 +913,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Steakhouse Américain",
     restaurant4Location: "3ème étage, Niveau exécutif",
     
-    tour1Name: "Visite de la Vieille Ville",
+    tour1Name: "Vieille Ville de Kotor",
     tour1Description: "Explorez la vieille ville historique avec un guide et visitez les monuments",
     tour1Duration: "3 heures",
     tour1Price: "€45",
@@ -1086,7 +1086,7 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Amerikanisches Steakhouse",
     restaurant4Location: "3. Etage, Executive Level",
     
-    tour1Name: "Altstadttour",
+    tour1Name: "Altstadt Kotor",
     tour1Description: "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",
     tour1Duration: "3 Stunden",
     tour1Price: "€45",
