@@ -46,6 +46,20 @@ export interface Translations {
   restaurant4Cuisine: string;
   restaurant4Location: string;
   
+  backToRestaurants: string;
+  restaurantBarDiner: string;
+  menuCategoryStarters: string;
+  menuCategoryMainCourses: string;
+  menuCategoryPasta: string;
+  menuCategorySoups: string;
+  menuCategorySalads: string;
+  menuCategoryDesserts: string;
+  menuCategorySushi: string;
+  menuCategoryHotDishes: string;
+  menuCategoryPizza: string;
+  menuCategorySteaks: string;
+  menuCategoryMains: string;
+  
   tour1Name: string;
   tour1Description: string;
   tour1Duration: string;
@@ -221,6 +235,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Američki Steakhouse",
     restaurant4Location: "Treći sprat, Izvršni nivo",
     
+    backToRestaurants: "Nazad na restorane",
+    restaurantBarDiner: "RESTORAN · BAR · DINER",
+    menuCategoryStarters: "Predjela",
+    menuCategoryMainCourses: "Glavna jela",
+    menuCategoryPasta: "Pasta",
+    menuCategorySoups: "Supe",
+    menuCategorySalads: "Salate",
+    menuCategoryDesserts: "Deserti",
+    menuCategorySushi: "Suši",
+    menuCategoryHotDishes: "Topla jela",
+    menuCategoryPizza: "Pizza",
+    menuCategorySteaks: "Odresci",
+    menuCategoryMains: "Glavna jela",
+    
     tour1Name: "Stari Grad Kotor",
     tour1Description: "Istražite istorijski stari grad sa vodicem i posetite lokalne znamenitosti",
     tour1Duration: "3 sata",
@@ -393,6 +421,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Description: "Premium steakhouse featuring dry-aged beef and fine wines",
     restaurant4Cuisine: "American Steakhouse",
     restaurant4Location: "3rd Floor, Executive Level",
+    
+    backToRestaurants: "Back to Restaurants",
+    restaurantBarDiner: "RESTAURANT · BAR · DINER",
+    menuCategoryStarters: "Starters",
+    menuCategoryMainCourses: "Main Courses",
+    menuCategoryPasta: "Pasta",
+    menuCategorySoups: "Soups",
+    menuCategorySalads: "Salads",
+    menuCategoryDesserts: "Desserts",
+    menuCategorySushi: "Sushi",
+    menuCategoryHotDishes: "Hot Dishes",
+    menuCategoryPizza: "Pizza",
+    menuCategorySteaks: "Steaks",
+    menuCategoryMains: "Mains",
     
     tour1Name: "Kotor Old Town",
     tour1Description: "Explore the historic old town with a local guide and visit landmarks",
@@ -567,6 +609,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Американский стейк-хаус",
     restaurant4Location: "3-й этаж, Исполнительный уровень",
     
+    backToRestaurants: "Назад к ресторанам",
+    restaurantBarDiner: "РЕСТОРАН · БАР · СТОЛОВАЯ",
+    menuCategoryStarters: "Закуски",
+    menuCategoryMainCourses: "Основные блюда",
+    menuCategoryPasta: "Паста",
+    menuCategorySoups: "Супы",
+    menuCategorySalads: "Салаты",
+    menuCategoryDesserts: "Десерты",
+    menuCategorySushi: "Суши",
+    menuCategoryHotDishes: "Горячие блюда",
+    menuCategoryPizza: "Пицца",
+    menuCategorySteaks: "Стейки",
+    menuCategoryMains: "Основные блюда",
+    
     tour1Name: "Старый Город Котор",
     tour1Description: "Исследуйте исторический старый город с гидом и посетите достопримечательности",
     tour1Duration: "3 часа",
@@ -739,6 +795,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Description: "Steakhouse premium con carne madurada en seco y vinos finos",
     restaurant4Cuisine: "Steakhouse Americano",
     restaurant4Location: "Tercer piso, Nivel ejecutivo",
+    
+    backToRestaurants: "Volver a restaurantes",
+    restaurantBarDiner: "RESTAURANTE · BAR · COMEDOR",
+    menuCategoryStarters: "Entrantes",
+    menuCategoryMainCourses: "Platos principales",
+    menuCategoryPasta: "Pasta",
+    menuCategorySoups: "Sopas",
+    menuCategorySalads: "Ensaladas",
+    menuCategoryDesserts: "Postres",
+    menuCategorySushi: "Sushi",
+    menuCategoryHotDishes: "Platos calientes",
+    menuCategoryPizza: "Pizza",
+    menuCategorySteaks: "Filetes",
+    menuCategoryMains: "Platos principales",
     
     tour1Name: "Casco Antiguo de Kotor",
     tour1Description: "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
@@ -913,6 +983,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Cuisine: "Steakhouse Américain",
     restaurant4Location: "3ème étage, Niveau exécutif",
     
+    backToRestaurants: "Retour aux restaurants",
+    restaurantBarDiner: "RESTAURANT · BAR · SALLE À MANGER",
+    menuCategoryStarters: "Entrées",
+    menuCategoryMainCourses: "Plats principaux",
+    menuCategoryPasta: "Pâtes",
+    menuCategorySoups: "Soupes",
+    menuCategorySalads: "Salades",
+    menuCategoryDesserts: "Desserts",
+    menuCategorySushi: "Sushi",
+    menuCategoryHotDishes: "Plats chauds",
+    menuCategoryPizza: "Pizza",
+    menuCategorySteaks: "Steaks",
+    menuCategoryMains: "Plats principaux",
+    
     tour1Name: "Vieille Ville de Kotor",
     tour1Description: "Explorez la vieille ville historique avec un guide et visitez les monuments",
     tour1Duration: "3 heures",
@@ -1085,6 +1169,20 @@ export const translations: Record<string, Translations> = {
     restaurant4Description: "Premium Steakhouse mit trocken gereiftem Rindfleisch und erlesenen Weinen",
     restaurant4Cuisine: "Amerikanisches Steakhouse",
     restaurant4Location: "3. Etage, Executive Level",
+    
+    backToRestaurants: "Zurück zu Restaurants",
+    restaurantBarDiner: "RESTAURANT · BAR · SPEISESAAL",
+    menuCategoryStarters: "Vorspeisen",
+    menuCategoryMainCourses: "Hauptgerichte",
+    menuCategoryPasta: "Pasta",
+    menuCategorySoups: "Suppen",
+    menuCategorySalads: "Salate",
+    menuCategoryDesserts: "Desserts",
+    menuCategorySushi: "Sushi",
+    menuCategoryHotDishes: "Warme Gerichte",
+    menuCategoryPizza: "Pizza",
+    menuCategorySteaks: "Steaks",
+    menuCategoryMains: "Hauptgerichte",
     
     tour1Name: "Altstadt Kotor",
     tour1Description: "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",

@@ -155,6 +155,25 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
   const categoryOrder = ['Starters', 'Main Courses', 'Pasta', 'Soups', 'Salads', 'Desserts', 'Sushi', 'Hot Dishes', 'Pizza', 'Steaks', 'Mains'];
   const orderedCategories = categoryOrder.filter(cat => groupedMenuItems[cat]);
 
+  // Map category names to translation keys
+  const getCategoryTranslation = (category: string): string => {
+    const translationMap: Record<string, keyof typeof t> = {
+      'Starters': 'menuCategoryStarters',
+      'Main Courses': 'menuCategoryMainCourses',
+      'Pasta': 'menuCategoryPasta',
+      'Soups': 'menuCategorySoups',
+      'Salads': 'menuCategorySalads',
+      'Desserts': 'menuCategoryDesserts',
+      'Sushi': 'menuCategorySushi',
+      'Hot Dishes': 'menuCategoryHotDishes',
+      'Pizza': 'menuCategoryPizza',
+      'Steaks': 'menuCategorySteaks',
+      'Mains': 'menuCategoryMains',
+    };
+    const key = translationMap[category];
+    return key ? (t[key] as string) : category;
+  };
+
   return (
     <div 
       className="w-full h-screen overflow-hidden p-6" 
@@ -238,7 +257,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                   data-testid="button-back-restaurants"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Restaurants
+                  {t.backToRestaurants}
                 </Button>
                 <LanguageSelector 
                   currentLanguage={currentLanguage}
@@ -255,7 +274,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                 <div className="h-full flex flex-col">
                   <div className="text-center mb-6 pb-4 border-b border-white/20">
                     <p className="text-white/80 text-sm tracking-widest uppercase mb-2">
-                      RESTAURANT · BAR · DINER
+                      {t.restaurantBarDiner}
                     </p>
                     <h2 className="text-3xl font-bold text-white mb-2" data-testid="text-restaurant-name">
                       {selectedRestaurantData?.name}
@@ -290,7 +309,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                               }}
                               data-testid={`menu-category-${category.toLowerCase().replace(' ', '-')}`}
                             >
-                              {category}
+                              {getCategoryTranslation(category)}
                             </h3>
                             <div className="space-y-6">
                               {groupedMenuItems[category].map((item, index) => (
