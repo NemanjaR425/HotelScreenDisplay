@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, DollarSign } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/LanguageSelector";
 import { getTranslation } from "@/utils/translations";
 import gradientBackground from "@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg";
@@ -14,11 +15,6 @@ import ent6Image from "@assets/stock_images/magician_performing__301ad7e0.jpg";
 import ent7Image from "@assets/stock_images/jazz_band_musicians__420a6631.jpg";
 import ent8Image from "@assets/stock_images/people_singing_karao_fc4b47bf.jpg";
 
-interface EntertainmentPageProps {
-  currentLanguage: string;
-  onLanguageChange: (lang: string) => void;
-}
-
 interface Entertainment {
   id: number;
   name: string;
@@ -28,7 +24,8 @@ interface Entertainment {
   image: string;
 }
 
-export default function EntertainmentPage({ currentLanguage, onLanguageChange }: EntertainmentPageProps) {
+export default function EntertainmentPage() {
+  const { currentLanguage, setLanguage } = useLanguage();
   const t = getTranslation(currentLanguage);
 
   const entImages = [
@@ -71,7 +68,7 @@ export default function EntertainmentPage({ currentLanguage, onLanguageChange }:
           </div>
           <LanguageSelector 
             currentLanguage={currentLanguage}
-            onLanguageChange={onLanguageChange}
+            onLanguageChange={setLanguage}
           />
         </div>
 

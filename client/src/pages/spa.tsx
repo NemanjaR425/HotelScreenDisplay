@@ -2,6 +2,7 @@ import { ArrowLeft, Clock, DollarSign } from 'lucide-react';
 import { Link } from 'wouter';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import spaImage1 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
@@ -54,12 +55,8 @@ const spaServices = [
   },
 ];
 
-interface SpaPageProps {
-  currentLanguage: string;
-  onLanguageChange: (language: string) => void;
-}
-
-export default function SpaPage({ currentLanguage, onLanguageChange }: SpaPageProps) {
+export default function SpaPage() {
+  const { currentLanguage, setLanguage } = useLanguage();
   const t = getTranslation(currentLanguage);
 
   const translatedServices = spaServices.map(service => ({
@@ -96,7 +93,7 @@ export default function SpaPage({ currentLanguage, onLanguageChange }: SpaPagePr
           </div>
           <LanguageSelector 
             currentLanguage={currentLanguage}
-            onLanguageChange={onLanguageChange}
+            onLanguageChange={setLanguage}
           />
         </div>
 

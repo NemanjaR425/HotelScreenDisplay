@@ -4,6 +4,7 @@ import { Link } from 'wouter';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import prosciuttoImage from '@assets/italian-parma-prosciutto-crudo-dried-ham-on-a-marb-2023-11-27-05-13-51-utc_1759175873409.jpg';
@@ -122,12 +123,8 @@ const restaurants = [
   }
 ];
 
-interface DiningPageProps {
-  currentLanguage: string;
-  onLanguageChange: (language: string) => void;
-}
-
-export default function DiningPage({ currentLanguage, onLanguageChange }: DiningPageProps) {
+export default function DiningPage() {
+  const { currentLanguage, setLanguage } = useLanguage();
   const [selectedRestaurant, setSelectedRestaurant] = useState<string | null>(null);
   const t = getTranslation(currentLanguage);
 
@@ -200,7 +197,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
             </div>
             <LanguageSelector 
               currentLanguage={currentLanguage}
-              onLanguageChange={onLanguageChange}
+              onLanguageChange={setLanguage}
             />
           </div>
         )}
@@ -261,7 +258,7 @@ export default function DiningPage({ currentLanguage, onLanguageChange }: Dining
                 </Button>
                 <LanguageSelector 
                   currentLanguage={currentLanguage}
-                  onLanguageChange={onLanguageChange}
+                  onLanguageChange={setLanguage}
                 />
               </div>
 

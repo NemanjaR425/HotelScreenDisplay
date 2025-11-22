@@ -15,8 +15,8 @@ Preferred communication style: Simple, everyday language.
 - **Build System**: Vite for fast development and optimized production builds
 - **Styling**: Tailwind CSS with custom design tokens following hospitality industry standards
 - **Component Library**: Radix UI primitives with shadcn/ui components for accessible, customizable UI elements
-- **State Management**: React hooks with TanStack Query for server state management
-- **Routing**: Wouter for lightweight client-side routing
+- **State Management**: React Context API for global language state, React hooks for local state, TanStack Query for server state management
+- **Routing**: Wouter for lightweight client-side routing with stable component references to preserve state across language changes
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js framework
@@ -39,6 +39,10 @@ Preferred communication style: Simple, everyday language.
 
 ### Content Management
 - **Multilingual Support**: Built-in internationalization with support for 6 languages (Montenegrin, English, Russian, Spanish, French, German)
+  - **LanguageContext**: Global language state managed via React Context (`client/src/contexts/LanguageContext.tsx`)
+  - **useLanguage Hook**: All pages and components access language state through `useLanguage()` hook
+  - **State Persistence**: Language changes update UI in-place without remounting components or losing page state
+  - **Translation System**: Centralized translations in `client/src/utils/translations.ts` with type-safe access
 - **Content Categories**: Modular system for dining, shopping, excursions, entertainment, and spa services
 - **Asset Management**: Integrated image handling for service categories and resort photography
 - **Auto-rotation**: Timed content slides with configurable intervals for dynamic information display

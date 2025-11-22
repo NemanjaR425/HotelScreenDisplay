@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
 import ToursPage from "@/pages/tours";
@@ -11,47 +11,27 @@ import SpaPage from "@/pages/spa";
 import EntertainmentPage from "@/pages/entertainment";
 import NotFound from "@/pages/not-found";
 
-function Home({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
-  return <DigitalSignage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
-}
-
-function Dining({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
-  return <DiningPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
-}
-
-function Tours({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
-  return <ToursPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
-}
-
-function Spa({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
-  return <SpaPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
-}
-
-function Entertainment({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
-  return <EntertainmentPage currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />;
-}
-
-function Router({ currentLanguage, onLanguageChange }: { currentLanguage: string; onLanguageChange: (language: string) => void }) {
+function Router() {
   return (
     <Switch>
-      <Route path="/" component={() => <Home currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
-      <Route path="/dining" component={() => <Dining currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
-      <Route path="/tours" component={() => <Tours currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
-      <Route path="/spa" component={() => <Spa currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
-      <Route path="/entertainment" component={() => <Entertainment currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />} />
+      <Route path="/" component={DigitalSignage} />
+      <Route path="/dining" component={DiningPage} />
+      <Route path="/tours" component={ToursPage} />
+      <Route path="/spa" component={SpaPage} />
+      <Route path="/entertainment" component={EntertainmentPage} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
 function App() {
-  const [currentLanguage, setCurrentLanguage] = useState('en');
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Router currentLanguage={currentLanguage} onLanguageChange={setCurrentLanguage} />
+        <LanguageProvider>
+          <Toaster />
+          <Router />
+        </LanguageProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );

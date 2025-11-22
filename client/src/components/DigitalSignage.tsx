@@ -5,26 +5,19 @@ import ServiceCategory from './ServiceCategory';
 import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import { useWeather } from '../hooks/use-weather';
+import { useLanguage } from '@/contexts/LanguageContext';
 import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 
-interface DigitalSignageProps {
-  hotelName?: string;
-  tagline?: string;
-  currentLanguage: string;
-  onLanguageChange: (language: string) => void;
-}
-
-export default function DigitalSignage({ 
-  hotelName = "Hotel Grand Plaza",
-  tagline = "Your Premier Destination for Luxury & Hospitality",
-  currentLanguage,
-  onLanguageChange
-}: DigitalSignageProps) {
+export default function DigitalSignage() {
+  const { currentLanguage, setLanguage } = useLanguage();
   const [currentTime, setCurrentTime] = useState(new Date());
   const { data: weather } = useWeather();
   
   const t = getTranslation(currentLanguage);
+  
+  const hotelName = "Hotel Grand Plaza";
+  const tagline = "Your Premier Destination for Luxury & Hospitality";
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -140,7 +133,7 @@ export default function DigitalSignage({
               {/* Language Selector */}
               <LanguageSelector 
                 currentLanguage={currentLanguage}
-                onLanguageChange={onLanguageChange}
+                onLanguageChange={setLanguage}
               />
             </div>
           </div>

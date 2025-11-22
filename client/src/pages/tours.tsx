@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Clock, DollarSign } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/LanguageSelector";
 import { getTranslation } from "@/utils/translations";
 import gradientBackground from "@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg";
@@ -20,11 +21,6 @@ import tour10Image from "@assets/budva-town-in-summer-2023-11-27-05-33-48-utc_17
 import tour11Image from "@assets/horsewoman-on-the-beach-2023-11-27-04-56-21-utc_1759609904305.jpg";
 import tour12Image from "@assets/happy-couple-on-red-four-wheeler-atv-in-mountains-2023-11-27-04-53-37-utc_1759609904303.jpg";
 
-interface TourPageProps {
-  currentLanguage: string;
-  onLanguageChange: (lang: string) => void;
-}
-
 interface Tour {
   id: number;
   name: string;
@@ -34,7 +30,8 @@ interface Tour {
   image: string;
 }
 
-export default function ToursPage({ currentLanguage, onLanguageChange }: TourPageProps) {
+export default function ToursPage() {
+  const { currentLanguage, setLanguage } = useLanguage();
   const t = getTranslation(currentLanguage);
 
   const tourImages = [
@@ -78,7 +75,7 @@ export default function ToursPage({ currentLanguage, onLanguageChange }: TourPag
           </div>
           <LanguageSelector 
             currentLanguage={currentLanguage}
-            onLanguageChange={onLanguageChange}
+            onLanguageChange={setLanguage}
           />
         </div>
 
