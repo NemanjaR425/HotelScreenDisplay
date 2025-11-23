@@ -134,11 +134,6 @@ export default function DiningPage() {
     description: t[`restaurant${restaurant.id}Description` as keyof typeof t] as string,
     cuisine: t[`restaurant${restaurant.id}Cuisine` as keyof typeof t] as string,
     location: t[`restaurant${restaurant.id}Location` as keyof typeof t] as string,
-    menuItems: restaurant.menuItems.map(item => ({
-      ...item,
-      name: t[`dish${item.dishId}Name` as keyof typeof t] as string,
-      description: t[`dish${item.dishId}Desc` as keyof typeof t] as string,
-    })),
   }));
 
   const selectedRestaurantData = selectedRestaurant 
