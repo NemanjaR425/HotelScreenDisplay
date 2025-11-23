@@ -120,11 +120,6 @@ export interface Translations {
   tour12Duration: string;
   tour12Price: string;
   
-  adventureToursTitle: string;
-  adventureToursDescription: string;
-  rentACarTitle: string;
-  back: string;
-  
   spa1Name: string;
   spa1Description: string;
   spa1Hours: string;
@@ -439,11 +434,6 @@ export const translations: Record<string, Translations> = {
     tour12Duration: "4 sata",
     tour12Price: "€55",
     
-    adventureToursTitle: "AVANTURE\nI IZLETI",
-    adventureToursDescription: "Istražite nezaboravne avanture i putovanja širom Crne Gore. Specijalizovani smo za kreiranje personalizovanih aranžmana, bilo da želite istražiti crnogorske planine, opustiti se na obali Jadranskog mora, ili krenuti u adrenalinski avanturu. Brinemo o svakom detalju kako bi vaše putovanje bilo bezbrizno i jedinstveno.",
-    rentACarTitle: "RENT A CAR",
-    back: "NAZAD",
-    
     spa1Name: "Švedska Masaža",
     spa1Description: "Klasična terapeutska masaža za opuštanje mišića",
     spa1Hours: "09:00 - 20:00",
@@ -755,11 +745,6 @@ export const translations: Record<string, Translations> = {
     tour12Description: "Explore local nightlife and entertainment venues",
     tour12Duration: "4 hours",
     tour12Price: "€55",
-    
-    adventureToursTitle: "ADVENTURE\n& EXCURSIONS",
-    adventureToursDescription: "Explore unforgettable adventures and travel throughout Montenegro. We specialize in creating personalized arrangements, whether you want to explore Montenegrin mountains, relax on the Adriatic coast, or embark on an adrenaline adventure. We take care of every detail to make your trip carefree and unique.",
-    rentACarTitle: "RENT A CAR",
-    back: "BACK",
     
     spa1Name: "Swedish Massage",
     spa1Description: "Classic therapeutic massage for muscle relaxation",
@@ -1073,11 +1058,6 @@ export const translations: Record<string, Translations> = {
     tour12Duration: "4 часа",
     tour12Price: "€55",
     
-    adventureToursTitle: "ПРИКЛЮЧЕНИЯ\nИ ЭКСКУРСИИ",
-    adventureToursDescription: "Исследуйте незабываемые приключения и путешествия по всей Черногории. Мы специализируемся на создании персонализированных туров, хотите ли вы исследовать черногорские горы, отдохнуть на побережье Адриатического моря или отправиться в адреналиновое приключение. Мы позаботимся о каждой детали, чтобы ваше путешествие было беззаботным и уникальным.",
-    rentACarTitle: "АРЕНДА АВТО",
-    back: "НАЗАД",
-    
     spa1Name: "Шведский Массаж",
     spa1Description: "Классический терапевтический массаж для расслабления мышц",
     spa1Hours: "09:00 - 20:00",
@@ -1389,11 +1369,6 @@ export const translations: Record<string, Translations> = {
     tour12Description: "Explore la vida nocturna local y lugares de entretenimiento",
     tour12Duration: "4 horas",
     tour12Price: "€55",
-    
-    adventureToursTitle: "AVENTURA\nY EXCURSIONES",
-    adventureToursDescription: "Explore aventuras inolvidables y viajes por todo Montenegro. Nos especializamos en crear arreglos personalizados, ya sea que desee explorar las montañas montenegrinas, relajarse en la costa del Adriático o embarcarse en una aventura llena de adrenalina. Nos encargamos de cada detalle para que su viaje sea sin preocupaciones y único.",
-    rentACarTitle: "ALQUILER DE COCHES",
-    back: "ATRÁS",
     
     spa1Name: "Masaje Sueco",
     spa1Description: "Masaje terapéutico clásico para relajación muscular",
@@ -1707,11 +1682,6 @@ export const translations: Record<string, Translations> = {
     tour12Duration: "4 heures",
     tour12Price: "€55",
     
-    adventureToursTitle: "AVENTURE\nET EXCURSIONS",
-    adventureToursDescription: "Explorez des aventures inoubliables et voyagez à travers le Monténégro. Nous sommes spécialisés dans la création d'arrangements personnalisés, que vous souhaitiez explorer les montagnes monténégrines, vous détendre sur la côte adriatique ou vous lancer dans une aventure pleine d'adrénaline. Nous prenons soin de chaque détail pour que votre voyage soit sans soucis et unique.",
-    rentACarTitle: "LOCATION DE VOITURE",
-    back: "RETOUR",
-    
     spa1Name: "Massage Suédois",
     spa1Description: "Massage thérapeutique classique pour la relaxation musculaire",
     spa1Hours: "09:00 - 20:00",
@@ -2023,11 +1993,6 @@ export const translations: Record<string, Translations> = {
     tour12Description: "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
     tour12Duration: "4 Stunden",
     tour12Price: "€55",
-    
-    adventureToursTitle: "ABENTEUER\nUND AUSFLÜGE",
-    adventureToursDescription: "Erkunden Sie unvergessliche Abenteuer und Reisen durch ganz Montenegro. Wir sind spezialisiert auf die Erstellung personalisierter Arrangements, egal ob Sie die montenegrinischen Berge erkunden, sich an der Adriaküste entspannen oder sich auf ein Adrenalin-Abenteuer begeben möchten. Wir kümmern uns um jedes Detail, damit Ihre Reise sorgenfrei und einzigartig wird.",
-    rentACarTitle: "AUTOVERMIETUNG",
-    back: "ZURÜCK",
     
     spa1Name: "Schwedische Massage",
     spa1Description: "Klassische therapeutische Massage zur Muskelentspannung",
