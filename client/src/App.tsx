@@ -8,6 +8,7 @@ import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
 import ToursPage from "@/pages/tours";
 import SpaPage from "@/pages/spa";
+import BeachPage from "@/pages/beach";
 import EntertainmentPage from "@/pages/entertainment";
 import NotFound from "@/pages/not-found";
 
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/dining" component={DiningPage} />
       <Route path="/tours" component={ToursPage} />
       <Route path="/spa" component={SpaPage} />
+      <Route path="/beach" component={BeachPage} />
       <Route path="/entertainment" component={EntertainmentPage} />
       <Route component={NotFound} />
     </Switch>

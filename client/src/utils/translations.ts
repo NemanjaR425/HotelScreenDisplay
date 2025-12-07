@@ -5,6 +5,7 @@ export interface Translations {
   excursions: string;
   entertainment: string;
   spa: string;
+  beach: string;
   currentWeatherIn: string;
   weatherSunny: string;
   weatherClearNight: string;
@@ -144,6 +145,31 @@ export interface Translations {
   spa5Description: string;
   spa5Hours: string;
   spa5Price: string;
+  
+  beach1Name: string;
+  beach1Description: string;
+  beach1Hours: string;
+  beach1Location: string;
+  
+  beach2Name: string;
+  beach2Description: string;
+  beach2Hours: string;
+  beach2Location: string;
+  
+  beach3Name: string;
+  beach3Description: string;
+  beach3Hours: string;
+  beach3Location: string;
+  
+  beach4Name: string;
+  beach4Description: string;
+  beach4Hours: string;
+  beach4Location: string;
+  
+  beach5Name: string;
+  beach5Description: string;
+  beach5Hours: string;
+  beach5Location: string;
   
   ent1Name: string;
   ent1Description: string;
@@ -319,6 +345,7 @@ export const translations: Record<string, Translations> = {
     excursions: "Izleti",
     entertainment: "Zabava",
     spa: "Spa",
+    beach: "Plaža",
     currentWeatherIn: "Trenutno vrijeme u",
     weatherSunny: "Sunčano",
     weatherClearNight: "Vedra noć",
@@ -458,6 +485,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    
+    beach1Name: "Ležaljke",
+    beach1Description: "Premium ležaljke sa uslugom suncobrana",
+    beach1Hours: "08:00 - 19:00",
+    beach1Location: "Glavna plaža",
+    
+    beach2Name: "Plaža Bar",
+    beach2Description: "Osvježavajući kokteli i lagani zalogaji pored vode",
+    beach2Hours: "10:00 - 22:00",
+    beach2Location: "Plaža paviljon",
+    
+    beach3Name: "Vodeni Sportovi",
+    beach3Description: "Kajak, paddleboarding i iznajmljivanje jet ski",
+    beach3Hours: "09:00 - 18:00",
+    beach3Location: "Centar za vodene sportove",
+    
+    beach4Name: "Plaža Kabane",
+    beach4Description: "Privatne kabane sa personalizovanom uslugom",
+    beach4Hours: "08:00 - 20:00",
+    beach4Location: "VIP zona plaže",
+    
+    beach5Name: "Zalazak Sunca Krstarenje",
+    beach5Description: "Večernje ture brodom duž jadranske obale",
+    beach5Hours: "18:00 - 21:00",
+    beach5Location: "Pristanište marine",
     
     ent1Name: "Live DJ Večeri",
     ent1Description: "Moderne elektronske muzičke performanse sa profesionalnim DJ-ovima",
@@ -631,6 +683,7 @@ export const translations: Record<string, Translations> = {
     excursions: "Excursions",
     entertainment: "Entertainment",
     spa: "Spa",
+    beach: "Beach",
     currentWeatherIn: "Current weather in",
     weatherSunny: "Sunny",
     weatherClearNight: "Clear Night",
@@ -770,6 +823,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
     spa5Price: "€70",
+    
+    beach1Name: "Sun Loungers",
+    beach1Description: "Premium sun loungers with umbrella service",
+    beach1Hours: "08:00 AM - 07:00 PM",
+    beach1Location: "Main Beach",
+    
+    beach2Name: "Beach Bar",
+    beach2Description: "Refreshing cocktails and light snacks by the water",
+    beach2Hours: "10:00 AM - 10:00 PM",
+    beach2Location: "Beach Pavilion",
+    
+    beach3Name: "Water Sports",
+    beach3Description: "Kayaking, paddleboarding, and jet ski rentals",
+    beach3Hours: "09:00 AM - 06:00 PM",
+    beach3Location: "Water Sports Center",
+    
+    beach4Name: "Beach Cabanas",
+    beach4Description: "Private cabanas with personalized service",
+    beach4Hours: "08:00 AM - 08:00 PM",
+    beach4Location: "VIP Beach Area",
+    
+    beach5Name: "Sunset Cruise",
+    beach5Description: "Evening boat tours along the Adriatic coast",
+    beach5Hours: "06:00 PM - 09:00 PM",
+    beach5Location: "Marina Dock",
     
     ent1Name: "Live DJ Nights",
     ent1Description: "Modern electronic music performances with professional DJs",
@@ -943,6 +1021,7 @@ export const translations: Record<string, Translations> = {
     excursions: "Экскурсии", 
     entertainment: "Развлечения",
     spa: "Спа",
+    beach: "Пляж",
     currentWeatherIn: "Текущая погода в",
     weatherSunny: "Солнечно",
     weatherClearNight: "Ясная ночь",
@@ -1082,6 +1161,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    
+    beach1Name: "Шезлонги",
+    beach1Description: "Премиум шезлонги с зонтиками",
+    beach1Hours: "08:00 - 19:00",
+    beach1Location: "Главный пляж",
+    
+    beach2Name: "Пляжный Бар",
+    beach2Description: "Освежающие коктейли и легкие закуски у воды",
+    beach2Hours: "10:00 - 22:00",
+    beach2Location: "Пляжный павильон",
+    
+    beach3Name: "Водные Виды Спорта",
+    beach3Description: "Каяки, падлбординг и аренда гидроциклов",
+    beach3Hours: "09:00 - 18:00",
+    beach3Location: "Центр водных видов спорта",
+    
+    beach4Name: "Пляжные Кабаны",
+    beach4Description: "Частные кабаны с персональным обслуживанием",
+    beach4Hours: "08:00 - 20:00",
+    beach4Location: "VIP зона пляжа",
+    
+    beach5Name: "Закатный Круиз",
+    beach5Description: "Вечерние морские прогулки вдоль Адриатического побережья",
+    beach5Hours: "18:00 - 21:00",
+    beach5Location: "Причал марины",
     
     ent1Name: "Живые DJ Вечера",
     ent1Description: "Современные электронные музыкальные выступления с профессиональными диджеями",
@@ -1255,6 +1359,7 @@ export const translations: Record<string, Translations> = {
     excursions: "Excursiones",
     entertainment: "Entretenimiento", 
     spa: "Spa",
+    beach: "Playa",
     currentWeatherIn: "Clima actual en",
     weatherSunny: "Soleado",
     weatherClearNight: "Noche despejada",
@@ -1394,6 +1499,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    
+    beach1Name: "Tumbonas",
+    beach1Description: "Tumbonas premium con servicio de sombrillas",
+    beach1Hours: "08:00 - 19:00",
+    beach1Location: "Playa Principal",
+    
+    beach2Name: "Bar de Playa",
+    beach2Description: "Cócteles refrescantes y aperitivos ligeros junto al agua",
+    beach2Hours: "10:00 - 22:00",
+    beach2Location: "Pabellón de Playa",
+    
+    beach3Name: "Deportes Acuáticos",
+    beach3Description: "Kayak, paddleboard y alquiler de motos acuáticas",
+    beach3Hours: "09:00 - 18:00",
+    beach3Location: "Centro de Deportes Acuáticos",
+    
+    beach4Name: "Cabañas de Playa",
+    beach4Description: "Cabañas privadas con servicio personalizado",
+    beach4Hours: "08:00 - 20:00",
+    beach4Location: "Zona VIP de Playa",
+    
+    beach5Name: "Crucero al Atardecer",
+    beach5Description: "Paseos en barco por la costa adriática al atardecer",
+    beach5Hours: "18:00 - 21:00",
+    beach5Location: "Muelle de la Marina",
     
     ent1Name: "Noches de DJ en Vivo",
     ent1Description: "Actuaciones de música electrónica moderna con DJs profesionales",
@@ -1566,7 +1696,8 @@ export const translations: Record<string, Translations> = {
     shopping: "Shopping",
     excursions: "Excursions",
     entertainment: "Divertissement",
-    spa: "Spa", 
+    spa: "Spa",
+    beach: "Plage",
     currentWeatherIn: "Météo actuelle à",
     weatherSunny: "Ensoleillé",
     weatherClearNight: "Nuit claire",
@@ -1706,6 +1837,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    
+    beach1Name: "Transats",
+    beach1Description: "Transats premium avec service de parasols",
+    beach1Hours: "08:00 - 19:00",
+    beach1Location: "Plage Principale",
+    
+    beach2Name: "Bar de Plage",
+    beach2Description: "Cocktails rafraîchissants et collations légères au bord de l'eau",
+    beach2Hours: "10:00 - 22:00",
+    beach2Location: "Pavillon de Plage",
+    
+    beach3Name: "Sports Nautiques",
+    beach3Description: "Kayak, paddleboard et location de jet-ski",
+    beach3Hours: "09:00 - 18:00",
+    beach3Location: "Centre de Sports Nautiques",
+    
+    beach4Name: "Cabanes de Plage",
+    beach4Description: "Cabanes privées avec service personnalisé",
+    beach4Hours: "08:00 - 20:00",
+    beach4Location: "Zone VIP Plage",
+    
+    beach5Name: "Croisière au Coucher du Soleil",
+    beach5Description: "Excursions en bateau le long de la côte adriatique au coucher du soleil",
+    beach5Hours: "18:00 - 21:00",
+    beach5Location: "Quai de la Marina",
     
     ent1Name: "Soirées DJ Live",
     ent1Description: "Performances musicales électroniques modernes avec des DJs professionnels",
@@ -1879,6 +2035,7 @@ export const translations: Record<string, Translations> = {
     excursions: "Ausflüge",
     entertainment: "Unterhaltung",
     spa: "Spa",
+    beach: "Strand",
     currentWeatherIn: "Aktuelles Wetter in",
     weatherSunny: "Sonnig",
     weatherClearNight: "Klare Nacht",
@@ -2018,6 +2175,31 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    
+    beach1Name: "Sonnenliegen",
+    beach1Description: "Premium-Sonnenliegen mit Sonnenschirmservice",
+    beach1Hours: "08:00 - 19:00",
+    beach1Location: "Hauptstrand",
+    
+    beach2Name: "Strandbar",
+    beach2Description: "Erfrischende Cocktails und leichte Snacks am Wasser",
+    beach2Hours: "10:00 - 22:00",
+    beach2Location: "Strandpavillon",
+    
+    beach3Name: "Wassersport",
+    beach3Description: "Kajak, Paddleboarding und Jetski-Verleih",
+    beach3Hours: "09:00 - 18:00",
+    beach3Location: "Wassersportzentrum",
+    
+    beach4Name: "Strandkabanen",
+    beach4Description: "Private Kabanen mit persönlichem Service",
+    beach4Hours: "08:00 - 20:00",
+    beach4Location: "VIP Strandbereich",
+    
+    beach5Name: "Sonnenuntergangskreuzfahrt",
+    beach5Description: "Abendliche Bootstouren entlang der Adriaküste",
+    beach5Hours: "18:00 - 21:00",
+    beach5Location: "Yachthafen",
     
     ent1Name: "Live DJ Abende",
     ent1Description: "Moderne elektronische Musikaufführungen mit professionellen DJs",

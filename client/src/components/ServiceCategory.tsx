@@ -1,13 +1,14 @@
-import { Utensils, ShoppingBag, MapPin, Music, Waves } from 'lucide-react';
+import { Utensils, ShoppingBag, MapPin, Music, Waves, Umbrella } from 'lucide-react';
 import { Link } from 'wouter';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
 import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
 import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
 import entertainmentImage from '@assets/the-musicians-were-playing-rock-music-on-stage-th-2023-11-27-05-11-51-utc_1759145753669.jpg';
 import spaImage from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
+import beachImage from '@assets/stock_images/luxury_beach_resort__7d96b99a.jpg';
 
 interface ServiceCategoryProps {
-  category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa';
+  category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa' | 'beach';
   title: string;
   className?: string;
 }
@@ -25,6 +26,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
         return <Music className="w-12 h-12" />;
       case 'spa':
         return <Waves className="w-12 h-12" />;
+      case 'beach':
+        return <Umbrella className="w-12 h-12" />;
       default:
         return <Utensils className="w-12 h-12" />;
     }
@@ -35,7 +38,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
   const isExcursions = category === 'excursions';
   const isEntertainment = category === 'entertainment';
   const isSpa = category === 'spa';
-  const hasBackgroundImage = isDining || isShopping || isExcursions || isEntertainment || isSpa;
+  const isBeach = category === 'beach';
+  const hasBackgroundImage = isDining || isShopping || isExcursions || isEntertainment || isSpa || isBeach;
 
   const getBackgroundImage = () => {
     if (isDining) return cookingImage;
@@ -43,6 +47,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     if (isExcursions) return excursionsImage;
     if (isEntertainment) return entertainmentImage;
     if (isSpa) return spaImage;
+    if (isBeach) return beachImage;
     return null;
   };
 
@@ -56,6 +61,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
         return '/spa';
       case 'entertainment':
         return '/entertainment';
+      case 'beach':
+        return '/beach';
       default:
         return '#'; // Placeholder for other categories
     }
@@ -87,7 +94,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     backgroundRepeat: 'no-repeat'
   } : {};
 
-  if (category === 'dining' || category === 'excursions' || category === 'spa' || category === 'entertainment') {
+  if (category === 'dining' || category === 'excursions' || category === 'spa' || category === 'entertainment' || category === 'beach') {
     return (
       <Link href={getNavigationPath()} className="h-full">
         <div 

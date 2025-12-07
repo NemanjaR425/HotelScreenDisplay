@@ -145,7 +145,8 @@ export default function DigitalSignage() {
           <ServiceCategory category="shopping" title={t.shopping} />
           <ServiceCategory category="excursions" title={t.excursions} />
           <ServiceCategory category="entertainment" title={t.entertainment} />
-          <ServiceCategory category="spa" title={t.spa} className="col-span-2" />
+          <ServiceCategory category="spa" title={t.spa} />
+          <ServiceCategory category="beach" title={t.beach} />
         </div>
       </div>
     </div>
