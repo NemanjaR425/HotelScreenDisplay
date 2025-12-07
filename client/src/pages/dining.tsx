@@ -183,23 +183,29 @@ export default function DiningPage() {
       }}
     >
       <div className="h-full flex flex-col relative">
-        {!selectedRestaurant && (
-          <div className="flex items-center mb-6">
-            <div className="flex items-center space-x-4">
+        {/* Header */}
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-4">
+            {!selectedRestaurant ? (
               <Link href="/">
                 <Button variant="default" size="icon" data-testid="button-back-home">
                   <ArrowLeft className="w-5 h-5" />
                 </Button>
               </Link>
-              <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
-                {t.dining}
-              </h1>
-            </div>
+            ) : (
+              <Button 
+                variant="default" 
+                size="icon"
+                onClick={() => setSelectedRestaurant(null)}
+                data-testid="button-back-restaurants"
+              >
+                <ArrowLeft className="w-5 h-5" />
+              </Button>
+            )}
+            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+              {selectedRestaurant ? selectedRestaurantData?.name : t.dining}
+            </h1>
           </div>
-        )}
-
-        {/* Language Selector - Bottom Left */}
-        <div className="absolute bottom-4 left-0 z-50">
           <LanguageSelector 
             currentLanguage={currentLanguage}
             onLanguageChange={setLanguage}
@@ -251,17 +257,6 @@ export default function DiningPage() {
             </div>
           ) : (
             <div className="h-full flex flex-col">
-              <div className="flex items-center mb-4">
-                <Button 
-                  variant="default" 
-                  onClick={() => setSelectedRestaurant(null)}
-                  data-testid="button-back-restaurants"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  {t.backToRestaurants}
-                </Button>
-              </div>
-
               <div 
                 className="flex-1 overflow-hidden rounded-lg p-8"
                 style={{
