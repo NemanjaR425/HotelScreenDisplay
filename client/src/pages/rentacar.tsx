@@ -7,7 +7,7 @@ import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765136365742.jpg';
 import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
-import carImage3 from '@assets/stock_images/midsize_sedan_car_re_9017b896.jpg';
+import octaviaImage from '@assets/octavia_1765138345158.png';
 import carImage4 from '@assets/stock_images/midsize_sedan_car_re_4d2e152b.jpg';
 import carImage5 from '@assets/stock_images/luxury_suv_vehicle_b_4201d5bf.jpg';
 import carImage6 from '@assets/stock_images/luxury_suv_vehicle_b_7317a346.jpg';
@@ -41,7 +41,7 @@ const carOptions = [
     passengers: '5',
     transmission: 'Automatic',
     price: '€55/day',
-    image: carImage3,
+    image: octaviaImage,
   },
   {
     id: '4',
