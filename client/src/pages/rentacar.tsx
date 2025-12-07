@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
-import carImage1 from '@assets/stock_images/compact_car_rental_v_e7919e97.jpg';
+import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765136365742.jpg';
 import carImage2 from '@assets/stock_images/compact_car_rental_v_688ae872.jpg';
 import carImage3 from '@assets/stock_images/midsize_sedan_car_re_9017b896.jpg';
 import carImage4 from '@assets/stock_images/midsize_sedan_car_re_4d2e152b.jpg';
@@ -23,7 +23,7 @@ const carOptions = [
     passengers: '4',
     transmission: 'Manual',
     price: '€35/day',
-    image: carImage1,
+    image: opelCorsaImage,
   },
   {
     id: '2',
