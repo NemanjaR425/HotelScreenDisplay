@@ -11,7 +11,7 @@ import octaviaImage from '@assets/octavia_1765138345158.png';
 import superbImage from '@assets/superb_1765138897149.jpg';
 import dusterImage from '@assets/dacia_duster_1765139096529.jpg';
 import bmwX5Image from '@assets/x5_1765139263561.jpg';
-import carImage7 from '@assets/stock_images/minivan_family_vehic_200cb4a3.jpg';
+import joggerImage from '@assets/jogger_1765139684325.jpg';
 import vwVanImage from '@assets/van_1765139487838.jpg';
 import { getTranslation } from '../utils/translations';
 
@@ -77,7 +77,7 @@ const carOptions = [
     passengers: '7',
     transmission: 'Automatic',
     price: '€70/day',
-    image: carImage7,
+    image: joggerImage,
   },
   {
     id: '8',
