@@ -17,19 +17,19 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
   const getCategoryIcon = () => {
     switch (category) {
       case 'dining':
-        return <Utensils className="w-8 h-8" />;
+        return <Utensils className="w-12 h-12" />;
       case 'rentACar':
-        return <Car className="w-8 h-8" />;
+        return <Car className="w-12 h-12" />;
       case 'excursions':
-        return <MapPin className="w-8 h-8" />;
+        return <MapPin className="w-12 h-12" />;
       case 'entertainment':
-        return <Music className="w-8 h-8" />;
+        return <Music className="w-12 h-12" />;
       case 'spa':
-        return <Waves className="w-8 h-8" />;
+        return <Waves className="w-12 h-12" />;
       case 'beach':
-        return <Sun className="w-8 h-8" />;
+        return <Sun className="w-12 h-12" />;
       default:
-        return <Utensils className="w-8 h-8" />;
+        return <Utensils className="w-12 h-12" />;
     }
   };
 
@@ -76,16 +76,16 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
         <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
       )}
       
-      <div className={`relative z-10 flex flex-col items-center ${hasBackgroundImage ? 'text-white' : 'text-primary'} mb-2`}>
+      <div className={`relative z-10 flex flex-col items-center ${hasBackgroundImage ? 'text-white' : 'text-primary'} mb-4`}>
         {getCategoryIcon()}
       </div>
-      <h3 className={`text-base font-medium text-center relative z-10 ${hasBackgroundImage ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
+      <h3 className={`text-2xl font-medium text-center relative z-10 ${hasBackgroundImage ? 'text-white' : 'text-card-foreground'}`} data-testid={`text-category-${category}`}>
         {title}
       </h3>
     </>
   );
 
-  const sharedClassName = `rounded-lg flex flex-col items-center justify-center p-4 hover-elevate active-elevate-2 relative overflow-hidden ${className} ${
+  const sharedClassName = `rounded-lg flex flex-col items-center justify-center p-6 hover-elevate active-elevate-2 relative overflow-hidden aspect-square ${className} ${
     hasBackgroundImage ? '' : 'bg-card'
   }`;
 
