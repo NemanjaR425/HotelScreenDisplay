@@ -115,7 +115,7 @@ export default function RentACarPage() {
     >
       <div className="h-full flex flex-col relative">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center mb-6">
           <div className="flex items-center space-x-4">
             <Link href="/">
               <Button variant="default" size="icon" data-testid="button-back-home">
@@ -126,6 +126,10 @@ export default function RentACarPage() {
               {t.rentACar}
             </h1>
           </div>
+        </div>
+
+        {/* Language Selector - Bottom Left */}
+        <div className="absolute bottom-4 left-0 z-50">
           <LanguageSelector 
             currentLanguage={currentLanguage}
             onLanguageChange={setLanguage}
