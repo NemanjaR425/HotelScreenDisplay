@@ -10,7 +10,7 @@ import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
 import octaviaImage from '@assets/octavia_1765138345158.png';
 import superbImage from '@assets/superb_1765138897149.jpg';
 import dusterImage from '@assets/dacia_duster_1765139096529.jpg';
-import carImage6 from '@assets/stock_images/luxury_suv_vehicle_b_7317a346.jpg';
+import bmwX5Image from '@assets/x5_1765139263561.jpg';
 import carImage7 from '@assets/stock_images/minivan_family_vehic_200cb4a3.jpg';
 import carImage8 from '@assets/stock_images/minivan_family_vehic_7a97e10b.jpg';
 import { getTranslation } from '../utils/translations';
@@ -68,7 +68,7 @@ const carOptions = [
     passengers: '7',
     transmission: 'Automatic',
     price: '€95/day',
-    image: carImage6,
+    image: bmwX5Image,
   },
   {
     id: '7',
