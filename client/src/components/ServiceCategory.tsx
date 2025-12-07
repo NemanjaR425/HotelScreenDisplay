@@ -1,7 +1,7 @@
 import { Utensils, Car, MapPin, Music, Waves, Sun } from 'lucide-react';
 import { Link } from 'wouter';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
-import rentACarImage from '@assets/octavia_1765135236990.png';
+import rentACarImage from '@assets/New-2024-Mercedes-Benz-E-Class-25_(Small)_1765139898858.jpg';
 import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
 import entertainmentImage from '@assets/the-musicians-were-playing-rock-music-on-stage-th-2023-11-27-05-11-51-utc_1759145753669.jpg';
 import spaImage from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
