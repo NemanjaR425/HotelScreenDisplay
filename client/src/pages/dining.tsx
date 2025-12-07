@@ -184,7 +184,7 @@ export default function DiningPage() {
     >
       <div className="h-full flex flex-col relative">
         {!selectedRestaurant && (
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center mb-6">
             <div className="flex items-center space-x-4">
               <Link href="/">
                 <Button variant="default" size="icon" data-testid="button-back-home">
@@ -195,12 +195,16 @@ export default function DiningPage() {
                 {t.dining}
               </h1>
             </div>
-            <LanguageSelector 
-              currentLanguage={currentLanguage}
-              onLanguageChange={setLanguage}
-            />
           </div>
         )}
+
+        {/* Language Selector - Bottom Left */}
+        <div className="absolute bottom-4 left-0 z-50">
+          <LanguageSelector 
+            currentLanguage={currentLanguage}
+            onLanguageChange={setLanguage}
+          />
+        </div>
 
         <div className="flex-1 overflow-hidden pb-20">
           {!selectedRestaurant ? (
@@ -247,7 +251,7 @@ export default function DiningPage() {
             </div>
           ) : (
             <div className="h-full flex flex-col">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center mb-4">
                 <Button 
                   variant="default" 
                   onClick={() => setSelectedRestaurant(null)}
@@ -256,10 +260,6 @@ export default function DiningPage() {
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   {t.backToRestaurants}
                 </Button>
-                <LanguageSelector 
-                  currentLanguage={currentLanguage}
-                  onLanguageChange={setLanguage}
-                />
               </div>
 
               <div 
