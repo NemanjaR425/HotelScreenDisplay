@@ -1,14 +1,14 @@
-import { Utensils, ShoppingBag, MapPin, Music, Waves, Sun } from 'lucide-react';
+import { Utensils, Car, MapPin, Music, Waves, Sun } from 'lucide-react';
 import { Link } from 'wouter';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
-import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
+import rentACarImage from '@assets/octavia_1765135236990.png';
 import excursionsImage from '@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759145689907.jpg';
 import entertainmentImage from '@assets/the-musicians-were-playing-rock-music-on-stage-th-2023-11-27-05-11-51-utc_1759145753669.jpg';
 import spaImage from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
 import beachImage from '@assets/stock_images/luxury_beach_resort__7d96b99a.jpg';
 
 interface ServiceCategoryProps {
-  category: 'dining' | 'shopping' | 'excursions' | 'entertainment' | 'spa' | 'beach';
+  category: 'dining' | 'rentACar' | 'excursions' | 'entertainment' | 'spa' | 'beach';
   title: string;
   className?: string;
 }
@@ -18,8 +18,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     switch (category) {
       case 'dining':
         return <Utensils className="w-12 h-12" />;
-      case 'shopping':
-        return <ShoppingBag className="w-12 h-12" />;
+      case 'rentACar':
+        return <Car className="w-12 h-12" />;
       case 'excursions':
         return <MapPin className="w-12 h-12" />;
       case 'entertainment':
@@ -34,16 +34,16 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
   };
 
   const isDining = category === 'dining';
-  const isShopping = category === 'shopping';
+  const isRentACar = category === 'rentACar';
   const isExcursions = category === 'excursions';
   const isEntertainment = category === 'entertainment';
   const isSpa = category === 'spa';
   const isBeach = category === 'beach';
-  const hasBackgroundImage = isDining || isShopping || isExcursions || isEntertainment || isSpa || isBeach;
+  const hasBackgroundImage = isDining || isRentACar || isExcursions || isEntertainment || isSpa || isBeach;
 
   const getBackgroundImage = () => {
     if (isDining) return cookingImage;
-    if (isShopping) return shoppingImage;
+    if (isRentACar) return rentACarImage;
     if (isExcursions) return excursionsImage;
     if (isEntertainment) return entertainmentImage;
     if (isSpa) return spaImage;

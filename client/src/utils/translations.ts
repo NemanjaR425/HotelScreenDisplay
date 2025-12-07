@@ -1,7 +1,7 @@
 export interface Translations {
   welcomeTo: string;
   dining: string;
-  shopping: string;
+  rentACar: string;
   excursions: string;
   entertainment: string;
   spa: string;
@@ -341,7 +341,7 @@ export const translations: Record<string, Translations> = {
   me: { // Montenegrin
     welcomeTo: "Dobrodošli u",
     dining: "Restoran",
-    shopping: "Kupovina",
+    rentACar: "Rent a Car",
     excursions: "Izleti",
     entertainment: "Zabava",
     spa: "Spa",
@@ -679,7 +679,7 @@ export const translations: Record<string, Translations> = {
   en: { // English
     welcomeTo: "Welcome to",
     dining: "Dining",
-    shopping: "Shopping", 
+    rentACar: "Rent a Car", 
     excursions: "Excursions",
     entertainment: "Entertainment",
     spa: "Spa",
@@ -1017,7 +1017,7 @@ export const translations: Record<string, Translations> = {
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
     dining: "Ресторан",
-    shopping: "Покупки",
+    rentACar: "Rent a Car",
     excursions: "Экскурсии", 
     entertainment: "Развлечения",
     spa: "Спа",
@@ -1355,7 +1355,7 @@ export const translations: Record<string, Translations> = {
   es: { // Spanish
     welcomeTo: "Bienvenido a",
     dining: "Restaurante",
-    shopping: "Compras",
+    rentACar: "Rent a Car",
     excursions: "Excursiones",
     entertainment: "Entretenimiento", 
     spa: "Spa",
@@ -1693,7 +1693,7 @@ export const translations: Record<string, Translations> = {
   fr: { // French
     welcomeTo: "Bienvenue à",
     dining: "Restaurant",
-    shopping: "Shopping",
+    rentACar: "Rent a Car",
     excursions: "Excursions",
     entertainment: "Divertissement",
     spa: "Spa",
@@ -2031,7 +2031,7 @@ export const translations: Record<string, Translations> = {
   de: { // German
     welcomeTo: "Willkommen im",
     dining: "Restaurant",
-    shopping: "Einkaufen",
+    rentACar: "Rent a Car",
     excursions: "Ausflüge",
     entertainment: "Unterhaltung",
     spa: "Spa",

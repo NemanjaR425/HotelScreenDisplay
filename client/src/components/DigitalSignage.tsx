@@ -142,7 +142,7 @@ export default function DigitalSignage() {
         {/* Right Panel - Service Categories Grid */}
         <div className="grid grid-cols-2 gap-4 auto-rows-fr" style={{ width: 'fit-content' }}>
           <ServiceCategory category="dining" title={t.dining} />
-          <ServiceCategory category="shopping" title={t.shopping} />
+          <ServiceCategory category="rentACar" title={t.rentACar} />
           <ServiceCategory category="excursions" title={t.excursions} />
           <ServiceCategory category="entertainment" title={t.entertainment} />
           <ServiceCategory category="spa" title={t.spa} />
