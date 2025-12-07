@@ -141,14 +141,14 @@ export default function RentACarPage() {
                 className="overflow-hidden bg-white/95 backdrop-blur-sm flex flex-col"
                 data-testid={`car-card-${car.id}`}
               >
-                <div className="relative w-full h-56 overflow-hidden">
+                <div className="relative w-full flex-[2] overflow-hidden">
                   <img 
                     src={car.image} 
                     alt={car.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <CardContent className="text-center space-y-2 p-4 flex flex-col items-center justify-center flex-1">
+                <CardContent className="text-center space-y-1 p-3 flex flex-col items-center justify-center flex-1">
                   <h3 className="text-lg font-bold" data-testid={`text-car-name-${car.id}`}>
                     {car.name}
                   </h3>
