@@ -141,7 +141,7 @@ export default function RentACarPage() {
                 className="overflow-hidden bg-white/95 backdrop-blur-sm flex flex-col"
                 data-testid={`car-card-${car.id}`}
               >
-                <div className="relative w-full h-36 overflow-hidden">
+                <div className="relative w-full h-48 overflow-hidden">
                   <img 
                     src={car.image} 
                     alt={car.name}
