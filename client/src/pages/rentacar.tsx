@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
-import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765136365742.jpg';
+import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765139827008.jpg';
 import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
 import octaviaImage from '@assets/octavia_1765138345158.png';
 import superbImage from '@assets/superb_1765138897149.jpg';
