@@ -1,4 +1,4 @@
-import { Utensils, ShoppingBag, MapPin, Music, Waves, Umbrella } from 'lucide-react';
+import { Utensils, ShoppingBag, MapPin, Music, Waves, Sun } from 'lucide-react';
 import { Link } from 'wouter';
 import cookingImage from '@assets/cook-garnishing-pasta-with-crushed-peanuts-2023-11-27-05-33-17-utc_1759145510240.jpg';
 import shoppingImage from '@assets/two-young-multiethnic-women-buying-purse-in-the-st-2023-11-27-04-55-45-utc_1759145595867.jpg';
@@ -27,7 +27,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
       case 'spa':
         return <Waves className="w-12 h-12" />;
       case 'beach':
-        return <Umbrella className="w-12 h-12" />;
+        return <Sun className="w-12 h-12" />;
       default:
         return <Utensils className="w-12 h-12" />;
     }
