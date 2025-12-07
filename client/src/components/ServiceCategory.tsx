@@ -63,6 +63,8 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
         return '/entertainment';
       case 'beach':
         return '/beach';
+      case 'rentACar':
+        return '/rentacar';
       default:
         return '#'; // Placeholder for other categories
     }
@@ -94,7 +96,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     backgroundRepeat: 'no-repeat'
   } : {};
 
-  if (category === 'dining' || category === 'excursions' || category === 'spa' || category === 'entertainment' || category === 'beach') {
+  if (category === 'dining' || category === 'excursions' || category === 'spa' || category === 'entertainment' || category === 'beach' || category === 'rentACar') {
     return (
       <Link href={getNavigationPath()} className="h-full">
         <div 

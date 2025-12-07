@@ -335,6 +335,39 @@ export interface Translations {
   dish61Desc: string;
   dish62Name: string;
   dish62Desc: string;
+  
+  car1Name: string;
+  car1Description: string;
+  car1Transmission: string;
+  car1Price: string;
+  car2Name: string;
+  car2Description: string;
+  car2Transmission: string;
+  car2Price: string;
+  car3Name: string;
+  car3Description: string;
+  car3Transmission: string;
+  car3Price: string;
+  car4Name: string;
+  car4Description: string;
+  car4Transmission: string;
+  car4Price: string;
+  car5Name: string;
+  car5Description: string;
+  car5Transmission: string;
+  car5Price: string;
+  car6Name: string;
+  car6Description: string;
+  car6Transmission: string;
+  car6Price: string;
+  car7Name: string;
+  car7Description: string;
+  car7Transmission: string;
+  car7Price: string;
+  car8Name: string;
+  car8Description: string;
+  car8Transmission: string;
+  car8Price: string;
 }
 
 export const translations: Record<string, Translations> = {
@@ -674,7 +707,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "New York Cheesecake",
     dish61Desc: "Klasični cheesecake sa bobičastim voćem",
     dish62Name: "Čokoladni lava kolač",
-    dish62Desc: "Topli čokoladni kolač sa vanila sladoledom"
+    dish62Desc: "Topli čokoladni kolač sa vanila sladoledom",
+    
+    car1Name: "Ekonom Kompakt",
+    car1Description: "Štedljivo gradsko vozilo, savršeno za kratka putovanja",
+    car1Transmission: "Manuelni",
+    car1Price: "€35/dan",
+    car2Name: "Kompakt Hečbek",
+    car2Description: "Svestran i lak za parkiranje u urbanim sredinama",
+    car2Transmission: "Automatik",
+    car2Price: "€40/dan",
+    car3Name: "Srednja Limuzina",
+    car3Description: "Udobna vožnja za duža putovanja",
+    car3Transmission: "Automatik",
+    car3Price: "€55/dan",
+    car4Name: "Premium Limuzina",
+    car4Description: "Luksuzna udobnost sa naprednim funkcijama",
+    car4Transmission: "Automatik",
+    car4Price: "€75/dan",
+    car5Name: "Kompakt SUV",
+    car5Description: "Idealan za planinske puteve i avanture",
+    car5Transmission: "Automatik",
+    car5Price: "€65/dan",
+    car6Name: "Luksuzni SUV",
+    car6Description: "Premium 4x4 sa sposobnošću za sve terene",
+    car6Transmission: "Automatik",
+    car6Price: "€95/dan",
+    car7Name: "Porodični Minivan",
+    car7Description: "Prostran enterijer za grupe i porodice",
+    car7Transmission: "Automatik",
+    car7Price: "€70/dan",
+    car8Name: "Premium Van",
+    car8Description: "Maksimalan prostor za velike grupe",
+    car8Transmission: "Automatik",
+    car8Price: "€85/dan"
   },
   en: { // English
     welcomeTo: "Welcome to",
@@ -1012,7 +1078,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "New York Cheesecake",
     dish61Desc: "Classic cheesecake with berry compote",
     dish62Name: "Chocolate Lava Cake",
-    dish62Desc: "Warm chocolate cake with vanilla ice cream"
+    dish62Desc: "Warm chocolate cake with vanilla ice cream",
+    
+    car1Name: "Economy Compact",
+    car1Description: "Fuel-efficient city car, perfect for short trips",
+    car1Transmission: "Manual",
+    car1Price: "€35/day",
+    car2Name: "Compact Hatchback",
+    car2Description: "Versatile and easy to park in urban areas",
+    car2Transmission: "Automatic",
+    car2Price: "€40/day",
+    car3Name: "Midsize Sedan",
+    car3Description: "Comfortable ride for longer journeys",
+    car3Transmission: "Automatic",
+    car3Price: "€55/day",
+    car4Name: "Premium Sedan",
+    car4Description: "Luxury comfort with advanced features",
+    car4Transmission: "Automatic",
+    car4Price: "€75/day",
+    car5Name: "Compact SUV",
+    car5Description: "Ideal for mountain roads and adventures",
+    car5Transmission: "Automatic",
+    car5Price: "€65/day",
+    car6Name: "Luxury SUV",
+    car6Description: "Premium 4x4 with all-terrain capability",
+    car6Transmission: "Automatic",
+    car6Price: "€95/day",
+    car7Name: "Family Minivan",
+    car7Description: "Spacious interior for groups and families",
+    car7Transmission: "Automatic",
+    car7Price: "€70/day",
+    car8Name: "Premium Van",
+    car8Description: "Maximum space for large groups",
+    car8Transmission: "Automatic",
+    car8Price: "€85/day"
   },
   ru: { // Russian
     welcomeTo: "Добро пожаловать в",
@@ -1350,7 +1449,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "New York Чизкейк",
     dish61Desc: "Классический чизкейк с ягодным компотом",
     dish62Name: "Шоколадный лавовый торт",
-    dish62Desc: "Теплый шоколадный торт с ванильным мороженым"
+    dish62Desc: "Теплый шоколадный торт с ванильным мороженым",
+    
+    car1Name: "Эконом Компакт",
+    car1Description: "Экономичный городской автомобиль, идеальный для коротких поездок",
+    car1Transmission: "Механика",
+    car1Price: "€35/день",
+    car2Name: "Компактный Хэтчбек",
+    car2Description: "Универсальный и легко паркуется в городе",
+    car2Transmission: "Автомат",
+    car2Price: "€40/день",
+    car3Name: "Средний Седан",
+    car3Description: "Комфортная поездка для длительных путешествий",
+    car3Transmission: "Автомат",
+    car3Price: "€55/день",
+    car4Name: "Премиум Седан",
+    car4Description: "Роскошный комфорт с продвинутыми функциями",
+    car4Transmission: "Автомат",
+    car4Price: "€75/день",
+    car5Name: "Компактный Внедорожник",
+    car5Description: "Идеально для горных дорог и приключений",
+    car5Transmission: "Автомат",
+    car5Price: "€65/день",
+    car6Name: "Люкс Внедорожник",
+    car6Description: "Премиум 4x4 с возможностью езды по бездорожью",
+    car6Transmission: "Автомат",
+    car6Price: "€95/день",
+    car7Name: "Семейный Минивэн",
+    car7Description: "Просторный салон для групп и семей",
+    car7Transmission: "Автомат",
+    car7Price: "€70/день",
+    car8Name: "Премиум Вэн",
+    car8Description: "Максимальное пространство для больших групп",
+    car8Transmission: "Автомат",
+    car8Price: "€85/день"
   },
   es: { // Spanish
     welcomeTo: "Bienvenido a",
@@ -1688,7 +1820,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "Tarta de Queso New York",
     dish61Desc: "Tarta de queso clásica con compota de bayas",
     dish62Name: "Pastel de Lava de Chocolate",
-    dish62Desc: "Pastel de chocolate caliente con helado de vainilla"
+    dish62Desc: "Pastel de chocolate caliente con helado de vainilla",
+    
+    car1Name: "Compacto Económico",
+    car1Description: "Coche urbano eficiente, perfecto para viajes cortos",
+    car1Transmission: "Manual",
+    car1Price: "€35/día",
+    car2Name: "Hatchback Compacto",
+    car2Description: "Versátil y fácil de aparcar en zonas urbanas",
+    car2Transmission: "Automático",
+    car2Price: "€40/día",
+    car3Name: "Sedán Mediano",
+    car3Description: "Viaje cómodo para trayectos largos",
+    car3Transmission: "Automático",
+    car3Price: "€55/día",
+    car4Name: "Sedán Premium",
+    car4Description: "Confort de lujo con características avanzadas",
+    car4Transmission: "Automático",
+    car4Price: "€75/día",
+    car5Name: "SUV Compacto",
+    car5Description: "Ideal para carreteras de montaña y aventuras",
+    car5Transmission: "Automático",
+    car5Price: "€65/día",
+    car6Name: "SUV de Lujo",
+    car6Description: "Premium 4x4 con capacidad todoterreno",
+    car6Transmission: "Automático",
+    car6Price: "€95/día",
+    car7Name: "Monovolumen Familiar",
+    car7Description: "Interior espacioso para grupos y familias",
+    car7Transmission: "Automático",
+    car7Price: "€70/día",
+    car8Name: "Van Premium",
+    car8Description: "Máximo espacio para grupos grandes",
+    car8Transmission: "Automático",
+    car8Price: "€85/día"
   },
   fr: { // French
     welcomeTo: "Bienvenue à",
@@ -2026,7 +2191,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "Cheesecake New York",
     dish61Desc: "Cheesecake classique avec compote de baies",
     dish62Name: "Gâteau Coulant au Chocolat",
-    dish62Desc: "Gâteau au chocolat chaud avec glace vanille"
+    dish62Desc: "Gâteau au chocolat chaud avec glace vanille",
+    
+    car1Name: "Compact Économique",
+    car1Description: "Voiture de ville économique, parfaite pour les courts trajets",
+    car1Transmission: "Manuelle",
+    car1Price: "€35/jour",
+    car2Name: "Hatchback Compact",
+    car2Description: "Polyvalent et facile à garer en zone urbaine",
+    car2Transmission: "Automatique",
+    car2Price: "€40/jour",
+    car3Name: "Berline Moyenne",
+    car3Description: "Conduite confortable pour les longs trajets",
+    car3Transmission: "Automatique",
+    car3Price: "€55/jour",
+    car4Name: "Berline Premium",
+    car4Description: "Confort luxueux avec fonctionnalités avancées",
+    car4Transmission: "Automatique",
+    car4Price: "€75/jour",
+    car5Name: "SUV Compact",
+    car5Description: "Idéal pour les routes de montagne et les aventures",
+    car5Transmission: "Automatique",
+    car5Price: "€65/jour",
+    car6Name: "SUV de Luxe",
+    car6Description: "4x4 premium avec capacité tout-terrain",
+    car6Transmission: "Automatique",
+    car6Price: "€95/jour",
+    car7Name: "Monospace Familial",
+    car7Description: "Intérieur spacieux pour groupes et familles",
+    car7Transmission: "Automatique",
+    car7Price: "€70/jour",
+    car8Name: "Van Premium",
+    car8Description: "Espace maximum pour grands groupes",
+    car8Transmission: "Automatique",
+    car8Price: "€85/jour"
   },
   de: { // German
     welcomeTo: "Willkommen im",
@@ -2364,7 +2562,40 @@ export const translations: Record<string, Translations> = {
     dish61Name: "New York Cheesecake",
     dish61Desc: "Klassischer Käsekuchen mit Beerenkompott",
     dish62Name: "Schokoladen Lava Kuchen",
-    dish62Desc: "Warmer Schokoladenkuchen mit Vanilleeis"
+    dish62Desc: "Warmer Schokoladenkuchen mit Vanilleeis",
+    
+    car1Name: "Kompakter Kleinwagen",
+    car1Description: "Sparsames Stadtauto, perfekt für kurze Fahrten",
+    car1Transmission: "Schaltgetriebe",
+    car1Price: "€35/Tag",
+    car2Name: "Kompakter Fließheck",
+    car2Description: "Vielseitig und einfach in städtischen Gebieten zu parken",
+    car2Transmission: "Automatik",
+    car2Price: "€40/Tag",
+    car3Name: "Mittelklasse Limousine",
+    car3Description: "Komfortable Fahrt für längere Reisen",
+    car3Transmission: "Automatik",
+    car3Price: "€55/Tag",
+    car4Name: "Premium Limousine",
+    car4Description: "Luxuriöser Komfort mit erweiterten Funktionen",
+    car4Transmission: "Automatik",
+    car4Price: "€75/Tag",
+    car5Name: "Kompakter SUV",
+    car5Description: "Ideal für Bergstraßen und Abenteuer",
+    car5Transmission: "Automatik",
+    car5Price: "€65/Tag",
+    car6Name: "Luxus SUV",
+    car6Description: "Premium 4x4 mit Geländefähigkeit",
+    car6Transmission: "Automatik",
+    car6Price: "€95/Tag",
+    car7Name: "Familien Minivan",
+    car7Description: "Geräumiger Innenraum für Gruppen und Familien",
+    car7Transmission: "Automatik",
+    car7Price: "€70/Tag",
+    car8Name: "Premium Van",
+    car8Description: "Maximaler Platz für große Gruppen",
+    car8Transmission: "Automatik",
+    car8Price: "€85/Tag"
   }
 };
 

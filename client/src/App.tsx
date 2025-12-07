@@ -10,6 +10,7 @@ import ToursPage from "@/pages/tours";
 import SpaPage from "@/pages/spa";
 import BeachPage from "@/pages/beach";
 import EntertainmentPage from "@/pages/entertainment";
+import RentACarPage from "@/pages/rentacar";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/spa" component={SpaPage} />
       <Route path="/beach" component={BeachPage} />
       <Route path="/entertainment" component={EntertainmentPage} />
+      <Route path="/rentacar" component={RentACarPage} />
       <Route component={NotFound} />
     </Switch>
   );
