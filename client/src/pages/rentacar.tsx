@@ -9,7 +9,7 @@ import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765136365742.jpg';
 import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
 import octaviaImage from '@assets/octavia_1765138345158.png';
 import superbImage from '@assets/superb_1765138897149.jpg';
-import carImage5 from '@assets/stock_images/luxury_suv_vehicle_b_4201d5bf.jpg';
+import dusterImage from '@assets/dacia_duster_1765139096529.jpg';
 import carImage6 from '@assets/stock_images/luxury_suv_vehicle_b_7317a346.jpg';
 import carImage7 from '@assets/stock_images/minivan_family_vehic_200cb4a3.jpg';
 import carImage8 from '@assets/stock_images/minivan_family_vehic_7a97e10b.jpg';
@@ -59,7 +59,7 @@ const carOptions = [
     passengers: '5',
     transmission: 'Automatic',
     price: '€65/day',
-    image: carImage5,
+    image: dusterImage,
   },
   {
     id: '6',
