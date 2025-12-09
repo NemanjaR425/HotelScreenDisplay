@@ -78,7 +78,7 @@ export default function EntertainmentPage() {
 
         {/* Entertainment Grid - 4x2 */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-20">
-          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(2, minmax(0, 280px))' }}>
+          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(2, minmax(0, 320px))' }}>
             {entertainments.map((ent) => (
               <div
                 key={ent.id}
