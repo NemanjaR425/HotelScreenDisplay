@@ -85,7 +85,7 @@ export default function ToursPage() {
 
         {/* Tours Grid */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-20">
-          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(3, minmax(0, 180px))' }}>
+          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(3, minmax(0, 200px))' }}>
             {tours.map((tour) => (
               <div
                 key={tour.id}
