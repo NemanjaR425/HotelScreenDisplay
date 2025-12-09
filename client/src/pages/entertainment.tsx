@@ -44,14 +44,8 @@ export default function EntertainmentPage() {
 
   return (
     <div 
-      className="w-full h-screen overflow-hidden p-6" 
+      className="w-full h-screen overflow-hidden p-6 bg-white" 
       data-testid="entertainment-page"
-      style={{ 
-        backgroundImage: `url(${gradientBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
       <div className="h-full flex flex-col relative">
         {/* Header */}
@@ -62,7 +56,7 @@ export default function EntertainmentPage() {
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+            <h1 className="text-5xl font-bold text-gray-900" data-testid="text-page-title">
               {t.entertainment}
             </h1>
           </div>
