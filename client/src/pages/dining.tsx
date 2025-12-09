@@ -187,8 +187,8 @@ export default function DiningPage() {
           <div className="flex items-center mb-6">
             <div className="flex items-center space-x-4">
               <Link href="/">
-                <Button variant="default" size="icon" data-testid="button-back-home">
-                  <ArrowLeft className="w-5 h-5" />
+                <Button variant="default" size="lg" className="rounded-full w-14 h-14" data-testid="button-back-home">
+                  <ArrowLeft className="w-6 h-6" />
                 </Button>
               </Link>
               <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
@@ -254,11 +254,12 @@ export default function DiningPage() {
               <div className="flex items-center mb-4">
                 <Button 
                   variant="default" 
+                  size="lg"
+                  className="rounded-full w-14 h-14"
                   onClick={() => setSelectedRestaurant(null)}
                   data-testid="button-back-restaurants"
                 >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  {t.backToRestaurants}
+                  <ArrowLeft className="w-6 h-6" />
                 </Button>
               </div>
 
