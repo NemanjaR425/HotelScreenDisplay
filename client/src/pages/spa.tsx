@@ -82,7 +82,7 @@ export default function SpaPage() {
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+            <h1 className="text-5xl font-bold text-white mt-[16px] mb-[16px]" data-testid="text-page-title">
               {t.spa}
             </h1>
           </div>
