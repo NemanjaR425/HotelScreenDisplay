@@ -84,7 +84,7 @@ export default function ToursPage() {
             {tours.map((tour) => (
               <div
                 key={tour.id}
-                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer"
+                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                 data-testid={`tour-card-${tour.id}`}
                 style={{
                   backgroundImage: `url(${tour.image})`,
