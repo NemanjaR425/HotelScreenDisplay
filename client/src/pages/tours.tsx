@@ -80,7 +80,7 @@ export default function ToursPage() {
 
         {/* Tours Grid - 5 columns x 2 rows to fit 10 cards */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
-          <div className="grid grid-cols-5 grid-rows-2 gap-3 w-full h-full">
+          <div className="grid grid-cols-5 grid-rows-2 gap-3 w-full h-full ml-[0px] mr-[0px] pl-[20px] pr-[20px] pt-[20px] pb-[20px]">
             {tours.slice(0, 10).map((tour) => (
               <div
                 key={tour.id}
