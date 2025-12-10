@@ -98,7 +98,7 @@ export default function SpaPage() {
 
         {/* Services Grid */}
         <div className="flex-1 overflow-y-auto pb-20">
-          <div className="grid grid-cols-5 gap-4 h-full">
+          <div className="grid grid-cols-5 gap-4 h-full mt-[0px] mb-[0px] pt-[20px] pb-[20px] pl-[22px] pr-[22px]">
             {translatedServices.map((service) => (
               <Card
                 key={service.id}
