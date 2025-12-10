@@ -85,7 +85,7 @@ export default function ServiceCategory({ category, title, className = '' }: Ser
     </>
   );
 
-  const sharedClassName = `rounded-lg flex flex-col items-center justify-center p-6 hover-elevate active-elevate-2 relative overflow-hidden aspect-square ${className} ${
+  const sharedClassName = `rounded-lg flex flex-col items-center justify-center p-6 hover-elevate active-elevate-2 relative overflow-hidden aspect-square border-2 border-white ${className} ${
     hasBackgroundImage ? '' : 'bg-card'
   }`;
 
