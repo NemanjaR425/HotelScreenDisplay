@@ -78,10 +78,10 @@ export default function ToursPage() {
           />
         </div>
 
-        {/* Tours Grid - 4 columns x 2 rows to fit 8 cards */}
+        {/* Tours Grid - 5 columns x 2 rows to fit 10 cards */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
-          <div className="grid grid-cols-4 grid-rows-2 gap-3 w-full h-full">
-            {tours.slice(0, 8).map((tour) => (
+          <div className="grid grid-cols-5 grid-rows-2 gap-3 w-full h-full">
+            {tours.slice(0, 10).map((tour) => (
               <div
                 key={tour.id}
                 className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
