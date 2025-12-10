@@ -75,16 +75,16 @@ export default function DigitalSignage() {
 
   return (
     <div 
-      className="w-full h-screen overflow-hidden p-6 bg-white" 
+      className="w-full h-screen overflow-hidden bg-white" 
       data-testid="digital-signage" 
       style={{ 
         aspectRatio: '16/9'
       }}
     >
-      <div className="h-full flex gap-3">
-        {/* Left Panel - Welcome Section */}
+      <div className="h-full flex gap-4 pr-4 py-4">
+        {/* Left Panel - Welcome Section - extends to left, top, bottom edges */}
         <div 
-          className="flex-1 rounded-lg p-8 flex flex-col relative overflow-hidden"
+          className="flex-1 p-8 flex flex-col relative overflow-hidden"
           style={{
             backgroundImage: `url(${hotelRoomImage})`,
             backgroundSize: 'cover',
@@ -93,7 +93,7 @@ export default function DigitalSignage() {
           }}
         >
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
           
           {/* Content container */}
           <div className="relative z-10 flex flex-col h-full">
