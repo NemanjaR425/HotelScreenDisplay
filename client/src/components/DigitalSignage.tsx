@@ -6,7 +6,7 @@ import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import { useWeather } from '../hooks/use-weather';
 import { useLanguage } from '@/contexts/LanguageContext';
-import resortImage from '@assets/oopm-resort-drone-view-3_1759144575928.webp';
+import hotelRoomImage from '@assets/1_1765362812657.jpg';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 
 export default function DigitalSignage() {
@@ -86,7 +86,7 @@ export default function DigitalSignage() {
         <div 
           className="flex-1 rounded-lg p-8 flex flex-col relative overflow-hidden"
           style={{
-            backgroundImage: `url(${resortImage})`,
+            backgroundImage: `url(${hotelRoomImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
