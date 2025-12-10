@@ -87,22 +87,22 @@ export default function ToursPage() {
                 className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
                 data-testid={`tour-card-${tour.id}`}
               >
-                {/* Image Section - 55% of height */}
+                {/* Image Section - 65% of height */}
                 <div 
                   className="w-full"
                   style={{
-                    height: '55%',
+                    height: '65%',
                     backgroundImage: `url(${tour.image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                   }}
                 />
-                {/* Content Section - 45% of height */}
-                <div className="p-3 flex flex-col flex-1">
-                  <h3 className="text-base font-bold text-gray-900 mb-1">{tour.name}</h3>
-                  <p className="text-xs text-gray-600 line-clamp-2 mb-2">{tour.description}</p>
-                  <div className="mt-auto space-y-0.5">
+                {/* Content Section - 35% of height */}
+                <div className="p-2 flex flex-col flex-1">
+                  <h3 className="text-sm font-bold text-gray-900 leading-tight">{tour.name}</h3>
+                  <p className="text-xs text-gray-600 line-clamp-1 mt-0.5">{tour.description}</p>
+                  <div className="mt-auto flex justify-between items-center">
                     <p className="text-xs text-gray-700">{tour.duration}</p>
                     <p className="text-sm font-semibold text-primary">{tour.price}</p>
                   </div>
