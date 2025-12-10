@@ -81,7 +81,7 @@ export default function DigitalSignage() {
         aspectRatio: '16/9'
       }}
     >
-      <div className="h-full flex gap-4 pr-4 py-4">
+      <div className="h-full flex gap-4 pr-4">
         {/* Left Panel - Welcome Section - extends to left, top, bottom edges */}
         <div 
           className="flex-1 p-8 flex flex-col relative overflow-hidden"
