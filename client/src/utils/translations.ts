@@ -372,7 +372,7 @@ export interface Translations {
 
 export const translations: Record<string, Translations> = {
   me: { // Montenegrin
-    welcomeTo: "Dobrodošli u",
+    welcomeTo: "Dobrodošli u hotel",
     dining: "Restoran",
     rentACar: "Rent a Car",
     excursions: "Izleti",
@@ -743,7 +743,7 @@ export const translations: Record<string, Translations> = {
     car8Price: "€85/dan"
   },
   en: { // English
-    welcomeTo: "Welcome to",
+    welcomeTo: "Welcome to hotel",
     dining: "Dining",
     rentACar: "Rent a Car", 
     excursions: "Excursions",
@@ -1114,7 +1114,7 @@ export const translations: Record<string, Translations> = {
     car8Price: "€85/day"
   },
   ru: { // Russian
-    welcomeTo: "Добро пожаловать в",
+    welcomeTo: "Добро пожаловать в отель",
     dining: "Ресторан",
     rentACar: "Rent a Car",
     excursions: "Экскурсии", 
@@ -1485,7 +1485,7 @@ export const translations: Record<string, Translations> = {
     car8Price: "€85/день"
   },
   es: { // Spanish
-    welcomeTo: "Bienvenido a",
+    welcomeTo: "Bienvenido al hotel",
     dining: "Restaurante",
     rentACar: "Rent a Car",
     excursions: "Excursiones",
@@ -1856,7 +1856,7 @@ export const translations: Record<string, Translations> = {
     car8Price: "€85/día"
   },
   fr: { // French
-    welcomeTo: "Bienvenue à",
+    welcomeTo: "Bienvenue à l'hôtel",
     dining: "Restaurant",
     rentACar: "Rent a Car",
     excursions: "Excursions",
@@ -2227,7 +2227,7 @@ export const translations: Record<string, Translations> = {
     car8Price: "€85/jour"
   },
   de: { // German
-    welcomeTo: "Willkommen im",
+    welcomeTo: "Willkommen im Hotel",
     dining: "Restaurant",
     rentACar: "Rent a Car",
     excursions: "Ausflüge",
