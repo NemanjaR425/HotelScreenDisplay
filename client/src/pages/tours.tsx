@@ -84,26 +84,27 @@ export default function ToursPage() {
             {tours.map((tour) => (
               <div
                 key={tour.id}
-                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
+                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col aspect-square"
                 data-testid={`tour-card-${tour.id}`}
               >
-                {/* Image Section */}
+                {/* Image Section - 55% of height */}
                 <div 
-                  className="w-full h-36"
+                  className="w-full"
                   style={{
+                    height: '55%',
                     backgroundImage: `url(${tour.image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                   }}
                 />
-                {/* Content Section */}
-                <div className="p-4 flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">{tour.name}</h3>
-                  <p className="text-sm text-gray-600 line-clamp-2 mb-3">{tour.description}</p>
-                  <div className="mt-auto space-y-1">
-                    <p className="text-sm text-gray-700">{tour.duration}</p>
-                    <p className="text-base font-semibold text-primary">{tour.price}</p>
+                {/* Content Section - 45% of height */}
+                <div className="p-3 flex flex-col flex-1">
+                  <h3 className="text-base font-bold text-gray-900 mb-1">{tour.name}</h3>
+                  <p className="text-xs text-gray-600 line-clamp-2 mb-2">{tour.description}</p>
+                  <div className="mt-auto space-y-0.5">
+                    <p className="text-xs text-gray-700">{tour.duration}</p>
+                    <p className="text-sm font-semibold text-primary">{tour.price}</p>
                   </div>
                 </div>
               </div>
