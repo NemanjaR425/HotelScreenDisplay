@@ -80,32 +80,30 @@ export default function ToursPage() {
 
         {/* Tours Grid */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-20">
-          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(3, minmax(0, 220px))' }}>
+          <div className="grid grid-cols-4 gap-4 w-full">
             {tours.map((tour) => (
               <div
                 key={tour.id}
-                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer"
+                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
                 data-testid={`tour-card-${tour.id}`}
-                style={{
-                  backgroundImage: `url(${tour.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
               >
-                <div className="absolute inset-0 bg-black/50 rounded-md"></div>
-                <div className="relative z-10 text-center space-y-2 p-4 flex flex-col items-center justify-center h-full text-white">
-                  <h3 className="text-lg font-bold leading-tight">{tour.name}</h3>
-                  <p className="text-xs line-clamp-2 opacity-90">{tour.description}</p>
-                  <div className="space-y-1 text-xs w-full mt-auto">
-                    <div className="flex items-center justify-center space-x-2">
-                      <Clock className="w-3 h-3" />
-                      <span>{tour.duration}</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <DollarSign className="w-3 h-3" />
-                      <span>{tour.price}</span>
-                    </div>
+                {/* Image Section */}
+                <div 
+                  className="w-full h-36"
+                  style={{
+                    backgroundImage: `url(${tour.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                  }}
+                />
+                {/* Content Section */}
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{tour.name}</h3>
+                  <p className="text-sm text-gray-600 line-clamp-2 mb-3">{tour.description}</p>
+                  <div className="mt-auto space-y-1">
+                    <p className="text-sm text-gray-700">{tour.duration}</p>
+                    <p className="text-base font-semibold text-primary">{tour.price}</p>
                   </div>
                 </div>
               </div>
