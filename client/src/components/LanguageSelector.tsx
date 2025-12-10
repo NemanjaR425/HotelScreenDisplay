@@ -15,7 +15,7 @@ export default function LanguageSelector({ currentLanguage, onLanguageChange, cl
   ];
 
   return (
-    <div className={`flex flex-wrap gap-2 ${className}`} data-testid="language-selector">
+    <div className="flex flex-wrap gap-2 pl-[0px] pr-[0px] ml-[20px] mr-[20px]" data-testid="language-selector">
       {languages.map((language) => (
         <button
           key={language.code}
