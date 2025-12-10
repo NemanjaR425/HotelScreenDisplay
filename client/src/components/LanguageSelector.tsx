@@ -25,8 +25,8 @@ export default function LanguageSelector({ currentLanguage, onLanguageChange, cl
           }}
           className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover-elevate ${
             currentLanguage === language.code
-              ? 'bg-white/20 text-white border border-white/30'
-              : 'bg-white/10 text-white/80 border border-white/20 hover:bg-white/15'
+              ? 'bg-white text-black border border-gray-300'
+              : 'bg-white text-black border border-gray-200'
           }`}
           data-testid={`language-button-${language.code}`}
         >
