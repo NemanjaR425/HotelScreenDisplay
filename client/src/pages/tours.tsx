@@ -78,13 +78,13 @@ export default function ToursPage() {
           />
         </div>
 
-        {/* Tours Grid */}
-        <div className="flex-1 flex items-start justify-center overflow-hidden pb-20">
-          <div className="grid grid-cols-4 gap-4 w-full">
-            {tours.map((tour) => (
+        {/* Tours Grid - 4 columns x 2 rows to fit 8 cards */}
+        <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
+          <div className="grid grid-cols-4 grid-rows-2 gap-3 w-full h-full">
+            {tours.slice(0, 8).map((tour) => (
               <div
                 key={tour.id}
-                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col aspect-square"
+                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
                 data-testid={`tour-card-${tour.id}`}
               >
                 {/* Image Section - 55% of height */}
