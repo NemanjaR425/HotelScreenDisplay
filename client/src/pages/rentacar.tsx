@@ -133,7 +133,7 @@ export default function RentACarPage() {
 
         {/* Cars Grid - 4 columns, 2 rows */}
         <div className="flex-1 overflow-y-auto pb-20">
-          <div className="grid grid-cols-4 gap-4 h-full">
+          <div className="grid grid-cols-4 gap-4 h-full ml-[20px] mr-[20px] mt-[0px] mb-[0px] pt-[10px] pb-[10px]">
             {translatedCars.map((car) => (
               <Card
                 key={car.id}
