@@ -203,7 +203,7 @@ export default function DiningPage() {
 
         <div className="flex-1 overflow-hidden pb-20">
           {!selectedRestaurant ? (
-            <div className="grid grid-cols-4 gap-4 h-full">
+            <div className="grid grid-cols-4 gap-4 h-full pl-[20px] pr-[20px]">
               {translatedRestaurants.map((restaurant) => (
                 <Card
                   key={restaurant.id}
