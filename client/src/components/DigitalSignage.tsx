@@ -6,7 +6,7 @@ import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import { useWeather } from '../hooks/use-weather';
 import { useLanguage } from '@/contexts/LanguageContext';
-import hotelRoomImage from '@assets/envato-labs-image-edit_(1)_1765374109464.png';
+import hotelRoomImage from '@assets/Carine_Kumbor_1765374473834.jpg';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 
 export default function DigitalSignage() {
