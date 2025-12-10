@@ -100,7 +100,7 @@ export default function ToursPage() {
                 />
                 {/* Content Section - 35% of height */}
                 <div className="p-2 flex flex-col flex-1">
-                  <h3 className="text-sm font-bold text-gray-900 leading-tight">{tour.name}</h3>
+                  <h3 className="font-bold text-gray-900 text-[16px]">{tour.name}</h3>
                   <p className="text-xs text-gray-600 line-clamp-1 mt-0.5">{tour.description}</p>
                   <div className="mt-auto">
                     <p className="text-xs text-gray-700">{tour.duration}</p>
