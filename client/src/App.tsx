@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
 import ToursPage from "@/pages/tours";
+import TourDetailPage from "@/pages/tour-detail";
 import SpaPage from "@/pages/spa";
 import BeachPage from "@/pages/beach";
 import EntertainmentPage from "@/pages/entertainment";
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/" component={DigitalSignage} />
       <Route path="/dining" component={DiningPage} />
       <Route path="/tours" component={ToursPage} />
+      <Route path="/tours/:id" component={TourDetailPage} />
       <Route path="/spa" component={SpaPage} />
       <Route path="/beach" component={BeachPage} />
       <Route path="/entertainment" component={EntertainmentPage} />

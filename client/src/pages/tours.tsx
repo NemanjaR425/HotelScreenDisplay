@@ -82,11 +82,11 @@ export default function ToursPage() {
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
           <div className="grid grid-cols-5 grid-rows-2 gap-3 w-full h-full ml-[0px] mr-[0px] pl-[20px] pr-[20px] pt-[20px] pb-[20px]">
             {tours.slice(0, 10).map((tour) => (
-              <div
-                key={tour.id}
-                className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col"
-                data-testid={`tour-card-${tour.id}`}
-              >
+              <Link href={`/tours/${tour.id}`} key={tour.id}>
+                <div
+                  className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col h-full"
+                  data-testid={`tour-card-${tour.id}`}
+                >
                 {/* Image Section - 65% of height */}
                 <div 
                   className="w-full"
@@ -107,7 +107,8 @@ export default function ToursPage() {
                     <p className="text-sm font-semibold text-primary">{tour.price}</p>
                   </div>
                 </div>
-              </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
