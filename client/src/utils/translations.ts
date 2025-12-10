@@ -469,7 +469,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 sata",
     tour7Price: "€50",
     
-    tour8Name: "Ribolov",
+    tour8Name: "Cable Car",
     tour8Description: "Tradicionalni ribolov sa lokalnim ribarima",
     tour8Duration: "4 sata",
     tour8Price: "€60",
@@ -840,7 +840,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 hours",
     tour7Price: "€50",
     
-    tour8Name: "Fishing Experience",
+    tour8Name: "Cable Car",
     tour8Description: "Traditional fishing trip with local fishermen",
     tour8Duration: "4 hours",
     tour8Price: "€60",
@@ -1211,7 +1211,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 часа",
     tour7Price: "€50",
     
-    tour8Name: "Рыбалка",
+    tour8Name: "Cable Car",
     tour8Description: "Традиционная рыбалка с местными рыбаками",
     tour8Duration: "4 часа",
     tour8Price: "€60",
@@ -1582,7 +1582,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 horas",
     tour7Price: "€50",
     
-    tour8Name: "Experiencia de Pesca",
+    tour8Name: "Cable Car",
     tour8Description: "Viaje de pesca tradicional con pescadores locales",
     tour8Duration: "4 horas",
     tour8Price: "€60",
@@ -1953,7 +1953,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 heures",
     tour7Price: "€50",
     
-    tour8Name: "Expérience de Pêche",
+    tour8Name: "Cable Car",
     tour8Description: "Sortie de pêche traditionnelle avec des pêcheurs locaux",
     tour8Duration: "4 heures",
     tour8Price: "€60",
@@ -2324,7 +2324,7 @@ export const translations: Record<string, Translations> = {
     tour7Duration: "3 Stunden",
     tour7Price: "€50",
     
-    tour8Name: "Angelerlebnis",
+    tour8Name: "Cable Car",
     tour8Description: "Traditioneller Angelausflug mit lokalen Fischern",
     tour8Duration: "4 Stunden",
     tour8Price: "€60",
