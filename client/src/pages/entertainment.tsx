@@ -53,7 +53,7 @@ export default function EntertainmentPage() {
         <div className="flex items-center mb-6">
           <div className="flex items-center space-x-4">
             <Link href="/">
-              <Button variant="default" size="lg" className="rounded-full w-14 h-14 bg-white text-black hover:bg-white" data-testid="button-back-home">
+              <Button variant="default" size="lg" className="rounded-full w-14 h-14 bg-white text-black hover:bg-white pl-[22px] pr-[22px] ml-[20px] mr-[20px] mt-[20px] mb-[20px]" data-testid="button-back-home">
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
