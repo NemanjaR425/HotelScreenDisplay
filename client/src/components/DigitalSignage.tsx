@@ -16,7 +16,7 @@ export default function DigitalSignage() {
   
   const t = getTranslation(currentLanguage);
   
-  const hotelName = "Casa del Mare - Mediterraneo";
+  const hotelName = "Kumbor";
   const tagline = "Your Premier Destination for Luxury & Hospitality";
 
   useEffect(() => {
