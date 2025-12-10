@@ -51,7 +51,8 @@ export default function ToursPage() {
 
   return (
     <div 
-      className="w-full h-screen overflow-hidden p-6 bg-white" 
+      className="w-full h-screen overflow-hidden p-6"
+      style={{ backgroundColor: '#162739' }} 
       data-testid="tours-page"
     >
       <div className="h-full flex flex-col relative">
@@ -63,7 +64,7 @@ export default function ToursPage() {
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-gray-900" data-testid="text-page-title">
+            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
               {t.excursions}
             </h1>
           </div>
