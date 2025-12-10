@@ -77,12 +77,12 @@ export default function SpaPage() {
         {/* Header */}
         <div className="flex items-center mb-6">
           <div className="flex items-center space-x-4">
-            <Link href="/">
+            <Link href="/" className="pl-[0px] pr-[0px] ml-[20px] mr-[20px]">
               <Button variant="default" size="lg" className="rounded-full w-14 h-14 bg-white text-black hover:bg-white" data-testid="button-back-home">
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-white mt-[16px] mb-[16px]" data-testid="text-page-title">
+            <h1 className="text-5xl font-bold text-white mt-[16px] mb-[16px] ml-[2px] mr-[2px]" data-testid="text-page-title">
               {t.spa}
             </h1>
           </div>
