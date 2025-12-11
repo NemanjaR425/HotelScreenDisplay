@@ -305,35 +305,39 @@ export default function DiningPage() {
                               {getCategoryTranslation(category)}
                             </h3>
                             <div className="space-y-6">
-                              {groupedMenuItems[category].map((item, index) => (
-                                <div 
-                                  key={index}
-                                  className="pb-4 border-b border-gray-300/30 last:border-0"
-                                  data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                >
-                                  <div className="flex justify-between items-baseline mb-1 gap-3">
-                                    <h4 
-                                      className="font-bold text-sm tracking-wide uppercase"
-                                      style={{ color: '#2d2d2d' }}
-                                    >
-                                      {item.name}
-                                    </h4>
-                                    <div className="border-b border-dotted border-gray-400/50 flex-1 mb-1"></div>
-                                    <span 
-                                      className="text-sm font-semibold whitespace-nowrap"
-                                      style={{ color: '#2d2d2d' }}
-                                    >
-                                      {item.price}
-                                    </span>
-                                  </div>
-                                  <p 
-                                    className="text-xs leading-relaxed"
-                                    style={{ color: '#666' }}
+                              {groupedMenuItems[category].map((item, index) => {
+                                const dishName = t[`dish${item.dishId}Name` as keyof typeof t] as string || item.name;
+                                const dishDesc = t[`dish${item.dishId}Desc` as keyof typeof t] as string || item.description;
+                                return (
+                                  <div 
+                                    key={index}
+                                    className="pb-4 border-b border-gray-300/30 last:border-0"
+                                    data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
                                   >
-                                    {item.description}
-                                  </p>
-                                </div>
-                              ))}
+                                    <div className="flex justify-between items-baseline mb-1 gap-3">
+                                      <h4 
+                                        className="font-bold text-sm tracking-wide uppercase"
+                                        style={{ color: '#2d2d2d' }}
+                                      >
+                                        {dishName}
+                                      </h4>
+                                      <div className="border-b border-dotted border-gray-400/50 flex-1 mb-1"></div>
+                                      <span 
+                                        className="text-sm font-semibold whitespace-nowrap"
+                                        style={{ color: '#2d2d2d' }}
+                                      >
+                                        {item.price}
+                                      </span>
+                                    </div>
+                                    <p 
+                                      className="text-xs leading-relaxed"
+                                      style={{ color: '#666' }}
+                                    >
+                                      {dishDesc}
+                                    </p>
+                                  </div>
+                                );
+                              })}
                             </div>
                           </div>
                         ))}
