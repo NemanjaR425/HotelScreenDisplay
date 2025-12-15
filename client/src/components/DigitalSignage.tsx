@@ -117,6 +117,16 @@ export default function DigitalSignage() {
                 location="Herceg Novi, Montenegro"
                 currentWeatherText={t.currentWeatherIn}
                 conditionText={getWeatherConditionText(weather?.condition ?? 'sunny')}
+                forecastTitle={t.sevenDayForecast}
+                dayNames={{
+                  monday: t.mondayName,
+                  tuesday: t.tuesdayName,
+                  wednesday: t.wednesdayName,
+                  thursday: t.thursdayName,
+                  friday: t.fridayName,
+                  saturday: t.saturdayName,
+                  sunday: t.sundayName
+                }}
               />
             </div>
 

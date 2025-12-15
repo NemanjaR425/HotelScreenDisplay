@@ -11,6 +11,7 @@ export interface Translations {
   weatherClearNight: string;
   weatherCloudy: string;
   weatherRainy: string;
+  sevenDayForecast: string;
   
   mondayName: string;
   mondayDescription: string;
@@ -384,6 +385,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Vedra noć",
     weatherCloudy: "Oblačno",
     weatherRainy: "Kiša",
+    sevenDayForecast: "7-dnevna prognoza",
     
     mondayName: "Ponedjeljak",
     mondayDescription: "Započnite sedmicu sa sofisticiranom jazz muzikom i opuštajućom atmosferom",
@@ -755,6 +757,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Clear Night",
     weatherCloudy: "Cloudy",
     weatherRainy: "Light Rain",
+    sevenDayForecast: "7-Day Forecast",
     
     mondayName: "Monday",
     mondayDescription: "Start your week with sophisticated jazz music and a relaxing atmosphere",
@@ -1126,6 +1129,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Ясная ночь",
     weatherCloudy: "Облачно",
     weatherRainy: "Дождь",
+    sevenDayForecast: "7-дневный прогноз",
     
     mondayName: "Понедельник",
     mondayDescription: "Начните неделю с изысканной джазовой музыки и расслабляющей атмосферы",
@@ -1497,6 +1501,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Noche despejada",
     weatherCloudy: "Nublado",
     weatherRainy: "Lluvia ligera",
+    sevenDayForecast: "Pronóstico de 7 días",
     
     mondayName: "Lunes",
     mondayDescription: "Comience la semana con música de jazz sofisticada y un ambiente relajante",
@@ -1868,6 +1873,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Nuit claire",
     weatherCloudy: "Nuageux",
     weatherRainy: "Pluie légère",
+    sevenDayForecast: "Prévisions sur 7 jours",
     
     mondayName: "Lundi",
     mondayDescription: "Commencez la semaine avec de la musique jazz sophistiquée et une atmosphère relaxante",
@@ -2239,6 +2245,7 @@ export const translations: Record<string, Translations> = {
     weatherClearNight: "Klare Nacht",
     weatherCloudy: "Bewölkt",
     weatherRainy: "Leichter Regen",
+    sevenDayForecast: "7-Tage-Vorhersage",
     
     mondayName: "Montag",
     mondayDescription: "Beginnen Sie die Woche mit anspruchsvoller Jazzmusik und entspannter Atmosphäre",
