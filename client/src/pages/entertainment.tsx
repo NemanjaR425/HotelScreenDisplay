@@ -4,9 +4,7 @@ import { ArrowLeft, Clock, DollarSign } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/LanguageSelector";
 import { getTranslation } from "@/utils/translations";
-import gradientBackground from "@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg";
 
-import ent1Image from "@assets/stock_images/professional_dj_perf_06ad4589.jpg";
 import ent2Image from "@assets/stock_images/traditional_folklore_3b184084.jpg";
 import ent3Image from "@assets/stock_images/people_dancing_at_pa_4a5acae1.jpg";
 import ent4Image from "@assets/stock_images/live_band_musicians__2e75c6eb.jpg";
@@ -49,7 +47,6 @@ export default function EntertainmentPage() {
       data-testid="entertainment-page"
     >
       <div className="h-full flex flex-col relative">
-        {/* Header */}
         <div className="flex items-center mb-6">
           <div className="flex items-center space-x-4">
             <Link href="/">
@@ -57,13 +54,12 @@ export default function EntertainmentPage() {
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-white" data-testid="text-page-title">
+            <h1 className="text-5xl font-bold text-white mt-[20px] mb-[20px]" data-testid="text-page-title">
               {t.entertainment}
             </h1>
           </div>
         </div>
 
-        {/* Language Selector - Bottom Left */}
         <div className="absolute bottom-4 left-0 z-50">
           <LanguageSelector 
             currentLanguage={currentLanguage}
@@ -71,37 +67,34 @@ export default function EntertainmentPage() {
           />
         </div>
 
-        {/* Entertainment Grid - 4x2 */}
-        <div className="flex-1 flex items-start justify-center overflow-hidden pb-20">
-          <div className="grid grid-cols-4 gap-3 w-full p-4" style={{ gridTemplateRows: 'repeat(2, minmax(0, 400px))' }}>
-            {entertainments.map((ent) => (
-              <div
-                key={ent.id}
-                className="relative rounded-md hover-elevate active-elevate-2 cursor-pointer"
-                data-testid={`entertainment-card-${ent.id}`}
-                style={{
-                  backgroundImage: `url(${ent.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div className="absolute inset-0 bg-black/50 rounded-md"></div>
-                <div className="relative z-10 text-center space-y-2 p-4 flex flex-col items-center justify-center h-full text-white">
-                  <h3 className="text-lg font-bold leading-tight">{ent.name}</h3>
-                  <p className="text-xs line-clamp-2 opacity-90">{ent.description}</p>
-                  <div className="space-y-1 text-xs w-full mt-auto">
-                    <div className="flex items-center justify-center space-x-2">
-                      <Clock className="w-5 h-5" />
-                      <span>{ent.time}</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <DollarSign className="w-3 h-3" />
-                      <span>{ent.price}</span>
+        <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
+          <div className="grid grid-cols-4 grid-rows-2 gap-3 w-full h-full ml-[0px] mr-[0px] pl-[20px] pr-[20px] pt-[20px] pb-[20px]">
+            {entertainments.slice(0, 8).map((ent) => (
+              <Link href={`/entertainment/${ent.id}`} key={ent.id}>
+                <div
+                  className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col h-full"
+                  data-testid={`entertainment-card-${ent.id}`}
+                >
+                  <div 
+                    className="w-full"
+                    style={{
+                      height: '65%',
+                      backgroundImage: `url(${ent.image})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  <div className="p-2 flex flex-col flex-1 pt-[14px] pb-[14px] ml-[12px] mr-[12px]">
+                    <h3 className="font-bold text-gray-900 text-[16px]">{ent.name}</h3>
+                    <p className="text-xs text-gray-600 line-clamp-1 mt-0.5">{ent.description}</p>
+                    <div className="mt-auto">
+                      <p className="text-xs text-gray-700">{ent.time}</p>
+                      <p className="text-sm font-semibold text-primary">{ent.price}</p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

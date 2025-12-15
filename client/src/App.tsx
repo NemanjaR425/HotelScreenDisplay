@@ -11,6 +11,7 @@ import TourDetailPage from "@/pages/tour-detail";
 import SpaPage from "@/pages/spa";
 import BeachPage from "@/pages/beach";
 import EntertainmentPage from "@/pages/entertainment";
+import EntertainmentDetailPage from "@/pages/entertainment-detail";
 import RentACarPage from "@/pages/rentacar";
 import NotFound from "@/pages/not-found";
 
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/spa" component={SpaPage} />
       <Route path="/beach" component={BeachPage} />
       <Route path="/entertainment" component={EntertainmentPage} />
+      <Route path="/entertainment/:id" component={EntertainmentDetailPage} />
       <Route path="/rentacar" component={RentACarPage} />
       <Route component={NotFound} />
     </Switch>
