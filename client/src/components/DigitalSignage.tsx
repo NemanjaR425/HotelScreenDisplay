@@ -6,8 +6,9 @@ import LanguageSelector from './LanguageSelector';
 import { getTranslation } from '../utils/translations';
 import { useWeather } from '../hooks/use-weather';
 import { useLanguage } from '@/contexts/LanguageContext';
-import hotelRoomImage from '@assets/Carine_Kumbor_1765374473834.jpg';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
+
+const HOTEL_BG_IMAGE = 'https://i.postimg.cc/v8WhdWnJ/oopm-accommodation-villa-one-garden.webp';
 
 export default function DigitalSignage() {
   const { currentLanguage, setLanguage } = useLanguage();
@@ -86,14 +87,14 @@ export default function DigitalSignage() {
         <div 
           className="flex-1 p-8 flex flex-col relative overflow-hidden"
           style={{
-            backgroundImage: `url(${hotelRoomImage})`,
+            backgroundImage: `url(${HOTEL_BG_IMAGE})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}
         >
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
           
           {/* Content container */}
           <div className="relative z-10 flex flex-col h-full">

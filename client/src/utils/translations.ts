@@ -12,7 +12,7 @@ export interface Translations {
   weatherCloudy: string;
   weatherRainy: string;
   sevenDayForecast: string;
-  
+
   mondayName: string;
   mondayDescription: string;
   tuesdayName: string;
@@ -27,27 +27,27 @@ export interface Translations {
   saturdayDescription: string;
   sundayName: string;
   sundayDescription: string;
-  
+
   restaurant1Name: string;
   restaurant1Description: string;
   restaurant1Cuisine: string;
   restaurant1Location: string;
-  
+
   restaurant2Name: string;
   restaurant2Description: string;
   restaurant2Cuisine: string;
   restaurant2Location: string;
-  
+
   restaurant3Name: string;
   restaurant3Description: string;
   restaurant3Cuisine: string;
   restaurant3Location: string;
-  
+
   restaurant4Name: string;
   restaurant4Description: string;
   restaurant4Cuisine: string;
   restaurant4Location: string;
-  
+
   backToRestaurants: string;
   restaurantBarDiner: string;
   menuCategoryStarters: string;
@@ -61,157 +61,157 @@ export interface Translations {
   menuCategoryPizza: string;
   menuCategorySteaks: string;
   menuCategoryMains: string;
-  
+
   tour1Name: string;
   tour1Description: string;
   tour1Duration: string;
   tour1Price: string;
-  
+
   tour2Name: string;
   tour2Description: string;
   tour2Duration: string;
   tour2Price: string;
-  
+
   tour3Name: string;
   tour3Description: string;
   tour3Duration: string;
   tour3Price: string;
-  
+
   tour4Name: string;
   tour4Description: string;
   tour4Duration: string;
   tour4Price: string;
-  
+
   tour5Name: string;
   tour5Description: string;
   tour5Duration: string;
   tour5Price: string;
-  
+
   tour6Name: string;
   tour6Description: string;
   tour6Duration: string;
   tour6Price: string;
-  
+
   tour7Name: string;
   tour7Description: string;
   tour7Duration: string;
   tour7Price: string;
-  
+
   tour8Name: string;
   tour8Description: string;
   tour8Duration: string;
   tour8Price: string;
-  
+
   tour9Name: string;
   tour9Description: string;
   tour9Duration: string;
   tour9Price: string;
-  
+
   tour10Name: string;
   tour10Description: string;
   tour10Duration: string;
   tour10Price: string;
-  
+
   tour11Name: string;
   tour11Description: string;
   tour11Duration: string;
   tour11Price: string;
-  
+
   tour12Name: string;
   tour12Description: string;
   tour12Duration: string;
   tour12Price: string;
-  
+
   spa1Name: string;
   spa1Description: string;
   spa1Hours: string;
   spa1Price: string;
-  
+
   spa2Name: string;
   spa2Description: string;
   spa2Hours: string;
   spa2Price: string;
-  
+
   spa3Name: string;
   spa3Description: string;
   spa3Hours: string;
   spa3Price: string;
-  
+
   spa4Name: string;
   spa4Description: string;
   spa4Hours: string;
   spa4Price: string;
-  
+
   spa5Name: string;
   spa5Description: string;
   spa5Hours: string;
   spa5Price: string;
-  
+
   beach1Name: string;
   beach1Description: string;
   beach1Hours: string;
   beach1Location: string;
-  
+
   beach2Name: string;
   beach2Description: string;
   beach2Hours: string;
   beach2Location: string;
-  
+
   beach3Name: string;
   beach3Description: string;
   beach3Hours: string;
   beach3Location: string;
-  
+
   beach4Name: string;
   beach4Description: string;
   beach4Hours: string;
   beach4Location: string;
-  
+
   beach5Name: string;
   beach5Description: string;
   beach5Hours: string;
   beach5Location: string;
-  
+
   ent1Name: string;
   ent1Description: string;
   ent1Time: string;
   ent1Price: string;
-  
+
   ent2Name: string;
   ent2Description: string;
   ent2Time: string;
   ent2Price: string;
-  
+
   ent3Name: string;
   ent3Description: string;
   ent3Time: string;
   ent3Price: string;
-  
+
   ent4Name: string;
   ent4Description: string;
   ent4Time: string;
   ent4Price: string;
-  
+
   ent5Name: string;
   ent5Description: string;
   ent5Time: string;
   ent5Price: string;
-  
+
   ent6Name: string;
   ent6Description: string;
   ent6Time: string;
   ent6Price: string;
-  
+
   ent7Name: string;
   ent7Description: string;
   ent7Time: string;
   ent7Price: string;
-  
+
   ent8Name: string;
   ent8Description: string;
   ent8Time: string;
   ent8Price: string;
-  
+
   dish1Name: string;
   dish1Desc: string;
   dish2Name: string;
@@ -336,7 +336,7 @@ export interface Translations {
   dish61Desc: string;
   dish62Name: string;
   dish62Desc: string;
-  
+
   car1Name: string;
   car1Description: string;
   car1Transmission: string;
@@ -372,7 +372,8 @@ export interface Translations {
 }
 
 export const translations: Record<string, Translations> = {
-  me: { // Montenegrin
+  me: {
+    // Montenegrin
     welcomeTo: "Dobrodošli u hotel",
     dining: "Restoran",
     rentACar: "Rent a Car",
@@ -386,42 +387,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Oblačno",
     weatherRainy: "Kiša",
     sevenDayForecast: "7-dnevna prognoza",
-    
+
     mondayName: "Ponedjeljak",
-    mondayDescription: "Započnite sedmicu sa sofisticiranom jazz muzikom i opuštajućom atmosferom",
+    mondayDescription:
+      "Započnite sedmicu sa sofisticiranom jazz muzikom i opuštajućom atmosferom",
     tuesdayName: "Utorak",
-    tuesdayDescription: "Uživajte u profesionalnim vokalnim nastupima sa poznatim hitovima",
+    tuesdayDescription:
+      "Uživajte u profesionalnim vokalnim nastupima sa poznatim hitovima",
     wednesdayName: "Srijeda",
-    wednesdayDescription: "Doživite autentične folklorne nastupe sa tradicionalnom muzikom i plesom",
+    wednesdayDescription:
+      "Doživite autentične folklorne nastupe sa tradicionalnom muzikom i plesom",
     thursdayName: "Četvrtak",
-    thursdayDescription: "Čarobno veče sa neverovatnim magičnim predstavama za sve uzraste",
+    thursdayDescription:
+      "Čarobno veče sa neverovatnim magičnim predstavama za sve uzraste",
     fridayName: "Petak",
-    fridayDescription: "Započnite vikend sa energičnim nastupima uživo i vrhunskom muzikom",
+    fridayDescription:
+      "Započnite vikend sa energičnim nastupima uživo i vrhunskom muzikom",
     saturdayName: "Subota",
-    saturdayDescription: "Najbolje veče sedmice sa DJ nastupima, plesnim zabavama i karaoke zabavom",
+    saturdayDescription:
+      "Najbolje veče sedmice sa DJ nastupima, plesnim zabavama i karaoke zabavom",
     sundayName: "Nedjelja",
-    sundayDescription: "Opustite se uz tradicionalne narodne nastupe i uživajte u kulturnom večeru",
-    
+    sundayDescription:
+      "Opustite se uz tradicionalne narodne nastupe i uživajte u kulturnom večeru",
+
     restaurant1Name: "Azure Mediteranski",
-    restaurant1Description: "Autentična mediteranska kuhinja sa svježim morskim plodovima i tradicionalnim jelima",
+    restaurant1Description:
+      "Autentična mediteranska kuhinja sa svježim morskim plodovima i tradicionalnim jelima",
     restaurant1Cuisine: "Mediteranski",
     restaurant1Location: "Prizemlje, Terasa sa pogledom na ocean",
-    
+
     restaurant2Name: "Sakura Suši Bar",
-    restaurant2Description: "Premium japanska kuhinja sa svježim sušijem i tradicionalnim jelima",
+    restaurant2Description:
+      "Premium japanska kuhinja sa svježim sušijem i tradicionalnim jelima",
     restaurant2Cuisine: "Japanski",
     restaurant2Location: "Drugi sprat, Pogled na vrt",
-    
+
     restaurant3Name: "Bella Vista Italijanski",
-    restaurant3Description: "Autentična italijanska tratoria sa domaćim tjesteninama i pica iz peći na drva",
+    restaurant3Description:
+      "Autentična italijanska tratoria sa domaćim tjesteninama i pica iz peći na drva",
     restaurant3Cuisine: "Italijanski",
     restaurant3Location: "Prizemlje, Piazza dvorište",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Premium steakhouse sa suhomesnatom govedinom i finim vinima",
+    restaurant4Description:
+      "Premium steakhouse sa suhomesnatom govedinom i finim vinima",
     restaurant4Cuisine: "Američki Steakhouse",
     restaurant4Location: "Treći sprat, Izvršni nivo",
-    
+
     backToRestaurants: "Nazad na restorane",
     restaurantBarDiner: "RESTORAN · BAR · DINER",
     menuCategoryStarters: "Predjela",
@@ -435,157 +447,168 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Pizza",
     menuCategorySteaks: "Odresci",
     menuCategoryMains: "Glavna jela",
-    
+
     tour1Name: "Stari Grad Kotor",
-    tour1Description: "Istražite istorijski stari grad sa vodicem i posetite lokalne znamenitosti",
+    tour1Description:
+      "Istražite istorijski stari grad sa vodičem i posjetite lokalne znamenitosti",
     tour1Duration: "3 sata",
     tour1Price: "€45",
-    
+
     tour2Name: "Perast",
-    tour2Description: "Opuštajuće krstarenje kroz zaljev Boka sa pogledom na planine",
+    tour2Description:
+      "Opuštajuće krstarenje kroz Bokokotorski zaliv sa pogledom na planine",
     tour2Duration: "4 sata",
     tour2Price: "€65",
-    
+
     tour3Name: "Rijeka Crnojevića",
-    tour3Description: "Posetite lokalne vinarije i degustirajte crnogorska vina",
+    tour3Description:
+      "Posjetite lokalne vinarije i degustirajte crnogorska vina",
     tour3Duration: "5 sati",
     tour3Price: "€80",
-    
+
     tour4Name: "Lovćen",
-    tour4Description: "Vođeno pešačenje kroz nacionalni park sa prekrasnim pogledima",
+    tour4Description:
+      "Vođeno pješačenje kroz nacionalni park sa prekrasnim pogledima",
     tour4Duration: "6 sati",
     tour4Price: "€55",
-    
-    tour5Name: "Kulinska Tura",
-    tour5Description: "Upoznajte crnogorsku kuhinju kroz tradicijska jela",
+
+    tour5Name: "Obilazak Zaliva gliserom",
+    tour5Description: "Obiđite Bokeška ostrva, plavu špilju i napušteni vojni tunel",
     tour5Duration: "4 sata",
     tour5Price: "€70",
-    
-    tour6Name: "Budva",
-    tour6Description: "Poseta skrivenim plažama i ronjenje u kristalno čistoj vodi",
+
+    tour6Name: "Buggy tura",
+    tour6Description:
+      "Obiđite planine i zaleđe iz potpuno nove atmosfere sa ATV vozilima",
     tour6Duration: "5 sati",
     tour6Price: "€90",
-    
+
     tour7Name: "Stari Grad Herceg Novi",
-    tour7Description: "Istražite srednjovekovne tvrđave i saznajte o istoriji regiona",
+    tour7Description:
+      "Istražite srednjovekovne tvrđave i saznajte o istoriji regiona",
     tour7Duration: "3 sata",
     tour7Price: "€50",
-    
-    tour8Name: "Cable Car",
-    tour8Description: "Tradicionalni ribolov sa lokalnim ribarima",
+
+    tour8Name: "Žičara Kotor-Lovćen",
+    tour8Description: "Vožna žičarom sa najboljim pogledom na zaliv",
     tour8Duration: "4 sata",
     tour8Price: "€60",
-    
-    tour9Name: "Misterija Monastira",
-    tour9Description: "Posetite drevne pravoslavne manastire skrivene u planinama",
+
+    tour9Name: "Bokeška Ostrva",
+    tour9Description:
+      "Posjetite drevne pravoslavne manastire skrivene u planinama",
     tour9Duration: "5 sati",
     tour9Price: "€75",
-    
-    tour10Name: "Budva",
-    tour10Description: "Romanticno jedrenje tokom zalaska sunca",
+
+    tour10Name: "Buggy Tura",
+    tour10Description: "Posjeta skrivenim plažama i ronjenje u kristalno čistoj vodi",
     tour10Duration: "2 sata",
     tour10Price: "€85",
-    
+
     tour11Name: "Lokalna Pijaca",
-    tour11Description: "Otkrijte lokalne pijace i prodavnice sa autentičnim proizvodima",
+    tour11Description:
+      "Otkrijte lokalne pijace i prodavnice sa autentičnim proizvodima",
     tour11Duration: "3 sata",
     tour11Price: "€40",
-    
-    tour12Name: "Buggy tura",
+
+    tour12Name: "Buggy turaBudva",
     tour12Description: "Istražite lokalni noćni život i zabavu",
     tour12Duration: "4 sata",
     tour12Price: "€55",
-    
+
     spa1Name: "Švedska Masaža",
     spa1Description: "Klasična terapeutska masaža za opuštanje mišića",
     spa1Hours: "09:00 - 20:00",
     spa1Price: "€65",
-    
+
     spa2Name: "Terapija Toplim Kamenom",
     spa2Description: "Umirujuća terapija sa toplim vulkanskim kamenjem",
     spa2Hours: "10:00 - 19:00",
     spa2Price: "€85",
-    
+
     spa3Name: "Tretman Lica",
     spa3Description: "Luksuzni tretman lica za sve tipove kože",
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
-    
+
     spa4Name: "Teretana",
-    spa4Description: "Revitalizirajući tretman piling tijela sa prirodnim uljima",
+    spa4Description:
+      "Revitalizirajući tretman piling tijela sa prirodnim uljima",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
-    
+
     spa5Name: "Sauna",
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
-    
+
     beach1Name: "Ležaljke",
     beach1Description: "Premium ležaljke sa uslugom suncobrana",
     beach1Hours: "08:00 - 19:00",
     beach1Location: "Glavna plaža",
-    
+
     beach2Name: "Plaža Bar",
     beach2Description: "Osvježavajući kokteli i lagani zalogaji pored vode",
     beach2Hours: "10:00 - 22:00",
     beach2Location: "Plaža paviljon",
-    
+
     beach3Name: "Vodeni Sportovi",
     beach3Description: "Kajak, paddleboarding i iznajmljivanje jet ski",
     beach3Hours: "09:00 - 18:00",
     beach3Location: "Centar za vodene sportove",
-    
+
     beach4Name: "Plaža Kabane",
     beach4Description: "Privatne kabane sa personalizovanom uslugom",
     beach4Hours: "08:00 - 20:00",
     beach4Location: "VIP zona plaže",
-    
+
     beach5Name: "Zalazak Sunca Krstarenje",
     beach5Description: "Večernje ture brodom duž jadranske obale",
     beach5Hours: "18:00 - 21:00",
     beach5Location: "Pristanište marine",
-    
+
     ent1Name: "Live DJ Večeri",
-    ent1Description: "Moderne elektronske muzičke performanse sa profesionalnim DJ-ovima",
+    ent1Description:
+      "Moderne elektronske muzičke performanse sa profesionalnim DJ-ovima",
     ent1Time: "21:00 - 02:00",
     ent1Price: "Besplatno",
-    
+
     ent2Name: "Tradicionalni Ples",
-    ent2Description: "Autentične folklorne predstave sa tradicional nom muzikom i plesom",
+    ent2Description:
+      "Autentične folklorne predstave sa tradicional nom muzikom i plesom",
     ent2Time: "19:00 - 20:30",
     ent2Price: "€15",
-    
+
     ent3Name: "Plesna Zabava",
     ent3Description: "Noćna plesna zabava sa vrhunskom muzikom i atmosferom",
     ent3Time: "22:00 - 03:00",
     ent3Price: "€10",
-    
+
     ent4Name: "Live Bend",
     ent4Description: "Vrhunski muzičari izvode popularnu i rock muziku",
     ent4Time: "20:00 - 23:00",
     ent4Price: "€20",
-    
-    ent5Name: "Live Pevač",
+
+    ent5Name: "Live Pjevač",
     ent5Description: "Profesionalni vokalisti izvode poznate hitove",
     ent5Time: "19:00 - 22:00",
     ent5Price: "Besplatno",
-    
-    ent6Name: "Magična Predstava",
+
+    ent6Name: "Mađioničar",
     ent6Description: "Zadivljujuće magične performanse za sve uzraste",
     ent6Time: "18:00 - 19:00",
     ent6Price: "€25",
-    
-    ent7Name: "Jazz Večer",
+
+    ent7Name: "Jazz Veče",
     ent7Description: "Sofisticirani jazz performansi sa renomiranim bendovima",
     ent7Time: "20:00 - 23:00",
     ent7Price: "€15",
-    
+
     ent8Name: "Karaoke Noć",
     ent8Description: "Zabavna karaoke večer sa širokim repertoarom pjesama",
     ent8Time: "21:00 - 01:00",
     ent8Price: "Besplatno",
-    
+
     dish1Name: "Hobotnica sa roštilja",
     dish1Desc: "Nežna hobotnica sa maslinovim uljem i začinskim biljem",
     dish2Name: "Mezze plata",
@@ -710,8 +733,8 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Klasični cheesecake sa bobičastim voćem",
     dish62Name: "Čokoladni lava kolač",
     dish62Desc: "Topli čokoladni kolač sa vanila sladoledom",
-    
-    car1Name: "Ekonom Kompakt",
+
+    car1Name: "Kompakt",
     car1Description: "Štedljivo gradsko vozilo, savršeno za kratka putovanja",
     car1Transmission: "Manuelni",
     car1Price: "€35/dan",
@@ -742,12 +765,13 @@ export const translations: Record<string, Translations> = {
     car8Name: "Premium Van",
     car8Description: "Maksimalan prostor za velike grupe",
     car8Transmission: "Automatik",
-    car8Price: "€85/dan"
+    car8Price: "€85/dan",
   },
-  en: { // English
+  en: {
+    // English
     welcomeTo: "Welcome to hotel",
     dining: "Dining",
-    rentACar: "Rent a Car", 
+    rentACar: "Rent a Car",
     excursions: "Excursions",
     entertainment: "Entertainment",
     spa: "Spa",
@@ -758,42 +782,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Cloudy",
     weatherRainy: "Light Rain",
     sevenDayForecast: "7-Day Forecast",
-    
+
     mondayName: "Monday",
-    mondayDescription: "Start your week with sophisticated jazz music and a relaxing atmosphere",
+    mondayDescription:
+      "Start your week with sophisticated jazz music and a relaxing atmosphere",
     tuesdayName: "Tuesday",
-    tuesdayDescription: "Enjoy professional vocal performances featuring popular hits",
+    tuesdayDescription:
+      "Enjoy professional vocal performances featuring popular hits",
     wednesdayName: "Wednesday",
-    wednesdayDescription: "Experience authentic folklore performances with traditional music and dance",
+    wednesdayDescription:
+      "Experience authentic folklore performances with traditional music and dance",
     thursdayName: "Thursday",
-    thursdayDescription: "A magical evening with amazing magic performances for all ages",
+    thursdayDescription:
+      "A magical evening with amazing magic performances for all ages",
     fridayName: "Friday",
-    fridayDescription: "Kick off the weekend with energetic live band performances and top music",
+    fridayDescription:
+      "Kick off the weekend with energetic live band performances and top music",
     saturdayName: "Saturday",
-    saturdayDescription: "The best night of the week with DJ performances, dance parties and karaoke fun",
+    saturdayDescription:
+      "The best night of the week with DJ performances, dance parties and karaoke fun",
     sundayName: "Sunday",
-    sundayDescription: "Relax with traditional folk performances and enjoy a cultural evening",
-    
+    sundayDescription:
+      "Relax with traditional folk performances and enjoy a cultural evening",
+
     restaurant1Name: "Azure Mediterranean",
-    restaurant1Description: "Authentic Mediterranean cuisine with fresh seafood and traditional dishes",
+    restaurant1Description:
+      "Authentic Mediterranean cuisine with fresh seafood and traditional dishes",
     restaurant1Cuisine: "Mediterranean",
     restaurant1Location: "Main Floor, Oceanview Terrace",
-    
+
     restaurant2Name: "Sakura Sushi Bar",
-    restaurant2Description: "Premium Japanese cuisine featuring fresh sushi and traditional dishes",
+    restaurant2Description:
+      "Premium Japanese cuisine featuring fresh sushi and traditional dishes",
     restaurant2Cuisine: "Japanese",
     restaurant2Location: "2nd Floor, Garden View",
-    
+
     restaurant3Name: "Bella Vista Italian",
-    restaurant3Description: "Authentic Italian trattoria with handmade pasta and wood-fired pizzas",
+    restaurant3Description:
+      "Authentic Italian trattoria with handmade pasta and wood-fired pizzas",
     restaurant3Cuisine: "Italian",
     restaurant3Location: "Main Floor, Piazza Courtyard",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Premium steakhouse featuring dry-aged beef and fine wines",
+    restaurant4Description:
+      "Premium steakhouse featuring dry-aged beef and fine wines",
     restaurant4Cuisine: "American Steakhouse",
     restaurant4Location: "3rd Floor, Executive Level",
-    
+
     backToRestaurants: "Back to Restaurants",
     restaurantBarDiner: "RESTAURANT · BAR · DINER",
     menuCategoryStarters: "Starters",
@@ -807,157 +842,165 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Pizza",
     menuCategorySteaks: "Steaks",
     menuCategoryMains: "Mains",
-    
+
     tour1Name: "Kotor Old Town",
-    tour1Description: "Explore the historic old town with a local guide and visit landmarks",
+    tour1Description:
+      "Explore the historic old town with a local guide and visit landmarks",
     tour1Duration: "3 hours",
     tour1Price: "€45",
-    
+
     tour2Name: "Perast",
-    tour2Description: "Relaxing cruise through the Bay of Kotor with mountain views",
+    tour2Description:
+      "Relaxing cruise through the Bay of Kotor with mountain views",
     tour2Duration: "4 hours",
     tour2Price: "€65",
-    
+
     tour3Name: "Rijeka Crnojevića",
     tour3Description: "Visit local wineries and taste Montenegrin wines",
     tour3Duration: "5 hours",
     tour3Price: "€80",
-    
+
     tour4Name: "Lovćen",
     tour4Description: "Guided hike through national park with stunning views",
     tour4Duration: "6 hours",
     tour4Price: "€55",
-    
-    tour5Name: "Culinary Tour",
-    tour5Description: "Discover Montenegrin cuisine through traditional dishes",
+
+    tour5Name: "Boat Tour",
+    tour5Description: "Discover Montenegrin coast in a speedboat, visit the islands, the magical blue cave and abandoned military tunnel",
     tour5Duration: "4 hours",
     tour5Price: "€70",
-    
-    tour6Name: "Budva",
-    tour6Description: "Visit hidden beaches and snorkel in crystal clear waters",
+
+    tour6Name: "Buggy tour",
+    tour6Description:
+      "Visit hidden mountains from an adventerous perspetcive with an ATV",
     tour6Duration: "5 hours",
     tour6Price: "€90",
-    
+
     tour7Name: "Old town Herceg Novi",
-    tour7Description: "Explore medieval fortresses and learn about regional history",
+    tour7Description:
+      "Explore medieval fortresses and learn about regional history",
     tour7Duration: "3 hours",
     tour7Price: "€50",
-    
+
     tour8Name: "Cable Car",
-    tour8Description: "Traditional fishing trip with local fishermen",
+    tour8Description: "Take a thirlling ride and see the best view of the bay",
     tour8Duration: "4 hours",
     tour8Price: "€60",
-    
+
     tour9Name: "Monastery Mystery",
-    tour9Description: "Visit ancient Orthodox monasteries hidden in the mountains",
+    tour9Description:
+      "Visit ancient Orthodox monasteries hidden in the mountains",
     tour9Duration: "5 hours",
     tour9Price: "€75",
-    
+
     tour10Name: "Budva",
     tour10Description: "Romantic sailing trip during sunset",
     tour10Duration: "2 hours",
     tour10Price: "€85",
-    
+
     tour11Name: "Local Market",
-    tour11Description: "Discover local markets and shops with authentic products",
+    tour11Description:
+      "Discover local markets and shops with authentic products",
     tour11Duration: "3 hours",
     tour11Price: "€40",
-    
+
     tour12Name: "Buggy tour",
     tour12Description: "Explore local nightlife and entertainment venues",
     tour12Duration: "4 hours",
     tour12Price: "€55",
-    
+
     spa1Name: "Swedish Massage",
     spa1Description: "Classic therapeutic massage for muscle relaxation",
     spa1Hours: "09:00 AM - 08:00 PM",
     spa1Price: "€65",
-    
+
     spa2Name: "Hot Stone Therapy",
     spa2Description: "Soothing therapy with warm volcanic stones",
     spa2Hours: "10:00 AM - 07:00 PM",
     spa2Price: "€85",
-    
+
     spa3Name: "Facial Treatment",
     spa3Description: "Luxury facial treatment for all skin types",
     spa3Hours: "09:00 AM - 08:00 PM",
     spa3Price: "€75",
-    
+
     spa4Name: "Gym",
     spa4Description: "Revitalizing body scrub treatment with natural oils",
     spa4Hours: "10:00 AM - 06:00 PM",
     spa4Price: "€55",
-    
+
     spa5Name: "Sauna",
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
     spa5Price: "€70",
-    
+
     beach1Name: "Sun Loungers",
     beach1Description: "Premium sun loungers with umbrella service",
     beach1Hours: "08:00 AM - 07:00 PM",
     beach1Location: "Main Beach",
-    
+
     beach2Name: "Beach Bar",
     beach2Description: "Refreshing cocktails and light snacks by the water",
     beach2Hours: "10:00 AM - 10:00 PM",
     beach2Location: "Beach Pavilion",
-    
+
     beach3Name: "Water Sports",
     beach3Description: "Kayaking, paddleboarding, and jet ski rentals",
     beach3Hours: "09:00 AM - 06:00 PM",
     beach3Location: "Water Sports Center",
-    
+
     beach4Name: "Beach Cabanas",
     beach4Description: "Private cabanas with personalized service",
     beach4Hours: "08:00 AM - 08:00 PM",
     beach4Location: "VIP Beach Area",
-    
+
     beach5Name: "Sunset Cruise",
     beach5Description: "Evening boat tours along the Adriatic coast",
     beach5Hours: "06:00 PM - 09:00 PM",
     beach5Location: "Marina Dock",
-    
+
     ent1Name: "Live DJ Nights",
-    ent1Description: "Modern electronic music performances with professional DJs",
+    ent1Description:
+      "Modern electronic music performances with professional DJs",
     ent1Time: "9:00 PM - 2:00 AM",
     ent1Price: "Free",
-    
+
     ent2Name: "Traditional Dance",
-    ent2Description: "Authentic folklore performances with traditional music and dance",
+    ent2Description:
+      "Authentic folklore performances with traditional music and dance",
     ent2Time: "7:00 PM - 8:30 PM",
     ent2Price: "€15",
-    
+
     ent3Name: "Dance Party",
     ent3Description: "Nighttime dance party with top music and atmosphere",
     ent3Time: "10:00 PM - 3:00 AM",
     ent3Price: "€10",
-    
+
     ent4Name: "Live Band",
     ent4Description: "Talented musicians performing popular and rock music",
     ent4Time: "8:00 PM - 11:00 PM",
     ent4Price: "€20",
-    
+
     ent5Name: "Live Singer",
     ent5Description: "Professional vocalists performing popular hits",
     ent5Time: "7:00 PM - 10:00 PM",
     ent5Price: "Free",
-    
+
     ent6Name: "Magic Show",
     ent6Description: "Amazing magic performances for all ages",
     ent6Time: "6:00 PM - 7:00 PM",
     ent6Price: "€25",
-    
+
     ent7Name: "Jazz Evening",
     ent7Description: "Sophisticated jazz performances with renowned bands",
     ent7Time: "8:00 PM - 11:00 PM",
     ent7Price: "€15",
-    
+
     ent8Name: "Karaoke Night",
     ent8Description: "Fun karaoke evening with a wide repertoire of songs",
     ent8Time: "9:00 PM - 1:00 AM",
     ent8Price: "Free",
-    
+
     dish1Name: "Grilled Octopus",
     dish1Desc: "Tender octopus with olive oil and herbs",
     dish2Name: "Mezze Platter",
@@ -1082,7 +1125,7 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Classic cheesecake with berry compote",
     dish62Name: "Chocolate Lava Cake",
     dish62Desc: "Warm chocolate cake with vanilla ice cream",
-    
+
     car1Name: "Economy Compact",
     car1Description: "Fuel-efficient city car, perfect for short trips",
     car1Transmission: "Manual",
@@ -1114,13 +1157,14 @@ export const translations: Record<string, Translations> = {
     car8Name: "Premium Van",
     car8Description: "Maximum space for large groups",
     car8Transmission: "Automatic",
-    car8Price: "€85/day"
+    car8Price: "€85/day",
   },
-  ru: { // Russian
+  ru: {
+    // Russian
     welcomeTo: "Добро пожаловать в отель",
     dining: "Ресторан",
     rentACar: "Rent a Car",
-    excursions: "Экскурсии", 
+    excursions: "Экскурсии",
     entertainment: "Развлечения",
     spa: "Спа",
     beach: "Пляж",
@@ -1130,42 +1174,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Облачно",
     weatherRainy: "Дождь",
     sevenDayForecast: "7-дневный прогноз",
-    
+
     mondayName: "Понедельник",
-    mondayDescription: "Начните неделю с изысканной джазовой музыки и расслабляющей атмосферы",
+    mondayDescription:
+      "Начните неделю с изысканной джазовой музыки и расслабляющей атмосферы",
     tuesdayName: "Вторник",
-    tuesdayDescription: "Наслаждайтесь профессиональными вокальными выступлениями с популярными хитами",
+    tuesdayDescription:
+      "Наслаждайтесь профессиональными вокальными выступлениями с популярными хитами",
     wednesdayName: "Среда",
-    wednesdayDescription: "Испытайте аутентичные фольклорные выступления с традиционной музыкой и танцами",
+    wednesdayDescription:
+      "Испытайте аутентичные фольклорные выступления с традиционной музыкой и танцами",
     thursdayName: "Четверг",
-    thursdayDescription: "Волшебный вечер с удивительными магическими представлениями для всех возрастов",
+    thursdayDescription:
+      "Волшебный вечер с удивительными магическими представлениями для всех возрастов",
     fridayName: "Пятница",
-    fridayDescription: "Начните выходные с энергичными живыми выступлениями и лучшей музыкой",
+    fridayDescription:
+      "Начните выходные с энергичными живыми выступлениями и лучшей музыкой",
     saturdayName: "Суббота",
-    saturdayDescription: "Лучшая ночь недели с выступлениями диджеев, танцевальными вечеринками и караоке",
+    saturdayDescription:
+      "Лучшая ночь недели с выступлениями диджеев, танцевальными вечеринками и караоке",
     sundayName: "Воскресенье",
-    sundayDescription: "Расслабьтесь с традиционными народными выступлениями и наслаждайтесь культурным вечером",
-    
+    sundayDescription:
+      "Расслабьтесь с традиционными народными выступлениями и наслаждайтесь культурным вечером",
+
     restaurant1Name: "Azure Средиземноморский",
-    restaurant1Description: "Аутентичная средиземноморская кухня со свежими морепродуктами и традиционными блюдами",
+    restaurant1Description:
+      "Аутентичная средиземноморская кухня со свежими морепродуктами и традиционными блюдами",
     restaurant1Cuisine: "Средиземноморская",
     restaurant1Location: "Первый этаж, Терраса с видом на океан",
-    
+
     restaurant2Name: "Sakura Суши Бар",
-    restaurant2Description: "Премиальная японская кухня со свежими суши и традиционными блюдами",
+    restaurant2Description:
+      "Премиальная японская кухня со свежими суши и традиционными блюдами",
     restaurant2Cuisine: "Японская",
     restaurant2Location: "2-й этаж, Вид на сад",
-    
+
     restaurant3Name: "Bella Vista Итальянский",
-    restaurant3Description: "Аутентичная итальянская траттория с домашней пастой и пиццей из дровяной печи",
+    restaurant3Description:
+      "Аутентичная итальянская траттория с домашней пастой и пиццей из дровяной печи",
     restaurant3Cuisine: "Итальянская",
     restaurant3Location: "Первый этаж, Внутренний двор Пьяцца",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Премиальный стейк-хаус с мясом сухого вызревания и изысканными винами",
+    restaurant4Description:
+      "Премиальный стейк-хаус с мясом сухого вызревания и изысканными винами",
     restaurant4Cuisine: "Американский стейк-хаус",
     restaurant4Location: "3-й этаж, Исполнительный уровень",
-    
+
     backToRestaurants: "Назад к ресторанам",
     restaurantBarDiner: "РЕСТОРАН · БАР · СТОЛОВАЯ",
     menuCategoryStarters: "Закуски",
@@ -1179,157 +1234,168 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Пицца",
     menuCategorySteaks: "Стейки",
     menuCategoryMains: "Основные блюда",
-    
+
     tour1Name: "Старый Город Котор",
-    tour1Description: "Исследуйте исторический старый город с гидом и посетите достопримечательности",
+    tour1Description:
+      "Исследуйте исторический старый город с гидом и посетите достопримечательности",
     tour1Duration: "3 часа",
     tour1Price: "€45",
-    
+
     tour2Name: "Пераст",
-    tour2Description: "Расслабляющий круиз по Бока-Которскому заливу с видом на горы",
+    tour2Description:
+      "Расслабляющий круиз по Бока-Которскому заливу с видом на горы",
     tour2Duration: "4 часа",
     tour2Price: "€65",
-    
+
     tour3Name: "Река Црноевича",
-    tour3Description: "Посетите местные винодельни и попробуйте черногорские вина",
+    tour3Description:
+      "Посетите местные винодельни и попробуйте черногорские вина",
     tour3Duration: "5 часов",
     tour3Price: "€80",
-    
+
     tour4Name: "Ловчен",
-    tour4Description: "Пешеходная экскурсия по национальному парку с потрясающими видами",
+    tour4Description:
+      "Пешеходная экскурсия по национальному парку с потрясающими видами",
     tour4Duration: "6 часов",
     tour4Price: "€55",
-    
-    tour5Name: "Кулинарный Тур",
+
+    tour5Name: "Поездка на лодке",
     tour5Description: "Откройте черногорскую кухню через традиционные блюда",
     tour5Duration: "4 часа",
     tour5Price: "€70",
-    
-    tour6Name: "Будва",
-    tour6Description: "Посетите скрытые пляжи и понырять в кристально чистой воде",
+
+    tour6Name: "Багги-тур",
+    tour6Description:
+      "Посетите скрытые пляжи и понырять в кристально чистой воде",
     tour6Duration: "5 часов",
     tour6Price: "€90",
-    
+
     tour7Name: "Старый Город Херцег-Нови",
-    tour7Description: "Исследуйте средневековые крепости и узнайте о региональной истории",
+    tour7Description:
+      "Исследуйте средневековые крепости и узнайте о региональной истории",
     tour7Duration: "3 часа",
     tour7Price: "€50",
-    
-    tour8Name: "Cable Car",
+
+    tour8Name: "Канатная дорога",
     tour8Description: "Традиционная рыбалка с местными рыбаками",
     tour8Duration: "4 часа",
     tour8Price: "€60",
-    
+
     tour9Name: "Тайна Монастырей",
     tour9Description: "Посетите древние православные монастыри в горах",
     tour9Duration: "5 часов",
     tour9Price: "€75",
-    
+
     tour10Name: "Будва",
     tour10Description: "Романтическое плавание на закате",
     tour10Duration: "2 часа",
     tour10Price: "€85",
-    
+
     tour11Name: "Местный Рынок",
     tour11Description: "Откройте местные рынки с аутентичными продуктами",
     tour11Duration: "3 часа",
     tour11Price: "€40",
-    
+
     tour12Name: "Багги тур",
     tour12Description: "Исследуйте местную ночную жизнь и развлечения",
     tour12Duration: "4 часа",
     tour12Price: "€55",
-    
+
     spa1Name: "Шведский Массаж",
-    spa1Description: "Классический терапевтический массаж для расслабления мышц",
+    spa1Description:
+      "Классический терапевтический массаж для расслабления мышц",
     spa1Hours: "09:00 - 20:00",
     spa1Price: "€65",
-    
+
     spa2Name: "Стоун-терапия",
     spa2Description: "Успокаивающая терапия теплыми вулканическими камнями",
     spa2Hours: "10:00 - 19:00",
     spa2Price: "€85",
-    
+
     spa3Name: "Уход за Лицом",
     spa3Description: "Роскошный уход за лицом для всех типов кожи",
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
-    
+
     spa4Name: "Тренажерный зал",
     spa4Description: "Восстанавливающий пилинг тела с натуральными маслами",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
-    
+
     spa5Name: "Сауна",
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
-    
+
     beach1Name: "Шезлонги",
     beach1Description: "Премиум шезлонги с зонтиками",
     beach1Hours: "08:00 - 19:00",
     beach1Location: "Главный пляж",
-    
+
     beach2Name: "Пляжный Бар",
     beach2Description: "Освежающие коктейли и легкие закуски у воды",
     beach2Hours: "10:00 - 22:00",
     beach2Location: "Пляжный павильон",
-    
+
     beach3Name: "Водные Виды Спорта",
     beach3Description: "Каяки, падлбординг и аренда гидроциклов",
     beach3Hours: "09:00 - 18:00",
     beach3Location: "Центр водных видов спорта",
-    
+
     beach4Name: "Пляжные Кабаны",
     beach4Description: "Частные кабаны с персональным обслуживанием",
     beach4Hours: "08:00 - 20:00",
     beach4Location: "VIP зона пляжа",
-    
+
     beach5Name: "Закатный Круиз",
-    beach5Description: "Вечерние морские прогулки вдоль Адриатического побережья",
+    beach5Description:
+      "Вечерние морские прогулки вдоль Адриатического побережья",
     beach5Hours: "18:00 - 21:00",
     beach5Location: "Причал марины",
-    
+
     ent1Name: "Живые DJ Вечера",
-    ent1Description: "Современные электронные музыкальные выступления с профессиональными диджеями",
+    ent1Description:
+      "Современные электронные музыкальные выступления с профессиональными диджеями",
     ent1Time: "21:00 - 02:00",
     ent1Price: "Бесплатно",
-    
+
     ent2Name: "Традиционные Танцы",
-    ent2Description: "Аутентичные фольклорные представления с традиционной музыкой и танцами",
+    ent2Description:
+      "Аутентичные фольклорные представления с традиционной музыкой и танцами",
     ent2Time: "19:00 - 20:30",
     ent2Price: "€15",
-    
+
     ent3Name: "Танцевальная Вечеринка",
-    ent3Description: "Ночная танцевальная вечеринка с лучшей музыкой и атмосферой",
+    ent3Description:
+      "Ночная танцевальная вечеринка с лучшей музыкой и атмосферой",
     ent3Time: "22:00 - 03:00",
     ent3Price: "€10",
-    
+
     ent4Name: "Живая Группа",
     ent4Description: "Талантливые музыканты исполняют популярную и рок-музыку",
     ent4Time: "20:00 - 23:00",
     ent4Price: "€20",
-    
+
     ent5Name: "Живой Вокалист",
     ent5Description: "Профессиональные вокалисты исполняют популярные хиты",
     ent5Time: "19:00 - 22:00",
     ent5Price: "Бесплатно",
-    
+
     ent6Name: "Магическое Шоу",
     ent6Description: "Удивительные магические представления для всех возрастов",
     ent6Time: "18:00 - 19:00",
     ent6Price: "€25",
-    
+
     ent7Name: "Джазовый Вечер",
     ent7Description: "Изысканные джазовые выступления с известными группами",
     ent7Time: "20:00 - 23:00",
     ent7Price: "€15",
-    
+
     ent8Name: "Караоке Ночь",
     ent8Description: "Веселый караоке вечер с широким репертуаром песен",
     ent8Time: "21:00 - 01:00",
     ent8Price: "Бесплатно",
-    
+
     dish1Name: "Жареный осьминог",
     dish1Desc: "Нежный осьминог с оливковым маслом и травами",
     dish2Name: "Плато Меззе",
@@ -1454,9 +1520,10 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Классический чизкейк с ягодным компотом",
     dish62Name: "Шоколадный лавовый торт",
     dish62Desc: "Теплый шоколадный торт с ванильным мороженым",
-    
+
     car1Name: "Эконом Компакт",
-    car1Description: "Экономичный городской автомобиль, идеальный для коротких поездок",
+    car1Description:
+      "Экономичный городской автомобиль, идеальный для коротких поездок",
     car1Transmission: "Механика",
     car1Price: "€35/день",
     car2Name: "Компактный Хэтчбек",
@@ -1486,14 +1553,15 @@ export const translations: Record<string, Translations> = {
     car8Name: "Премиум Вэн",
     car8Description: "Максимальное пространство для больших групп",
     car8Transmission: "Автомат",
-    car8Price: "€85/день"
+    car8Price: "€85/день",
   },
-  es: { // Spanish
+  es: {
+    // Spanish
     welcomeTo: "Bienvenido al hotel",
     dining: "Restaurante",
     rentACar: "Rent a Car",
     excursions: "Excursiones",
-    entertainment: "Entretenimiento", 
+    entertainment: "Entretenimiento",
     spa: "Spa",
     beach: "Playa",
     currentWeatherIn: "Clima actual en",
@@ -1502,42 +1570,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Nublado",
     weatherRainy: "Lluvia ligera",
     sevenDayForecast: "Pronóstico de 7 días",
-    
+
     mondayName: "Lunes",
-    mondayDescription: "Comience la semana con música de jazz sofisticada y un ambiente relajante",
+    mondayDescription:
+      "Comience la semana con música de jazz sofisticada y un ambiente relajante",
     tuesdayName: "Martes",
-    tuesdayDescription: "Disfrute de actuaciones vocales profesionales con éxitos populares",
+    tuesdayDescription:
+      "Disfrute de actuaciones vocales profesionales con éxitos populares",
     wednesdayName: "Miércoles",
-    wednesdayDescription: "Experimente auténticas actuaciones folclóricas con música y danza tradicional",
+    wednesdayDescription:
+      "Experimente auténticas actuaciones folclóricas con música y danza tradicional",
     thursdayName: "Jueves",
-    thursdayDescription: "Una velada mágica con increíbles espectáculos de magia para todas las edades",
+    thursdayDescription:
+      "Una velada mágica con increíbles espectáculos de magia para todas las edades",
     fridayName: "Viernes",
-    fridayDescription: "Comience el fin de semana con energéticas actuaciones de bandas en vivo y la mejor música",
+    fridayDescription:
+      "Comience el fin de semana con energéticas actuaciones de bandas en vivo y la mejor música",
     saturdayName: "Sábado",
-    saturdayDescription: "La mejor noche de la semana con presentaciones de DJ, fiestas de baile y diversión de karaoke",
+    saturdayDescription:
+      "La mejor noche de la semana con presentaciones de DJ, fiestas de baile y diversión de karaoke",
     sundayName: "Domingo",
-    sundayDescription: "Relájese con actuaciones folclóricas tradicionales y disfrute de una velada cultural",
-    
+    sundayDescription:
+      "Relájese con actuaciones folclóricas tradicionales y disfrute de una velada cultural",
+
     restaurant1Name: "Azure Mediterráneo",
-    restaurant1Description: "Auténtica cocina mediterránea con mariscos frescos y platos tradicionales",
+    restaurant1Description:
+      "Auténtica cocina mediterránea con mariscos frescos y platos tradicionales",
     restaurant1Cuisine: "Mediterránea",
     restaurant1Location: "Planta principal, Terraza con vista al océano",
-    
+
     restaurant2Name: "Sakura Sushi Bar",
-    restaurant2Description: "Cocina japonesa premium con sushi fresco y platos tradicionales",
+    restaurant2Description:
+      "Cocina japonesa premium con sushi fresco y platos tradicionales",
     restaurant2Cuisine: "Japonesa",
     restaurant2Location: "Segundo piso, Vista al jardín",
-    
+
     restaurant3Name: "Bella Vista Italiano",
-    restaurant3Description: "Auténtica trattoria italiana con pasta casera y pizzas al horno de leña",
+    restaurant3Description:
+      "Auténtica trattoria italiana con pasta casera y pizzas al horno de leña",
     restaurant3Cuisine: "Italiana",
     restaurant3Location: "Planta principal, Patio Piazza",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Steakhouse premium con carne madurada en seco y vinos finos",
+    restaurant4Description:
+      "Steakhouse premium con carne madurada en seco y vinos finos",
     restaurant4Cuisine: "Steakhouse Americano",
     restaurant4Location: "Tercer piso, Nivel ejecutivo",
-    
+
     backToRestaurants: "Volver a restaurantes",
     restaurantBarDiner: "RESTAURANTE · BAR · COMEDOR",
     menuCategoryStarters: "Entrantes",
@@ -1551,157 +1630,171 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Pizza",
     menuCategorySteaks: "Filetes",
     menuCategoryMains: "Platos principales",
-    
+
     tour1Name: "Casco Antiguo de Kotor",
-    tour1Description: "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
+    tour1Description:
+      "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
     tour1Duration: "3 horas",
     tour1Price: "€45",
-    
+
     tour2Name: "Perast",
-    tour2Description: "Relajante crucero por la Bahía de Kotor con vistas a las montañas",
+    tour2Description:
+      "Relajante crucero por la Bahía de Kotor con vistas a las montañas",
     tour2Duration: "4 horas",
     tour2Price: "€65",
-    
+
     tour3Name: "Rijeka Crnojevića",
     tour3Description: "Visite bodegas locales y deguste vinos montenegrinos",
     tour3Duration: "5 horas",
     tour3Price: "€80",
-    
+
     tour4Name: "Lovćen",
-    tour4Description: "Caminata guiada por el parque nacional con vistas impresionantes",
+    tour4Description:
+      "Caminata guiada por el parque nacional con vistas impresionantes",
     tour4Duration: "6 horas",
     tour4Price: "€55",
-    
-    tour5Name: "Tour Culinario",
-    tour5Description: "Descubra la cocina montenegrina a través de platos tradicionales",
+
+    tour5Name: "Paseo en Barco",
+    tour5Description:
+      "Descubra la cocina montenegrina a través de platos tradicionales",
     tour5Duration: "4 horas",
     tour5Price: "€70",
-    
-    tour6Name: "Budva",
-    tour6Description: "Visite playas escondidas y practique snorkel en aguas cristalinas",
+
+    tour6Name: "Tour en buggy",
+    tour6Description:
+      "Visite playas escondidas y practique snorkel en aguas cristalinas",
     tour6Duration: "5 horas",
     tour6Price: "€90",
-    
+
     tour7Name: "Casco Antiguo Herceg Novi",
-    tour7Description: "Explore fortalezas medievales y aprenda sobre la historia regional",
+    tour7Description:
+      "Explore fortalezas medievales y aprenda sobre la historia regional",
     tour7Duration: "3 horas",
     tour7Price: "€50",
-    
-    tour8Name: "Cable Car",
+
+    tour8Name: "Teleférico",
     tour8Description: "Viaje de pesca tradicional con pescadores locales",
     tour8Duration: "4 horas",
     tour8Price: "€60",
-    
+
     tour9Name: "Misterio del Monasterio",
-    tour9Description: "Visite antiguos monasterios ortodoxos escondidos en las montañas",
+    tour9Description:
+      "Visite antiguos monasterios ortodoxos escondidos en las montañas",
     tour9Duration: "5 horas",
     tour9Price: "€75",
-    
+
     tour10Name: "Budva",
     tour10Description: "Viaje romántico en velero durante el atardecer",
     tour10Duration: "2 horas",
     tour10Price: "€85",
-    
+
     tour11Name: "Mercado Local",
-    tour11Description: "Descubra mercados locales y tiendas con productos auténticos",
+    tour11Description:
+      "Descubra mercados locales y tiendas con productos auténticos",
     tour11Duration: "3 horas",
     tour11Price: "€40",
-    
+
     tour12Name: "Tour en Buggy",
-    tour12Description: "Explore la vida nocturna local y lugares de entretenimiento",
+    tour12Description:
+      "Explore la vida nocturna local y lugares de entretenimiento",
     tour12Duration: "4 horas",
     tour12Price: "€55",
-    
+
     spa1Name: "Masaje Sueco",
     spa1Description: "Masaje terapéutico clásico para relajación muscular",
     spa1Hours: "09:00 - 20:00",
     spa1Price: "€65",
-    
+
     spa2Name: "Terapia de Piedras Calientes",
     spa2Description: "Terapia relajante con piedras volcánicas calientes",
     spa2Hours: "10:00 - 19:00",
     spa2Price: "€85",
-    
+
     spa3Name: "Tratamiento Facial",
     spa3Description: "Tratamiento facial de lujo para todo tipo de piel",
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
-    
+
     spa4Name: "Gimnasio",
-    spa4Description: "Tratamiento revitalizante de exfoliación corporal con aceites naturales",
+    spa4Description:
+      "Tratamiento revitalizante de exfoliación corporal con aceites naturales",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
-    
+
     spa5Name: "Sauna",
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
-    
+
     beach1Name: "Tumbonas",
     beach1Description: "Tumbonas premium con servicio de sombrillas",
     beach1Hours: "08:00 - 19:00",
     beach1Location: "Playa Principal",
-    
+
     beach2Name: "Bar de Playa",
-    beach2Description: "Cócteles refrescantes y aperitivos ligeros junto al agua",
+    beach2Description:
+      "Cócteles refrescantes y aperitivos ligeros junto al agua",
     beach2Hours: "10:00 - 22:00",
     beach2Location: "Pabellón de Playa",
-    
+
     beach3Name: "Deportes Acuáticos",
     beach3Description: "Kayak, paddleboard y alquiler de motos acuáticas",
     beach3Hours: "09:00 - 18:00",
     beach3Location: "Centro de Deportes Acuáticos",
-    
+
     beach4Name: "Cabañas de Playa",
     beach4Description: "Cabañas privadas con servicio personalizado",
     beach4Hours: "08:00 - 20:00",
     beach4Location: "Zona VIP de Playa",
-    
+
     beach5Name: "Crucero al Atardecer",
     beach5Description: "Paseos en barco por la costa adriática al atardecer",
     beach5Hours: "18:00 - 21:00",
     beach5Location: "Muelle de la Marina",
-    
+
     ent1Name: "Noches de DJ en Vivo",
-    ent1Description: "Actuaciones de música electrónica moderna con DJs profesionales",
+    ent1Description:
+      "Actuaciones de música electrónica moderna con DJs profesionales",
     ent1Time: "21:00 - 02:00",
     ent1Price: "Gratis",
-    
+
     ent2Name: "Danza Tradicional",
-    ent2Description: "Actuaciones folclóricas auténticas con música y baile tradicional",
+    ent2Description:
+      "Actuaciones folclóricas auténticas con música y baile tradicional",
     ent2Time: "19:00 - 20:30",
     ent2Price: "€15",
-    
+
     ent3Name: "Fiesta de Baile",
     ent3Description: "Fiesta de baile nocturna con la mejor música y ambiente",
     ent3Time: "22:00 - 03:00",
     ent3Price: "€10",
-    
+
     ent4Name: "Banda en Vivo",
     ent4Description: "Músicos talentosos interpretando música popular y rock",
     ent4Time: "20:00 - 23:00",
     ent4Price: "€20",
-    
+
     ent5Name: "Cantante en Vivo",
     ent5Description: "Vocalistas profesionales interpretando éxitos populares",
     ent5Time: "19:00 - 22:00",
     ent5Price: "Gratis",
-    
+
     ent6Name: "Espectáculo de Magia",
     ent6Description: "Asombrosas actuaciones de magia para todas las edades",
     ent6Time: "18:00 - 19:00",
     ent6Price: "€25",
-    
+
     ent7Name: "Velada de Jazz",
     ent7Description: "Sofisticadas actuaciones de jazz con bandas reconocidas",
     ent7Time: "20:00 - 23:00",
     ent7Price: "€15",
-    
+
     ent8Name: "Noche de Karaoke",
-    ent8Description: "Divertida velada de karaoke con un amplio repertorio de canciones",
+    ent8Description:
+      "Divertida velada de karaoke con un amplio repertorio de canciones",
     ent8Time: "21:00 - 01:00",
     ent8Price: "Gratis",
-    
+
     dish1Name: "Pulpo a la Parrilla",
     dish1Desc: "Pulpo tierno con aceite de oliva y hierbas",
     dish2Name: "Plato Mezze",
@@ -1826,7 +1919,7 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Tarta de queso clásica con compota de bayas",
     dish62Name: "Pastel de Lava de Chocolate",
     dish62Desc: "Pastel de chocolate caliente con helado de vainilla",
-    
+
     car1Name: "Compacto Económico",
     car1Description: "Coche urbano eficiente, perfecto para viajes cortos",
     car1Transmission: "Manual",
@@ -1858,9 +1951,10 @@ export const translations: Record<string, Translations> = {
     car8Name: "Van Premium",
     car8Description: "Máximo espacio para grupos grandes",
     car8Transmission: "Automático",
-    car8Price: "€85/día"
+    car8Price: "€85/día",
   },
-  fr: { // French
+  fr: {
+    // French
     welcomeTo: "Bienvenue à l'hôtel",
     dining: "Restaurant",
     rentACar: "Rent a Car",
@@ -1874,42 +1968,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Nuageux",
     weatherRainy: "Pluie légère",
     sevenDayForecast: "Prévisions sur 7 jours",
-    
+
     mondayName: "Lundi",
-    mondayDescription: "Commencez la semaine avec de la musique jazz sophistiquée et une atmosphère relaxante",
+    mondayDescription:
+      "Commencez la semaine avec de la musique jazz sophistiquée et une atmosphère relaxante",
     tuesdayName: "Mardi",
-    tuesdayDescription: "Profitez de performances vocales professionnelles avec des hits populaires",
+    tuesdayDescription:
+      "Profitez de performances vocales professionnelles avec des hits populaires",
     wednesdayName: "Mercredi",
-    wednesdayDescription: "Découvrez des spectacles folkloriques authentiques avec musique et danse traditionnelles",
+    wednesdayDescription:
+      "Découvrez des spectacles folkloriques authentiques avec musique et danse traditionnelles",
     thursdayName: "Jeudi",
-    thursdayDescription: "Une soirée magique avec d'incroyables spectacles de magie pour tous les âges",
+    thursdayDescription:
+      "Une soirée magique avec d'incroyables spectacles de magie pour tous les âges",
     fridayName: "Vendredi",
-    fridayDescription: "Lancez le week-end avec des performances live énergiques et de la meilleure musique",
+    fridayDescription:
+      "Lancez le week-end avec des performances live énergiques et de la meilleure musique",
     saturdayName: "Samedi",
-    saturdayDescription: "La meilleure soirée de la semaine avec des performances de DJ, des soirées dansantes et du karaoké",
+    saturdayDescription:
+      "La meilleure soirée de la semaine avec des performances de DJ, des soirées dansantes et du karaoké",
     sundayName: "Dimanche",
-    sundayDescription: "Détendez-vous avec des spectacles folkloriques traditionnels et profitez d'une soirée culturelle",
-    
+    sundayDescription:
+      "Détendez-vous avec des spectacles folkloriques traditionnels et profitez d'une soirée culturelle",
+
     restaurant1Name: "Azure Méditerranéen",
-    restaurant1Description: "Cuisine méditerranéenne authentique avec fruits de mer frais et plats traditionnels",
+    restaurant1Description:
+      "Cuisine méditerranéenne authentique avec fruits de mer frais et plats traditionnels",
     restaurant1Cuisine: "Méditerranéenne",
     restaurant1Location: "Rez-de-chaussée, Terrasse vue océan",
-    
+
     restaurant2Name: "Sakura Sushi Bar",
-    restaurant2Description: "Cuisine japonaise premium avec sushi frais et plats traditionnels",
+    restaurant2Description:
+      "Cuisine japonaise premium avec sushi frais et plats traditionnels",
     restaurant2Cuisine: "Japonaise",
     restaurant2Location: "2ème étage, Vue sur le jardin",
-    
+
     restaurant3Name: "Bella Vista Italien",
-    restaurant3Description: "Trattoria italienne authentique avec pâtes faites maison et pizzas au feu de bois",
+    restaurant3Description:
+      "Trattoria italienne authentique avec pâtes faites maison et pizzas au feu de bois",
     restaurant3Cuisine: "Italienne",
     restaurant3Location: "Rez-de-chaussée, Cour Piazza",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Steakhouse premium avec boeuf maturé à sec et vins fins",
+    restaurant4Description:
+      "Steakhouse premium avec boeuf maturé à sec et vins fins",
     restaurant4Cuisine: "Steakhouse Américain",
     restaurant4Location: "3ème étage, Niveau exécutif",
-    
+
     backToRestaurants: "Retour aux restaurants",
     restaurantBarDiner: "RESTAURANT · BAR · SALLE À MANGER",
     menuCategoryStarters: "Entrées",
@@ -1923,157 +2028,177 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Pizza",
     menuCategorySteaks: "Steaks",
     menuCategoryMains: "Plats principaux",
-    
+
     tour1Name: "Vieille Ville de Kotor",
-    tour1Description: "Explorez la vieille ville historique avec un guide et visitez les monuments",
+    tour1Description:
+      "Explorez la vieille ville historique avec un guide et visitez les monuments",
     tour1Duration: "3 heures",
     tour1Price: "€45",
-    
+
     tour2Name: "Perast",
-    tour2Description: "Croisière relaxante dans la baie de Kotor avec vue sur les montagnes",
+    tour2Description:
+      "Croisière relaxante dans la baie de Kotor avec vue sur les montagnes",
     tour2Duration: "4 heures",
     tour2Price: "€65",
-    
+
     tour3Name: "Rijeka Crnojevića",
-    tour3Description: "Visitez les caves locales et dégustez les vins monténégrins",
+    tour3Description:
+      "Visitez les caves locales et dégustez les vins monténégrins",
     tour3Duration: "5 heures",
     tour3Price: "€80",
-    
+
     tour4Name: "Lovćen",
-    tour4Description: "Randonnée guidée dans le parc national avec vues spectaculaires",
+    tour4Description:
+      "Randonnée guidée dans le parc national avec vues spectaculaires",
     tour4Duration: "6 heures",
     tour4Price: "€55",
-    
-    tour5Name: "Tour Culinaire",
-    tour5Description: "Découvrez la cuisine monténégrine à travers des plats traditionnels",
+
+    tour5Name: "Promenade en bateau",
+    tour5Description:
+      "Découvrez la cuisine monténégrine à travers des plats traditionnels",
     tour5Duration: "4 heures",
     tour5Price: "€70",
-    
-    tour6Name: "Budva",
-    tour6Description: "Visitez des plages cachées et faites du snorkeling dans des eaux cristallines",
+
+    tour6Name: "Tour en buggy",
+    tour6Description:
+      "Visitez des plages cachées et faites du snorkeling dans des eaux cristallines",
     tour6Duration: "5 heures",
     tour6Price: "€90",
-    
+
     tour7Name: "Vieille Ville Herceg Novi",
-    tour7Description: "Explorez les forteresses médiévales et découvrez l'histoire régionale",
+    tour7Description:
+      "Explorez les forteresses médiévales et découvrez l'histoire régionale",
     tour7Duration: "3 heures",
     tour7Price: "€50",
-    
-    tour8Name: "Cable Car",
+
+    tour8Name: "Téléphérique",
     tour8Description: "Sortie de pêche traditionnelle avec des pêcheurs locaux",
     tour8Duration: "4 heures",
     tour8Price: "€60",
-    
+
     tour9Name: "Mystère des Monastères",
-    tour9Description: "Visitez d'anciens monastères orthodoxes cachés dans les montagnes",
+    tour9Description:
+      "Visitez d'anciens monastères orthodoxes cachés dans les montagnes",
     tour9Duration: "5 heures",
     tour9Price: "€75",
-    
+
     tour10Name: "Budva",
     tour10Description: "Sortie romantique en voilier au coucher du soleil",
     tour10Duration: "2 heures",
     tour10Price: "€85",
-    
+
     tour11Name: "Marché Local",
-    tour11Description: "Découvrez les marchés locaux avec des produits authentiques",
+    tour11Description:
+      "Découvrez les marchés locaux avec des produits authentiques",
     tour11Duration: "3 heures",
     tour11Price: "€40",
-    
+
     tour12Name: "Tour en Buggy",
-    tour12Description: "Explorez la vie nocturne locale et les lieux de divertissement",
+    tour12Description:
+      "Explorez la vie nocturne locale et les lieux de divertissement",
     tour12Duration: "4 heures",
     tour12Price: "€55",
-    
+
     spa1Name: "Massage Suédois",
-    spa1Description: "Massage thérapeutique classique pour la relaxation musculaire",
+    spa1Description:
+      "Massage thérapeutique classique pour la relaxation musculaire",
     spa1Hours: "09:00 - 20:00",
     spa1Price: "€65",
-    
+
     spa2Name: "Thérapie aux Pierres Chaudes",
     spa2Description: "Thérapie apaisante avec des pierres volcaniques chaudes",
     spa2Hours: "10:00 - 19:00",
     spa2Price: "€85",
-    
+
     spa3Name: "Soin du Visage",
     spa3Description: "Soin du visage de luxe pour tous types de peau",
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
-    
+
     spa4Name: "Salle de Sport",
     spa4Description: "Gommage corporel revitalisant aux huiles naturelles",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
-    
+
     spa5Name: "Sauna",
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
-    
+
     beach1Name: "Transats",
     beach1Description: "Transats premium avec service de parasols",
     beach1Hours: "08:00 - 19:00",
     beach1Location: "Plage Principale",
-    
+
     beach2Name: "Bar de Plage",
-    beach2Description: "Cocktails rafraîchissants et collations légères au bord de l'eau",
+    beach2Description:
+      "Cocktails rafraîchissants et collations légères au bord de l'eau",
     beach2Hours: "10:00 - 22:00",
     beach2Location: "Pavillon de Plage",
-    
+
     beach3Name: "Sports Nautiques",
     beach3Description: "Kayak, paddleboard et location de jet-ski",
     beach3Hours: "09:00 - 18:00",
     beach3Location: "Centre de Sports Nautiques",
-    
+
     beach4Name: "Cabanes de Plage",
     beach4Description: "Cabanes privées avec service personnalisé",
     beach4Hours: "08:00 - 20:00",
     beach4Location: "Zone VIP Plage",
-    
+
     beach5Name: "Croisière au Coucher du Soleil",
-    beach5Description: "Excursions en bateau le long de la côte adriatique au coucher du soleil",
+    beach5Description:
+      "Excursions en bateau le long de la côte adriatique au coucher du soleil",
     beach5Hours: "18:00 - 21:00",
     beach5Location: "Quai de la Marina",
-    
+
     ent1Name: "Soirées DJ Live",
-    ent1Description: "Performances musicales électroniques modernes avec des DJs professionnels",
+    ent1Description:
+      "Performances musicales électroniques modernes avec des DJs professionnels",
     ent1Time: "21:00 - 02:00",
     ent1Price: "Gratuit",
-    
+
     ent2Name: "Danse Traditionnelle",
-    ent2Description: "Spectacles folkloriques authentiques avec musique et danse traditionnelles",
+    ent2Description:
+      "Spectacles folkloriques authentiques avec musique et danse traditionnelles",
     ent2Time: "19:00 - 20:30",
     ent2Price: "€15",
-    
+
     ent3Name: "Soirée Dansante",
-    ent3Description: "Soirée dansante nocturne avec une excellente musique et ambiance",
+    ent3Description:
+      "Soirée dansante nocturne avec une excellente musique et ambiance",
     ent3Time: "22:00 - 03:00",
     ent3Price: "€10",
-    
+
     ent4Name: "Groupe Live",
-    ent4Description: "Musiciens talentueux interprétant de la musique populaire et rock",
+    ent4Description:
+      "Musiciens talentueux interprétant de la musique populaire et rock",
     ent4Time: "20:00 - 23:00",
     ent4Price: "€20",
-    
+
     ent5Name: "Chanteur Live",
-    ent5Description: "Chanteurs professionnels interprétant des hits populaires",
+    ent5Description:
+      "Chanteurs professionnels interprétant des hits populaires",
     ent5Time: "19:00 - 22:00",
     ent5Price: "Gratuit",
-    
+
     ent6Name: "Spectacle de Magie",
     ent6Description: "Spectacles de magie étonnants pour tous les âges",
     ent6Time: "18:00 - 19:00",
     ent6Price: "€25",
-    
+
     ent7Name: "Soirée Jazz",
-    ent7Description: "Spectacles de jazz sophistiqués avec des groupes renommés",
+    ent7Description:
+      "Spectacles de jazz sophistiqués avec des groupes renommés",
     ent7Time: "20:00 - 23:00",
     ent7Price: "€15",
-    
+
     ent8Name: "Soirée Karaoké",
-    ent8Description: "Soirée karaoké amusante avec un large répertoire de chansons",
+    ent8Description:
+      "Soirée karaoké amusante avec un large répertoire de chansons",
     ent8Time: "21:00 - 01:00",
     ent8Price: "Gratuit",
-    
+
     dish1Name: "Poulpe Grillé",
     dish1Desc: "Poulpe tendre à l'huile d'olive et aux herbes",
     dish2Name: "Plateau Mezze",
@@ -2198,9 +2323,10 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Cheesecake classique avec compote de baies",
     dish62Name: "Gâteau Coulant au Chocolat",
     dish62Desc: "Gâteau au chocolat chaud avec glace vanille",
-    
+
     car1Name: "Compact Économique",
-    car1Description: "Voiture de ville économique, parfaite pour les courts trajets",
+    car1Description:
+      "Voiture de ville économique, parfaite pour les courts trajets",
     car1Transmission: "Manuelle",
     car1Price: "€35/jour",
     car2Name: "Hatchback Compact",
@@ -2230,9 +2356,10 @@ export const translations: Record<string, Translations> = {
     car8Name: "Van Premium",
     car8Description: "Espace maximum pour grands groupes",
     car8Transmission: "Automatique",
-    car8Price: "€85/jour"
+    car8Price: "€85/jour",
   },
-  de: { // German
+  de: {
+    // German
     welcomeTo: "Willkommen im Hotel",
     dining: "Restaurant",
     rentACar: "Rent a Car",
@@ -2246,42 +2373,53 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Bewölkt",
     weatherRainy: "Leichter Regen",
     sevenDayForecast: "7-Tage-Vorhersage",
-    
+
     mondayName: "Montag",
-    mondayDescription: "Beginnen Sie die Woche mit anspruchsvoller Jazzmusik und entspannter Atmosphäre",
+    mondayDescription:
+      "Beginnen Sie die Woche mit anspruchsvoller Jazzmusik und entspannter Atmosphäre",
     tuesdayName: "Dienstag",
-    tuesdayDescription: "Genießen Sie professionelle Gesangsauftritte mit beliebten Hits",
+    tuesdayDescription:
+      "Genießen Sie professionelle Gesangsauftritte mit beliebten Hits",
     wednesdayName: "Mittwoch",
-    wednesdayDescription: "Erleben Sie authentische Folkloreaufführungen mit traditioneller Musik und Tanz",
+    wednesdayDescription:
+      "Erleben Sie authentische Folkloreaufführungen mit traditioneller Musik und Tanz",
     thursdayName: "Donnerstag",
-    thursdayDescription: "Ein magischer Abend mit erstaunlichen Zaubervorstellungen für alle Altersgruppen",
+    thursdayDescription:
+      "Ein magischer Abend mit erstaunlichen Zaubervorstellungen für alle Altersgruppen",
     fridayName: "Freitag",
-    fridayDescription: "Starten Sie ins Wochenende mit energiegeladenen Live-Band-Auftritten und bester Musik",
+    fridayDescription:
+      "Starten Sie ins Wochenende mit energiegeladenen Live-Band-Auftritten und bester Musik",
     saturdayName: "Samstag",
-    saturdayDescription: "Die beste Nacht der Woche mit DJ-Auftritten, Tanzpartys und Karaoke-Spaß",
+    saturdayDescription:
+      "Die beste Nacht der Woche mit DJ-Auftritten, Tanzpartys und Karaoke-Spaß",
     sundayName: "Sonntag",
-    sundayDescription: "Entspannen Sie mit traditionellen Folkloreaufführungen und genießen Sie einen kulturellen Abend",
-    
+    sundayDescription:
+      "Entspannen Sie mit traditionellen Folkloreaufführungen und genießen Sie einen kulturellen Abend",
+
     restaurant1Name: "Azure Mediterran",
-    restaurant1Description: "Authentische mediterrane Küche mit frischen Meeresfrüchten und traditionellen Gerichten",
+    restaurant1Description:
+      "Authentische mediterrane Küche mit frischen Meeresfrüchten und traditionellen Gerichten",
     restaurant1Cuisine: "Mediterran",
     restaurant1Location: "Erdgeschoss, Terrasse mit Meerblick",
-    
+
     restaurant2Name: "Sakura Sushi Bar",
-    restaurant2Description: "Premium japanische Küche mit frischem Sushi und traditionellen Gerichten",
+    restaurant2Description:
+      "Premium japanische Küche mit frischem Sushi und traditionellen Gerichten",
     restaurant2Cuisine: "Japanisch",
     restaurant2Location: "2. Etage, Gartenblick",
-    
+
     restaurant3Name: "Bella Vista Italienisch",
-    restaurant3Description: "Authentische italienische Trattoria mit hausgemachter Pasta und Holzofen-Pizzen",
+    restaurant3Description:
+      "Authentische italienische Trattoria mit hausgemachter Pasta und Holzofen-Pizzen",
     restaurant3Cuisine: "Italienisch",
     restaurant3Location: "Erdgeschoss, Piazza-Innenhof",
-    
+
     restaurant4Name: "Steakhouse Prime",
-    restaurant4Description: "Premium Steakhouse mit trocken gereiftem Rindfleisch und erlesenen Weinen",
+    restaurant4Description:
+      "Premium Steakhouse mit trocken gereiftem Rindfleisch und erlesenen Weinen",
     restaurant4Cuisine: "Amerikanisches Steakhouse",
     restaurant4Location: "3. Etage, Executive Level",
-    
+
     backToRestaurants: "Zurück zu Restaurants",
     restaurantBarDiner: "RESTAURANT · BAR · SPEISESAAL",
     menuCategoryStarters: "Vorspeisen",
@@ -2295,157 +2433,171 @@ export const translations: Record<string, Translations> = {
     menuCategoryPizza: "Pizza",
     menuCategorySteaks: "Steaks",
     menuCategoryMains: "Hauptgerichte",
-    
+
     tour1Name: "Altstadt Kotor",
-    tour1Description: "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",
+    tour1Description:
+      "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",
     tour1Duration: "3 Stunden",
     tour1Price: "€45",
-    
+
     tour2Name: "Perast",
-    tour2Description: "Entspannende Kreuzfahrt durch die Bucht von Kotor mit Bergblick",
+    tour2Description:
+      "Entspannende Kreuzfahrt durch die Bucht von Kotor mit Bergblick",
     tour2Duration: "4 Stunden",
     tour2Price: "€65",
-    
+
     tour3Name: "Rijeka Crnojevića",
-    tour3Description: "Besuchen Sie lokale Weingüter und probieren Sie montenegrinische Weine",
+    tour3Description:
+      "Besuchen Sie lokale Weingüter und probieren Sie montenegrinische Weine",
     tour3Duration: "5 Stunden",
     tour3Price: "€80",
-    
+
     tour4Name: "Lovćen",
-    tour4Description: "Geführte Wanderung durch den Nationalpark mit atemberaubender Aussicht",
+    tour4Description:
+      "Geführte Wanderung durch den Nationalpark mit atemberaubender Aussicht",
     tour4Duration: "6 Stunden",
     tour4Price: "€55",
-    
-    tour5Name: "Kulinarische Tour",
-    tour5Description: "Entdecken Sie die montenegrinische Küche durch traditionelle Gerichte",
+
+    tour5Name: "Bootsfahrt",
+    tour5Description:
+      "Entdecken Sie die montenegrinische Küche durch traditionelle Gerichte",
     tour5Duration: "4 Stunden",
     tour5Price: "€70",
-    
-    tour6Name: "Budva",
-    tour6Description: "Besuchen Sie versteckte Strände und schnorcheln Sie im kristallklaren Wasser",
+
+    tour6Name: "Buggy-Tour",
+    tour6Description:
+      "Besuchen Sie versteckte Strände und schnorcheln Sie im kristallklaren Wasser",
     tour6Duration: "5 Stunden",
     tour6Price: "€90",
-    
+
     tour7Name: "Altstadt Herceg Novi",
-    tour7Description: "Erkunden Sie mittelalterliche Festungen und lernen Sie die regionale Geschichte kennen",
+    tour7Description:
+      "Erkunden Sie mittelalterliche Festungen und lernen Sie die regionale Geschichte kennen",
     tour7Duration: "3 Stunden",
     tour7Price: "€50",
-    
-    tour8Name: "Cable Car",
+
+    tour8Name: "Seilbahn",
     tour8Description: "Traditioneller Angelausflug mit lokalen Fischern",
     tour8Duration: "4 Stunden",
     tour8Price: "€60",
-    
+
     tour9Name: "Kloster-Geheimnis",
-    tour9Description: "Besuchen Sie alte orthodoxe Klöster versteckt in den Bergen",
+    tour9Description:
+      "Besuchen Sie alte orthodoxe Klöster versteckt in den Bergen",
     tour9Duration: "5 Stunden",
     tour9Price: "€75",
-    
+
     tour10Name: "Budva",
     tour10Description: "Romantischer Segelausflug bei Sonnenuntergang",
     tour10Duration: "2 Stunden",
     tour10Price: "€85",
-    
+
     tour11Name: "Lokaler Markt",
-    tour11Description: "Entdecken Sie lokale Märkte mit authentischen Produkten",
+    tour11Description:
+      "Entdecken Sie lokale Märkte mit authentischen Produkten",
     tour11Duration: "3 Stunden",
     tour11Price: "€40",
-    
+
     tour12Name: "Buggy-Tour",
-    tour12Description: "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
+    tour12Description:
+      "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
     tour12Duration: "4 Stunden",
     tour12Price: "€55",
-    
+
     spa1Name: "Schwedische Massage",
     spa1Description: "Klassische therapeutische Massage zur Muskelentspannung",
     spa1Hours: "09:00 - 20:00",
     spa1Price: "€65",
-    
+
     spa2Name: "Hot Stone Therapie",
     spa2Description: "Beruhigende Therapie mit warmen Vulkansteinen",
     spa2Hours: "10:00 - 19:00",
     spa2Price: "€85",
-    
+
     spa3Name: "Gesichtsbehandlung",
     spa3Description: "Luxuriöse Gesichtsbehandlung für alle Hauttypen",
     spa3Hours: "09:00 - 20:00",
     spa3Price: "€75",
-    
+
     spa4Name: "Fitnessstudio",
-    spa4Description: "Revitalisierende Körperpeeling-Behandlung mit natürlichen Ölen",
+    spa4Description:
+      "Revitalisierende Körperpeeling-Behandlung mit natürlichen Ölen",
     spa4Hours: "10:00 - 18:00",
     spa4Price: "€55",
-    
+
     spa5Name: "Sauna",
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
-    
+
     beach1Name: "Sonnenliegen",
     beach1Description: "Premium-Sonnenliegen mit Sonnenschirmservice",
     beach1Hours: "08:00 - 19:00",
     beach1Location: "Hauptstrand",
-    
+
     beach2Name: "Strandbar",
     beach2Description: "Erfrischende Cocktails und leichte Snacks am Wasser",
     beach2Hours: "10:00 - 22:00",
     beach2Location: "Strandpavillon",
-    
+
     beach3Name: "Wassersport",
     beach3Description: "Kajak, Paddleboarding und Jetski-Verleih",
     beach3Hours: "09:00 - 18:00",
     beach3Location: "Wassersportzentrum",
-    
+
     beach4Name: "Strandkabanen",
     beach4Description: "Private Kabanen mit persönlichem Service",
     beach4Hours: "08:00 - 20:00",
     beach4Location: "VIP Strandbereich",
-    
+
     beach5Name: "Sonnenuntergangskreuzfahrt",
     beach5Description: "Abendliche Bootstouren entlang der Adriaküste",
     beach5Hours: "18:00 - 21:00",
     beach5Location: "Yachthafen",
-    
+
     ent1Name: "Live DJ Abende",
-    ent1Description: "Moderne elektronische Musikaufführungen mit professionellen DJs",
+    ent1Description:
+      "Moderne elektronische Musikaufführungen mit professionellen DJs",
     ent1Time: "21:00 - 02:00",
     ent1Price: "Kostenlos",
-    
+
     ent2Name: "Traditioneller Tanz",
-    ent2Description: "Authentische Folklore-Aufführungen mit traditioneller Musik und Tanz",
+    ent2Description:
+      "Authentische Folklore-Aufführungen mit traditioneller Musik und Tanz",
     ent2Time: "19:00 - 20:30",
     ent2Price: "€15",
-    
+
     ent3Name: "Tanzparty",
     ent3Description: "Nächtliche Tanzparty mit bester Musik und Atmosphäre",
     ent3Time: "22:00 - 03:00",
     ent3Price: "€10",
-    
+
     ent4Name: "Live Band",
     ent4Description: "Talentierte Musiker spielen populäre und Rock-Musik",
     ent4Time: "20:00 - 23:00",
     ent4Price: "€20",
-    
+
     ent5Name: "Live Sänger",
     ent5Description: "Professionelle Sänger spielen beliebte Hits",
     ent5Time: "19:00 - 22:00",
     ent5Price: "Kostenlos",
-    
+
     ent6Name: "Zaubershow",
     ent6Description: "Erstaunliche Zauberaufführungen für alle Altersgruppen",
     ent6Time: "18:00 - 19:00",
     ent6Price: "€25",
-    
+
     ent7Name: "Jazz Abend",
     ent7Description: "Raffinierte Jazz-Aufführungen mit renommierten Bands",
     ent7Time: "20:00 - 23:00",
     ent7Price: "€15",
-    
+
     ent8Name: "Karaoke Nacht",
-    ent8Description: "Unterhaltsamer Karaoke-Abend mit einem breiten Repertoire an Liedern",
+    ent8Description:
+      "Unterhaltsamer Karaoke-Abend mit einem breiten Repertoire an Liedern",
     ent8Time: "21:00 - 01:00",
     ent8Price: "Kostenlos",
-    
+
     dish1Name: "Gegrillter Oktopus",
     dish1Desc: "Zarter Oktopus mit Olivenöl und Kräutern",
     dish2Name: "Mezze Platte",
@@ -2570,7 +2722,7 @@ export const translations: Record<string, Translations> = {
     dish61Desc: "Klassischer Käsekuchen mit Beerenkompott",
     dish62Name: "Schokoladen Lava Kuchen",
     dish62Desc: "Warmer Schokoladenkuchen mit Vanilleeis",
-    
+
     car1Name: "Kompakter Kleinwagen",
     car1Description: "Sparsames Stadtauto, perfekt für kurze Fahrten",
     car1Transmission: "Schaltgetriebe",
@@ -2602,8 +2754,8 @@ export const translations: Record<string, Translations> = {
     car8Name: "Premium Van",
     car8Description: "Maximaler Platz für große Gruppen",
     car8Transmission: "Automatik",
-    car8Price: "€85/Tag"
-  }
+    car8Price: "€85/Tag",
+  },
 };
 
 export function getTranslation(language: string): Translations {

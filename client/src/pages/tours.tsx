@@ -8,16 +8,16 @@ import LanguageSelector from "@/components/LanguageSelector";
 import { getTranslation } from "@/utils/translations";
 import gradientBackground from "@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg";
 
-import tour1Image from "@assets/fortress-walls-of-the-ancient-town-of-kotor-on-the-2023-11-27-05-28-50-utc_1759609904304.jpg";
-import tour2Image from "@assets/the-picturesque-town-of-perast-in-the-bay-of-kotor-2023-11-27-04-48-55-utc_1759609904304.jpg";
-import tour3Image from "@assets/river-rijeka-crnojevica-in-montenegro-2024-10-18-07-50-59-utc_1759609904305.jpg";
-import tour4Image from "@assets/mausoleum-of-petar-petrovic-njegos-2023-11-27-05-02-52-utc_1759609904304.jpg";
-import tour5Image from "@assets/city-perast-montenegro-2023-11-27-05-09-23-utc_1759609904305.jpg";
-import tour6Image from "@assets/discover-the-enchanting-island-of-sveti-stefan-in-2024-09-30-13-00-59-utc_1759609904303.jpg";
+import tour1Image from "@assets/fortress-walls-of-the-ancient-town-of-kotor.webp";
+import tour2Image from "@assets/perast-detail.webp";
+import tour3Image from "@assets/river-rijeka-crnojevica-in-montenegro.webp";
+import tour4Image from "@assets/mausoleum-of-petar-petrovic-njegos.webp";
+import tour5Image from "@assets/gorgeous-redhead-caucasian-woman-in-beige-dress.webp";
+import tour6Image from "@assets/happy-couple-on-red-four-wheeler-atv-in-mountains.webp";
 import tour7Image from "@assets/DJI_0148_1762174357607.jpg";
-import tour8Image from "@assets/close-up-of-a-cable-car-cabin-against-the-sky-2023-11-27-05-20-12-utc_1759609904303.jpg";
-import tour9Image from "@assets/beautiful-mediterranean-landscape-2023-11-27-05-36-32-utc_1759609904305.jpg";
-import tour10Image from "@assets/budva-town-in-summer-2023-11-27-05-33-48-utc_1759609904305.jpg";
+import tour8Image from "@assets/cablecar.webp";
+import tour9Image from "@assets/church-of-the-our-lady-on-the-rocks-on-the-island.webp";
+import tour10Image from "@assets/old-town-in-budva.webp";
 import tour11Image from "@assets/horsewoman-on-the-beach-2023-11-27-04-56-21-utc_1759609904305.jpg";
 import tour12Image from "@assets/happy-couple-on-red-four-wheeler-atv-in-mountains-2023-11-27-04-53-37-utc_1759609904303.jpg";
 
