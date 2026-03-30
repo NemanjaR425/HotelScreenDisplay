@@ -249,8 +249,7 @@ export default function DiningPage() {
               <div className="flex items-center mb-4">
                 <Button 
                   variant="default" 
-                  size="lg"
-                  className="rounded-full w-14 h-14 bg-white text-black hover:bg-white"
+                  className="rounded-full w-14 h-14 p-0 flex items-center justify-center bg-white text-black"
                   onClick={() => setSelectedRestaurant(null)}
                   data-testid="button-back-restaurants"
                 >
