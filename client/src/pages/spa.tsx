@@ -1,17 +1,22 @@
-import { ArrowLeft, MapPin, Clock, Flower2 } from 'lucide-react';
+import { ArrowLeft, MapPin, Clock, Flower2, DollarSign } from 'lucide-react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import spaImage1 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
+import spaImage2 from '@assets/close-up-of-a-portrait-of-a-young-woman-with-her-e-2025-01-09-21-59-16-utc (Large)_1763401007421.jpg';
+import spaImage3 from '@assets/two-attractive-women-are-pampered-themselves-at-th-2024-04-22-20-12-44-utc (Large)_1763401615156.jpg';
+import spaImage4 from '@assets/strong-couch-training-woman-in-modern-gym-2025-03-08-05-47-45-utc (Large)_1763401695456.jpg';
+import spaImage5 from '@assets/young-happy-couple-relaxing-at-spa-resort-hotel-lu-2025-04-01-13-03-43-utc (Large)_1763401809350.jpg';
 import { getTranslation } from '../utils/translations';
 
 const spaServices = [
-  { id: '1' },
-  { id: '2' },
-  { id: '3' },
-  { id: '4' },
-  { id: '5' },
+  { id: '1', image: spaImage1 },
+  { id: '2', image: spaImage2 },
+  { id: '3', image: spaImage3 },
+  { id: '4', image: spaImage4 },
+  { id: '5', image: spaImage5 },
 ];
 
 export default function SpaPage() {
@@ -20,14 +25,12 @@ export default function SpaPage() {
 
   const translatedServices = spaServices.map(s => ({
     id: s.id,
+    image:       s.image,
     name:        t[`spa${s.id}Name`        as keyof typeof t] as string,
     description: t[`spa${s.id}Description` as keyof typeof t] as string,
     hours:       t[`spa${s.id}Hours`       as keyof typeof t] as string,
     price:       t[`spa${s.id}Price`       as keyof typeof t] as string,
   }));
-
-  const col1 = translatedServices.slice(0, 3);
-  const col2 = translatedServices.slice(3, 5);
 
   return (
     <div
@@ -99,88 +102,47 @@ export default function SpaPage() {
         </div>
       </div>
 
-      {/* ── Right panel: service menu ── */}
+      {/* ── Right panel: service cards ── */}
       <div
-        className="flex-1 flex flex-col h-full overflow-hidden"
-        style={{ backgroundColor: '#f5f1eb' }}
+        className="flex-1 h-full overflow-hidden py-6 pr-6"
+        style={{ backgroundColor: '#162739' }}
       >
-        {/* Top decorative line */}
-        <div className="mx-10 mt-8 border-t border-[#c8b89a]" />
-
-        {/* Services grid */}
-        <div className="flex-1 overflow-hidden px-10 py-8 flex gap-10">
-          {/* Column 1 */}
-          <div className="flex-1 space-y-8">
-            {col1.map((service, idx) => (
-              <ServiceRow
-                key={service.id}
-                service={service}
-                priceLabel={t.spaPriceLabel}
-                showHeader={idx === 0}
-                data-testid={`spa-service-${service.id}`}
-              />
-            ))}
-          </div>
-
-          {/* Divider */}
-          <div className="w-px bg-[#c8b89a] self-stretch" />
-
-          {/* Column 2 */}
-          <div className="flex-1 space-y-8">
-            {col2.map((service, idx) => (
-              <ServiceRow
-                key={service.id}
-                service={service}
-                priceLabel={t.spaPriceLabel}
-                showHeader={idx === 0}
-                data-testid={`spa-service-${service.id}`}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-5 gap-3 h-full">
+          {translatedServices.map((service) => (
+            <Card
+              key={service.id}
+              className="overflow-hidden bg-white/95 flex flex-col h-full"
+              data-testid={`spa-service-card-${service.id}`}
+            >
+              <div className="relative w-full overflow-hidden" style={{ flex: '0 0 65%' }}>
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="flex flex-col items-center justify-center text-center space-y-2 p-4 flex-1">
+                <h3 className="text-sm font-bold leading-tight" data-testid={`text-service-name-${service.id}`}>
+                  {service.name}
+                </h3>
+                <p className="text-muted-foreground text-xs leading-relaxed">
+                  {service.description}
+                </p>
+                <div className="space-y-1 text-xs text-muted-foreground pt-1">
+                  <div className="flex items-center justify-center space-x-1">
+                    <Clock className="w-3 h-3" />
+                    <span>{service.hours}</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-1">
+                    <DollarSign className="w-3 h-3" />
+                    <span className="font-semibold text-foreground">{service.price}</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-
-        {/* Bottom decorative line */}
-        <div className="mx-10 mb-8 border-b border-[#c8b89a]" />
       </div>
-    </div>
-  );
-}
-
-interface ServiceRowProps {
-  service: { id: string; name: string; description: string; hours: string; price: string };
-  priceLabel: string;
-  showHeader: boolean;
-  'data-testid'?: string;
-}
-
-function ServiceRow({ service, priceLabel, showHeader, 'data-testid': testId }: ServiceRowProps) {
-  return (
-    <div data-testid={testId}>
-      {showHeader && (
-        <div className="flex justify-between items-baseline mb-4 pb-1 border-b border-[#c8b89a]">
-          <span className="text-xs tracking-[0.2em] uppercase text-[#7a6a55] font-semibold" />
-          <span className="text-xs tracking-[0.2em] uppercase text-[#7a6a55] font-semibold">
-            {priceLabel}
-          </span>
-        </div>
-      )}
-      <div className="flex justify-between items-start gap-4">
-        <div className="flex-1">
-          <div className="flex items-baseline gap-2 mb-1">
-            <h3 className="text-sm font-bold tracking-wide uppercase text-[#2d2417]">
-              {service.name}
-            </h3>
-            <span className="text-xs text-[#9a8a72]">({service.hours})</span>
-          </div>
-          <p className="text-xs text-[#7a6a55] leading-relaxed">
-            {service.description}
-          </p>
-        </div>
-        <span className="text-sm font-semibold text-[#2d2417] whitespace-nowrap">
-          {service.price}
-        </span>
-      </div>
-      <div className="mt-4 border-b border-[#c8b89a]/50" />
     </div>
   );
 }
