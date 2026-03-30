@@ -102,12 +102,12 @@ export default function DigitalSignage() {
             <div className="flex justify-between items-start mb-8">
               <div className="text-left">
                 <div className="flex items-center space-x-2 text-white mb-2">
-                  <Clock className="w-8 h-8" />
-                  <span className="text-3xl font-medium" data-testid="text-current-time">
+                  <Clock className="w-12 h-12" />
+                  <span className="text-5xl font-medium" data-testid="text-current-time">
                     {formatTime(currentTime)}
                   </span>
                 </div>
-                <div className="text-lg text-white/80" data-testid="text-current-date">
+                <div className="text-2xl text-white/80" data-testid="text-current-date">
                   {formatDate(currentTime)}
                 </div>
               </div>
