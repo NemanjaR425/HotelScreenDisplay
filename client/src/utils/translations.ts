@@ -148,6 +148,11 @@ export interface Translations {
   spa5Description: string;
   spa5Hours: string;
   spa5Price: string;
+  spaIntro: string;
+  spaTagline: string;
+  spaOpenHours: string;
+  spaFloor: string;
+  spaPriceLabel: string;
 
   beach1Name: string;
   beach1Description: string;
@@ -545,6 +550,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spaIntro: "Naš spa centar je vaše utočište za obnovu duha i tijela. Uživajte u luksuznim tretmanima, relaksirajućim masažama i wellness ritualima koji vraćaju ravnotežu i harmoniju.",
+    spaTagline: "Dobrodošli u oazu mira.",
+    spaOpenHours: "Svakodnevno 09:00 - 20:00",
+    spaFloor: "Prizemlje, One & Only Resort",
+    spaPriceLabel: "CIJENA",
 
     beach1Name: "Ležaljke",
     beach1Description: "Premium ležaljke sa uslugom suncobrana",
@@ -939,6 +949,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
     spa5Price: "€70",
+    spaIntro: "Our spa centre is your sanctuary for mind and body renewal. Enjoy luxurious treatments, relaxing massages and wellness rituals that restore balance and harmony.",
+    spaTagline: "Welcome to our oasis of serenity.",
+    spaOpenHours: "Daily 09:00 AM - 08:00 PM",
+    spaFloor: "Ground Floor, One & Only Resort",
+    spaPriceLabel: "PRICE",
 
     beach1Name: "Sun Loungers",
     beach1Description: "Premium sun loungers with umbrella service",
@@ -1334,6 +1349,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spaIntro: "Наш СПА-центр — ваше убежище для обновления тела и духа. Насладитесь роскошными процедурами, расслабляющими массажами и велнес-ритуалами, восстанавливающими гармонию.",
+    spaTagline: "Добро пожаловать в наш оазис покоя.",
+    spaOpenHours: "Ежедневно 09:00 - 20:00",
+    spaFloor: "Первый этаж, One & Only Resort",
+    spaPriceLabel: "ЦЕНА",
 
     beach1Name: "Шезлонги",
     beach1Description: "Премиум шезлонги с зонтиками",
@@ -1735,6 +1755,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spaIntro: "Nuestro spa es su santuario para la renovación del cuerpo y la mente. Disfrute de lujosos tratamientos, relajantes masajes y rituales de bienestar que restauran el equilibrio.",
+    spaTagline: "Bienvenido a nuestro oasis de serenidad.",
+    spaOpenHours: "Diariamente 09:00 - 20:00",
+    spaFloor: "Planta Baja, One & Only Resort",
+    spaPriceLabel: "PRECIO",
 
     beach1Name: "Tumbonas",
     beach1Description: "Tumbonas premium con servicio de sombrillas",
@@ -2136,6 +2161,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spaIntro: "Notre spa est votre sanctuaire pour le renouvellement du corps et de l'esprit. Profitez de traitements luxueux, de massages relaxants et de rituels bien-être qui restaurent l'équilibre.",
+    spaTagline: "Bienvenue dans notre oasis de sérénité.",
+    spaOpenHours: "Quotidiennement 09:00 - 20:00",
+    spaFloor: "Rez-de-chaussée, One & Only Resort",
+    spaPriceLabel: "PRIX",
 
     beach1Name: "Transats",
     beach1Description: "Transats premium avec service de parasols",
@@ -2543,6 +2573,11 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spaIntro: "Unser Spa ist Ihr Refugium für die Erneuerung von Körper und Geist. Genießen Sie luxuriöse Behandlungen, entspannende Massagen und Wellness-Rituale, die Gleichgewicht und Harmonie wiederherstellen.",
+    spaTagline: "Willkommen in unserer Oase der Ruhe.",
+    spaOpenHours: "Täglich 09:00 - 20:00",
+    spaFloor: "Erdgeschoss, One & Only Resort",
+    spaPriceLabel: "PREIS",
 
     beach1Name: "Sonnenliegen",
     beach1Description: "Premium-Sonnenliegen mit Sonnenschirmservice",

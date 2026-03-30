@@ -1,142 +1,186 @@
-import { ArrowLeft, Clock, DollarSign } from 'lucide-react';
+import { ArrowLeft, MapPin, Clock, Flower2 } from 'lucide-react';
 import { Link } from 'wouter';
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
-import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import spaImage1 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1759145807719.jpg';
-import spaImage2 from '@assets/close-up-of-a-portrait-of-a-young-woman-with-her-e-2025-01-09-21-59-16-utc (Large)_1763401007421.jpg';
-import spaImage3 from '@assets/two-attractive-women-are-pampered-themselves-at-th-2024-04-22-20-12-44-utc (Large)_1763401615156.jpg';
-import spaImage4 from '@assets/strong-couch-training-woman-in-modern-gym-2025-03-08-05-47-45-utc (Large)_1763401695456.jpg';
-import spaImage5 from '@assets/young-happy-couple-relaxing-at-spa-resort-hotel-lu-2025-04-01-13-03-43-utc (Large)_1763401809350.jpg';
 import { getTranslation } from '../utils/translations';
 
 const spaServices = [
-  {
-    id: '1',
-    name: 'Swedish Massage',
-    description: 'Classic therapeutic massage for muscle relaxation',
-    hours: '09:00 AM - 08:00 PM',
-    price: '€65',
-    image: spaImage1,
-  },
-  {
-    id: '2',
-    name: 'Hot Stone Therapy',
-    description: 'Soothing therapy with warm volcanic stones',
-    hours: '10:00 AM - 07:00 PM',
-    price: '€85',
-    image: spaImage2,
-  },
-  {
-    id: '3',
-    name: 'Facial Treatment',
-    description: 'Luxury facial treatment for all skin types',
-    hours: '09:00 AM - 08:00 PM',
-    price: '€75',
-    image: spaImage3,
-  },
-  {
-    id: '4',
-    name: 'Body Scrub',
-    description: 'Revitalizing body scrub treatment with natural oils',
-    hours: '10:00 AM - 06:00 PM',
-    price: '€55',
-    image: spaImage4,
-  },
-  {
-    id: '5',
-    name: 'Aromatherapy',
-    description: 'Relaxing massage with essential oils',
-    hours: '09:00 AM - 08:00 PM',
-    price: '€70',
-    image: spaImage5,
-  },
+  { id: '1' },
+  { id: '2' },
+  { id: '3' },
+  { id: '4' },
+  { id: '5' },
 ];
 
 export default function SpaPage() {
   const { currentLanguage, setLanguage } = useLanguage();
   const t = getTranslation(currentLanguage);
 
-  const translatedServices = spaServices.map(service => ({
-    ...service,
-    name: t[`spa${service.id}Name` as keyof typeof t] as string,
-    description: t[`spa${service.id}Description` as keyof typeof t] as string,
-    hours: t[`spa${service.id}Hours` as keyof typeof t] as string,
-    price: t[`spa${service.id}Price` as keyof typeof t] as string,
+  const translatedServices = spaServices.map(s => ({
+    id: s.id,
+    name:        t[`spa${s.id}Name`        as keyof typeof t] as string,
+    description: t[`spa${s.id}Description` as keyof typeof t] as string,
+    hours:       t[`spa${s.id}Hours`       as keyof typeof t] as string,
+    price:       t[`spa${s.id}Price`       as keyof typeof t] as string,
   }));
 
+  const col1 = translatedServices.slice(0, 3);
+  const col2 = translatedServices.slice(3, 5);
+
   return (
-    <div 
-      className="w-full h-screen overflow-hidden p-6"
-      style={{ backgroundColor: '#162739' }} 
+    <div
+      className="w-full h-screen overflow-hidden flex"
       data-testid="spa-page"
     >
-      <div className="h-full flex flex-col relative">
-        {/* Header */}
-        <div className="flex items-center mb-6">
-          <div className="flex items-center space-x-4">
-            <Link href="/" className="pl-[0px] pr-[0px] ml-[20px] mr-[20px]">
-              <Button variant="default" size="lg" className="rounded-full w-14 h-14 bg-white text-black hover:bg-white mt-[30px] mb-[30px] pl-[22px] pr-[22px]" data-testid="button-back-home">
+      {/* ── Left panel: atmospheric image + info ── */}
+      <div
+        className="relative flex flex-col w-[38%] h-full overflow-hidden"
+        style={{
+          backgroundImage: `url(${spaImage1})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/55" />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col h-full p-10">
+          {/* Logo + name */}
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-14 h-14 rounded-full bg-white/15 border border-white/30 flex items-center justify-center">
+              <Flower2 className="w-7 h-7 text-white" />
+            </div>
+            <span className="text-white text-3xl font-light tracking-widest uppercase">
+              {t.spa}
+            </span>
+          </div>
+
+          {/* Location & hours */}
+          <div className="space-y-2 mb-8">
+            <div className="flex items-center gap-2 text-white/70 text-sm">
+              <MapPin className="w-4 h-4 shrink-0" />
+              <span>{t.spaFloor}</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/70 text-sm">
+              <Clock className="w-4 h-4 shrink-0" />
+              <span>{t.spaOpenHours}</span>
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="text-white/80 text-sm leading-relaxed mb-6">
+            {t.spaIntro}
+          </p>
+
+          {/* Tagline */}
+          <p className="text-white text-lg font-light italic mt-auto mb-8">
+            {t.spaTagline}
+          </p>
+
+          {/* Back + Language */}
+          <div className="flex items-center gap-4">
+            <Link href="/">
+              <Button
+                variant="default"
+                className="rounded-full w-14 h-14 p-0 flex items-center justify-center bg-white text-black"
+                data-testid="button-back-home"
+              >
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <h1 className="text-5xl font-bold text-white mt-[16px] mb-[16px] ml-[2px] mr-[2px]" data-testid="text-page-title">
-              {t.spa}
-            </h1>
-          </div>
-        </div>
-
-        {/* Language Selector - Bottom Left */}
-        <div className="absolute bottom-4 left-0 z-50">
-          <LanguageSelector 
-            currentLanguage={currentLanguage}
-            onLanguageChange={setLanguage}
-          />
-        </div>
-
-        {/* Services Grid */}
-        <div className="flex-1 overflow-y-auto pb-20">
-          <div className="grid grid-cols-5 gap-4 h-full mt-[0px] mb-[0px] pt-[20px] pb-[20px] pl-[22px] pr-[22px]">
-            {translatedServices.map((service) => (
-              <Card
-                key={service.id}
-                className="overflow-hidden bg-white/95 backdrop-blur-sm flex flex-col h-full"
-                data-testid={`spa-service-card-${service.id}`}
-              >
-                <div className="relative w-full flex-1 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1 flex flex-col">
-                  <CardContent className="text-center space-y-3 p-6 flex flex-col items-center justify-center h-full">
-                    <h3 className="text-xl font-bold" data-testid={`text-service-name-${service.id}`}>
-                      {service.name}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                    <div className="space-y-1 text-xs text-muted-foreground">
-                      <div className="flex items-center justify-center space-x-2">
-                        <Clock className="w-3 h-3" />
-                        <span>{service.hours}</span>
-                      </div>
-                      <div className="flex items-center justify-center space-x-2">
-                        <DollarSign className="w-3 h-3" />
-                        <span className="font-semibold text-foreground">{service.price}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
-            ))}
+            <LanguageSelector
+              currentLanguage={currentLanguage}
+              onLanguageChange={setLanguage}
+            />
           </div>
         </div>
       </div>
+
+      {/* ── Right panel: service menu ── */}
+      <div
+        className="flex-1 flex flex-col h-full overflow-hidden"
+        style={{ backgroundColor: '#f5f1eb' }}
+      >
+        {/* Top decorative line */}
+        <div className="mx-10 mt-8 border-t border-[#c8b89a]" />
+
+        {/* Services grid */}
+        <div className="flex-1 overflow-hidden px-10 py-8 flex gap-10">
+          {/* Column 1 */}
+          <div className="flex-1 space-y-8">
+            {col1.map((service, idx) => (
+              <ServiceRow
+                key={service.id}
+                service={service}
+                priceLabel={t.spaPriceLabel}
+                showHeader={idx === 0}
+                data-testid={`spa-service-${service.id}`}
+              />
+            ))}
+          </div>
+
+          {/* Divider */}
+          <div className="w-px bg-[#c8b89a] self-stretch" />
+
+          {/* Column 2 */}
+          <div className="flex-1 space-y-8">
+            {col2.map((service, idx) => (
+              <ServiceRow
+                key={service.id}
+                service={service}
+                priceLabel={t.spaPriceLabel}
+                showHeader={idx === 0}
+                data-testid={`spa-service-${service.id}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom decorative line */}
+        <div className="mx-10 mb-8 border-b border-[#c8b89a]" />
+      </div>
+    </div>
+  );
+}
+
+interface ServiceRowProps {
+  service: { id: string; name: string; description: string; hours: string; price: string };
+  priceLabel: string;
+  showHeader: boolean;
+  'data-testid'?: string;
+}
+
+function ServiceRow({ service, priceLabel, showHeader, 'data-testid': testId }: ServiceRowProps) {
+  return (
+    <div data-testid={testId}>
+      {showHeader && (
+        <div className="flex justify-between items-baseline mb-4 pb-1 border-b border-[#c8b89a]">
+          <span className="text-xs tracking-[0.2em] uppercase text-[#7a6a55] font-semibold" />
+          <span className="text-xs tracking-[0.2em] uppercase text-[#7a6a55] font-semibold">
+            {priceLabel}
+          </span>
+        </div>
+      )}
+      <div className="flex justify-between items-start gap-4">
+        <div className="flex-1">
+          <div className="flex items-baseline gap-2 mb-1">
+            <h3 className="text-sm font-bold tracking-wide uppercase text-[#2d2417]">
+              {service.name}
+            </h3>
+            <span className="text-xs text-[#9a8a72]">({service.hours})</span>
+          </div>
+          <p className="text-xs text-[#7a6a55] leading-relaxed">
+            {service.description}
+          </p>
+        </div>
+        <span className="text-sm font-semibold text-[#2d2417] whitespace-nowrap">
+          {service.price}
+        </span>
+      </div>
+      <div className="mt-4 border-b border-[#c8b89a]/50" />
     </div>
   );
 }
