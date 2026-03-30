@@ -119,6 +119,8 @@ export default function DigitalSignage() {
                 currentWeatherText={t.currentWeatherIn}
                 conditionText={getWeatherConditionText(weather?.condition ?? 'sunny')}
                 forecastTitle={t.sevenDayForecast}
+                hourlyForecast={t.hourlyForecast}
+                dailyForecast={t.dailyForecast}
                 dayNames={{
                   monday: t.mondayName,
                   tuesday: t.tuesdayName,

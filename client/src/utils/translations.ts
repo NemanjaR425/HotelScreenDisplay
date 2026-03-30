@@ -12,6 +12,8 @@ export interface Translations {
   weatherCloudy: string;
   weatherRainy: string;
   sevenDayForecast: string;
+  hourlyForecast: string;
+  dailyForecast: string;
 
   mondayName: string;
   mondayDescription: string;
@@ -387,6 +389,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Oblačno",
     weatherRainy: "Kiša",
     sevenDayForecast: "7-dnevna prognoza",
+    hourlyForecast: "Satna prognoza",
+    dailyForecast: "Dnevna prognoza",
 
     mondayName: "Ponedjeljak",
     mondayDescription:
@@ -782,6 +786,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Cloudy",
     weatherRainy: "Light Rain",
     sevenDayForecast: "7-Day Forecast",
+    hourlyForecast: "Hourly Forecast",
+    dailyForecast: "Daily Forecast",
 
     mondayName: "Monday",
     mondayDescription:
@@ -1174,6 +1180,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Облачно",
     weatherRainy: "Дождь",
     sevenDayForecast: "7-дневный прогноз",
+    hourlyForecast: "Почасовой прогноз",
+    dailyForecast: "Ежедневный прогноз",
 
     mondayName: "Понедельник",
     mondayDescription:
@@ -1570,6 +1578,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Nublado",
     weatherRainy: "Lluvia ligera",
     sevenDayForecast: "Pronóstico de 7 días",
+    hourlyForecast: "Pronóstico por horas",
+    dailyForecast: "Pronóstico diario",
 
     mondayName: "Lunes",
     mondayDescription:
@@ -1968,6 +1978,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Nuageux",
     weatherRainy: "Pluie légère",
     sevenDayForecast: "Prévisions sur 7 jours",
+    hourlyForecast: "Prévisions horaires",
+    dailyForecast: "Prévisions quotidiennes",
 
     mondayName: "Lundi",
     mondayDescription:
@@ -2373,6 +2385,8 @@ export const translations: Record<string, Translations> = {
     weatherCloudy: "Bewölkt",
     weatherRainy: "Leichter Regen",
     sevenDayForecast: "7-Tage-Vorhersage",
+    hourlyForecast: "Stündliche Vorhersage",
+    dailyForecast: "Tägliche Vorhersage",
 
     mondayName: "Montag",
     mondayDescription:

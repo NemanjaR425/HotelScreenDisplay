@@ -10,6 +10,8 @@ interface WeatherWidgetProps {
   conditionText: string;
   forecast?: ForecastDay[];
   forecastTitle?: string;
+  hourlyForecast?: string;
+  dailyForecast?: string;
   dayNames?: {
     monday: string;
     tuesday: string;
@@ -28,6 +30,12 @@ interface ForecastDay {
   condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
 }
 
+interface HourlyEntry {
+  time: string;
+  temp: number;
+  condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
+}
+
 export default function WeatherWidget({ 
   temperature, 
   condition, 
@@ -36,9 +44,12 @@ export default function WeatherWidget({
   conditionText,
   forecast,
   forecastTitle = "7-Day Forecast",
+  hourlyForecast = "Hourly Forecast",
+  dailyForecast = "Daily Forecast",
   dayNames
 }: WeatherWidgetProps) {
   const [showForecast, setShowForecast] = useState(false);
+  const [activeTab, setActiveTab] = useState<'hourly' | 'daily'>('hourly');
 
   const getWeatherIcon = (cond: 'sunny' | 'cloudy' | 'rainy' | 'clear-night', size: string = "w-8 h-8") => {
     switch (cond) {
@@ -75,6 +86,38 @@ export default function WeatherWidget({
   });
 
   const forecastData = forecast || defaultForecast;
+
+  // Generate simulated hourly data for today based on current temperature
+  const generateHourlyData = (): HourlyEntry[] => {
+    const now = new Date();
+    const currentHour = now.getHours();
+    const base = temperature;
+    // Temperature offsets throughout the day (relative to current temp)
+    const hourlyPattern: Array<{ offset: number; condition: HourlyEntry['condition'] }> = [
+      { offset: -4, condition: 'clear-night' }, // 00:00
+      { offset: -5, condition: 'clear-night' }, // 03:00
+      { offset: -4, condition: 'cloudy'      }, // 06:00
+      { offset: -2, condition: 'cloudy'      }, // 09:00
+      { offset:  2, condition: 'sunny'       }, // 12:00
+      { offset:  3, condition: 'sunny'       }, // 15:00
+      { offset:  1, condition: 'sunny'       }, // 18:00
+      { offset: -2, condition: 'cloudy'      }, // 21:00
+    ];
+
+    return hourlyPattern.map((entry, i) => {
+      const slotHour = i * 3;
+      const isPast = slotHour < currentHour;
+      const label = `${String(slotHour).padStart(2, '0')}:00`;
+      return {
+        time: label,
+        temp: Math.round(base + entry.offset),
+        condition: isPast ? (slotHour < 6 ? 'clear-night' : 'sunny') : entry.condition,
+        isPast,
+      } as HourlyEntry & { isPast: boolean };
+    });
+  };
+
+  const hourlyData = generateHourlyData() as Array<HourlyEntry & { isPast: boolean }>;
 
   return (
     <>
@@ -114,6 +157,7 @@ export default function WeatherWidget({
             onClick={(e) => e.stopPropagation()}
             data-testid="forecast-modal"
           >
+            {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900" data-testid="text-forecast-title">
@@ -132,6 +176,7 @@ export default function WeatherWidget({
               </Button>
             </div>
 
+            {/* Current conditions */}
             <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 mb-6">
               <div className="flex items-center justify-between text-white">
                 <div className="flex items-center space-x-4">
@@ -148,22 +193,62 @@ export default function WeatherWidget({
               </div>
             </div>
 
-            <div className="grid grid-cols-7 gap-3">
-              {forecastData.map((day, index) => (
-                <div 
-                  key={index}
-                  className="bg-gray-50 rounded-xl p-4 text-center"
-                  data-testid={`forecast-day-${index}`}
-                >
-                  <p className="font-semibold text-gray-900 text-sm mb-2">{day.day}</p>
-                  <div className="flex justify-center mb-2">
-                    {getWeatherIcon(day.condition, "w-10 h-10")}
-                  </div>
-                  <p className="text-lg font-bold text-gray-900">{day.high}°</p>
-                  <p className="text-sm text-gray-500">{day.low}°</p>
-                </div>
-              ))}
+            {/* Tab toggle */}
+            <div className="flex gap-2 mb-4">
+              <Button
+                variant={activeTab === 'hourly' ? 'default' : 'outline'}
+                onClick={() => setActiveTab('hourly')}
+                data-testid="tab-hourly"
+              >
+                {hourlyForecast}
+              </Button>
+              <Button
+                variant={activeTab === 'daily' ? 'default' : 'outline'}
+                onClick={() => setActiveTab('daily')}
+                data-testid="tab-daily"
+              >
+                {dailyForecast}
+              </Button>
             </div>
+
+            {/* Hourly view */}
+            {activeTab === 'hourly' && (
+              <div className="grid grid-cols-8 gap-2" data-testid="hourly-forecast">
+                {hourlyData.map((slot, index) => (
+                  <div 
+                    key={index}
+                    className={`rounded-xl p-3 text-center ${slot.isPast ? 'bg-gray-100 opacity-50' : 'bg-gray-50'}`}
+                    data-testid={`hourly-slot-${index}`}
+                  >
+                    <p className="font-semibold text-gray-900 text-xs mb-2">{slot.time}</p>
+                    <div className="flex justify-center mb-2">
+                      {getWeatherIcon(slot.condition, "w-8 h-8")}
+                    </div>
+                    <p className="text-base font-bold text-gray-900">{slot.temp}°</p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Daily view */}
+            {activeTab === 'daily' && (
+              <div className="grid grid-cols-7 gap-3" data-testid="daily-forecast">
+                {forecastData.map((day, index) => (
+                  <div 
+                    key={index}
+                    className="bg-gray-50 rounded-xl p-4 text-center"
+                    data-testid={`forecast-day-${index}`}
+                  >
+                    <p className="font-semibold text-gray-900 text-sm mb-2">{day.day}</p>
+                    <div className="flex justify-center mb-2">
+                      {getWeatherIcon(day.condition, "w-10 h-10")}
+                    </div>
+                    <p className="text-lg font-bold text-gray-900">{day.high}°</p>
+                    <p className="text-sm text-gray-500">{day.low}°</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
