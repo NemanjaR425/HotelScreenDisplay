@@ -9,6 +9,7 @@ import spaImage2 from '@assets/close-up-of-a-portrait-of-a-young-woman-with-her-
 import spaImage3 from '@assets/two-attractive-women-are-pampered-themselves-at-th-2024-04-22-20-12-44-utc (Large)_1763401615156.jpg';
 import spaImage4 from '@assets/strong-couch-training-woman-in-modern-gym-2025-03-08-05-47-45-utc (Large)_1763401695456.jpg';
 import spaImage5 from '@assets/young-happy-couple-relaxing-at-spa-resort-hotel-lu-2025-04-01-13-03-43-utc (Large)_1763401809350.jpg';
+import spaImage6 from '@assets/skilled-physiotherapist-relaxing-tight-pectoral-mu-2024-10-18-10-50-56-utc_1763401354430.jpg';
 import { getTranslation } from '../utils/translations';
 
 const spaServices = [
@@ -17,6 +18,7 @@ const spaServices = [
   { id: '3', image: spaImage3 },
   { id: '4', image: spaImage4 },
   { id: '5', image: spaImage5 },
+  { id: '6', image: spaImage6 },
 ];
 
 export default function SpaPage() {
@@ -39,7 +41,7 @@ export default function SpaPage() {
     >
       {/* ── Left panel: atmospheric image + info ── */}
       <div
-        className="relative flex flex-col w-[38%] h-full overflow-hidden"
+        className="relative flex flex-col w-1/2 h-full overflow-hidden"
         style={{
           backgroundImage: `url(${spaImage1})`,
           backgroundSize: 'cover',

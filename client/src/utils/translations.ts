@@ -148,6 +148,10 @@ export interface Translations {
   spa5Description: string;
   spa5Hours: string;
   spa5Price: string;
+  spa6Name: string;
+  spa6Description: string;
+  spa6Hours: string;
+  spa6Price: string;
   spaIntro: string;
   spaTagline: string;
   spaOpenHours: string;
@@ -550,6 +554,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaksirajuća masaža sa esencijalnim uljima",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spa6Name: "Jacuzzi & Hidro Bazen",
+    spa6Description: "Opuštajuća hidroterapija u toplim vodenim masažnim bazenima",
+    spa6Hours: "09:00 - 21:00",
+    spa6Price: "€40",
     spaIntro: "Naš spa centar je vaše utočište za obnovu duha i tijela. Uživajte u luksuznim tretmanima, relaksirajućim masažama i wellness ritualima koji vraćaju ravnotežu i harmoniju.",
     spaTagline: "Dobrodošli u oazu mira.",
     spaOpenHours: "Svakodnevno 09:00 - 20:00",
@@ -949,6 +957,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Relaxing massage with essential oils",
     spa5Hours: "09:00 AM - 08:00 PM",
     spa5Price: "€70",
+    spa6Name: "Jacuzzi & Hydro Pool",
+    spa6Description: "Relaxing hydrotherapy in warm water massage pools",
+    spa6Hours: "09:00 AM - 09:00 PM",
+    spa6Price: "€40",
     spaIntro: "Our spa centre is your sanctuary for mind and body renewal. Enjoy luxurious treatments, relaxing massages and wellness rituals that restore balance and harmony.",
     spaTagline: "Welcome to our oasis of serenity.",
     spaOpenHours: "Daily 09:00 AM - 08:00 PM",
@@ -1349,6 +1361,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Расслабляющий массаж с эфирными маслами",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spa6Name: "Джакузи и Гидробассейн",
+    spa6Description: "Расслабляющая гидротерапия в тёплых водных массажных бассейнах",
+    spa6Hours: "09:00 - 21:00",
+    spa6Price: "€40",
     spaIntro: "Наш СПА-центр — ваше убежище для обновления тела и духа. Насладитесь роскошными процедурами, расслабляющими массажами и велнес-ритуалами, восстанавливающими гармонию.",
     spaTagline: "Добро пожаловать в наш оазис покоя.",
     spaOpenHours: "Ежедневно 09:00 - 20:00",
@@ -1755,6 +1771,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Masaje relajante con aceites esenciales",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spa6Name: "Jacuzzi & Hidromasaje",
+    spa6Description: "Relajante hidroterapia en cálidas piscinas de masaje",
+    spa6Hours: "09:00 - 21:00",
+    spa6Price: "€40",
     spaIntro: "Nuestro spa es su santuario para la renovación del cuerpo y la mente. Disfrute de lujosos tratamientos, relajantes masajes y rituales de bienestar que restauran el equilibrio.",
     spaTagline: "Bienvenido a nuestro oasis de serenidad.",
     spaOpenHours: "Diariamente 09:00 - 20:00",
@@ -2161,6 +2181,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Massage relaxant aux huiles essentielles",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spa6Name: "Jacuzzi & Bain à Remous",
+    spa6Description: "Hydrothérapie relaxante dans des bassins de massage à eau chaude",
+    spa6Hours: "09:00 - 21:00",
+    spa6Price: "€40",
     spaIntro: "Notre spa est votre sanctuaire pour le renouvellement du corps et de l'esprit. Profitez de traitements luxueux, de massages relaxants et de rituels bien-être qui restaurent l'équilibre.",
     spaTagline: "Bienvenue dans notre oasis de sérénité.",
     spaOpenHours: "Quotidiennement 09:00 - 20:00",
@@ -2573,6 +2597,10 @@ export const translations: Record<string, Translations> = {
     spa5Description: "Entspannende Massage mit ätherischen Ölen",
     spa5Hours: "09:00 - 20:00",
     spa5Price: "€70",
+    spa6Name: "Jacuzzi & Hydro-Pool",
+    spa6Description: "Entspannende Hydrotherapie in warmen Wassermaßage-Becken",
+    spa6Hours: "09:00 - 21:00",
+    spa6Price: "€40",
     spaIntro: "Unser Spa ist Ihr Refugium für die Erneuerung von Körper und Geist. Genießen Sie luxuriöse Behandlungen, entspannende Massagen und Wellness-Rituale, die Gleichgewicht und Harmonie wiederherstellen.",
     spaTagline: "Willkommen in unserer Oase der Ruhe.",
     spaOpenHours: "Täglich 09:00 - 20:00",
