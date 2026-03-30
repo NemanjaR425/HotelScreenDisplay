@@ -104,36 +104,36 @@ export default function SpaPage() {
 
       {/* ── Right panel: service cards ── */}
       <div
-        className="flex-1 h-full overflow-hidden py-6 pr-6"
+        className="flex-1 h-full overflow-hidden flex items-center justify-center py-6 pr-6"
         style={{ backgroundColor: '#162739' }}
       >
-        <div className="grid grid-cols-5 gap-3 h-full">
+        <div className="grid grid-cols-3 gap-3 w-full">
           {translatedServices.map((service) => (
             <Card
               key={service.id}
-              className="overflow-hidden bg-white/95 flex flex-col h-full"
+              className="overflow-hidden bg-white/95 flex flex-col"
               data-testid={`spa-service-card-${service.id}`}
             >
-              <div className="relative w-full overflow-hidden" style={{ flex: '0 0 65%' }}>
+              <div className="w-full aspect-square overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <CardContent className="flex flex-col items-center justify-center text-center space-y-2 p-4 flex-1">
+              <CardContent className="flex flex-col items-center justify-center text-center space-y-1 p-3">
                 <h3 className="text-sm font-bold leading-tight" data-testid={`text-service-name-${service.id}`}>
                   {service.name}
                 </h3>
                 <p className="text-muted-foreground text-xs leading-relaxed">
                   {service.description}
                 </p>
-                <div className="space-y-1 text-xs text-muted-foreground pt-1">
-                  <div className="flex items-center justify-center space-x-1">
+                <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-muted-foreground pt-1">
+                  <div className="flex items-center space-x-1">
                     <Clock className="w-3 h-3" />
                     <span>{service.hours}</span>
                   </div>
-                  <div className="flex items-center justify-center space-x-1">
+                  <div className="flex items-center space-x-1">
                     <DollarSign className="w-3 h-3" />
                     <span className="font-semibold text-foreground">{service.price}</span>
                   </div>
