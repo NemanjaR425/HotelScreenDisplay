@@ -249,7 +249,7 @@ export default function DiningPage() {
               <div className="flex items-center mb-4">
                 <Button 
                   variant="default" 
-                  className="rounded-full w-14 h-14 p-0 flex items-center justify-center bg-white text-black"
+                  className="rounded-full w-14 h-14 p-0 flex items-center justify-center bg-white text-black ml-[22px]"
                   onClick={() => setSelectedRestaurant(null)}
                   data-testid="button-back-restaurants"
                 >
