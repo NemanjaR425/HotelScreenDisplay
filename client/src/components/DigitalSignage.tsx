@@ -8,7 +8,7 @@ import { useWeather } from '../hooks/use-weather';
 import { useLanguage } from '@/contexts/LanguageContext';
 import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 
-const HOTEL_BG_IMAGE = 'https://i.postimg.cc/v8WhdWnJ/oopm-accommodation-villa-one-garden.webp';
+const HOTEL_BG_IMAGE = 'https://i.postimg.cc/FRZBNqCz/oopm-resort-drone-view-3.webp';
 
 export default function DigitalSignage() {
   const { currentLanguage, setLanguage } = useLanguage();
