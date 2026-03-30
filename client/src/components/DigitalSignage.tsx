@@ -17,7 +17,7 @@ export default function DigitalSignage() {
   
   const t = getTranslation(currentLanguage);
   
-  const hotelName = "Kumbor";
+  const hotelName = "One & Only";
   const tagline = "Your Premier Destination for Luxury & Hospitality";
 
   useEffect(() => {
