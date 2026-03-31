@@ -143,7 +143,7 @@ export default function DigitalSignage() {
                 src="https://i.postimg.cc/prcrNH9n/oo-portonovi-logo.png"
                 alt="One & Only"
                 className="pl-[20px]"
-                style={{ height: '80px', width: 'auto' }}
+                style={{ height: '160px', width: 'auto' }}
                 data-testid="text-hotel-name"
               />
             </div>
