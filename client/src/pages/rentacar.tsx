@@ -1,10 +1,9 @@
-import { ArrowLeft, Users, Settings, QrCode, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Users, Settings, QrCode } from 'lucide-react';
 import { Link } from 'wouter';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
-import gradientBackground from '@assets/abstract-luxury-gradient-blue-background-smooth-d-2025-03-08-01-09-33-utc_1759149171572.jpg';
 import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765139827008.jpg';
 import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
 import octaviaImage from '@assets/octavia_1765138345158.png';
@@ -137,69 +136,62 @@ export default function RentACarPage() {
           />
         </div>
 
-        {/* Main content: QR panel + Cars Grid */}
-        <div className="flex-1 flex flex-row gap-5 overflow-hidden ml-[20px] mr-[20px] pb-16">
+        {/* Cars Grid - 4 columns, 2 rows */}
+        <div className="flex-1 overflow-y-auto pb-20">
+          <div className="grid grid-cols-4 gap-4 h-full ml-[20px] mr-[20px] pt-[10px] pb-[10px]">
+            {translatedCars.map((car) => (
+              <Card
+                key={car.id}
+                className="overflow-hidden bg-white/95 backdrop-blur-sm flex flex-col"
+                data-testid={`car-card-${car.id}`}
+              >
+                {/* Car image */}
+                <div className="relative w-full flex-[2] overflow-hidden">
+                  <img
+                    src={car.image}
+                    alt={car.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-          {/* QR Code Panel */}
-          <div className="flex flex-col items-center justify-center w-[200px] shrink-0">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 flex flex-col items-center gap-4 w-full">
-              <div className="bg-white rounded-lg p-3 w-[130px] h-[130px] flex items-center justify-center">
-                <QrCode className="w-full h-full text-[#162739]" strokeWidth={1.5} />
-              </div>
-              <div className="text-center">
-                <p className="text-white font-semibold text-sm leading-tight mb-1">Scan to Reserve</p>
-                <p className="text-white/60 text-xs leading-tight">Your car online</p>
-              </div>
-              <div className="w-full border-t border-white/20 pt-3 flex items-center gap-1.5 justify-center">
-                <ExternalLink className="w-3 h-3 text-white/50 shrink-0" />
-                <p className="text-white/50 text-[10px] leading-tight text-center break-all">your-rental-site.com</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Cars Grid - 4 columns, 2 rows */}
-          <div className="flex-1 overflow-y-auto">
-            <div className="grid grid-cols-4 gap-4 h-full pt-[10px] pb-[10px]">
-              {translatedCars.map((car) => (
-                <Card
-                  key={car.id}
-                  className="overflow-hidden bg-white/95 backdrop-blur-sm flex flex-col"
-                  data-testid={`car-card-${car.id}`}
-                >
-                  <div className="relative w-full flex-[2] overflow-hidden">
-                    <img
-                      src={car.image}
-                      alt={car.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="text-center space-y-1 p-3 flex flex-col items-center justify-center flex-1">
-                    <h3 className="text-lg font-bold" data-testid={`text-car-name-${car.id}`}>
+                {/* Info + QR code */}
+                <CardContent className="p-3 flex flex-row items-center gap-3 flex-1">
+                  {/* Text info */}
+                  <div className="flex-1 flex flex-col justify-center gap-1 min-w-0">
+                    <h3 className="text-sm font-bold leading-tight" data-testid={`text-car-name-${car.id}`}>
                       {car.name}
                     </h3>
-                    <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
+                    <p className="text-muted-foreground text-[10px] leading-relaxed line-clamp-2">
                       {car.description}
                     </p>
-                    <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
                       <div className="flex items-center gap-1">
-                        <Users className="w-3 h-3" />
+                        <Users className="w-3 h-3 shrink-0" />
                         <span>{car.passengers}</span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <Settings className="w-3 h-3" />
+                        <Settings className="w-3 h-3 shrink-0" />
                         <span>{car.transmission}</span>
                       </div>
                     </div>
-                    <div className="text-lg font-bold text-primary" data-testid={`text-car-price-${car.id}`}>
+                    <div className="text-sm font-bold text-primary" data-testid={`text-car-price-${car.id}`}>
                       {car.price}
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
+                  </div>
 
+                  {/* QR code placeholder */}
+                  <div className="flex flex-col items-center gap-1 shrink-0">
+                    <div className="bg-white border border-gray-200 rounded-md p-1.5 w-[72px] h-[72px] flex items-center justify-center">
+                      <QrCode className="w-full h-full text-[#162739]" strokeWidth={1.5} />
+                    </div>
+                    <p className="text-[9px] text-muted-foreground text-center leading-tight">Scan to<br />book</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
+
       </div>
     </div>
   );
