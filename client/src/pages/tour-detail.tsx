@@ -62,18 +62,31 @@ export default function TourDetailPage() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         
         <div className="relative z-20 w-full h-full flex flex-col p-6">
-          <div className="flex items-center mb-6">
-            <div className="flex items-center space-x-4">
-              <Link href="/tours">
-                <Button 
-                  variant="default" 
-                  size="lg" 
-                  className="rounded-full w-14 h-14 bg-white text-black hover:bg-white ml-[24px] mr-[24px] pl-[22px] pr-[22px] mt-[22px] mb-[22px]" 
-                  data-testid="button-back-tours"
-                >
-                  <ArrowLeft className="w-6 h-6" />
-                </Button>
-              </Link>
+          {/* Top: back button + title + description */}
+          <div className="flex items-start gap-6 ml-[24px] mt-[22px]">
+            <Link href="/tours">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="rounded-full w-14 h-14 bg-white text-black hover:bg-white p-0 flex items-center justify-center shrink-0" 
+                data-testid="button-back-tours"
+              >
+                <ArrowLeft className="w-6 h-6" />
+              </Button>
+            </Link>
+            <div className="max-w-2xl pt-1">
+              <h1 
+                className="text-6xl font-bold text-white mb-3 drop-shadow-lg leading-tight"
+                data-testid="text-tour-name"
+              >
+                {tour.name}
+              </h1>
+              <p 
+                className="text-xl text-white/90 drop-shadow-md leading-relaxed"
+                data-testid="text-tour-description"
+              >
+                {tour.description}
+              </p>
             </div>
           </div>
 
@@ -84,29 +97,16 @@ export default function TourDetailPage() {
             />
           </div>
 
+          {/* Bottom: duration + price */}
           <div className="flex-1 flex items-end justify-start pb-24 pl-8">
-            <div className="max-w-2xl">
-              <h1 
-                className="text-6xl font-bold text-white mb-4 drop-shadow-lg"
-                data-testid="text-tour-name"
-              >
-                {tour.name}
-              </h1>
-              <p 
-                className="text-xl text-white/90 mb-6 drop-shadow-md leading-relaxed"
-                data-testid="text-tour-description"
-              >
-                {tour.description}
-              </p>
-              <div className="flex items-center space-x-8">
-                <div className="flex items-center space-x-3 text-white">
-                  <Clock className="w-6 h-6" />
-                  <span className="text-xl font-medium" data-testid="text-tour-duration">{tour.duration}</span>
-                </div>
-                <div className="flex items-center space-x-3 text-white">
-                  <DollarSign className="w-0 h-0" />
-                  <span className="text-2xl font-bold" data-testid="text-tour-price">{tour.price}</span>
-                </div>
+            <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-3 text-white">
+                <Clock className="w-6 h-6" />
+                <span className="text-xl font-medium" data-testid="text-tour-duration">{tour.duration}</span>
+              </div>
+              <div className="flex items-center space-x-3 text-white">
+                <DollarSign className="w-0 h-0" />
+                <span className="text-2xl font-bold" data-testid="text-tour-price">{tour.price}</span>
               </div>
             </div>
           </div>
