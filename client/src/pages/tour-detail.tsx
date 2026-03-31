@@ -62,8 +62,8 @@ export default function TourDetailPage() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         
         <div className="relative z-20 w-full h-full flex flex-col p-6">
-          {/* Top: back button + title + description */}
-          <div className="flex items-start gap-6 ml-[24px] mt-[22px]">
+          {/* Top: back button, then title + description below */}
+          <div className="flex flex-col ml-[24px] mt-[22px] gap-4">
             <Link href="/tours">
               <Button 
                 variant="default" 
@@ -74,7 +74,7 @@ export default function TourDetailPage() {
                 <ArrowLeft className="w-6 h-6" />
               </Button>
             </Link>
-            <div className="max-w-2xl pt-1">
+            <div className="max-w-2xl">
               <h1 
                 className="text-6xl font-bold text-white mb-3 drop-shadow-lg leading-tight"
                 data-testid="text-tour-name"
