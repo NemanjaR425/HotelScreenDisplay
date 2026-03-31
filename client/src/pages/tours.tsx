@@ -81,23 +81,25 @@ export default function ToursPage() {
         {/* Tours Grid - 5 columns x 2 rows to fit 10 cards */}
         <div className="flex-1 flex items-start justify-center overflow-hidden pb-16">
           <div className="grid grid-cols-5 grid-rows-2 gap-3 w-full h-full ml-[0px] mr-[0px] pl-[20px] pr-[20px] pt-[20px] pb-[20px]">
-            {tours.slice(0, 10).map((tour) => (
+            {tours.slice(0, 10).map((tour, index) => (
               <Link href={`/tours/${tour.id}`} key={tour.id}>
                 <div
                   className="bg-white rounded-lg overflow-hidden hover-elevate active-elevate-2 cursor-pointer flex flex-col h-full"
                   data-testid={`tour-card-${tour.id}`}
                 >
                 {/* Image Section - 65% of height */}
-                <div 
-                  className="w-full"
-                  style={{
-                    height: '65%',
-                    backgroundImage: `url(${tour.image})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                />
+                <div className="w-full overflow-hidden" style={{ height: '65%' }}>
+                  <img
+                    src={tour.image}
+                    alt={tour.name}
+                    loading={index < 5 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    fetchPriority={index < 2 ? 'high' : 'low'}
+                    width={300}
+                    height={200}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 {/* Content Section - 35% of height */}
                 <div className="p-2 flex flex-col flex-1 pt-[14px] pb-[14px] ml-[12px] mr-[12px]">
                   <h3 className="font-bold text-gray-900 text-[16px]">{tour.name}</h3>
