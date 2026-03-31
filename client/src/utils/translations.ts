@@ -851,67 +851,67 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Kotor Old Town",
     tour1Description:
-      "Explore the historic old town with a local guide and visit landmarks",
+      "Wander through the labyrinthine streets of Kotor's UNESCO-listed Old Town with an expert local guide. Discover hidden medieval chapels, grand Venetian squares, and ancient city walls that have stood for over 2,000 years. Climb the fortifications for breathtaking panoramic views over the entire Bay of Kotor.",
     tour1Duration: "3 hours",
     tour1Price: "€45",
 
     tour2Name: "Perast",
     tour2Description:
-      "Relaxing cruise through the Bay of Kotor with mountain views",
+      "Glide through the shimmering waters of the Bay of Kotor to the perfectly preserved baroque town of Perast. Visit the legendary island church of Our Lady of the Rocks, floating serenely on the bay, and admire 17th-century palazzos that reflect a golden age of Venetian maritime glory.",
     tour2Duration: "4 hours",
     tour2Price: "€65",
 
     tour3Name: "Rijeka Crnojevića",
-    tour3Description: "Visit local wineries and taste Montenegrin wines",
+    tour3Description: "Journey into Montenegro's wine country along the tranquil shores of Lake Skadar to the historic village of Rijeka Crnojevića. Explore family-run vineyards on ancient terraces and sample award-winning indigenous varieties like Vranac and Krstač, paired with local cheese and cured meats in an authentic Montenegrin farmhouse setting.",
     tour3Duration: "5 hours",
     tour3Price: "€80",
 
     tour4Name: "Lovćen",
-    tour4Description: "Guided hike through national park with stunning views",
+    tour4Description: "Ascend to the roof of Montenegro in Lovćen National Park, where serpentine mountain roads lead to breathtaking panoramas stretching from the Adriatic to the Albanian Alps. Visit the iconic mausoleum of Prince-Bishop Njegoš, Montenegro's greatest poet, perched dramatically at 1,657 metres above sea level with views that will take your breath away.",
     tour4Duration: "6 hours",
     tour4Price: "€55",
 
     tour5Name: "Boat Tour",
-    tour5Description: "Discover Montenegrin coast in a speedboat, visit the islands, the magical blue cave and abandoned military tunnel",
+    tour5Description: "Discover the wild beauty of Montenegro's coastline aboard a private speedboat. Glide through the world's southernmost fjord, anchor at secluded coves reachable only by water, slip into the ethereal Blue Cave glowing with turquoise light, and explore the haunting chambers of an abandoned Cold War military tunnel carved deep into the cliffs.",
     tour5Duration: "4 hours",
     tour5Price: "€70",
 
     tour6Name: "Buggy tour",
     tour6Description:
-      "Visit hidden mountains from an adventerous perspetcive with an ATV",
+      "Tear through rugged mountain terrain surrounding the Bay of Kotor in a high-powered buggy, reaching remote villages and viewpoints no ordinary car can access. Feel the thrill of off-road adventure while soaking in some of the most dramatic landscapes in the Balkans — pine forests, rocky gorges, and sweeping coastal vistas that stretch all the way to the open sea.",
     tour6Duration: "5 hours",
     tour6Price: "€90",
 
     tour7Name: "Old town Herceg Novi",
     tour7Description:
-      "Explore medieval fortresses and learn about regional history",
+      "Step back in time in Herceg Novi, a city of flowers and fortresses where Venetian, Ottoman, and Austro-Hungarian influences blend in perfect harmony. Stroll through jasmine-scented squares, climb the medieval Kanli Tower overlooking the bay, and explore the charming clocktower plaza that has been the beating heart of the city for centuries.",
     tour7Duration: "3 hours",
     tour7Price: "€50",
 
     tour8Name: "Cable Car",
-    tour8Description: "Take a thirlling ride and see the best view of the bay",
+    tour8Description: "Soar above the terracotta rooftops of Herceg Novi on a thrilling cable car ride, rising steeply over olive groves and ancient forest to a mountaintop terrace with arguably the finest panoramic view in all of Montenegro. On clear days, the entire Bay of Kotor unfolds before you — azure water framed by dramatic limestone peaks.",
     tour8Duration: "4 hours",
     tour8Price: "€60",
 
     tour9Name: "Monastery Mystery",
     tour9Description:
-      "Visit ancient Orthodox monasteries hidden in the mountains",
+      "Journey into Montenegro's spiritual heart to discover ancient Orthodox monasteries hidden among forested mountain slopes. Marvel at medieval frescoes that have survived centuries, learn about monastic traditions still practised today, and find profound serenity in some of the most remote and breathtakingly beautiful corners of the Balkans.",
     tour9Duration: "5 hours",
     tour9Price: "€75",
 
     tour10Name: "Budva",
-    tour10Description: "Romantic sailing trip during sunset",
+    tour10Description: "Explore the vibrant Adriatic jewel of Budva, where a perfectly preserved medieval old town meets some of Montenegro's most celebrated beaches. Wander through narrow stone streets lined with art galleries and boutiques, admire the magnificent sea fortress, and soak up the atmosphere of a coastal city that has thrived for over 2,500 years.",
     tour10Duration: "2 hours",
     tour10Price: "€85",
 
     tour11Name: "Local Market",
     tour11Description:
-      "Discover local markets and shops with authentic products",
+      "Immerse yourself in the colours, aromas, and flavours of Montenegro's local markets, where farmers and artisans gather each morning with seasonal produce, wild honey, olive oil, homemade rakija, and handcrafted souvenirs. A wonderful opportunity to meet the people behind the products, taste what the land offers, and bring an authentic piece of Montenegro home with you.",
     tour11Duration: "3 hours",
     tour11Price: "€40",
 
     tour12Name: "Buggy tour",
-    tour12Description: "Explore local nightlife and entertainment venues",
+    tour12Description: "Experience the mountains after dark on an exhilarating night buggy ride through remote villages illuminated by starlight. Follow local guides along ancient trading routes to hidden mountain tavernas serving traditional Montenegrin food and wine, for an unforgettable evening that blends off-road adventure with genuine local culture.",
     tour12Duration: "4 hours",
     tour12Price: "€55",
 
