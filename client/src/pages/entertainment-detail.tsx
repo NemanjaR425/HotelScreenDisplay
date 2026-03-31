@@ -53,7 +53,7 @@ export default function EntertainmentDetailPage() {
             backgroundRepeat: 'no-repeat'
           }}
         />
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.18) 70%, rgba(0,0,0,0.05) 100%)' }} />
         
         <div className="relative z-20 w-full h-full flex flex-col p-6">
           <div className="flex items-center mb-6">
