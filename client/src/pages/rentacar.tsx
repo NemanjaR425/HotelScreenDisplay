@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import opelCorsaImage from '@assets/opel-corsa-autosportmany_1765139827008.jpg';
-import vwGolfImage from '@assets/2019102501_VW_Golf_1765138194734.jpg';
+import vwGolfImage from '@assets/VW-Golf-2024-2023AU01469_1774950639082.jpg';
 import octaviaImage from '@assets/octavia_1765138345158.png';
 import superbImage from '@assets/superb_1765138897149.jpg';
 import dusterImage from '@assets/dacia_duster_1765139096529.jpg';
