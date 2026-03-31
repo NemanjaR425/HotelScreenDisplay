@@ -454,69 +454,69 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Stari Grad Kotor",
     tour1Description:
-      "Istražite istorijski stari grad sa vodičem i posjetite lokalne znamenitosti",
+      "Prošetajte labirintskim ulicama UNESCO-zaštićenog Starog grada Kotora uz stručnog lokalnog vodiča. Otkrijte skrivene srednjovjekovne kapele, raskošne mletačke trgove i drevne gradske zidine koje stoje već više od 2.000 godina. Popnite se na fortifikacije za zadivljujuće panoramske poglede na cijeli Kotorski zaliv.",
     tour1Duration: "3 sata",
     tour1Price: "€45",
 
     tour2Name: "Perast",
     tour2Description:
-      "Opuštajuće krstarenje kroz Bokokotorski zaliv sa pogledom na planine",
+      "Klizite po sjajnim vodama Kotorskog zaliva do savršeno očuvanog baroknog grada Perasta. Posjetite legendarnu otočnu crkvu Gospe od Škrpjela, koja mirno lebdi na zalivu, i divite se palačama iz 17. vijeka koje odražavaju zlatno doba mletačke pomorske slave.",
     tour2Duration: "4 sata",
     tour2Price: "€65",
 
     tour3Name: "Rijeka Crnojevića",
     tour3Description:
-      "Posjetite lokalne vinarije i degustirajte crnogorska vina",
+      "Putujte u vinsku zemlju Crne Gore uz mirne obale Skadarskog jezera do historijskog sela Rijeka Crnojevića. Istražite porodične vinograde na drevnim terasama i kušajte nagrađivane autohtone sorte poput Vranca i Krstača, uz lokalne sireve i suhomesnate proizvode u autentičnoj crnogorskoj seoskoj atmosferi.",
     tour3Duration: "5 sati",
     tour3Price: "€80",
 
     tour4Name: "Lovćen",
     tour4Description:
-      "Vođeno pješačenje kroz nacionalni park sa prekrasnim pogledima",
+      "Popnite se na krov Crne Gore u Nacionalnom parku Lovćen, gdje vijugavi planinski putevi vode do zadivljujućih panorama koje se prostiru od Jadrana do albanskih Alpa. Posjetite ikonični mauzolej vladike Petra II Petrovića Njegoša, najvećeg crnogorskog pjesnika, koji se dramatično uzdiže na 1.657 metara nadmorske visine.",
     tour4Duration: "6 sati",
     tour4Price: "€55",
 
     tour5Name: "Obilazak Zaliva gliserom",
-    tour5Description: "Obiđite Bokeška ostrva, plavu špilju i napušteni vojni tunel",
+    tour5Description: "Otkrijte divlju ljepotu crnogorske obale na privatnom gliseru. Kližite kroz najjužniji fjord na svijetu, sidrište se u skrivenim uvalama dostupnim samo vodom, zaronite u eteričnu Plavu špilju koja sjaji tirkiznom svjetlošću i istražite mračne dvorane napuštenog vojnog tunela iz Hladnog rata uklesanog duboko u stijene.",
     tour5Duration: "4 sata",
     tour5Price: "€70",
 
     tour6Name: "Buggy tura",
     tour6Description:
-      "Obiđite planine i zaleđe iz potpuno nove atmosfere sa ATV vozilima",
+      "Projurite grubim planinskim terenom koji okružuje Kotorski zaliv u snažnom baggiju, dosežući udaljena sela i vidikovce do kojih obično vozilo ne može doći. Osjetite uzbuđenje off-road avanture dok upijate neka od najdramatičnijih predela Balkana — borove šume, stjenovite klisure i panorame obale koje sežu do otvorenog mora.",
     tour6Duration: "5 sati",
     tour6Price: "€90",
 
     tour7Name: "Stari Grad Herceg Novi",
     tour7Description:
-      "Istražite srednjovekovne tvrđave i saznajte o istoriji regiona",
+      "Krenite u prošlost u Herceg Novom, gradu cvijeća i tvrđava gdje se mletački, osmanski i austrougarski uticaji stapaju u savršenoj harmoniji. Prošetajte mirisnim trgovima, popnite se na středevjekovnu kulu Kanli koja gleda na zaliv i istražite šarmantni trg sa tornjem sa satom koji je bio srce grada kroz vjekove.",
     tour7Duration: "3 sata",
     tour7Price: "€50",
 
     tour8Name: "Žičara Kotor-Lovćen",
-    tour8Description: "Vožna žičarom sa najboljim pogledom na zaliv",
+    tour8Description: "Vinite se iznad terakota krovova Herceg Novog uzbudljivom vožnjom žičarom, strmo se penjući iznad maslinika i drevnih šuma do planinske terase s vjerovatno najboljim panoramskim pogledom u cijeloj Crnoj Gori. Za vedrog vremena, cijeli Kotorski zaliv se pruža pred vama — azurna voda uokvirena dramatičnim krečnjačkim vrhovima.",
     tour8Duration: "4 sata",
     tour8Price: "€60",
 
     tour9Name: "Bokeška Ostrva",
     tour9Description:
-      "Posjetite drevne pravoslavne manastire skrivene u planinama",
+      "Putujte u duhovni centar Crne Gore da otkrijete drevne pravoslavne manastire skrivene među pošumljenim planinskim obroncima. Divite se středovjekovnim freskama koje su preživjele vjekove, saznajte o manastirskim tradicijama koje se i danas praktikuju i pronađite duboki mir u nekim od najudaljenijih i najljepših kutaka Balkana.",
     tour9Duration: "5 sati",
     tour9Price: "€75",
 
     tour10Name: "Buggy Tura",
-    tour10Description: "Posjeta skrivenim plažama i ronjenje u kristalno čistoj vodi",
+    tour10Description: "Istražite živahni jadranski biser Budve, gdje se savršeno očuvani srednji grad susreće s nekim od najpoznatijih plaža u Crnoj Gori. Prošetajte uskim kamenim ulicama obloženim galerijama i buticima, divite se veličanstvenoj morskoj tvrđavi i upijajte atmosferu primorskog grada koji prosperira već više od 2.500 godina.",
     tour10Duration: "2 sata",
     tour10Price: "€85",
 
     tour11Name: "Lokalna Pijaca",
     tour11Description:
-      "Otkrijte lokalne pijace i prodavnice sa autentičnim proizvodima",
+      "Uronite u boje, arome i ukuse crnogorskih lokalnih pijaca, gdje se farmeri i zanatlije svako jutro okupljaju sa sezonskim plodovima, divljim medom, maslinovim uljem, domaćom rakijom i ručno pravljenim suvenirima. Divna prilika da upoznate ljude iza proizvoda, okuste što zemlja nudi i donesete autentični komad Crne Gore kući sa sobom.",
     tour11Duration: "3 sata",
     tour11Price: "€40",
 
     tour12Name: "Buggy turaBudva",
-    tour12Description: "Istražite lokalni noćni život i zabavu",
+    tour12Description: "Doživite planine u mraku tokom uzbudljive noćne vožnje baggijima kroz udaljena sela osvijetljena zvijezdama. Slijedite lokalne vodiče drevnim trgovačkim putevima do skrivenih planinskih konoba koje poslužuju tradicionalnu crnogorsku hranu i vino — nezaboravno veče koje spaja avanturu i autentičnu lokalnu kulturu.",
     tour12Duration: "4 sata",
     tour12Price: "€55",
 
@@ -1245,67 +1245,67 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Старый Город Котор",
     tour1Description:
-      "Исследуйте исторический старый город с гидом и посетите достопримечательности",
+      "Прогуляйтесь по лабиринтным улочкам внесённого в список UNESCO Старого города Котора с опытным местным гидом. Откройте скрытые средневековые часовни, величественные венецианские площади и древние городские стены, стоящие уже более 2.000 лет. Поднимитесь на укрепления ради захватывающих панорамных видов на весь Которский залив.",
     tour1Duration: "3 часа",
     tour1Price: "€45",
 
     tour2Name: "Пераст",
     tour2Description:
-      "Расслабляющий круиз по Бока-Которскому заливу с видом на горы",
+      "Скользите по сверкающим водам Которского залива к идеально сохранившемуся барочному городу Пераст. Посетите легендарную островную церковь Богоматери на Рифе, мирно покоящуюся на заливе, и полюбуйтесь дворцами XVII века, отражающими золотую эпоху венецианской морской славы.",
     tour2Duration: "4 часа",
     tour2Price: "€65",
 
     tour3Name: "Река Црноевича",
     tour3Description:
-      "Посетите местные винодельни и попробуйте черногорские вина",
+      "Отправьтесь в винную страну Черногории вдоль тихих берегов Скадарского озера к историческому селу Риека Crnojevića. Исследуйте семейные виноградники на древних террасах и отведайте отмеченные наградами сорта Вранац и Крстач в сочетании с местными сырами и мясными деликатесами в аутентичной черногорской атмосфере.",
     tour3Duration: "5 часов",
     tour3Price: "€80",
 
     tour4Name: "Ловчен",
     tour4Description:
-      "Пешеходная экскурсия по национальному парку с потрясающими видами",
+      "Поднимитесь на крышу Черногории в Национальном парке Ловчен, где извилистые горные дороги ведут к захватывающим панорамам от Адриатики до Албанских Альп. Посетите знаменитый мавзолей князя-епископа Негоша, великого черногорского поэта, расположенный на высоте 1.657 метров над уровнем моря.",
     tour4Duration: "6 часов",
     tour4Price: "€55",
 
     tour5Name: "Поездка на лодке",
-    tour5Description: "Откройте черногорскую кухню через традиционные блюда",
+    tour5Description: "Откройте дикую красоту черногорского побережья на борту частного катера. Скользите через самый южный фьорд в мире, бросайте якорь в уединённых бухтах, доступных только по воде, погрузитесь в эфирный Голубой грот, мерцающий бирюзовым светом, и исследуйте жуткие камеры заброшенного военного тоннеля холодной войны.",
     tour5Duration: "4 часа",
     tour5Price: "€70",
 
     tour6Name: "Багги-тур",
     tour6Description:
-      "Посетите скрытые пляжи и понырять в кристально чистой воде",
+      "Мчитесь по суровому горному рельефу вокруг Которского залива на мощном багги, добираясь до отдалённых деревень и смотровых площадок, недоступных для обычного автомобиля. Ощутите азарт приключения на бездорожье, наслаждаясь одними из самых впечатляющих пейзажей Балкан — сосновыми лесами, скалистыми ущельями и прибрежными панорамами.",
     tour6Duration: "5 часов",
     tour6Price: "€90",
 
     tour7Name: "Старый Город Херцег-Нови",
     tour7Description:
-      "Исследуйте средневековые крепости и узнайте о региональной истории",
+      "Перенеситесь в прошлое в Херцег-Нови, городе цветов и крепостей, где венецианские, османские и австро-венгерские влияния сливаются в идеальной гармонии. Прогуляйтесь по площадям, благоухающим жасмином, поднимитесь на средневековую башню Канли, возвышающуюся над заливом, и исследуйте очаровательную площадь с башенными часами.",
     tour7Duration: "3 часа",
     tour7Price: "€50",
 
     tour8Name: "Канатная дорога",
-    tour8Description: "Традиционная рыбалка с местными рыбаками",
+    tour8Description: "Взмойте над черепичными крышами Херцег-Нови на захватывающем кресельном подъёмнике, круто поднимаясь над оливковыми рощами и древними лесами к горной террасе с, пожалуй, лучшим панорамным видом во всей Черногории. В ясные дни весь Которский залив открывается перед вами — лазурная вода, обрамлённая величественными известняковыми пиками.",
     tour8Duration: "4 часа",
     tour8Price: "€60",
 
     tour9Name: "Тайна Монастырей",
-    tour9Description: "Посетите древние православные монастыри в горах",
+    tour9Description: "Отправьтесь в духовное сердце Черногории, чтобы открыть древние православные монастыри, спрятанные среди лесистых горных склонов. Восхититесь средневековыми фресками, пережившими века, познакомьтесь с монастырскими традициями, которые соблюдаются и сегодня, и обретите глубокое умиротворение в одних из самых отдалённых уголков Балкан.",
     tour9Duration: "5 часов",
     tour9Price: "€75",
 
     tour10Name: "Будва",
-    tour10Description: "Романтическое плавание на закате",
+    tour10Description: "Исследуйте живой адриатический жемчужный город Будва, где идеально сохранившийся средневековый город встречается с одними из самых известных пляжей Черногории. Прогуляйтесь по узким каменным улочкам с галереями и бутиками, полюбуйтесь великолепной морской крепостью и насладитесь атмосферой прибрежного города с более чем 2.500-летней историей.",
     tour10Duration: "2 часа",
     tour10Price: "€85",
 
     tour11Name: "Местный Рынок",
-    tour11Description: "Откройте местные рынки с аутентичными продуктами",
+    tour11Description: "Погрузитесь в краски, ароматы и вкусы черногорских местных рынков, где фермеры и ремесленники каждое утро собираются с сезонными продуктами, диким мёдом, оливковым маслом, домашней ракией и ручной работы сувенирами. Замечательная возможность познакомиться с людьми, стоящими за продуктами, и привезти домой кусочек подлинной Черногории.",
     tour11Duration: "3 часа",
     tour11Price: "€40",
 
     tour12Name: "Багги тур",
-    tour12Description: "Исследуйте местную ночную жизнь и развлечения",
+    tour12Description: "Почувствуйте горы в темноте во время захватывающей ночной поездки на багги через отдалённые деревни, освещённые звёздным светом. Следуйте за местными гидами по древним торговым путям к скрытым горным тавернам, где подают традиционную черногорскую еду и вино — незабываемый вечер, сочетающий приключения и подлинную местную культуру.",
     tour12Duration: "4 часа",
     tour12Price: "€55",
 
@@ -1643,70 +1643,70 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Casco Antiguo de Kotor",
     tour1Description:
-      "Explore el casco antiguo histórico con un guía local y visite lugares emblemáticos",
+      "Recorra las laberínticas calles del Casco Antiguo de Kotor, declarado Patrimonio de la Humanidad por la UNESCO, con un experto guía local. Descubra capillas medievales ocultas, grandiosas plazas venecianas y antiguas murallas que han resistido más de 2.000 años. Suba a las fortificaciones para disfrutar de vistas panorámicas impresionantes sobre toda la Bahía de Kotor.",
     tour1Duration: "3 horas",
     tour1Price: "€45",
 
     tour2Name: "Perast",
     tour2Description:
-      "Relajante crucero por la Bahía de Kotor con vistas a las montañas",
+      "Deslícese por las brillantes aguas de la Bahía de Kotor hasta la perfectamente conservada ciudad barroca de Perast. Visite la legendaria iglesia isleña de Nuestra Señora de las Rocas, que flota serenamente en la bahía, y admire los palacios del siglo XVII que reflejan la edad dorada de la gloria marítima veneciana.",
     tour2Duration: "4 horas",
     tour2Price: "€65",
 
     tour3Name: "Rijeka Crnojevića",
-    tour3Description: "Visite bodegas locales y deguste vinos montenegrinos",
+    tour3Description: "Navegue por las aguas esmeralda del río Rijeka Crnojevića, un tesoro natural escondido entre colinas densamente arboladas y acantilados de piedra caliza, pasando por antiguas iglesias ortodoxas, tabernas ribereñas y el fascinante pueblo abandonado de Rijeka que parece haberse detenido en el tiempo.",
     tour3Duration: "5 horas",
     tour3Price: "€80",
 
     tour4Name: "Lovćen",
     tour4Description:
-      "Caminata guiada por el parque nacional con vistas impresionantes",
+      "Ascienda hasta las alturas eternas del Monte Lovćen, el corazón de la identidad montenegrina, para visitar el imponente Mausoleo Njeguši que corona la montaña. Las vistas desde 1.660 metros de altitud son absolutamente sobrecogedoras: el mar Adriático, la Bahía de Kotor y picos que se extienden hasta Albania y más allá.",
     tour4Duration: "6 horas",
     tour4Price: "€55",
 
     tour5Name: "Paseo en Barco",
     tour5Description:
-      "Descubra la cocina montenegrina a través de platos tradicionales",
+      "Zarpe desde el puerto de Portonovi y navegue hacia el Adriático a bordo de un barco privado, deteniéndose en calas vírgenes de agua turquesa solo accesibles por mar. Pesque, bucee con esnórquel y disfrute de un almuerzo de marisco recién preparado a bordo mientras la magnífica costa montenegrina se despliega ante sus ojos.",
     tour5Duration: "4 horas",
     tour5Price: "€70",
 
     tour6Name: "Tour en buggy",
     tour6Description:
-      "Visite playas escondidas y practique snorkel en aguas cristalinas",
+      "Agárrese fuerte y lánzese a una emocionante aventura en buggy todoterreno por los escarpados senderos de montaña que rodean la bahía. Atraviese bosques de olivos, aldeas remotas y laderas pedregosas que solo los buggies pueden alcanzar, con paradas en miradores secretos que revelan panoramas de la bahía que pocos turistas llegan a ver.",
     tour6Duration: "5 horas",
     tour6Price: "€90",
 
     tour7Name: "Casco Antiguo Herceg Novi",
     tour7Description:
-      "Explore fortalezas medievales y aprenda sobre la historia regional",
+      "Retroceda en el tiempo en Herceg Novi, la ciudad de las flores y las fortalezas, donde las influencias venecianas, otomanas y austrohúngaras se fusionan en perfecta armonía. Pasee por plazas perfumadas con jazmín, suba a la medieval Torre Kanli que domina la bahía y explore la encantadora plaza con su reloj que ha sido el corazón de la ciudad durante siglos.",
     tour7Duration: "3 horas",
     tour7Price: "€50",
 
     tour8Name: "Teleférico",
-    tour8Description: "Viaje de pesca tradicional con pescadores locales",
+    tour8Description: "Elévese sobre los tejados de terracota de Herceg Novi en un emocionante teleférico que sube escarpadamente sobre olivares y bosques antiguos hasta una terraza de montaña con probablemente las mejores vistas panorámicas de todo Montenegro. En días despejados, toda la Bahía de Kotor se extiende ante usted — aguas azul zafiro enmarcadas por dramáticos picos calizos.",
     tour8Duration: "4 horas",
     tour8Price: "€60",
 
     tour9Name: "Misterio del Monasterio",
     tour9Description:
-      "Visite antiguos monasterios ortodoxos escondidos en las montañas",
+      "Viaje al corazón espiritual de Montenegro para descubrir antiguos monasterios ortodoxos escondidos entre laderas de montaña boscosas. Admire los frescos medievales que han sobrevivido siglos, conozca las tradiciones monásticas que aún se practican hoy en día y encuentre una profunda paz en algunos de los rincones más remotos y bellos de los Balcanes.",
     tour9Duration: "5 horas",
     tour9Price: "€75",
 
     tour10Name: "Budva",
-    tour10Description: "Viaje romántico en velero durante el atardecer",
+    tour10Description: "Explore la vibrante perla adriática de Budva, donde un casco antiguo perfectamente conservado se encuentra con algunas de las playas más famosas de Montenegro. Pasee por estrechas calles de piedra flanqueadas por galerías y boutiques, admire la magnífica ciudadela junto al mar y empápese de la atmósfera de una ciudad costera que ha prosperado durante más de 2.500 años.",
     tour10Duration: "2 horas",
     tour10Price: "€85",
 
     tour11Name: "Mercado Local",
     tour11Description:
-      "Descubra mercados locales y tiendas con productos auténticos",
+      "Sumérjase en los colores, aromas y sabores de los mercados locales montenegrinos, donde agricultores y artesanos se reúnen cada mañana con frutas de temporada, miel silvestre, aceite de oliva, rakija casera y souvenirs artesanales. Una oportunidad maravillosa para conocer a las personas detrás de los productos y llevar consigo un auténtico pedacito de Montenegro.",
     tour11Duration: "3 horas",
     tour11Price: "€40",
 
     tour12Name: "Tour en Buggy",
     tour12Description:
-      "Explore la vida nocturna local y lugares de entretenimiento",
+      "Experimente las montañas en la oscuridad durante una emocionante excursión nocturna en buggy por aldeas remotas iluminadas por las estrellas. Siga a guías locales por antiguos caminos comerciales hasta tabernas de montaña escondidas que sirven comida y vino montenegrino tradicional — una velada inolvidable que combina aventura y cultura local auténtica.",
     tour12Duration: "4 horas",
     tour12Price: "€55",
 
@@ -2043,71 +2043,71 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Vieille Ville de Kotor",
     tour1Description:
-      "Explorez la vieille ville historique avec un guide et visitez les monuments",
+      "Flânez dans les ruelles labyrinthiques de la vieille ville de Kotor, classée au patrimoine mondial de l'UNESCO, avec un guide local expert. Découvrez des chapelles médiévales cachées, de magnifiques places vénitiennes et des remparts antiques qui s'élèvent depuis plus de 2.000 ans. Montez sur les fortifications pour des vues panoramiques époustouflantes sur toute la Baie de Kotor.",
     tour1Duration: "3 heures",
     tour1Price: "€45",
 
     tour2Name: "Perast",
     tour2Description:
-      "Croisière relaxante dans la baie de Kotor avec vue sur les montagnes",
+      "Glissez sur les eaux scintillantes de la Baie de Kotor jusqu'à la parfaitement préservée ville baroque de Perast. Visitez la légendaire église insulaire Notre-Dame du Rocher, flottant sereinement dans la baie, et admirez les palais du XVIIe siècle qui reflètent l'âge d'or de la gloire maritime vénitienne.",
     tour2Duration: "4 heures",
     tour2Price: "€65",
 
     tour3Name: "Rijeka Crnojevića",
     tour3Description:
-      "Visitez les caves locales et dégustez les vins monténégrins",
+      "Naviguez sur les eaux émeraude de la rivière Rijeka Crnojevića, un trésor naturel niché entre des collines boisées et des falaises calcaires, en passant par d'anciennes églises orthodoxes, des tavernes au bord de l'eau et le fascinant village abandonné de Rijeka, figé dans le temps.",
     tour3Duration: "5 heures",
     tour3Price: "€80",
 
     tour4Name: "Lovćen",
     tour4Description:
-      "Randonnée guidée dans le parc national avec vues spectaculaires",
+      "Montez vers les hauteurs éternelles du Mont Lovćen, cœur de l'identité monténégrine, pour visiter l'imposant Mausolée Njeguši qui couronne la montagne. Les vues depuis 1.660 mètres d'altitude sont absolument saisissantes : la mer Adriatique, la Baie de Kotor et des sommets s'étendant jusqu'en Albanie et au-delà.",
     tour4Duration: "6 heures",
     tour4Price: "€55",
 
     tour5Name: "Promenade en bateau",
     tour5Description:
-      "Découvrez la cuisine monténégrine à travers des plats traditionnels",
+      "Partez du port de Portonovi et voguez vers l'Adriatique à bord d'un bateau privé, vous arrêtant dans des criques vierges aux eaux turquoise accessibles uniquement par la mer. Pêchez, faites de la plongée avec tuba et savourez un déjeuner de fruits de mer fraîchement préparé à bord tandis que le magnifique littoral monténégrin se déploie devant vous.",
     tour5Duration: "4 heures",
     tour5Price: "€70",
 
     tour6Name: "Tour en buggy",
     tour6Description:
-      "Visitez des plages cachées et faites du snorkeling dans des eaux cristallines",
+      "Accrochez-vous et lancez-vous dans une aventure palpitante en buggy tout-terrain sur les sentiers de montagne escarpés entourant la baie. Traversez des oliveraies, des villages reculés et des versants rocheux que seuls les buggies peuvent atteindre, avec des arrêts à des belvédères secrets révélant des panoramas sur la baie que peu de touristes ont la chance de voir.",
     tour6Duration: "5 heures",
     tour6Price: "€90",
 
     tour7Name: "Vieille Ville Herceg Novi",
     tour7Description:
-      "Explorez les forteresses médiévales et découvrez l'histoire régionale",
+      "Remontez le temps à Herceg Novi, la ville des fleurs et des forteresses, où les influences vénitiennes, ottomanes et austro-hongroises se fondent en parfaite harmonie. Promenez-vous dans des places parfumées au jasmin, montez sur la Tour médiévale Kanli surplombant la baie et explorez la charmante place avec sa tour d'horloge, qui fut le cœur de la ville pendant des siècles.",
     tour7Duration: "3 heures",
     tour7Price: "€50",
 
     tour8Name: "Téléphérique",
-    tour8Description: "Sortie de pêche traditionnelle avec des pêcheurs locaux",
+    tour8Description: "Élevez-vous au-dessus des toits de tuiles d'Herceg Novi dans un téléphérique exaltant qui monte abruptement au-dessus des oliveraies et des forêts anciennes jusqu'à une terrasse de montagne offrant peut-être les meilleures vues panoramiques de tout le Monténégro. Par temps clair, toute la Baie de Kotor se déploie devant vous — eaux bleu saphir encadrées par de dramatiques pics calcaires.",
     tour8Duration: "4 heures",
     tour8Price: "€60",
 
     tour9Name: "Mystère des Monastères",
     tour9Description:
-      "Visitez d'anciens monastères orthodoxes cachés dans les montagnes",
+      "Voyagez au cœur spirituel du Monténégro pour découvrir d'anciens monastères orthodoxes cachés parmi des versants de montagne boisés. Admirez des fresques médiévales qui ont traversé les siècles, découvrez les traditions monastiques encore pratiquées aujourd'hui et trouvez une profonde paix dans certains des recoins les plus reculés et les plus beaux des Balkans.",
     tour9Duration: "5 heures",
     tour9Price: "€75",
 
     tour10Name: "Budva",
-    tour10Description: "Sortie romantique en voilier au coucher du soleil",
+    tour10Description: "Explorez la vivante perle adriatique de Budva, où une vieille ville parfaitement préservée côtoie certaines des plages les plus célèbres du Monténégro. Flânez dans d'étroites ruelles de pierre bordées de galeries et de boutiques, admirez la magnifique citadelle au bord de la mer et imprégnez-vous de l'atmosphère d'une ville côtière qui prospère depuis plus de 2.500 ans.",
     tour10Duration: "2 heures",
     tour10Price: "€85",
 
     tour11Name: "Marché Local",
     tour11Description:
-      "Découvrez les marchés locaux avec des produits authentiques",
+      "Plongez dans les couleurs, les arômes et les saveurs des marchés locaux monténégrins, où agriculteurs et artisans se rassemblent chaque matin avec des fruits de saison, du miel sauvage, de l'huile d'olive, de la rakija maison et des souvenirs artisanaux. Une merveilleuse occasion de rencontrer les personnes derrière les produits et de ramener chez soi un vrai morceau du Monténégro.",
     tour11Duration: "3 heures",
     tour11Price: "€40",
 
     tour12Name: "Tour en Buggy",
     tour12Description:
-      "Explorez la vie nocturne locale et les lieux de divertissement",
+      "Vivez les montagnes dans l'obscurité lors d'une palpitante excursion nocturne en buggy à travers des villages reculés éclairés par les étoiles. Suivez des guides locaux sur d'anciens chemins commerciaux jusqu'à des tavernes de montagne cachées qui servent de la nourriture et du vin monténégrins traditionnels — une soirée inoubliable alliant aventure et culture locale authentique.",
     tour12Duration: "4 heures",
     tour12Price: "€55",
 
@@ -2450,71 +2450,71 @@ export const translations: Record<string, Translations> = {
 
     tour1Name: "Altstadt Kotor",
     tour1Description:
-      "Erkunden Sie die historische Altstadt mit einem Führer und besuchen Sie Sehenswürdigkeiten",
+      "Schlendern Sie durch die labyrinthischen Gassen der UNESCO-gelisteten Altstadt von Kotor mit einem erfahrenen einheimischen Reiseführer. Entdecken Sie versteckte mittelalterliche Kapellen, prächtige venezianische Plätze und antike Stadtmauern, die seit über 2.000 Jahren stehen. Besteigen Sie die Befestigungen für atemberaubende Panoramablicke über die gesamte Bucht von Kotor.",
     tour1Duration: "3 Stunden",
     tour1Price: "€45",
 
     tour2Name: "Perast",
     tour2Description:
-      "Entspannende Kreuzfahrt durch die Bucht von Kotor mit Bergblick",
+      "Gleiten Sie über das funkelnde Wasser der Bucht von Kotor zur perfekt erhaltenen Barockstadt Perast. Besuchen Sie die legendäre Inselkirche Unserer Lieben Frau vom Felsen, die friedvoll in der Bucht schwebt, und bewundern Sie die Paläste aus dem 17. Jahrhundert, die an die goldene Ära des venezianischen Seeruhms erinnern.",
     tour2Duration: "4 Stunden",
     tour2Price: "€65",
 
     tour3Name: "Rijeka Crnojevića",
     tour3Description:
-      "Besuchen Sie lokale Weingüter und probieren Sie montenegrinische Weine",
+      "Gleiten Sie über das smaragdgrüne Wasser des Flusses Rijeka Crnojevića, einem Naturjuwel, eingebettet zwischen dicht bewaldeten Hügeln und Kalksteinfelsen, vorbei an alten orthodoxen Kirchen, ufernahen Tavernen und dem faszinierenden verlassenen Dorf Rijeka, das die Zeit einzufrieren scheint.",
     tour3Duration: "5 Stunden",
     tour3Price: "€80",
 
     tour4Name: "Lovćen",
     tour4Description:
-      "Geführte Wanderung durch den Nationalpark mit atemberaubender Aussicht",
+      "Steigen Sie zu den ewigen Höhen des Lovcen-Gebirges auf, dem Herzstück der montenegrinischen Identität, um das imposante Njeguši-Mausoleum zu besuchen, das den Gipfel krönt. Die Aussichten aus 1.660 Metern Höhe sind atemberaubend: die Adria, die Bucht von Kotor und Gipfel, die sich bis nach Albanien und darüber hinaus erstrecken.",
     tour4Duration: "6 Stunden",
     tour4Price: "€55",
 
     tour5Name: "Bootsfahrt",
     tour5Description:
-      "Entdecken Sie die montenegrinische Küche durch traditionelle Gerichte",
+      "Legen Sie im Hafen von Portonovi ab und segeln Sie auf einem Privatboot in die Adria, mit Stopps in unberührten Buchten mit türkisfarbenem Wasser, die nur vom Meer aus erreichbar sind. Angeln, schnorcheln und genießen Sie ein frisch zubereitetes Meeresfrüchte-Mittagessen an Bord, während die prächtige montenegrinische Küste sich vor Ihnen entfaltet.",
     tour5Duration: "4 Stunden",
     tour5Price: "€70",
 
     tour6Name: "Buggy-Tour",
     tour6Description:
-      "Besuchen Sie versteckte Strände und schnorcheln Sie im kristallklaren Wasser",
+      "Halten Sie sich fest und stürzen Sie sich in ein aufregendes Geländewagen-Abenteuer auf den steilen Bergpfaden rund um die Bucht. Durchqueren Sie Olivenhaine, abgelegene Dörfer und felsige Hänge, die nur Buggies erreichen können, mit Stopps an geheimen Aussichtspunkten, die Buchtpanoramen enthüllen, die nur wenige Touristen zu sehen bekommen.",
     tour6Duration: "5 Stunden",
     tour6Price: "€90",
 
     tour7Name: "Altstadt Herceg Novi",
     tour7Description:
-      "Erkunden Sie mittelalterliche Festungen und lernen Sie die regionale Geschichte kennen",
+      "Reisen Sie in die Vergangenheit von Herceg Novi, der Stadt der Blumen und Festungen, wo venezianische, osmanische und österreichisch-ungarische Einflüsse in perfekter Harmonie verschmelzen. Schlendern Sie durch jasminduftende Plätze, besteigen Sie den mittelalterlichen Kanli-Turm mit Blick auf die Bucht und erkunden Sie den charmanten Platz mit dem Uhrenturm, der seit Jahrhunderten das Herz der Stadt ist.",
     tour7Duration: "3 Stunden",
     tour7Price: "€50",
 
     tour8Name: "Seilbahn",
-    tour8Description: "Traditioneller Angelausflug mit lokalen Fischern",
+    tour8Description: "Schweben Sie über den Terrakottadächern von Herceg Novi in einer aufregenden Seilbahn, die steil über Olivenhaine und alte Wälder bis zu einer Bergterrasse aufsteigt, die vielleicht den besten Panoramablick ganz Montenegros bietet. Bei klarem Wetter erstreckt sich die gesamte Bucht von Kotor vor Ihnen — saphirblaues Wasser, eingerahmt von dramatischen Kalksteinspitzen.",
     tour8Duration: "4 Stunden",
     tour8Price: "€60",
 
     tour9Name: "Kloster-Geheimnis",
     tour9Description:
-      "Besuchen Sie alte orthodoxe Klöster versteckt in den Bergen",
+      "Reisen Sie in das spirituelle Herz Montenegros, um alte orthodoxe Klöster zu entdecken, die zwischen bewaldeten Berghängen versteckt liegen. Bewundern Sie mittelalterliche Fresken, die Jahrhunderte überdauert haben, lernen Sie die klösterlichen Traditionen kennen, die noch heute gelebt werden, und finden Sie tiefen Frieden in einigen der abgelegensten und schönsten Ecken des Balkans.",
     tour9Duration: "5 Stunden",
     tour9Price: "€75",
 
     tour10Name: "Budva",
-    tour10Description: "Romantischer Segelausflug bei Sonnenuntergang",
+    tour10Description: "Erkunden Sie das lebhafte adriatische Juwel Budva, wo eine perfekt erhaltene Altstadt auf einige der bekanntesten Strände Montenegros trifft. Schlendern Sie durch enge Steinstraßen, gesäumt von Galerien und Boutiquen, bewundern Sie die prächtige Seefestung und nehmen Sie die Atmosphäre einer Küstenstadt auf, die seit über 2.500 Jahren gedeiht.",
     tour10Duration: "2 Stunden",
     tour10Price: "€85",
 
     tour11Name: "Lokaler Markt",
     tour11Description:
-      "Entdecken Sie lokale Märkte mit authentischen Produkten",
+      "Tauchen Sie ein in die Farben, Aromen und Geschmäcker der montenegrinischen lokalen Märkte, wo Bauern und Handwerker jeden Morgen mit saisonalen Früchten, wildem Honig, Olivenöl, hausgemachter Rakija und handgefertigten Souvenirs zusammenkommen. Eine wunderbare Gelegenheit, die Menschen hinter den Produkten kennenzulernen und ein echtes Stück Montenegro nach Hause mitzunehmen.",
     tour11Duration: "3 Stunden",
     tour11Price: "€40",
 
     tour12Name: "Buggy-Tour",
     tour12Description:
-      "Erkunden Sie das lokale Nachtleben und Unterhaltungsorte",
+      "Erleben Sie die Berge in der Dunkelheit bei einer aufregenden nächtlichen Buggy-Tour durch abgelegene Dörfer, beleuchtet von Sternen. Folgen Sie lokalen Führern auf alten Handelswegen zu versteckten Bergwirtshäusern, die traditionelle montenegrinische Speisen und Weine servieren — ein unvergesslicher Abend, der Abenteuer und authentische lokale Kultur verbindet.",
     tour12Duration: "4 Stunden",
     tour12Price: "€55",
 
