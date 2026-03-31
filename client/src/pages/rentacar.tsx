@@ -184,7 +184,7 @@ export default function RentACarPage() {
                     <div className="bg-white border border-gray-200 rounded-md p-1.5 w-[72px] h-[72px] flex items-center justify-center">
                       <QrCode className="w-full h-full text-[#162739]" strokeWidth={1.5} />
                     </div>
-                    <p className="text-[9px] text-muted-foreground text-center leading-tight">Scan to<br />book</p>
+                    <p className="text-[9px] text-muted-foreground text-center leading-tight">{t.scanToBook}</p>
                   </div>
                 </CardContent>
               </Card>
