@@ -71,7 +71,7 @@ export default function EntertainmentDetailPage() {
             </div>
           </div>
 
-          <div className="absolute bottom-4 left-0 z-50">
+          <div className="absolute bottom-4 left-[36px] z-50">
             <LanguageSelector 
               currentLanguage={currentLanguage}
               onLanguageChange={setLanguage}
