@@ -138,7 +138,7 @@ export default function DigitalSignage() {
 
             {/* Bottom welcome message */}
             <div className="mb-8">
-              <p className="text-2xl text-white/80 mt-[0px] mb-[4px] pl-[22px] pr-[22px]">{t.welcomeTo}</p>
+              <p className="text-2xl text-white/80 mt-[0px] mb-0 pl-[22px] pr-[22px]">{t.welcomeTo}</p>
               <img
                 src="https://i.postimg.cc/prcrNH9n/oo-portonovi-logo.png"
                 alt="One & Only"
