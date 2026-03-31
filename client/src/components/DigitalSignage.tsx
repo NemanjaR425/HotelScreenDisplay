@@ -138,10 +138,14 @@ export default function DigitalSignage() {
 
             {/* Bottom welcome message */}
             <div className="mb-8">
-              <p className="text-2xl text-white/80 mt-[0px] mb-[0px] pl-[22px] pr-[22px]">{t.welcomeTo}</p>
-              <h1 className="text-6xl font-bold text-white leading-tight pl-[20px] pr-[20px]" data-testid="text-hotel-name">
-                {hotelName}
-              </h1>
+              <p className="text-2xl text-white/80 mt-[0px] mb-[4px] pl-[22px] pr-[22px]">{t.welcomeTo}</p>
+              <img
+                src="https://i.postimg.cc/prcrNH9n/oo-portonovi-logo.png"
+                alt="One & Only"
+                className="pl-[20px]"
+                style={{ height: '80px', width: 'auto' }}
+                data-testid="text-hotel-name"
+              />
             </div>
             
             {/* Language Selector - Bottom Left */}
