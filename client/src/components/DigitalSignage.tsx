@@ -140,7 +140,7 @@ export default function DigitalSignage() {
             <div className="mb-8">
               <p className="text-2xl text-white/80 mt-[0px] mb-0 pl-[22px] pr-[22px]">{t.welcomeTo}</p>
               <img
-                src="https://i.postimg.cc/prcrNH9n/oo-portonovi-logo.png"
+                src="https://i.postimg.cc/4yRys5wG/oo-portonovi-logo.png"
                 alt="One & Only"
                 className="pl-[20px]"
                 style={{ height: '160px', width: 'auto' }}
