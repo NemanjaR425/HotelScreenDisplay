@@ -66,26 +66,21 @@ export default function WeatherWidget({
     }
   };
 
-  // All 7 days in order starting from Sunday (index 0) to match JS getDay()
-  const allDays = [
-    { key: 'sunday',    name: dayNames?.sunday    || 'Sunday',    high: 26, low: 19, condition: 'cloudy'  as const },
-    { key: 'monday',    name: dayNames?.monday    || 'Monday',    high: 24, low: 18, condition: 'sunny'   as const },
-    { key: 'tuesday',   name: dayNames?.tuesday   || 'Tuesday',   high: 26, low: 19, condition: 'sunny'   as const },
-    { key: 'wednesday', name: dayNames?.wednesday || 'Wednesday', high: 23, low: 17, condition: 'cloudy'  as const },
-    { key: 'thursday',  name: dayNames?.thursday  || 'Thursday',  high: 22, low: 16, condition: 'rainy'   as const },
-    { key: 'friday',    name: dayNames?.friday    || 'Friday',    high: 25, low: 18, condition: 'sunny'   as const },
-    { key: 'saturday',  name: dayNames?.saturday  || 'Saturday',  high: 27, low: 20, condition: 'sunny'   as const },
-  ];
+  // Map English day names to translated names
+  const dayNameMap: Record<string, string> = {
+    Sunday:    dayNames?.sunday    || 'Sunday',
+    Monday:    dayNames?.monday    || 'Monday',
+    Tuesday:   dayNames?.tuesday   || 'Tuesday',
+    Wednesday: dayNames?.wednesday || 'Wednesday',
+    Thursday:  dayNames?.thursday  || 'Thursday',
+    Friday:    dayNames?.friday    || 'Friday',
+    Saturday:  dayNames?.saturday  || 'Saturday',
+  };
 
-  // Start from tomorrow and take the next 7 days
-  const todayIndex = new Date().getDay(); // 0=Sun, 1=Mon, ...
-  const defaultForecast: ForecastDay[] = Array.from({ length: 7 }, (_, i) => {
-    const dayIndex = (todayIndex + 1 + i) % 7;
-    const d = allDays[dayIndex];
-    return { day: d.name, high: d.high, low: d.low, condition: d.condition };
-  });
-
-  const forecastData = forecast || defaultForecast;
+  const forecastData: ForecastDay[] = (forecast || []).map(day => ({
+    ...day,
+    day: dayNameMap[day.day] || day.day,
+  }));
 
   // Generate simulated hourly data for today based on current temperature
   const generateHourlyData = (): HourlyEntry[] => {
