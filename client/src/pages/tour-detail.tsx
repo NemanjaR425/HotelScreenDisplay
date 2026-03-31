@@ -68,7 +68,7 @@ export default function TourDetailPage() {
                 <Button 
                   variant="default" 
                   size="lg" 
-                  className="rounded-full w-14 h-14 bg-white text-black hover:bg-white ml-[24px] mr-[24px] pl-[22px] pr-[22px] mt-[22px] mb-[22px]" 
+                  className="rounded-full w-14 h-14 bg-white text-black hover:bg-white ml-[24px] mr-[24px] pl-[22px] pr-[22px] mt-[22px] mb-[22px] border-0 shadow-none" 
                   data-testid="button-back-tours"
                 >
                   <ArrowLeft className="w-6 h-6" />
