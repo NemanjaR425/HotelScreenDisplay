@@ -67,7 +67,7 @@ async function fetchWeather(): Promise<WeatherData> {
     `&current=temperature_2m,weather_code,is_day` +
     `&hourly=temperature_2m,weather_code,is_day` +
     `&daily=temperature_2m_max,temperature_2m_min,weather_code` +
-    `&forecast_days=2&timezone=auto`;
+    `&forecast_days=8&timezone=auto`;
 
   const response = await fetch(url);
 
