@@ -1,27 +1,7 @@
 import { useState } from 'react';
 import { Cloud, Sun, CloudRain, Thermometer, Moon, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-interface WeatherWidgetProps {
-  temperature: number;
-  condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
-  location: string;
-  currentWeatherText: string;
-  conditionText: string;
-  forecast?: ForecastDay[];
-  forecastTitle?: string;
-  hourlyForecast?: string;
-  dailyForecast?: string;
-  dayNames?: {
-    monday: string;
-    tuesday: string;
-    wednesday: string;
-    thursday: string;
-    friday: string;
-    saturday: string;
-    sunday: string;
-  };
-}
+import type { HourlySlot } from '../hooks/use-weather';
 
 interface ForecastDay {
   day: string;
@@ -36,6 +16,28 @@ interface HourlyEntry {
   condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
 }
 
+interface WeatherWidgetProps {
+  temperature: number;
+  condition: 'sunny' | 'cloudy' | 'rainy' | 'clear-night';
+  location: string;
+  currentWeatherText: string;
+  conditionText: string;
+  forecast?: ForecastDay[];
+  hourly?: HourlySlot[];
+  forecastTitle?: string;
+  hourlyForecast?: string;
+  dailyForecast?: string;
+  dayNames?: {
+    monday: string;
+    tuesday: string;
+    wednesday: string;
+    thursday: string;
+    friday: string;
+    saturday: string;
+    sunday: string;
+  };
+}
+
 export default function WeatherWidget({ 
   temperature, 
   condition, 
@@ -43,6 +45,7 @@ export default function WeatherWidget({
   currentWeatherText, 
   conditionText,
   forecast,
+  hourly,
   forecastTitle = "7-Day Forecast",
   hourlyForecast = "Hourly Forecast",
   dailyForecast = "Daily Forecast",
@@ -82,37 +85,7 @@ export default function WeatherWidget({
     day: dayNameMap[day.day] || day.day,
   }));
 
-  // Generate simulated hourly data for today based on current temperature
-  const generateHourlyData = (): HourlyEntry[] => {
-    const now = new Date();
-    const currentHour = now.getHours();
-    const base = temperature;
-    // Temperature offsets throughout the day (relative to current temp)
-    const hourlyPattern: Array<{ offset: number; condition: HourlyEntry['condition'] }> = [
-      { offset: -4, condition: 'clear-night' }, // 00:00
-      { offset: -5, condition: 'clear-night' }, // 03:00
-      { offset: -4, condition: 'cloudy'      }, // 06:00
-      { offset: -2, condition: 'cloudy'      }, // 09:00
-      { offset:  2, condition: 'sunny'       }, // 12:00
-      { offset:  3, condition: 'sunny'       }, // 15:00
-      { offset:  1, condition: 'sunny'       }, // 18:00
-      { offset: -2, condition: 'cloudy'      }, // 21:00
-    ];
-
-    return hourlyPattern.map((entry, i) => {
-      const slotHour = i * 3;
-      const isPast = slotHour < currentHour;
-      const label = `${String(slotHour).padStart(2, '0')}:00`;
-      return {
-        time: label,
-        temp: Math.round(base + entry.offset),
-        condition: isPast ? (slotHour < 6 ? 'clear-night' : 'sunny') : entry.condition,
-        isPast,
-      } as HourlyEntry & { isPast: boolean };
-    });
-  };
-
-  const hourlyData = generateHourlyData() as Array<HourlyEntry & { isPast: boolean }>;
+  const hourlyData: Array<HourlyEntry & { isPast: boolean }> = hourly ?? [];
 
   return (
     <>
