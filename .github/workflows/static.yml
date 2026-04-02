@@ -29,19 +29,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-     - name: Install dependencies
+   - name: Install dependencies
         run: npm install
-        working-directory: ./client # Tell GitHub to go into your client folder
 
-      - name: Build project
+      - name: Build
         run: npm run build
-        working-directory: ./client
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This tells GitHub where the "ready-to-see" files are
-          path: './client/dist'
+          # Change this to 'dist' (the default Vite output folder)
+          path: './dist'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
