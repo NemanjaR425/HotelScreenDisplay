@@ -25,10 +25,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Build
+     - name: Build
         run: |
           npm install
-          npx vite build --root client --base ./ --outDir ../dist
+          cd client && npx vite build --base ./ --outDir ../dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
