@@ -1,8 +1,8 @@
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
-/*import { Toaster } from "@/components/ui/toaster";*/
-import { TooltipProvider } from "@/components/ui/tooltip";
+// import { Toaster } from "@/components/ui/toaster";
+// import { TooltipProvider } from "@/components/ui/tooltip"; // Commented out
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import DigitalSignage from "@/components/DigitalSignage";
 import DiningPage from "@/pages/dining";
@@ -35,12 +35,14 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
+      {/* <TooltipProvider> */}
         <LanguageProvider>
-          {/* <Toaster /> */}  {/* Correct way to comment out JSX tags */}
+          {/* <Toaster /> */}
           <Router />
         </LanguageProvider>
-      </TooltipProvider>
+      {/* </TooltipProvider> */}
     </QueryClientProvider>
   );
 }
+
+export default App;
