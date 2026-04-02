@@ -1,4 +1,4 @@
-name: Deploy Frontend to Pages
+name: Deploy Frontend
 
 on:
   push:
@@ -12,9 +12,6 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,9 +20,9 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-     - name: Build
+      - name: Install and Build
         run: |
           npm install
           cd client && npx vite build --base ./ --outDir ../dist
@@ -38,6 +35,5 @@ jobs:
         with:
           path: './dist'
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy
         uses: actions/deploy-pages@v4
