@@ -1,19 +1,19 @@
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
-// import { Toaster } from "@/components/ui/toaster";
-// import { TooltipProvider } from "@/components/ui/tooltip"; // Commented out
-import { LanguageProvider } from "@/contexts/LanguageContext";
-import DigitalSignage from "@/components/DigitalSignage";
-import DiningPage from "@/pages/dining";
-import ToursPage from "@/pages/tours";
-import TourDetailPage from "@/pages/tour-detail";
-import SpaPage from "@/pages/spa";
-import BeachPage from "@/pages/beach";
-import EntertainmentPage from "@/pages/entertainment";
-import EntertainmentDetailPage from "@/pages/entertainment-detail";
-import RentACarPage from "@/pages/rentacar";
-import NotFound from "@/pages/not-found";
+// import { Toaster } from "./components/ui/toaster";
+// import { TooltipProvider } from "./components/ui/tooltip";
+import { LanguageProvider } from "./contexts/LanguageContext"; // Changed from @ to ./
+import DigitalSignage from "./components/DigitalSignage";     // Changed from @ to ./
+import DiningPage from "./pages/dining";
+import ToursPage from "./pages/tours";
+import TourDetailPage from "./pages/tour-detail";
+import SpaPage from "./pages/spa";
+import BeachPage from "./pages/beach";
+import EntertainmentPage from "./pages/entertainment";
+import EntertainmentDetailPage from "./pages/entertainment-detail";
+import RentACarPage from "./pages/rentacar";
+import NotFound from "./pages/not-found";
 
 function Router() {
   return (
