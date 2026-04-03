@@ -1,5 +1,5 @@
 import { Link, useParams } from "wouter";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/card";
 import { ArrowLeft, Clock, DollarSign } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/LanguageSelector";
