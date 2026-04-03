@@ -22,10 +22,14 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install and Build
+      - name: Build
         run: |
+          # This command finds the 'client' folder automatically
+          CLIENT_PATH=$(find . -name "package.json" -path "*/client/*" -exec dirname {} \;)
+          echo "Found client at: $CLIENT_PATH"
+          cd "$CLIENT_PATH"
           npm install
-          cd client && npx vite build --base ./ --outDir ../dist
+          npx vite build --base ./ --outDir ../dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -33,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './HotelScreenDisplay/dist' # Adjusted for your specific nesting
 
       - name: Deploy
         uses: actions/deploy-pages@v4
